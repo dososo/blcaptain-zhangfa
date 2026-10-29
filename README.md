@@ -10,6 +10,8 @@
 
 [打开案例试验场](https://dososo.github.io/blcaptain-zhangfa/) · [12组局部试排](https://dososo.github.io/blcaptain-zhangfa/lab/) · [方法与边界](docs/方法与边界.md) · [生成与评测协议](bench/协议.md)
 
+[约30秒操作演示](https://github.com/dososo/blcaptain-zhangfa/releases/download/v0.1.0/zhangfa-demo.mp4)：同版本本地站点的自动化浏览器无声实录，展示条件切换、手机视口与局部试排；不代表真人测试或真机验收。
+
 试验场逐题切换“不加载本技能／仅分寸／章法＋分寸”，支持桌面与手机宽度预览、查看原始需求和打开真实页面。规则示意、实际生成和未完成状态分别标注。
 
 这里展示的是批次生成示例，不是每题独立运行的统计胜率实验。完整模型构建版本、统一 token 成本等无法核实时明确披露；不宣称视觉胜率或业务转化提升。技术检查也不等于审美或真机验收。
