@@ -5,6 +5,7 @@ const armIds = ["control", "measure", "full"];
 const armLabels = { control: "无本技能", measure: "仅分寸", full: "章法＋分寸" };
 const state = { cases: [], selectedId: null, arm: "full", device: "desktop", kind: "all" };
 let resizeObserver;
+let previewTimer;
 
 function localUrl(value) {
   if (typeof value !== "string" || !value.trim()) return null;
@@ -125,10 +126,27 @@ function renderPreview() {
   $("#frame-shell").hidden = !url;
   openPage.hidden = !url;
   if (url) {
-    if (frame.getAttribute("src") !== url) frame.src = url;
+    if (frame.getAttribute("src") !== url) {
+      clearTimeout(previewTimer);
+      frame.style.visibility = "hidden";
+      $("#frame-loading").hidden = false;
+      $("#frame-loading").textContent = "正在加载这一页…";
+      frame.onload = () => {
+        if (frame.getAttribute("src") !== url) return;
+        clearTimeout(previewTimer);
+        frame.style.visibility = "visible";
+        $("#frame-loading").hidden = true;
+      };
+      frame.src = url;
+      previewTimer = setTimeout(() => {
+        if (frame.getAttribute("src") === url) $("#frame-loading").textContent = "预览尚未加载完成，可打开独立页面继续查看。";
+      }, 8000);
+    }
     frame.title = `${item.title}：${armLabels[state.arm]}的页面预览`;
     openPage.href = url;
   } else {
+    clearTimeout(previewTimer);
+    $("#frame-loading").hidden = true;
     frame.removeAttribute("src");
     openPage.removeAttribute("href");
     $("#empty-title").textContent = arm?.status === "failed" ? "本次生成未成功" : ["generated", "verified"].includes(arm?.status) ? "页面地址待补充" : "这个条件的页面尚未制作";
@@ -138,6 +156,10 @@ function renderPreview() {
   const checkLabels = { pass: "指定范围的自动复查通过", fail: "自动复查发现问题，详见试验记录", unknown: "自动复查存在无法判断项", not_run: "自动复查尚未运行", not_applicable: "该项检查不适用" };
   const technical = ["generated", "verified"].includes(arm?.status) ? `技术检查：${checkLabels[arm.technicalStatus] || "待验证"}；视觉与人工验收：待确认。` : "技术检查与视觉验收：尚无可验收页面。";
   $("#evidence-status").textContent = `${armLabels[state.arm]} · ${statusLabel(arm?.status || "planned")}\n${technical}${kind === "规则示意" ? "\n当前是规则示意，用于说明方法，不作为真实智能体试验的效果证据。" : ""}`;
+  const originalUrl = localUrl(arm?.visualRevision?.originalUrl);
+  $("#open-original").hidden = !originalUrl;
+  if (originalUrl) $("#open-original").href = originalUrl;
+  else $("#open-original").removeAttribute("href");
   if (arm?.protocolNotes?.length) $("#evidence-status").textContent += `\n过程偏差：${arm.protocolNotes.map(note => typeof note === "string" ? note : JSON.stringify(note)).join("；")}。本条件不作为完整流程严格对照。`;
   const evidenceUrl = localUrl(item.evidenceUrl);
   $("#evidence-link").hidden = !evidenceUrl;

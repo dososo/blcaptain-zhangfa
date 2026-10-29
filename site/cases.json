@@ -17,7 +17,8 @@
           "url": "./runs/01/control/index.html",
           "status": "generated",
           "technicalStatus": "fail",
-          "protocolNotes": []
+          "protocolNotes": [],
+          "visualRevision": null
         },
         {
           "id": "measure",
@@ -25,7 +26,8 @@
           "url": "./runs/01/measure/index.html",
           "status": "generated",
           "technicalStatus": "pass",
-          "protocolNotes": []
+          "protocolNotes": [],
+          "visualRevision": null
         },
         {
           "id": "full",
@@ -33,7 +35,24 @@
           "url": "./runs/01/full/index.html",
           "status": "generated",
           "technicalStatus": "pass",
-          "protocolNotes": []
+          "protocolNotes": [
+            "当前页面为0.2.0视觉审查后修订版；原始生成页另存，不能用修订版计算原始生成胜率"
+          ],
+          "visualRevision": {
+            "version": "0.2.0",
+            "originalUrl": "./history/v0.1.0/runs/01/full/index.html",
+            "reason": "根据独立视觉审查修复中文语义断行或窄屏局部布局；原文、数据与主要行为保全。16题将装饰分隔点改为状态标签。",
+            "originalFiles": [
+              {
+                "文件": "index.html",
+                "sha256": "4cd2f21c4d615a0b2350a6bdb41516582ac9044239af5b29eb2fe9c916fa22a0"
+              },
+              {
+                "文件": "measure.css",
+                "sha256": "cc0ba1e4da554d44e1a1a753512a1e52e78c7901debdc5c44d97c948b2a826a4"
+              }
+            ]
+          }
         }
       ],
       "evidenceUrl": "./records/01.json"
@@ -54,7 +73,8 @@
           "url": "./runs/02/control/index.html",
           "status": "generated",
           "technicalStatus": "fail",
-          "protocolNotes": []
+          "protocolNotes": [],
+          "visualRevision": null
         },
         {
           "id": "measure",
@@ -62,7 +82,8 @@
           "url": "./runs/02/measure/index.html",
           "status": "generated",
           "technicalStatus": "pass",
-          "protocolNotes": []
+          "protocolNotes": [],
+          "visualRevision": null
         },
         {
           "id": "full",
@@ -76,7 +97,8 @@
             "初次文字放大使用百分比叠加探针，不能当作准确200%证据；后续另用实际字号逐元素乘2的压力测试，保留两份记录。",
             "同会话自审，没有独立人类或真机验收；不宣称完整技能流程通过，不计效果胜率。"
           ],
-          "technicalStatus": "pass"
+          "technicalStatus": "pass",
+          "visualRevision": null
         }
       ],
       "evidenceUrl": "./records/02.json"
@@ -97,7 +119,8 @@
           "url": "./runs/03/control/index.html",
           "status": "generated",
           "technicalStatus": "fail",
-          "protocolNotes": []
+          "protocolNotes": [],
+          "visualRevision": null
         },
         {
           "id": "measure",
@@ -105,7 +128,8 @@
           "url": "./runs/03/measure/index.html",
           "status": "generated",
           "technicalStatus": "pass",
-          "protocolNotes": []
+          "protocolNotes": [],
+          "visualRevision": null
         },
         {
           "id": "full",
@@ -119,7 +143,8 @@
             "初次文字放大使用百分比叠加探针，不能当作准确200%证据；后续另用实际字号逐元素乘2的压力测试，保留两份记录。",
             "同会话自审，没有独立人类或真机验收；不宣称完整技能流程通过，不计效果胜率。"
           ],
-          "technicalStatus": "pass"
+          "technicalStatus": "pass",
+          "visualRevision": null
         }
       ],
       "evidenceUrl": "./records/03.json"
@@ -140,7 +165,8 @@
           "url": "./runs/04/control/index.html",
           "status": "generated",
           "technicalStatus": "not_run",
-          "protocolNotes": []
+          "protocolNotes": [],
+          "visualRevision": null
         },
         {
           "id": "measure",
@@ -148,7 +174,8 @@
           "url": "./runs/04/measure/index.html",
           "status": "generated",
           "technicalStatus": "not_run",
-          "protocolNotes": []
+          "protocolNotes": [],
+          "visualRevision": null
         },
         {
           "id": "full",
@@ -162,7 +189,8 @@
             "初次文字放大使用百分比叠加探针，不能当作准确200%证据；后续另用实际字号逐元素乘2的压力测试，保留两份记录。",
             "同会话自审，没有独立人类或真机验收；不宣称完整技能流程通过，不计效果胜率。"
           ],
-          "technicalStatus": "not_run"
+          "technicalStatus": "not_run",
+          "visualRevision": null
         }
       ],
       "evidenceUrl": "./records/04.json"
@@ -183,7 +211,8 @@
           "url": "./runs/05/control/index.html",
           "status": "generated",
           "technicalStatus": "fail",
-          "protocolNotes": []
+          "protocolNotes": [],
+          "visualRevision": null
         },
         {
           "id": "measure",
@@ -191,7 +220,8 @@
           "url": "./runs/05/measure/index.html",
           "status": "generated",
           "technicalStatus": "pass",
-          "protocolNotes": []
+          "protocolNotes": [],
+          "visualRevision": null
         },
         {
           "id": "full",
@@ -199,7 +229,24 @@
           "url": "./runs/05/full/index.html",
           "status": "generated",
           "technicalStatus": "pass",
-          "protocolNotes": []
+          "protocolNotes": [
+            "当前页面为0.2.0视觉审查后修订版；原始生成页另存，不能用修订版计算原始生成胜率"
+          ],
+          "visualRevision": {
+            "version": "0.2.0",
+            "originalUrl": "./history/v0.1.0/runs/05/full/index.html",
+            "reason": "根据独立视觉审查修复中文语义断行或窄屏局部布局；原文、数据与主要行为保全。16题将装饰分隔点改为状态标签。",
+            "originalFiles": [
+              {
+                "文件": "index.html",
+                "sha256": "014d13667fbc98e8bdd20448d3679c67d92799a251bf5fb87033b1d73a594b0b"
+              },
+              {
+                "文件": "measure.css",
+                "sha256": "cc0ba1e4da554d44e1a1a753512a1e52e78c7901debdc5c44d97c948b2a826a4"
+              }
+            ]
+          }
         }
       ],
       "evidenceUrl": "./records/05.json"
@@ -220,7 +267,8 @@
           "url": "./runs/06/control/index.html",
           "status": "generated",
           "technicalStatus": "fail",
-          "protocolNotes": []
+          "protocolNotes": [],
+          "visualRevision": null
         },
         {
           "id": "measure",
@@ -228,7 +276,8 @@
           "url": "./runs/06/measure/index.html",
           "status": "generated",
           "technicalStatus": "pass",
-          "protocolNotes": []
+          "protocolNotes": [],
+          "visualRevision": null
         },
         {
           "id": "full",
@@ -240,9 +289,29 @@
             "每题只保留一个实际方向和理由，未先保留三个可比较首屏方向。",
             "03、06、12题超出一次首轮修复预算；已保留失败文件、报告和逐轮原因，不计公平胜率。",
             "初次文字放大使用百分比叠加探针，不能当作准确200%证据；后续另用实际字号逐元素乘2的压力测试，保留两份记录。",
-            "同会话自审，没有独立人类或真机验收；不宣称完整技能流程通过，不计效果胜率。"
+            "同会话自审，没有独立人类或真机验收；不宣称完整技能流程通过，不计效果胜率。",
+            "当前页面为0.2.0视觉审查后修订版；原始生成页另存，不能用修订版计算原始生成胜率"
           ],
-          "technicalStatus": "pass"
+          "technicalStatus": "pass",
+          "visualRevision": {
+            "version": "0.2.0",
+            "originalUrl": "./history/v0.1.0/runs/06/full/index.html",
+            "reason": "根据独立视觉审查修复中文语义断行或窄屏局部布局；原文、数据与主要行为保全。16题将装饰分隔点改为状态标签。",
+            "originalFiles": [
+              {
+                "文件": "index.html",
+                "sha256": "9c32abdb976d4a1b26ff897d7883a4cb354128efe4b3e153e9b3f2b1317a982e"
+              },
+              {
+                "文件": "measure.css",
+                "sha256": "cc0ba1e4da554d44e1a1a753512a1e52e78c7901debdc5c44d97c948b2a826a4"
+              },
+              {
+                "文件": "style.css",
+                "sha256": "4194e620a8edb5a9fba1cfcbf68f87e782277bb7a0315e1ae4aa07d6b13c2641"
+              }
+            ]
+          }
         }
       ],
       "evidenceUrl": "./records/06.json"
@@ -263,7 +332,8 @@
           "url": "./runs/07/control/index.html",
           "status": "generated",
           "technicalStatus": "fail",
-          "protocolNotes": []
+          "protocolNotes": [],
+          "visualRevision": null
         },
         {
           "id": "measure",
@@ -271,7 +341,8 @@
           "url": "./runs/07/measure/index.html",
           "status": "generated",
           "technicalStatus": "pass",
-          "protocolNotes": []
+          "protocolNotes": [],
+          "visualRevision": null
         },
         {
           "id": "full",
@@ -283,9 +354,33 @@
             "每题只保留一个实际方向和理由，未先保留三个可比较首屏方向。",
             "03、06、12题超出一次首轮修复预算；已保留失败文件、报告和逐轮原因，不计公平胜率。",
             "初次文字放大使用百分比叠加探针，不能当作准确200%证据；后续另用实际字号逐元素乘2的压力测试，保留两份记录。",
-            "同会话自审，没有独立人类或真机验收；不宣称完整技能流程通过，不计效果胜率。"
+            "同会话自审，没有独立人类或真机验收；不宣称完整技能流程通过，不计效果胜率。",
+            "当前页面为0.2.0视觉审查后修订版；原始生成页另存，不能用修订版计算原始生成胜率"
           ],
-          "technicalStatus": "pass"
+          "technicalStatus": "pass",
+          "visualRevision": {
+            "version": "0.2.0",
+            "originalUrl": "./history/v0.1.0/runs/07/full/index.html",
+            "reason": "根据独立视觉审查修复中文语义断行或窄屏局部布局；原文、数据与主要行为保全。16题将装饰分隔点改为状态标签。",
+            "originalFiles": [
+              {
+                "文件": "app.js",
+                "sha256": "08c5a6f23db9d36444582fd6acce5ef8e3d46b2c958a221a2638e17d0f550355"
+              },
+              {
+                "文件": "index.html",
+                "sha256": "7f1b283b0761b889492ced1ab87bd90ccda94352368f18fe4c7317861e8a6a76"
+              },
+              {
+                "文件": "measure.css",
+                "sha256": "cc0ba1e4da554d44e1a1a753512a1e52e78c7901debdc5c44d97c948b2a826a4"
+              },
+              {
+                "文件": "style.css",
+                "sha256": "ae4f42c41317a70bbdab74c6dd29e0e7ef164f3c10e3ed418a5d1cdadf3f05ee"
+              }
+            ]
+          }
         }
       ],
       "evidenceUrl": "./records/07.json"
@@ -306,7 +401,8 @@
           "url": "./runs/08/control/index.html",
           "status": "generated",
           "technicalStatus": "fail",
-          "protocolNotes": []
+          "protocolNotes": [],
+          "visualRevision": null
         },
         {
           "id": "measure",
@@ -314,7 +410,8 @@
           "url": "./runs/08/measure/index.html",
           "status": "generated",
           "technicalStatus": "pass",
-          "protocolNotes": []
+          "protocolNotes": [],
+          "visualRevision": null
         },
         {
           "id": "full",
@@ -326,9 +423,29 @@
             "每题只保留一个实际方向和理由，未先保留三个可比较首屏方向。",
             "03、06、12题超出一次首轮修复预算；已保留失败文件、报告和逐轮原因，不计公平胜率。",
             "初次文字放大使用百分比叠加探针，不能当作准确200%证据；后续另用实际字号逐元素乘2的压力测试，保留两份记录。",
-            "同会话自审，没有独立人类或真机验收；不宣称完整技能流程通过，不计效果胜率。"
+            "同会话自审，没有独立人类或真机验收；不宣称完整技能流程通过，不计效果胜率。",
+            "当前页面为0.2.0视觉审查后修订版；原始生成页另存，不能用修订版计算原始生成胜率"
           ],
-          "technicalStatus": "pass"
+          "technicalStatus": "pass",
+          "visualRevision": {
+            "version": "0.2.0",
+            "originalUrl": "./history/v0.1.0/runs/08/full/index.html",
+            "reason": "根据独立视觉审查修复中文语义断行或窄屏局部布局；原文、数据与主要行为保全。16题将装饰分隔点改为状态标签。",
+            "originalFiles": [
+              {
+                "文件": "index.html",
+                "sha256": "264fea60094cd08db5bde538990d7584ec635588f5829f10ef2449e70bf574b6"
+              },
+              {
+                "文件": "measure.css",
+                "sha256": "cc0ba1e4da554d44e1a1a753512a1e52e78c7901debdc5c44d97c948b2a826a4"
+              },
+              {
+                "文件": "style.css",
+                "sha256": "5fe0b5b27b96695de670787159600098b5c0042fbb32dbfa984197beb58daa9c"
+              }
+            ]
+          }
         }
       ],
       "evidenceUrl": "./records/08.json"
@@ -349,7 +466,8 @@
           "url": "./runs/09/control/index.html",
           "status": "generated",
           "technicalStatus": "fail",
-          "protocolNotes": []
+          "protocolNotes": [],
+          "visualRevision": null
         },
         {
           "id": "measure",
@@ -357,7 +475,8 @@
           "url": "./runs/09/measure/index.html",
           "status": "generated",
           "technicalStatus": "pass",
-          "protocolNotes": []
+          "protocolNotes": [],
+          "visualRevision": null
         },
         {
           "id": "full",
@@ -365,7 +484,24 @@
           "url": "./runs/09/full/index.html",
           "status": "generated",
           "technicalStatus": "pass",
-          "protocolNotes": []
+          "protocolNotes": [
+            "当前页面为0.2.0视觉审查后修订版；原始生成页另存，不能用修订版计算原始生成胜率"
+          ],
+          "visualRevision": {
+            "version": "0.2.0",
+            "originalUrl": "./history/v0.1.0/runs/09/full/index.html",
+            "reason": "根据独立视觉审查修复中文语义断行或窄屏局部布局；原文、数据与主要行为保全。16题将装饰分隔点改为状态标签。",
+            "originalFiles": [
+              {
+                "文件": "index.html",
+                "sha256": "e8c218e4dace98c8493cf9b212e4db5760898659c1d3f9259342cd62cd6dc340"
+              },
+              {
+                "文件": "measure.css",
+                "sha256": "cc0ba1e4da554d44e1a1a753512a1e52e78c7901debdc5c44d97c948b2a826a4"
+              }
+            ]
+          }
         }
       ],
       "evidenceUrl": "./records/09.json"
@@ -386,7 +522,8 @@
           "url": "./runs/10/control/index.html",
           "status": "generated",
           "technicalStatus": "not_run",
-          "protocolNotes": []
+          "protocolNotes": [],
+          "visualRevision": null
         },
         {
           "id": "measure",
@@ -394,7 +531,8 @@
           "url": "./runs/10/measure/index.html",
           "status": "generated",
           "technicalStatus": "not_run",
-          "protocolNotes": []
+          "protocolNotes": [],
+          "visualRevision": null
         },
         {
           "id": "full",
@@ -408,7 +546,8 @@
             "初次文字放大使用百分比叠加探针，不能当作准确200%证据；后续另用实际字号逐元素乘2的压力测试，保留两份记录。",
             "同会话自审，没有独立人类或真机验收；不宣称完整技能流程通过，不计效果胜率。"
           ],
-          "technicalStatus": "not_run"
+          "technicalStatus": "not_run",
+          "visualRevision": null
         }
       ],
       "evidenceUrl": "./records/10.json"
@@ -429,7 +568,8 @@
           "url": "./runs/11/control/index.html",
           "status": "generated",
           "technicalStatus": "fail",
-          "protocolNotes": []
+          "protocolNotes": [],
+          "visualRevision": null
         },
         {
           "id": "measure",
@@ -437,7 +577,8 @@
           "url": "./runs/11/measure/index.html",
           "status": "generated",
           "technicalStatus": "pass",
-          "protocolNotes": []
+          "protocolNotes": [],
+          "visualRevision": null
         },
         {
           "id": "full",
@@ -451,7 +592,8 @@
             "初次文字放大使用百分比叠加探针，不能当作准确200%证据；后续另用实际字号逐元素乘2的压力测试，保留两份记录。",
             "同会话自审，没有独立人类或真机验收；不宣称完整技能流程通过，不计效果胜率。"
           ],
-          "technicalStatus": "pass"
+          "technicalStatus": "pass",
+          "visualRevision": null
         }
       ],
       "evidenceUrl": "./records/11.json"
@@ -472,7 +614,8 @@
           "url": "./runs/12/control/index.html",
           "status": "generated",
           "technicalStatus": "fail",
-          "protocolNotes": []
+          "protocolNotes": [],
+          "visualRevision": null
         },
         {
           "id": "measure",
@@ -480,7 +623,8 @@
           "url": "./runs/12/measure/index.html",
           "status": "generated",
           "technicalStatus": "pass",
-          "protocolNotes": []
+          "protocolNotes": [],
+          "visualRevision": null
         },
         {
           "id": "full",
@@ -494,7 +638,8 @@
             "初次文字放大使用百分比叠加探针，不能当作准确200%证据；后续另用实际字号逐元素乘2的压力测试，保留两份记录。",
             "同会话自审，没有独立人类或真机验收；不宣称完整技能流程通过，不计效果胜率。"
           ],
-          "technicalStatus": "pass"
+          "technicalStatus": "pass",
+          "visualRevision": null
         }
       ],
       "evidenceUrl": "./records/12.json"
@@ -515,7 +660,8 @@
           "url": "./runs/13/control/index.html",
           "status": "generated",
           "technicalStatus": "fail",
-          "protocolNotes": []
+          "protocolNotes": [],
+          "visualRevision": null
         },
         {
           "id": "measure",
@@ -523,7 +669,8 @@
           "url": "./runs/13/measure/index.html",
           "status": "generated",
           "technicalStatus": "pass",
-          "protocolNotes": []
+          "protocolNotes": [],
+          "visualRevision": null
         },
         {
           "id": "full",
@@ -531,7 +678,8 @@
           "url": "./runs/13/full/index.html",
           "status": "generated",
           "technicalStatus": "pass",
-          "protocolNotes": []
+          "protocolNotes": [],
+          "visualRevision": null
         }
       ],
       "evidenceUrl": "./records/13.json"
@@ -552,7 +700,8 @@
           "url": "./runs/14/control/index.html",
           "status": "generated",
           "technicalStatus": "fail",
-          "protocolNotes": []
+          "protocolNotes": [],
+          "visualRevision": null
         },
         {
           "id": "measure",
@@ -560,7 +709,8 @@
           "url": "./runs/14/measure/index.html",
           "status": "generated",
           "technicalStatus": "pass",
-          "protocolNotes": []
+          "protocolNotes": [],
+          "visualRevision": null
         },
         {
           "id": "full",
@@ -572,9 +722,29 @@
             "每题只保留一个实际方向和理由，未先保留三个可比较首屏方向。",
             "03、06、12题超出一次首轮修复预算；已保留失败文件、报告和逐轮原因，不计公平胜率。",
             "初次文字放大使用百分比叠加探针，不能当作准确200%证据；后续另用实际字号逐元素乘2的压力测试，保留两份记录。",
-            "同会话自审，没有独立人类或真机验收；不宣称完整技能流程通过，不计效果胜率。"
+            "同会话自审，没有独立人类或真机验收；不宣称完整技能流程通过，不计效果胜率。",
+            "当前页面为0.2.0视觉审查后修订版；原始生成页另存，不能用修订版计算原始生成胜率"
           ],
-          "technicalStatus": "pass"
+          "technicalStatus": "pass",
+          "visualRevision": {
+            "version": "0.2.0",
+            "originalUrl": "./history/v0.1.0/runs/14/full/index.html",
+            "reason": "根据独立视觉审查修复中文语义断行或窄屏局部布局；原文、数据与主要行为保全。16题将装饰分隔点改为状态标签。",
+            "originalFiles": [
+              {
+                "文件": "index.html",
+                "sha256": "a04fa5c1101f257cb680e738cc7ab22d6c306fc0d71df566dcdd0e0279c821c3"
+              },
+              {
+                "文件": "measure.css",
+                "sha256": "cc0ba1e4da554d44e1a1a753512a1e52e78c7901debdc5c44d97c948b2a826a4"
+              },
+              {
+                "文件": "style.css",
+                "sha256": "52eef62734f09c12593cfed44551a1b7734cc9174fe2d75caffb2760204e71bf"
+              }
+            ]
+          }
         }
       ],
       "evidenceUrl": "./records/14.json"
@@ -595,7 +765,8 @@
           "url": "./runs/15/control/index.html",
           "status": "generated",
           "technicalStatus": "fail",
-          "protocolNotes": []
+          "protocolNotes": [],
+          "visualRevision": null
         },
         {
           "id": "measure",
@@ -603,7 +774,8 @@
           "url": "./runs/15/measure/index.html",
           "status": "generated",
           "technicalStatus": "pass",
-          "protocolNotes": []
+          "protocolNotes": [],
+          "visualRevision": null
         },
         {
           "id": "full",
@@ -617,7 +789,8 @@
             "初次文字放大使用百分比叠加探针，不能当作准确200%证据；后续另用实际字号逐元素乘2的压力测试，保留两份记录。",
             "同会话自审，没有独立人类或真机验收；不宣称完整技能流程通过，不计效果胜率。"
           ],
-          "technicalStatus": "pass"
+          "technicalStatus": "pass",
+          "visualRevision": null
         }
       ],
       "evidenceUrl": "./records/15.json"
@@ -638,7 +811,8 @@
           "url": "./runs/16/control/index.html",
           "status": "generated",
           "technicalStatus": "fail",
-          "protocolNotes": []
+          "protocolNotes": [],
+          "visualRevision": null
         },
         {
           "id": "measure",
@@ -646,7 +820,8 @@
           "url": "./runs/16/measure/index.html",
           "status": "generated",
           "technicalStatus": "fail",
-          "protocolNotes": []
+          "protocolNotes": [],
+          "visualRevision": null
         },
         {
           "id": "full",
@@ -658,9 +833,29 @@
             "每题只保留一个实际方向和理由，未先保留三个可比较首屏方向。",
             "03、06、12题超出一次首轮修复预算；已保留失败文件、报告和逐轮原因，不计公平胜率。",
             "初次文字放大使用百分比叠加探针，不能当作准确200%证据；后续另用实际字号逐元素乘2的压力测试，保留两份记录。",
-            "同会话自审，没有独立人类或真机验收；不宣称完整技能流程通过，不计效果胜率。"
+            "同会话自审，没有独立人类或真机验收；不宣称完整技能流程通过，不计效果胜率。",
+            "当前页面为0.2.0视觉审查后修订版；原始生成页另存，不能用修订版计算原始生成胜率"
           ],
-          "technicalStatus": "fail"
+          "technicalStatus": "pass",
+          "visualRevision": {
+            "version": "0.2.0",
+            "originalUrl": "./history/v0.1.0/runs/16/full/index.html",
+            "reason": "根据独立视觉审查修复中文语义断行或窄屏局部布局；原文、数据与主要行为保全。16题将装饰分隔点改为状态标签。",
+            "originalFiles": [
+              {
+                "文件": "index.html",
+                "sha256": "333f080ff3ab43022d5a74bfbb1c40a44e0bde1b54a2da5b8585369a6d5ce821"
+              },
+              {
+                "文件": "measure.css",
+                "sha256": "cc0ba1e4da554d44e1a1a753512a1e52e78c7901debdc5c44d97c948b2a826a4"
+              },
+              {
+                "文件": "style.css",
+                "sha256": "52eef62734f09c12593cfed44551a1b7734cc9174fe2d75caffb2760204e71bf"
+              }
+            ]
+          }
         }
       ],
       "evidenceUrl": "./records/16.json"
@@ -681,7 +876,8 @@
           "url": "./runs/17/control/index.html",
           "status": "generated",
           "technicalStatus": "fail",
-          "protocolNotes": []
+          "protocolNotes": [],
+          "visualRevision": null
         },
         {
           "id": "measure",
@@ -689,7 +885,8 @@
           "url": "./runs/17/measure/index.html",
           "status": "generated",
           "technicalStatus": "pass",
-          "protocolNotes": []
+          "protocolNotes": [],
+          "visualRevision": null
         },
         {
           "id": "full",
@@ -697,7 +894,24 @@
           "url": "./runs/17/full/index.html",
           "status": "generated",
           "technicalStatus": "pass",
-          "protocolNotes": []
+          "protocolNotes": [
+            "当前页面为0.2.0视觉审查后修订版；原始生成页另存，不能用修订版计算原始生成胜率"
+          ],
+          "visualRevision": {
+            "version": "0.2.0",
+            "originalUrl": "./history/v0.1.0/runs/17/full/index.html",
+            "reason": "根据独立视觉审查修复中文语义断行或窄屏局部布局；原文、数据与主要行为保全。16题将装饰分隔点改为状态标签。",
+            "originalFiles": [
+              {
+                "文件": "index.html",
+                "sha256": "4e0d6707bfdd908b49f927f0f876335479593fcef6551a65dca5bb87c24c8ffd"
+              },
+              {
+                "文件": "measure.css",
+                "sha256": "cc0ba1e4da554d44e1a1a753512a1e52e78c7901debdc5c44d97c948b2a826a4"
+              }
+            ]
+          }
         }
       ],
       "evidenceUrl": "./records/17.json"
@@ -718,7 +932,8 @@
           "url": "./runs/18/control/index.html",
           "status": "generated",
           "technicalStatus": "not_run",
-          "protocolNotes": []
+          "protocolNotes": [],
+          "visualRevision": null
         },
         {
           "id": "measure",
@@ -726,7 +941,8 @@
           "url": "./runs/18/measure/index.html",
           "status": "generated",
           "technicalStatus": "not_run",
-          "protocolNotes": []
+          "protocolNotes": [],
+          "visualRevision": null
         },
         {
           "id": "full",
@@ -740,7 +956,8 @@
             "初次文字放大使用百分比叠加探针，不能当作准确200%证据；后续另用实际字号逐元素乘2的压力测试，保留两份记录。",
             "同会话自审，没有独立人类或真机验收；不宣称完整技能流程通过，不计效果胜率。"
           ],
-          "technicalStatus": "not_run"
+          "technicalStatus": "not_run",
+          "visualRevision": null
         }
       ],
       "evidenceUrl": "./records/18.json"
@@ -761,7 +978,8 @@
           "url": "./runs/19/control/index.html",
           "status": "generated",
           "technicalStatus": "fail",
-          "protocolNotes": []
+          "protocolNotes": [],
+          "visualRevision": null
         },
         {
           "id": "measure",
@@ -769,7 +987,8 @@
           "url": "./runs/19/measure/index.html",
           "status": "generated",
           "technicalStatus": "pass",
-          "protocolNotes": []
+          "protocolNotes": [],
+          "visualRevision": null
         },
         {
           "id": "full",
@@ -781,9 +1000,33 @@
             "每题只保留一个实际方向和理由，未先保留三个可比较首屏方向。",
             "03、06、12题超出一次首轮修复预算；已保留失败文件、报告和逐轮原因，不计公平胜率。",
             "初次文字放大使用百分比叠加探针，不能当作准确200%证据；后续另用实际字号逐元素乘2的压力测试，保留两份记录。",
-            "同会话自审，没有独立人类或真机验收；不宣称完整技能流程通过，不计效果胜率。"
+            "同会话自审，没有独立人类或真机验收；不宣称完整技能流程通过，不计效果胜率。",
+            "当前页面为0.2.0视觉审查后修订版；原始生成页另存，不能用修订版计算原始生成胜率"
           ],
-          "technicalStatus": "pass"
+          "technicalStatus": "pass",
+          "visualRevision": {
+            "version": "0.2.0",
+            "originalUrl": "./history/v0.1.0/runs/19/full/index.html",
+            "reason": "根据独立视觉审查修复中文语义断行或窄屏局部布局；原文、数据与主要行为保全。16题将装饰分隔点改为状态标签。",
+            "originalFiles": [
+              {
+                "文件": "app.js",
+                "sha256": "3c29d4fbdc4e7d8288e5c3f189a35ecae49b8339a4932ea394060a23bf188069"
+              },
+              {
+                "文件": "index.html",
+                "sha256": "869517329b17bd8ea778b9c82fd21865a10dece853916a918754194d4be57a32"
+              },
+              {
+                "文件": "measure.css",
+                "sha256": "cc0ba1e4da554d44e1a1a753512a1e52e78c7901debdc5c44d97c948b2a826a4"
+              },
+              {
+                "文件": "style.css",
+                "sha256": "0372b6769380d15e2a00c0b46609c0a443c58dacf88874e25cc493a4d87edd5a"
+              }
+            ]
+          }
         }
       ],
       "evidenceUrl": "./records/19.json"
@@ -804,7 +1047,8 @@
           "url": "./runs/20/control/index.html",
           "status": "generated",
           "technicalStatus": "fail",
-          "protocolNotes": []
+          "protocolNotes": [],
+          "visualRevision": null
         },
         {
           "id": "measure",
@@ -812,7 +1056,8 @@
           "url": "./runs/20/measure/index.html",
           "status": "generated",
           "technicalStatus": "pass",
-          "protocolNotes": []
+          "protocolNotes": [],
+          "visualRevision": null
         },
         {
           "id": "full",
@@ -824,9 +1069,33 @@
             "每题只保留一个实际方向和理由，未先保留三个可比较首屏方向。",
             "03、06、12题超出一次首轮修复预算；已保留失败文件、报告和逐轮原因，不计公平胜率。",
             "初次文字放大使用百分比叠加探针，不能当作准确200%证据；后续另用实际字号逐元素乘2的压力测试，保留两份记录。",
-            "同会话自审，没有独立人类或真机验收；不宣称完整技能流程通过，不计效果胜率。"
+            "同会话自审，没有独立人类或真机验收；不宣称完整技能流程通过，不计效果胜率。",
+            "当前页面为0.2.0视觉审查后修订版；原始生成页另存，不能用修订版计算原始生成胜率"
           ],
-          "technicalStatus": "pass"
+          "technicalStatus": "pass",
+          "visualRevision": {
+            "version": "0.2.0",
+            "originalUrl": "./history/v0.1.0/runs/20/full/index.html",
+            "reason": "根据独立视觉审查修复中文语义断行或窄屏局部布局；原文、数据与主要行为保全。16题将装饰分隔点改为状态标签。",
+            "originalFiles": [
+              {
+                "文件": "app.js",
+                "sha256": "445e1517505824589b243e14158cb3a43ed32be1f2f750f393a8b5d9acbd0f93"
+              },
+              {
+                "文件": "index.html",
+                "sha256": "5f64eb53df227e10256cd818edf21a9da1cc74f49e51909ebc7042fcbec03765"
+              },
+              {
+                "文件": "measure.css",
+                "sha256": "cc0ba1e4da554d44e1a1a753512a1e52e78c7901debdc5c44d97c948b2a826a4"
+              },
+              {
+                "文件": "style.css",
+                "sha256": "271e7d233090edae6785e3c9a459dfdb00e189d914aa42259a439ceab2767fb2"
+              }
+            ]
+          }
         }
       ],
       "evidenceUrl": "./records/20.json"
@@ -847,7 +1116,8 @@
           "url": "./runs/21/control/index.html",
           "status": "generated",
           "technicalStatus": "fail",
-          "protocolNotes": []
+          "protocolNotes": [],
+          "visualRevision": null
         },
         {
           "id": "measure",
@@ -855,7 +1125,8 @@
           "url": "./runs/21/measure/index.html",
           "status": "generated",
           "technicalStatus": "pass",
-          "protocolNotes": []
+          "protocolNotes": [],
+          "visualRevision": null
         },
         {
           "id": "full",
@@ -863,7 +1134,24 @@
           "url": "./runs/21/full/index.html",
           "status": "generated",
           "technicalStatus": "pass",
-          "protocolNotes": []
+          "protocolNotes": [
+            "当前页面为0.2.0视觉审查后修订版；原始生成页另存，不能用修订版计算原始生成胜率"
+          ],
+          "visualRevision": {
+            "version": "0.2.0",
+            "originalUrl": "./history/v0.1.0/runs/21/full/index.html",
+            "reason": "根据独立视觉审查修复中文语义断行或窄屏局部布局；原文、数据与主要行为保全。16题将装饰分隔点改为状态标签。",
+            "originalFiles": [
+              {
+                "文件": "index.html",
+                "sha256": "941c3c4e10b85cc6b592d2867fa36d75d3d40e43334c395e389adb69a70a0c7b"
+              },
+              {
+                "文件": "measure.css",
+                "sha256": "cc0ba1e4da554d44e1a1a753512a1e52e78c7901debdc5c44d97c948b2a826a4"
+              }
+            ]
+          }
         }
       ],
       "evidenceUrl": "./records/21.json"
@@ -884,7 +1172,8 @@
           "url": "./runs/22/control/index.html",
           "status": "generated",
           "technicalStatus": "fail",
-          "protocolNotes": []
+          "protocolNotes": [],
+          "visualRevision": null
         },
         {
           "id": "measure",
@@ -892,7 +1181,8 @@
           "url": "./runs/22/measure/index.html",
           "status": "generated",
           "technicalStatus": "pass",
-          "protocolNotes": []
+          "protocolNotes": [],
+          "visualRevision": null
         },
         {
           "id": "full",
@@ -904,9 +1194,33 @@
             "每题只保留一个实际方向和理由，未先保留三个可比较首屏方向。",
             "03、06、12题超出一次首轮修复预算；已保留失败文件、报告和逐轮原因，不计公平胜率。",
             "初次文字放大使用百分比叠加探针，不能当作准确200%证据；后续另用实际字号逐元素乘2的压力测试，保留两份记录。",
-            "同会话自审，没有独立人类或真机验收；不宣称完整技能流程通过，不计效果胜率。"
+            "同会话自审，没有独立人类或真机验收；不宣称完整技能流程通过，不计效果胜率。",
+            "当前页面为0.2.0视觉审查后修订版；原始生成页另存，不能用修订版计算原始生成胜率"
           ],
-          "technicalStatus": "pass"
+          "technicalStatus": "pass",
+          "visualRevision": {
+            "version": "0.2.0",
+            "originalUrl": "./history/v0.1.0/runs/22/full/index.html",
+            "reason": "根据独立视觉审查修复中文语义断行或窄屏局部布局；原文、数据与主要行为保全。16题将装饰分隔点改为状态标签。",
+            "originalFiles": [
+              {
+                "文件": "app.js",
+                "sha256": "22ff8ab322ddb7bdc4c41b05c1927ef1d23c215577bb486427b617182cba30c6"
+              },
+              {
+                "文件": "index.html",
+                "sha256": "938aa778310a07ef622e59a7bb2ce9893dafaa6e0025ef79c40a8fd0a9ca5036"
+              },
+              {
+                "文件": "measure.css",
+                "sha256": "cc0ba1e4da554d44e1a1a753512a1e52e78c7901debdc5c44d97c948b2a826a4"
+              },
+              {
+                "文件": "style.css",
+                "sha256": "b5819e9b83257a5f8aacdf5306ea5220d4c5e3c70aab7b450e9d09111e446171"
+              }
+            ]
+          }
         }
       ],
       "evidenceUrl": "./records/22.json"
@@ -927,7 +1241,8 @@
           "url": "./runs/23/control/index.html",
           "status": "generated",
           "technicalStatus": "fail",
-          "protocolNotes": []
+          "protocolNotes": [],
+          "visualRevision": null
         },
         {
           "id": "measure",
@@ -935,7 +1250,8 @@
           "url": "./runs/23/measure/index.html",
           "status": "generated",
           "technicalStatus": "pass",
-          "protocolNotes": []
+          "protocolNotes": [],
+          "visualRevision": null
         },
         {
           "id": "full",
@@ -949,7 +1265,8 @@
             "初次文字放大使用百分比叠加探针，不能当作准确200%证据；后续另用实际字号逐元素乘2的压力测试，保留两份记录。",
             "同会话自审，没有独立人类或真机验收；不宣称完整技能流程通过，不计效果胜率。"
           ],
-          "technicalStatus": "pass"
+          "technicalStatus": "pass",
+          "visualRevision": null
         }
       ],
       "evidenceUrl": "./records/23.json"
@@ -970,7 +1287,8 @@
           "url": "./runs/24/control/index.html",
           "status": "generated",
           "technicalStatus": "not_run",
-          "protocolNotes": []
+          "protocolNotes": [],
+          "visualRevision": null
         },
         {
           "id": "measure",
@@ -978,7 +1296,8 @@
           "url": "./runs/24/measure/index.html",
           "status": "generated",
           "technicalStatus": "not_run",
-          "protocolNotes": []
+          "protocolNotes": [],
+          "visualRevision": null
         },
         {
           "id": "full",
@@ -992,7 +1311,8 @@
             "初次文字放大使用百分比叠加探针，不能当作准确200%证据；后续另用实际字号逐元素乘2的压力测试，保留两份记录。",
             "同会话自审，没有独立人类或真机验收；不宣称完整技能流程通过，不计效果胜率。"
           ],
-          "technicalStatus": "not_run"
+          "technicalStatus": "not_run",
+          "visualRevision": null
         }
       ],
       "evidenceUrl": "./records/24.json"

@@ -1,0 +1,301 @@
+{
+  "version": "0.2.0",
+  "date": "2026-10-29",
+  "baselineCommit": "741646750a077636b5a0f25b23527d5f3a3e683b",
+  "reviewedPages": 20,
+  "viewportWidths": [
+    320,
+    390,
+    768,
+    1440
+  ],
+  "nature": "独立模型视觉审查与作者指导修复，不是人类盲评或独立模型生成胜率",
+  "protectedFiles": 95,
+  "protectedStatus": "字节摘要不变",
+  "selectedComparisons": 5,
+  "humanStatus": "MANUAL_PENDING",
+  "changes": {
+    "01": {
+      "version": "0.2.0",
+      "originalUrl": "./history/v0.1.0/runs/01/full/index.html",
+      "reason": "根据独立视觉审查修复中文语义断行或窄屏局部布局；原文、数据与主要行为保全。16题将装饰分隔点改为状态标签。",
+      "originalFiles": [
+        {
+          "文件": "index.html",
+          "sha256": "4cd2f21c4d615a0b2350a6bdb41516582ac9044239af5b29eb2fe9c916fa22a0"
+        },
+        {
+          "文件": "measure.css",
+          "sha256": "cc0ba1e4da554d44e1a1a753512a1e52e78c7901debdc5c44d97c948b2a826a4"
+        }
+      ]
+    },
+    "05": {
+      "version": "0.2.0",
+      "originalUrl": "./history/v0.1.0/runs/05/full/index.html",
+      "reason": "根据独立视觉审查修复中文语义断行或窄屏局部布局；原文、数据与主要行为保全。16题将装饰分隔点改为状态标签。",
+      "originalFiles": [
+        {
+          "文件": "index.html",
+          "sha256": "014d13667fbc98e8bdd20448d3679c67d92799a251bf5fb87033b1d73a594b0b"
+        },
+        {
+          "文件": "measure.css",
+          "sha256": "cc0ba1e4da554d44e1a1a753512a1e52e78c7901debdc5c44d97c948b2a826a4"
+        }
+      ]
+    },
+    "06": {
+      "version": "0.2.0",
+      "originalUrl": "./history/v0.1.0/runs/06/full/index.html",
+      "reason": "根据独立视觉审查修复中文语义断行或窄屏局部布局；原文、数据与主要行为保全。16题将装饰分隔点改为状态标签。",
+      "originalFiles": [
+        {
+          "文件": "index.html",
+          "sha256": "9c32abdb976d4a1b26ff897d7883a4cb354128efe4b3e153e9b3f2b1317a982e"
+        },
+        {
+          "文件": "measure.css",
+          "sha256": "cc0ba1e4da554d44e1a1a753512a1e52e78c7901debdc5c44d97c948b2a826a4"
+        },
+        {
+          "文件": "style.css",
+          "sha256": "4194e620a8edb5a9fba1cfcbf68f87e782277bb7a0315e1ae4aa07d6b13c2641"
+        }
+      ]
+    },
+    "07": {
+      "version": "0.2.0",
+      "originalUrl": "./history/v0.1.0/runs/07/full/index.html",
+      "reason": "根据独立视觉审查修复中文语义断行或窄屏局部布局；原文、数据与主要行为保全。16题将装饰分隔点改为状态标签。",
+      "originalFiles": [
+        {
+          "文件": "app.js",
+          "sha256": "08c5a6f23db9d36444582fd6acce5ef8e3d46b2c958a221a2638e17d0f550355"
+        },
+        {
+          "文件": "index.html",
+          "sha256": "7f1b283b0761b889492ced1ab87bd90ccda94352368f18fe4c7317861e8a6a76"
+        },
+        {
+          "文件": "measure.css",
+          "sha256": "cc0ba1e4da554d44e1a1a753512a1e52e78c7901debdc5c44d97c948b2a826a4"
+        },
+        {
+          "文件": "style.css",
+          "sha256": "ae4f42c41317a70bbdab74c6dd29e0e7ef164f3c10e3ed418a5d1cdadf3f05ee"
+        }
+      ]
+    },
+    "08": {
+      "version": "0.2.0",
+      "originalUrl": "./history/v0.1.0/runs/08/full/index.html",
+      "reason": "根据独立视觉审查修复中文语义断行或窄屏局部布局；原文、数据与主要行为保全。16题将装饰分隔点改为状态标签。",
+      "originalFiles": [
+        {
+          "文件": "index.html",
+          "sha256": "264fea60094cd08db5bde538990d7584ec635588f5829f10ef2449e70bf574b6"
+        },
+        {
+          "文件": "measure.css",
+          "sha256": "cc0ba1e4da554d44e1a1a753512a1e52e78c7901debdc5c44d97c948b2a826a4"
+        },
+        {
+          "文件": "style.css",
+          "sha256": "5fe0b5b27b96695de670787159600098b5c0042fbb32dbfa984197beb58daa9c"
+        }
+      ]
+    },
+    "09": {
+      "version": "0.2.0",
+      "originalUrl": "./history/v0.1.0/runs/09/full/index.html",
+      "reason": "根据独立视觉审查修复中文语义断行或窄屏局部布局；原文、数据与主要行为保全。16题将装饰分隔点改为状态标签。",
+      "originalFiles": [
+        {
+          "文件": "index.html",
+          "sha256": "e8c218e4dace98c8493cf9b212e4db5760898659c1d3f9259342cd62cd6dc340"
+        },
+        {
+          "文件": "measure.css",
+          "sha256": "cc0ba1e4da554d44e1a1a753512a1e52e78c7901debdc5c44d97c948b2a826a4"
+        }
+      ]
+    },
+    "14": {
+      "version": "0.2.0",
+      "originalUrl": "./history/v0.1.0/runs/14/full/index.html",
+      "reason": "根据独立视觉审查修复中文语义断行或窄屏局部布局；原文、数据与主要行为保全。16题将装饰分隔点改为状态标签。",
+      "originalFiles": [
+        {
+          "文件": "index.html",
+          "sha256": "a04fa5c1101f257cb680e738cc7ab22d6c306fc0d71df566dcdd0e0279c821c3"
+        },
+        {
+          "文件": "measure.css",
+          "sha256": "cc0ba1e4da554d44e1a1a753512a1e52e78c7901debdc5c44d97c948b2a826a4"
+        },
+        {
+          "文件": "style.css",
+          "sha256": "52eef62734f09c12593cfed44551a1b7734cc9174fe2d75caffb2760204e71bf"
+        }
+      ]
+    },
+    "16": {
+      "version": "0.2.0",
+      "originalUrl": "./history/v0.1.0/runs/16/full/index.html",
+      "reason": "根据独立视觉审查修复中文语义断行或窄屏局部布局；原文、数据与主要行为保全。16题将装饰分隔点改为状态标签。",
+      "originalFiles": [
+        {
+          "文件": "index.html",
+          "sha256": "333f080ff3ab43022d5a74bfbb1c40a44e0bde1b54a2da5b8585369a6d5ce821"
+        },
+        {
+          "文件": "measure.css",
+          "sha256": "cc0ba1e4da554d44e1a1a753512a1e52e78c7901debdc5c44d97c948b2a826a4"
+        },
+        {
+          "文件": "style.css",
+          "sha256": "52eef62734f09c12593cfed44551a1b7734cc9174fe2d75caffb2760204e71bf"
+        }
+      ]
+    },
+    "17": {
+      "version": "0.2.0",
+      "originalUrl": "./history/v0.1.0/runs/17/full/index.html",
+      "reason": "根据独立视觉审查修复中文语义断行或窄屏局部布局；原文、数据与主要行为保全。16题将装饰分隔点改为状态标签。",
+      "originalFiles": [
+        {
+          "文件": "index.html",
+          "sha256": "4e0d6707bfdd908b49f927f0f876335479593fcef6551a65dca5bb87c24c8ffd"
+        },
+        {
+          "文件": "measure.css",
+          "sha256": "cc0ba1e4da554d44e1a1a753512a1e52e78c7901debdc5c44d97c948b2a826a4"
+        }
+      ]
+    },
+    "19": {
+      "version": "0.2.0",
+      "originalUrl": "./history/v0.1.0/runs/19/full/index.html",
+      "reason": "根据独立视觉审查修复中文语义断行或窄屏局部布局；原文、数据与主要行为保全。16题将装饰分隔点改为状态标签。",
+      "originalFiles": [
+        {
+          "文件": "app.js",
+          "sha256": "3c29d4fbdc4e7d8288e5c3f189a35ecae49b8339a4932ea394060a23bf188069"
+        },
+        {
+          "文件": "index.html",
+          "sha256": "869517329b17bd8ea778b9c82fd21865a10dece853916a918754194d4be57a32"
+        },
+        {
+          "文件": "measure.css",
+          "sha256": "cc0ba1e4da554d44e1a1a753512a1e52e78c7901debdc5c44d97c948b2a826a4"
+        },
+        {
+          "文件": "style.css",
+          "sha256": "0372b6769380d15e2a00c0b46609c0a443c58dacf88874e25cc493a4d87edd5a"
+        }
+      ]
+    },
+    "20": {
+      "version": "0.2.0",
+      "originalUrl": "./history/v0.1.0/runs/20/full/index.html",
+      "reason": "根据独立视觉审查修复中文语义断行或窄屏局部布局；原文、数据与主要行为保全。16题将装饰分隔点改为状态标签。",
+      "originalFiles": [
+        {
+          "文件": "app.js",
+          "sha256": "445e1517505824589b243e14158cb3a43ed32be1f2f750f393a8b5d9acbd0f93"
+        },
+        {
+          "文件": "index.html",
+          "sha256": "5f64eb53df227e10256cd818edf21a9da1cc74f49e51909ebc7042fcbec03765"
+        },
+        {
+          "文件": "measure.css",
+          "sha256": "cc0ba1e4da554d44e1a1a753512a1e52e78c7901debdc5c44d97c948b2a826a4"
+        },
+        {
+          "文件": "style.css",
+          "sha256": "271e7d233090edae6785e3c9a459dfdb00e189d914aa42259a439ceab2767fb2"
+        }
+      ]
+    },
+    "21": {
+      "version": "0.2.0",
+      "originalUrl": "./history/v0.1.0/runs/21/full/index.html",
+      "reason": "根据独立视觉审查修复中文语义断行或窄屏局部布局；原文、数据与主要行为保全。16题将装饰分隔点改为状态标签。",
+      "originalFiles": [
+        {
+          "文件": "index.html",
+          "sha256": "941c3c4e10b85cc6b592d2867fa36d75d3d40e43334c395e389adb69a70a0c7b"
+        },
+        {
+          "文件": "measure.css",
+          "sha256": "cc0ba1e4da554d44e1a1a753512a1e52e78c7901debdc5c44d97c948b2a826a4"
+        }
+      ]
+    },
+    "22": {
+      "version": "0.2.0",
+      "originalUrl": "./history/v0.1.0/runs/22/full/index.html",
+      "reason": "根据独立视觉审查修复中文语义断行或窄屏局部布局；原文、数据与主要行为保全。16题将装饰分隔点改为状态标签。",
+      "originalFiles": [
+        {
+          "文件": "app.js",
+          "sha256": "22ff8ab322ddb7bdc4c41b05c1927ef1d23c215577bb486427b617182cba30c6"
+        },
+        {
+          "文件": "index.html",
+          "sha256": "938aa778310a07ef622e59a7bb2ce9893dafaa6e0025ef79c40a8fd0a9ca5036"
+        },
+        {
+          "文件": "measure.css",
+          "sha256": "cc0ba1e4da554d44e1a1a753512a1e52e78c7901debdc5c44d97c948b2a826a4"
+        },
+        {
+          "文件": "style.css",
+          "sha256": "b5819e9b83257a5f8aacdf5306ea5220d4c5e3c70aab7b450e9d09111e446171"
+        }
+      ]
+    }
+  },
+  "technical": {
+    "pages": 20,
+    "widths": [
+      320,
+      390,
+      1440
+    ],
+    "status": "pass",
+    "measureVersion": "0.1.0",
+    "errors": 0,
+    "warnings": 0
+  },
+  "readingStress": {
+    "states": 80,
+    "pages": 20,
+    "widths": [
+      320,
+      390
+    ],
+    "methods": [
+      "文字间距覆盖",
+      "逐元素初始计算字号翻倍"
+    ],
+    "status": "所查根溢出及控件越界通过",
+    "notEquivalentTo": "真实浏览器缩放或完整无障碍验收"
+  },
+  "independentVisual": {
+    "initial": "20页四宽独立模型审查",
+    "changedPages": 13,
+    "final": "原问题复看并完成05书封与16动态反馈的最后定点复核",
+    "notEquivalentTo": "人类盲评或所有状态全覆盖"
+  },
+  "forwardTesting": {
+    "newCreation": "实际产物、38项执行者检查；独立审阅后另8项手机号反馈回归",
+    "restrictedRedesign": "原版94项基线、原／新版189项回归、9项压力与主代理10项独立复核；主代理目视发现关闭按钮悬停对比不足，补修后21项定向检查通过（局部文字4.94∶1）",
+    "reviewOnly": "实际渲染、输入前后哈希一致，成功发现断行／边界小字／假提交问题",
+    "sessions": "新建与受限改版在同一测试会话连续执行；只审阅由另一代理执行",
+    "human": "MANUAL_PENDING"
+  }
+}

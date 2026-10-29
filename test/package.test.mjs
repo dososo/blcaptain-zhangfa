@@ -5,6 +5,7 @@ import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { execFileSync } from 'node:child_process';
 import { startServer } from '../scripts/serve.mjs';
+const { version } = JSON.parse(await readFile(new URL('../package.json', import.meta.url), 'utf8'));
 
 test('本地预览只服务指定站点且拒绝路径越界', async () => {
   const root = await mkdtemp(join(tmpdir(), 'zhangfa-serve-'));
@@ -22,10 +23,10 @@ test('技能归档可重现且仅含运行所需内容', async () => {
   const output = await mkdtemp(join(tmpdir(), 'zhangfa-pack-'));
   const args = ['scripts/package.mjs', '--out', output];
   execFileSync(process.execPath, args);
-  const first = await readFile(join(output, 'blcaptain-zhangfa-0.1.0.zip'));
+  const first = await readFile(join(output, `blcaptain-zhangfa-${version}.zip`));
   execFileSync(process.execPath, args);
-  assert.deepEqual(await readFile(join(output, 'blcaptain-zhangfa-0.1.0.zip')), first);
-  const list = JSON.parse(execFileSync('python3', ['-c', 'import zipfile,json,sys;print(json.dumps(zipfile.ZipFile(sys.argv[1]).namelist()))', join(output, 'blcaptain-zhangfa-0.1.0.zip')], { encoding: 'utf8' }));
+  assert.deepEqual(await readFile(join(output, `blcaptain-zhangfa-${version}.zip`)), first);
+  const list = JSON.parse(execFileSync('python3', ['-c', 'import zipfile,json,sys;print(json.dumps(zipfile.ZipFile(sys.argv[1]).namelist()))', join(output, `blcaptain-zhangfa-${version}.zip`)], { encoding: 'utf8' }));
   assert.ok(list.includes('blcaptain-zhangfa/SKILL.md'));
   assert.ok(list.includes('blcaptain-zhangfa/scripts/check-page.mjs'));
   assert.ok(list.includes('blcaptain-zhangfa/LICENSE'));

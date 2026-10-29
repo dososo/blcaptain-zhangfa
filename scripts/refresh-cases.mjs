@@ -5,6 +5,7 @@ import { resolve } from 'node:path';
 const root = resolve(import.meta.dirname, '..');
 const catalogPath = resolve(root, 'site/cases.json');
 const catalog = JSON.parse(await readFile(catalogPath, 'utf8'));
+const revisionLog = JSON.parse(await readFile(resolve(root, 'site/review-v2.json'), 'utf8'));
 const folder = resolve(root, 'evidence/generation');
 const records = [];
 for (const name of await readdir(folder)) {
@@ -25,7 +26,9 @@ for (const item of catalog.cases) {
     try { if (!(await stat(path)).size) continue; } catch { continue; }
     arm.url = `./runs/${item.id}/${arm.id}/index.html`;
     arm.status = 'generated';
-    arm.protocolNotes = record.raw.protocolDeviations || [];
+    const revision = arm.id === 'full' ? revisionLog.changes[item.id] || null : null;
+    arm.visualRevision = revision;
+    arm.protocolNotes = [...(record.raw.protocolDeviations || []), ...(revision ? [`当前页面为${revision.version}视觉审查后修订版；原始生成页另存，不能用修订版计算原始生成胜率`] : [])];
     let independent = null;
     try { independent = JSON.parse(await readFile(resolve(root, `evidence/qa/${item.id}-${arm.id}.json`), 'utf8')); } catch {}
     arm.technicalStatus = independent?.status || 'not_run';
@@ -37,7 +40,7 @@ for (const item of catalog.cases) {
       const file = resolve(path, '..', name);
       if ((await stat(file)).isFile() && !name.endsWith('.mjs')) files.push({ 文件: name, sha256: createHash('sha256').update(await readFile(file)).digest('hex') });
     }
-    report.条件.push({ 条件: arm.label, 产物: `../runs/${item.id}/${arm.id}/index.html`, 类型: item.mode === '只审阅' ? '审阅报告，不是替代网页' : '实际生成页面', 流程偏差: arm.protocolNotes, 模型完整版本: record.raw.模型完整版本 || record.raw.modelFullVersion || '未暴露', 批次开始时间: started, 批次结束时间: finished, 作者记录脱敏副本: `./runs/${record.name}`, 作者自测性质: '由该条件的生成智能体执行，不冒充独立人类验收', 方向理由: entry.方向理由 || entry.direction || null, 任务与操作: entry.actions || entry.实际操作 || entry.操作 || entry.checks?.interaction || [], 修复记录: entry.repairs || entry.repairBudget || entry.已修复失败记录 || entry.额外修复 || entry.修复 || '见生成记录脱敏副本', 已知问题与边界: entry.knownIssues || entry.knownLimitations || entry.已知问题 || entry.已知缺陷 || record.raw.已知问题 || [], 独立自动复核: independent || { status: 'not_run' }, 文件: files });
+    report.条件.push({ 条件: arm.label, 产物: `../runs/${item.id}/${arm.id}/index.html`, 类型: item.mode === '只审阅' ? '审阅报告，不是替代网页' : revision ? '实际生成后的视觉修订页面' : '实际生成页面', 修订记录: revision, 流程偏差: arm.protocolNotes, 模型完整版本: record.raw.模型完整版本 || record.raw.modelFullVersion || '未暴露', 批次开始时间: started, 批次结束时间: finished, 作者记录脱敏副本: `./runs/${record.name}`, 作者自测性质: '由该条件的生成智能体执行，不冒充独立人类验收', 方向理由: entry.方向理由 || entry.direction || null, 任务与操作: entry.actions || entry.实际操作 || entry.操作 || entry.checks?.interaction || [], 修复记录: entry.repairs || entry.repairBudget || entry.已修复失败记录 || entry.额外修复 || entry.修复 || '见生成记录脱敏副本', 已知问题与边界: entry.knownIssues || entry.knownLimitations || entry.已知问题 || entry.已知缺陷 || record.raw.已知问题 || [], 独立自动复核: independent || { status: 'not_run' }, 文件: files });
     count++;
   }
   if (report.条件.length) {

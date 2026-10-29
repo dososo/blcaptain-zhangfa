@@ -1,0 +1,98 @@
+{
+  "version": "0.2.0",
+  "browser": "156.0.8078.48",
+  "anchor": "页面顶部，scrollY=0",
+  "capturedAt": "2026-10-29T11:49:32.942Z",
+  "captures": [
+    {
+      "id": "01",
+      "condition": "before",
+      "url": "./history/v0.1.0/runs/01/full/index.html",
+      "width": 390,
+      "height": 1000,
+      "scrollY": 0,
+      "sha256": "be784df6c59afa9fac842588e03437d347df1c929f37cf5cb4fe2002d2540bdc"
+    },
+    {
+      "id": "01",
+      "condition": "after",
+      "url": "./runs/01/full/index.html",
+      "width": 390,
+      "height": 1000,
+      "scrollY": 0,
+      "sha256": "bb9f258608760687a8bdd4a901d16a8cc86dff62c10e9c5f5a540137b555b675"
+    },
+    {
+      "id": "05",
+      "condition": "before",
+      "url": "./history/v0.1.0/runs/05/full/index.html",
+      "width": 768,
+      "height": 1000,
+      "scrollY": 0,
+      "sha256": "ac1215badbd0f8045f129fafbeecff9c1aa20ea165005d6438259c9824539084"
+    },
+    {
+      "id": "05",
+      "condition": "after",
+      "url": "./runs/05/full/index.html",
+      "width": 768,
+      "height": 1000,
+      "scrollY": 0,
+      "sha256": "c9afc5a3b83cd7ac0aced5e0d0aeed86896760f333a3d9784a4a4296e03e2fba"
+    },
+    {
+      "id": "09",
+      "condition": "before",
+      "url": "./history/v0.1.0/runs/09/full/index.html",
+      "width": 390,
+      "height": 1000,
+      "scrollY": 0,
+      "sha256": "dc987baff82f9d962b53e4205a1758fea72afbe4b24847593c1de4420feab84c"
+    },
+    {
+      "id": "09",
+      "condition": "after",
+      "url": "./runs/09/full/index.html",
+      "width": 390,
+      "height": 1000,
+      "scrollY": 0,
+      "sha256": "094cd5d14f34354947b5c8866f30ec07533cd76d6d3eeb4a2797d8fb3b495a76"
+    },
+    {
+      "id": "17",
+      "condition": "before",
+      "url": "./history/v0.1.0/runs/17/full/index.html",
+      "width": 768,
+      "height": 1000,
+      "scrollY": 0,
+      "sha256": "bb52908e687c09a0832f31297448553f93bbadce5efb6372e0733e15641071dc"
+    },
+    {
+      "id": "17",
+      "condition": "after",
+      "url": "./runs/17/full/index.html",
+      "width": 768,
+      "height": 1000,
+      "scrollY": 0,
+      "sha256": "b6b4d6f3200bb3f50453f67396a1bdebfc40eb5512c544b3a0bbc4216ad42366"
+    },
+    {
+      "id": "21",
+      "condition": "before",
+      "url": "./history/v0.1.0/runs/21/full/index.html",
+      "width": 320,
+      "height": 1000,
+      "scrollY": 0,
+      "sha256": "641c9c8cedfd755ae3abc5ed544969f13a00eca0d3cb6ce4021962d9a186c147"
+    },
+    {
+      "id": "21",
+      "condition": "after",
+      "url": "./runs/21/full/index.html",
+      "width": 320,
+      "height": 1000,
+      "scrollY": 0,
+      "sha256": "744ef63bb07b2503abe80aae9893eb472db7f4fc5cc8bcc38c0c2c3ad0046b6e"
+    }
+  ]
+}

@@ -252,3 +252,10 @@ test('CLI 帮助使用中文，不依赖浏览器', () => {
   assert.match(cli.stdout, /用法/);
   assert.match(cli.stdout, /--allow-remote/);
 });
+
+test('默认检查实际包含320像素，避免漏掉最窄重排状态', async t => {
+  const url=await serve(t);
+  const report=await inspectPage({url,out:await temporary(),noMeasure:true});
+  assert.ok(report.widths.includes(320));
+  assert.equal(report.pages.find(page=>page.width===320)?.status,'pass');
+});

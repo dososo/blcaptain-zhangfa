@@ -1,0 +1,69 @@
+{
+  "version": "0.2.0",
+  "nature": "同页面经独立模型视觉审查后的迭代修复，精选展示；不是独立模型生成胜率",
+  "baseline": "741646750a077636b5a0f25b23527d5f3a3e683b",
+  "viewportHeight": 1000,
+  "anchor": "页面顶部，scrollY=0",
+  "cases": [
+    {
+      "id": "01",
+      "title": "让“都有章法”，连起来读。",
+      "description": "同一句标题，在390px里把“都／有章法”整理为“都有章法”。调整候选断点与字阶，原文完整保留。",
+      "width": 390,
+      "beforeImage": "./assets/refinements/01-390-before.webp",
+      "afterImage": "./assets/refinements/01-390-after.webp",
+      "beforeAlt": "390像素真实截图：主标题的“都有”被分成两行",
+      "afterAlt": "390像素同页修复截图：“都有章法”完整一行",
+      "beforeUrl": "./history/v0.1.0/runs/01/full/index.html",
+      "afterUrl": "./runs/01/full/index.html"
+    },
+    {
+      "id": "05",
+      "title": "平板，也值得重新构图。",
+      "description": "中宽提前重排首屏，手机将两本书错位纵排；保留书封的性格，让书名和活动标题有可读的空间。",
+      "width": 768,
+      "beforeImage": "./assets/refinements/05-768-before.webp",
+      "afterImage": "./assets/refinements/05-768-after.webp",
+      "beforeAlt": "平板，也值得重新构图。修复前，768像素同锚点真实截图",
+      "afterAlt": "平板，也值得重新构图。修复后，768像素同锚点真实截图",
+      "beforeUrl": "./history/v0.1.0/runs/05/full/index.html",
+      "afterUrl": "./runs/05/full/index.html"
+    },
+    {
+      "id": "09",
+      "title": "“为什么”，值得完整地问。",
+      "description": "按逗号、疑问与动作短语组织候选断点，保留标题与全文，让“为什么”“停在门外”完整出现。",
+      "width": 390,
+      "beforeImage": "./assets/refinements/09-390-before.webp",
+      "afterImage": "./assets/refinements/09-390-after.webp",
+      "beforeAlt": "“为什么”，值得完整地问。修复前，390像素同锚点真实截图",
+      "afterAlt": "“为什么”，值得完整地问。修复后，390像素同锚点真实截图",
+      "beforeUrl": "./history/v0.1.0/runs/09/full/index.html",
+      "afterUrl": "./runs/09/full/index.html"
+    },
+    {
+      "id": "17",
+      "title": "让报名入口，先说完整的话。",
+      "description": "中宽将左右栏重排，保全日期、票价、场次与参与条款；“日常”“城市”不再被截成无意义碎片。",
+      "width": 768,
+      "beforeImage": "./assets/refinements/17-768-before.webp",
+      "afterImage": "./assets/refinements/17-768-after.webp",
+      "beforeAlt": "让报名入口，先说完整的话。修复前，768像素同锚点真实截图",
+      "afterAlt": "让报名入口，先说完整的话。修复后，768像素同锚点真实截图",
+      "beforeUrl": "./history/v0.1.0/runs/17/full/index.html",
+      "afterUrl": "./runs/17/full/index.html"
+    },
+    {
+      "id": "21",
+      "title": "把孤零零的“选”，放回句子。",
+      "description": "用窄屏字阶和语义片段重排标题，不删字、不隐藏三款参数；比较表仍可局部横向滚动。",
+      "width": 320,
+      "beforeImage": "./assets/refinements/21-320-before.webp",
+      "afterImage": "./assets/refinements/21-320-after.webp",
+      "beforeAlt": "把孤零零的“选”，放回句子。修复前，320像素同锚点真实截图",
+      "afterAlt": "把孤零零的“选”，放回句子。修复后，320像素同锚点真实截图",
+      "beforeUrl": "./history/v0.1.0/runs/21/full/index.html",
+      "afterUrl": "./runs/21/full/index.html"
+    }
+  ]
+}

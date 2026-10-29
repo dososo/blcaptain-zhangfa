@@ -5,11 +5,12 @@ import { tmpdir } from 'node:os';
 import { join, resolve } from 'node:path';
 import { execFileSync, spawn } from 'node:child_process';
 import { startServer } from '../scripts/serve.mjs';
+const { version } = JSON.parse(await readFile(new URL('../package.json', import.meta.url), 'utf8'));
 
 test('ZIP安装到独立目录后检查器仍能使用调用项目的依赖', async () => {
   const target = await mkdtemp(join(tmpdir(), 'zhangfa-installed-'));
   execFileSync(process.execPath, ['scripts/package.mjs', '--out', target]);
-  execFileSync('python3', ['-c', 'import zipfile,sys;zipfile.ZipFile(sys.argv[1]).extractall(sys.argv[2])', join(target, 'blcaptain-zhangfa-0.1.0.zip'), target]);
+  execFileSync('python3', ['-c', 'import zipfile,sys;zipfile.ZipFile(sys.argv[1]).extractall(sys.argv[2])', join(target, `blcaptain-zhangfa-${version}.zip`), target]);
   const server = await startServer({ root: resolve('test/fixtures/checker'), port: 0 });
   try {
     const out = join(target, '证据');

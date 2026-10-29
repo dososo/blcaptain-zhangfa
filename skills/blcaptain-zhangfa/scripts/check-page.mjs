@@ -7,7 +7,7 @@ import { spawn } from 'node:child_process';
 import { isIP } from 'node:net';
 
 const here = path.dirname(fileURLToPath(import.meta.url));
-const defaultWidths = [360, 390, 768, 1024, 1280, 1440];
+const defaultWidths = [320, 360, 390, 768, 1024, 1280, 1440];
 const limitations = [
   '这是当前页面和指定宽度的浏览器快照，不是审美评分，也不代表完整无障碍合规。',
   '名称检查覆盖常见原生控件与按钮角色；复杂 ARIA、键盘操作、对比度和读屏体验仍需人工验收。',
