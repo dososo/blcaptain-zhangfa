@@ -1,0 +1,1 @@
+const states=["正在本地编辑，尚未同步","演示网络中断，笔记仍保留在当前会话","本地模拟同步完成，未发送到服务器"];for(let i=0;i<3;i++)document.querySelector('#state'+i).onclick=()=>document.querySelector('#status').textContent=states[i];for(let i=0;i<3;i++)document.querySelector('#note'+i).onclick=()=>document.querySelector('#editor').focus();

@@ -1,0 +1,277 @@
+{
+  "题号": "18",
+  "模式": "只审阅",
+  "任务": "判断课程是否适合初学者，找到先修条件和申请边界，输出有证据的审阅。",
+  "内容包": "../../bench/briefs/18.json",
+  "说明": "这是批次生成示例。各条件分开会话，组内共享上下文；不是逐题独立统计胜率实验。作者自测、独立复核和人工验收分别记录。",
+  "人工验收": "MANUAL_PENDING",
+  "条件": [
+    {
+      "条件": "甲：不加载章法与分寸",
+      "产物": "../runs/18/control/index.html",
+      "类型": "审阅报告，不是替代网页",
+      "流程偏差": [],
+      "模型完整版本": "未暴露",
+      "批次开始时间": "2026-10-29T10:39:56.213Z",
+      "批次结束时间": "2026-10-29T10:42:50.345Z",
+      "作者记录脱敏副本": "./runs/control-remaining.json",
+      "作者自测性质": "由该条件的生成智能体执行，不冒充独立人类验收",
+      "方向理由": null,
+      "任务与操作": [
+        {
+          "题号": "18",
+          "宽度": 390,
+          "测量": {
+            "视口": 390,
+            "页面宽": 390,
+            "横向溢出": false
+          },
+          "操作": [
+            {
+              "操作": "初始先修条件可见性",
+              "可见": false
+            },
+            {
+              "操作": "第一个键盘焦点",
+              "元素": "<button id=\"apply\">本地模拟申请</button>",
+              "先修条件可见": false
+            },
+            {
+              "操作": "本地模拟申请",
+              "结果": "已录取"
+            },
+            {
+              "操作": "鼠标悬停先修条件",
+              "可见": true
+            }
+          ]
+        },
+        {
+          "题号": "18",
+          "宽度": 320,
+          "测量": {
+            "视口": 320,
+            "页面宽": 320,
+            "横向溢出": false
+          },
+          "操作": [
+            {
+              "操作": "初始先修条件可见性",
+              "可见": false
+            },
+            {
+              "操作": "第一个键盘焦点",
+              "元素": "<button id=\"apply\">本地模拟申请</button>",
+              "先修条件可见": false
+            },
+            {
+              "操作": "本地模拟申请",
+              "结果": "已录取"
+            },
+            {
+              "操作": "鼠标悬停先修条件",
+              "可见": true
+            }
+          ]
+        },
+        {
+          "题号": "18",
+          "宽度": 1440,
+          "测量": {
+            "视口": 1440,
+            "页面宽": 1440,
+            "横向溢出": false
+          },
+          "操作": [
+            {
+              "操作": "初始先修条件可见性",
+              "可见": false
+            },
+            {
+              "操作": "第一个键盘焦点",
+              "元素": "<button id=\"apply\">本地模拟申请</button>",
+              "先修条件可见": false
+            },
+            {
+              "操作": "本地模拟申请",
+              "结果": "已录取"
+            },
+            {
+              "操作": "鼠标悬停先修条件",
+              "可见": true
+            }
+          ]
+        }
+      ],
+      "修复记录": [],
+      "已知问题与边界": [
+        {
+          "元素": ".hover-only > span 与 .prerequisites",
+          "宽度": "320、390、1440",
+          "复现": "初始条件列表不可见；从页面按Tab，直接到本地模拟申请按钮，条件仍隐藏；鼠标悬停才显示。",
+          "影响": "键盘用户无法展开完整先修条件，不能充分判断适配性。",
+          "建议": "改成键盘可操作的展开按钮或常显条件，触屏同样可达。",
+          "级别": "高"
+        },
+        {
+          "元素": "#apply 与 #result",
+          "宽度": "320、390、1440",
+          "复现": "点击本地模拟申请，结果显示“已录取”；页面前文写“不保证录取、无真实招生名额”。",
+          "影响": "状态反馈与申请边界冲突，可能误导为确定录取。",
+          "建议": "反馈改为本地模拟申请已记录，并继续明确不保证录取及不外发资料。",
+          "级别": "高"
+        }
+      ],
+      "独立自动复核": {
+        "status": "not_run"
+      },
+      "文件": [
+        {
+          "文件": "index.html",
+          "sha256": "e0ff31b3c24d73da40cdd9a0e2d65bb52d47c8930f43d2204feccd4f9b21dda6"
+        },
+        {
+          "文件": "report.json",
+          "sha256": "3cab2358f0c8caed0ffa97568818d11f75f169d3b871ec52f368c6d74a710f72"
+        }
+      ]
+    },
+    {
+      "条件": "乙：只加载分寸",
+      "产物": "../runs/18/measure/index.html",
+      "类型": "审阅报告，不是替代网页",
+      "流程偏差": [],
+      "模型完整版本": "未暴露",
+      "批次开始时间": "2026-10-29T10:37:24.422Z",
+      "批次结束时间": "2026-10-29T10:43:10.263Z",
+      "作者记录脱敏副本": "./runs/measure-remaining.json",
+      "作者自测性质": "由该条件的生成智能体执行，不冒充独立人类验收",
+      "方向理由": null,
+      "任务与操作": [
+        "读取允许冻结输入",
+        "在4180对390/320/1440实际观察并执行关键操作",
+        "输出确定缺陷、正常对照、设计建议、待核实项",
+        "只生成报告，未修改输入"
+      ],
+      "修复记录": [],
+      "已知问题与边界": [
+        "200%文字放大为浏览器叶节点字号模拟；字体回退为Arial/sans-serif模拟，未做真实操作系统字体卸载。",
+        "未做真实手机、屏幕阅读器和人工视觉验收。",
+        "输入中的问题未修复；完整字段与事实可在原始观察记录核对。"
+      ],
+      "独立自动复核": {
+        "status": "not_run"
+      },
+      "文件": [
+        {
+          "文件": "index.html",
+          "sha256": "e9d0511f0b43f16fc70f90200f6e1e76510cb76e8d25b5ea5feb585e1f69a1c9"
+        },
+        {
+          "文件": "measure.css",
+          "sha256": "cc0ba1e4da554d44e1a1a753512a1e52e78c7901debdc5c44d97c948b2a826a4"
+        },
+        {
+          "文件": "report.json",
+          "sha256": "7d4ab8d4c76d7079ba41872e74568e8c17f64fb1c29f0c23751b3b86f3804581"
+        }
+      ]
+    },
+    {
+      "条件": "丙：章法结合分寸",
+      "产物": "../runs/18/full/index.html",
+      "类型": "审阅报告，不是替代网页",
+      "流程偏差": [
+        "初版完整写出后才运行标题行探针，未执行全页铺开前的片段试排。",
+        "每题只保留一个实际方向和理由，未先保留三个可比较首屏方向。",
+        "03、06、12题超出一次首轮修复预算；已保留失败文件、报告和逐轮原因，不计公平胜率。",
+        "初次文字放大使用百分比叠加探针，不能当作准确200%证据；后续另用实际字号逐元素乘2的压力测试，保留两份记录。",
+        "同会话自审，没有独立人类或真机验收；不宣称完整技能流程通过，不计效果胜率。"
+      ],
+      "模型完整版本": "未暴露",
+      "批次开始时间": "2026-10-29T10:47:05.410Z",
+      "批次结束时间": "2026-10-29T10:49:56.595Z",
+      "作者记录脱敏副本": "./runs/full-remaining.json",
+      "作者自测性质": "由该条件的生成智能体执行，不冒充独立人类验收",
+      "方向理由": "只观察冻结输入，报告按问题、复现、影响、建议、正常对照与未知组织；不改输入。",
+      "任务与操作": [
+        {
+          "width": 390,
+          "actions": [
+            "Tab遍历先修入口并点击本地模拟申请，记录状态结果"
+          ],
+          "externalRequests": [],
+          "prerequisites": false,
+          "tabStops": [
+            "<button id=\"apply\">本地模拟申请</button>",
+            "<body><main><p class=\"notice\">演示内容，仅用于中文网页设计评测。 这是审阅或改版的冻结输入，不是已验收成品。</p><h1>面向中文界面的信息组织、排版验证与任务可用性入门实践课</h1><p>有基础HTML与CSS知识，能在本地运行静态页面的学习者。</p><div class=\"hover-only\"><span>查看先修条件</span><div class=\"prerequisites\"><ul><li>能编辑HTML与CSS。</li><li>理解浏览器开发工具的基本使用。</li><li>不要求已有设计学位。</li></ul></div></div><p>章法教学角色甲（合成人物，无真实履历背书）</p><ul><li><dl><dt>课次</dt><dd>第一讲</dd><dt>内容</dt><dd>明确任务与冻结内容</dd></dl></li><li><dl><dt>课次</dt><dd>第二讲</dd><dt>内容</dt><dd>中文阅读与页面层级</dd></dl></li><li><dl><dt>课次</dt><dd>第三讲</dd><dt>内容</dt><dd>浏览器测量与缺陷复现</dd></dl></li><li><dl><dt>课次</dt><dd>第四讲</dd><dt>内容</dt><dd>任务回放与证据整理</dd></dl></li></ul><p>¥399／期（演示）</p><p>无真实招生名额</p><p>仅可本地模拟申请，不保证录取，不会外发资料。</p><button id=\"apply\">本地模拟申请</button><output id=\"result\" aria-live=\"polite\"></output></main><script>document.querySelector('#apply').onclick=()=>document.querySelector('#result').textContent='已录取';</script></body>",
+            "<button id=\"apply\">本地模拟申请</button>",
+            "<button id=\"apply\">本地模拟申请</button>",
+            "<body><main><p class=\"notice\">演示内容，仅用于中文网页设计评测。 这是审阅或改版的冻结输入，不是已验收成品。</p><h1>面向中文界面的信息组织、排版验证与任务可用性入门实践课</h1><p>有基础HTML与CSS知识，能在本地运行静态页面的学习者。</p><div class=\"hover-only\"><span>查看先修条件</span><div class=\"prerequisites\"><ul><li>能编辑HTML与CSS。</li><li>理解浏览器开发工具的基本使用。</li><li>不要求已有设计学位。</li></ul></div></div><p>章法教学角色甲（合成人物，无真实履历背书）</p><ul><li><dl><dt>课次</dt><dd>第一讲</dd><dt>内容</dt><dd>明确任务与冻结内容</dd></dl></li><li><dl><dt>课次</dt><dd>第二讲</dd><dt>内容</dt><dd>中文阅读与页面层级</dd></dl></li><li><dl><dt>课次</dt><dd>第三讲</dd><dt>内容</dt><dd>浏览器测量与缺陷复现</dd></dl></li><li><dl><dt>课次</dt><dd>第四讲</dd><dt>内容</dt><dd>任务回放与证据整理</dd></dl></li></ul><p>¥399／期（演示）</p><p>无真实招生名额</p><p>仅可本地模拟申请，不保证录取，不会外发资料。</p><button id=\"apply\">本地模拟申请</button><output id=\"result\" aria-live=\"polite\"></output></main><script>document.querySelector('#apply').onclick=()=>document.querySelector('#result').textContent='已录取';</script></body>"
+          ],
+          "applicationResult": "已录取",
+          "status": "pass"
+        },
+        {
+          "width": 1440,
+          "actions": [
+            "Tab遍历先修入口并点击本地模拟申请，记录状态结果"
+          ],
+          "externalRequests": [],
+          "prerequisites": false,
+          "tabStops": [
+            "<button id=\"apply\">本地模拟申请</button>",
+            "<body><main><p class=\"notice\">演示内容，仅用于中文网页设计评测。 这是审阅或改版的冻结输入，不是已验收成品。</p><h1>面向中文界面的信息组织、排版验证与任务可用性入门实践课</h1><p>有基础HTML与CSS知识，能在本地运行静态页面的学习者。</p><div class=\"hover-only\"><span>查看先修条件</span><div class=\"prerequisites\"><ul><li>能编辑HTML与CSS。</li><li>理解浏览器开发工具的基本使用。</li><li>不要求已有设计学位。</li></ul></div></div><p>章法教学角色甲（合成人物，无真实履历背书）</p><ul><li><dl><dt>课次</dt><dd>第一讲</dd><dt>内容</dt><dd>明确任务与冻结内容</dd></dl></li><li><dl><dt>课次</dt><dd>第二讲</dd><dt>内容</dt><dd>中文阅读与页面层级</dd></dl></li><li><dl><dt>课次</dt><dd>第三讲</dd><dt>内容</dt><dd>浏览器测量与缺陷复现</dd></dl></li><li><dl><dt>课次</dt><dd>第四讲</dd><dt>内容</dt><dd>任务回放与证据整理</dd></dl></li></ul><p>¥399／期（演示）</p><p>无真实招生名额</p><p>仅可本地模拟申请，不保证录取，不会外发资料。</p><button id=\"apply\">本地模拟申请</button><output id=\"result\" aria-live=\"polite\"></output></main><script>document.querySelector('#apply').onclick=()=>document.querySelector('#result').textContent='已录取';</script></body>",
+            "<button id=\"apply\">本地模拟申请</button>",
+            "<button id=\"apply\">本地模拟申请</button>",
+            "<body><main><p class=\"notice\">演示内容，仅用于中文网页设计评测。 这是审阅或改版的冻结输入，不是已验收成品。</p><h1>面向中文界面的信息组织、排版验证与任务可用性入门实践课</h1><p>有基础HTML与CSS知识，能在本地运行静态页面的学习者。</p><div class=\"hover-only\"><span>查看先修条件</span><div class=\"prerequisites\"><ul><li>能编辑HTML与CSS。</li><li>理解浏览器开发工具的基本使用。</li><li>不要求已有设计学位。</li></ul></div></div><p>章法教学角色甲（合成人物，无真实履历背书）</p><ul><li><dl><dt>课次</dt><dd>第一讲</dd><dt>内容</dt><dd>明确任务与冻结内容</dd></dl></li><li><dl><dt>课次</dt><dd>第二讲</dd><dt>内容</dt><dd>中文阅读与页面层级</dd></dl></li><li><dl><dt>课次</dt><dd>第三讲</dd><dt>内容</dt><dd>浏览器测量与缺陷复现</dd></dl></li><li><dl><dt>课次</dt><dd>第四讲</dd><dt>内容</dt><dd>任务回放与证据整理</dd></dl></li></ul><p>¥399／期（演示）</p><p>无真实招生名额</p><p>仅可本地模拟申请，不保证录取，不会外发资料。</p><button id=\"apply\">本地模拟申请</button><output id=\"result\" aria-live=\"polite\"></output></main><script>document.querySelector('#apply').onclick=()=>document.querySelector('#result').textContent='已录取';</script></body>"
+          ],
+          "applicationResult": "已录取",
+          "status": "pass"
+        }
+      ],
+      "修复记录": [],
+      "已知问题与边界": [
+        {
+          "severity": "高",
+          "element": ".hover-only / .prerequisites",
+          "title": "先修条件无法由键盘展开",
+          "steps": "加载页面不移动鼠标，以Tab遍历焦点，尝试到达“查看先修条件”。",
+          "observed": ".prerequisites初始不可见；入口是无tabindex的span，Tab直接到达申请按钮。CSS仅:hover显示先修条件。",
+          "impact": "键盘用户不能判断自己是否适合课程；触屏稳定展开也没有明确控件。",
+          "suggestion": "改为常驻清单，或用原生details/summary、按钮提供可聚焦展开状态。"
+        },
+        {
+          "severity": "高",
+          "element": "#apply / #result",
+          "title": "模拟申请反馈误写为已录取",
+          "steps": "在390、1440像素点击“本地模拟申请”。",
+          "observed": "反馈为“已录取”，但正文明确无真实招生名额、仅本地模拟且不保证录取。",
+          "impact": "把本地动作冒充招生决定，破坏演示边界。",
+          "suggestion": "反馈明确“本地模拟申请已记录，未提交、不保证录取”。"
+        }
+      ],
+      "独立自动复核": {
+        "status": "not_run"
+      },
+      "文件": [
+        {
+          "文件": "index.html",
+          "sha256": "71634c5221ce7311b107ecf767710cd8e61020b1ab3711adba767f9f1a34d082"
+        },
+        {
+          "文件": "measure.css",
+          "sha256": "cc0ba1e4da554d44e1a1a753512a1e52e78c7901debdc5c44d97c948b2a826a4"
+        },
+        {
+          "文件": "report.json",
+          "sha256": "7e4aff53d8eeb097d384929ca3a6f74ba2f036d92d05a09935a2381abf4679ca"
+        },
+        {
+          "文件": "style.css",
+          "sha256": "3d7ca692bcacd2e04b57c44b6af6a4d1d66400cafd4a8569f87d2f39f1951849"
+        }
+      ]
+    }
+  ]
+}

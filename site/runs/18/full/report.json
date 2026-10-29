@@ -1,0 +1,119 @@
+{
+  "id": "18",
+  "condition": "full",
+  "mode": "只审阅",
+  "title": "课程适配与先修条件审阅",
+  "url": "http://127.0.0.1:4180/18/",
+  "inputSha256": "1dad16946217cf3738656f1f95bc2ec35a59b31e61e6a344490a41bc2de8aa81",
+  "reviewer": "同会话模型自审；非独立人类验收",
+  "findings": [
+    {
+      "severity": "高",
+      "element": ".hover-only / .prerequisites",
+      "title": "先修条件无法由键盘展开",
+      "steps": "加载页面不移动鼠标，以Tab遍历焦点，尝试到达“查看先修条件”。",
+      "observed": ".prerequisites初始不可见；入口是无tabindex的span，Tab直接到达申请按钮。CSS仅:hover显示先修条件。",
+      "impact": "键盘用户不能判断自己是否适合课程；触屏稳定展开也没有明确控件。",
+      "suggestion": "改为常驻清单，或用原生details/summary、按钮提供可聚焦展开状态。"
+    },
+    {
+      "severity": "高",
+      "element": "#apply / #result",
+      "title": "模拟申请反馈误写为已录取",
+      "steps": "在390、1440像素点击“本地模拟申请”。",
+      "observed": "反馈为“已录取”，但正文明确无真实招生名额、仅本地模拟且不保证录取。",
+      "impact": "把本地动作冒充招生决定，破坏演示边界。",
+      "suggestion": "反馈明确“本地模拟申请已记录，未提交、不保证录取”。"
+    }
+  ],
+  "normalControls": "长课程名自然多行不是缺陷；讲师为合成人物且无真实背书已明确披露，不要求编造履历。",
+  "measurement": {
+    "summary": {
+      "files": 1,
+      "cjk_files": 1,
+      "errors": 3,
+      "warns": 0,
+      "status": "fail"
+    },
+    "raw": "evidence/generation/full-rem-18/measure-first/raw.json",
+    "arbitration": "T02/T04是缺少声明的规则结果，未据此推断每一行已出现禁则缺陷；T13字体栈声明不足不等于已看到缺字。"
+  },
+  "evidence": {
+    "url": "http://127.0.0.1:4180/18/",
+    "tasks": [
+      {
+        "width": 390,
+        "actions": [
+          "Tab遍历先修入口并点击本地模拟申请，记录状态结果"
+        ],
+        "externalRequests": [],
+        "prerequisites": false,
+        "tabStops": [
+          "<button id=\"apply\">本地模拟申请</button>",
+          "<body><main><p class=\"notice\">演示内容，仅用于中文网页设计评测。 这是审阅或改版的冻结输入，不是已验收成品。</p><h1>面向中文界面的信息组织、排版验证与任务可用性入门实践课</h1><p>有基础HTML与CSS知识，能在本地运行静态页面的学习者。</p><div class=\"hover-only\"><span>查看先修条件</span><div class=\"prerequisites\"><ul><li>能编辑HTML与CSS。</li><li>理解浏览器开发工具的基本使用。</li><li>不要求已有设计学位。</li></ul></div></div><p>章法教学角色甲（合成人物，无真实履历背书）</p><ul><li><dl><dt>课次</dt><dd>第一讲</dd><dt>内容</dt><dd>明确任务与冻结内容</dd></dl></li><li><dl><dt>课次</dt><dd>第二讲</dd><dt>内容</dt><dd>中文阅读与页面层级</dd></dl></li><li><dl><dt>课次</dt><dd>第三讲</dd><dt>内容</dt><dd>浏览器测量与缺陷复现</dd></dl></li><li><dl><dt>课次</dt><dd>第四讲</dd><dt>内容</dt><dd>任务回放与证据整理</dd></dl></li></ul><p>¥399／期（演示）</p><p>无真实招生名额</p><p>仅可本地模拟申请，不保证录取，不会外发资料。</p><button id=\"apply\">本地模拟申请</button><output id=\"result\" aria-live=\"polite\"></output></main><script>document.querySelector('#apply').onclick=()=>document.querySelector('#result').textContent='已录取';</script></body>",
+          "<button id=\"apply\">本地模拟申请</button>",
+          "<button id=\"apply\">本地模拟申请</button>",
+          "<body><main><p class=\"notice\">演示内容，仅用于中文网页设计评测。 这是审阅或改版的冻结输入，不是已验收成品。</p><h1>面向中文界面的信息组织、排版验证与任务可用性入门实践课</h1><p>有基础HTML与CSS知识，能在本地运行静态页面的学习者。</p><div class=\"hover-only\"><span>查看先修条件</span><div class=\"prerequisites\"><ul><li>能编辑HTML与CSS。</li><li>理解浏览器开发工具的基本使用。</li><li>不要求已有设计学位。</li></ul></div></div><p>章法教学角色甲（合成人物，无真实履历背书）</p><ul><li><dl><dt>课次</dt><dd>第一讲</dd><dt>内容</dt><dd>明确任务与冻结内容</dd></dl></li><li><dl><dt>课次</dt><dd>第二讲</dd><dt>内容</dt><dd>中文阅读与页面层级</dd></dl></li><li><dl><dt>课次</dt><dd>第三讲</dd><dt>内容</dt><dd>浏览器测量与缺陷复现</dd></dl></li><li><dl><dt>课次</dt><dd>第四讲</dd><dt>内容</dt><dd>任务回放与证据整理</dd></dl></li></ul><p>¥399／期（演示）</p><p>无真实招生名额</p><p>仅可本地模拟申请，不保证录取，不会外发资料。</p><button id=\"apply\">本地模拟申请</button><output id=\"result\" aria-live=\"polite\"></output></main><script>document.querySelector('#apply').onclick=()=>document.querySelector('#result').textContent='已录取';</script></body>"
+        ],
+        "applicationResult": "已录取",
+        "status": "pass"
+      },
+      {
+        "width": 1440,
+        "actions": [
+          "Tab遍历先修入口并点击本地模拟申请，记录状态结果"
+        ],
+        "externalRequests": [],
+        "prerequisites": false,
+        "tabStops": [
+          "<button id=\"apply\">本地模拟申请</button>",
+          "<body><main><p class=\"notice\">演示内容，仅用于中文网页设计评测。 这是审阅或改版的冻结输入，不是已验收成品。</p><h1>面向中文界面的信息组织、排版验证与任务可用性入门实践课</h1><p>有基础HTML与CSS知识，能在本地运行静态页面的学习者。</p><div class=\"hover-only\"><span>查看先修条件</span><div class=\"prerequisites\"><ul><li>能编辑HTML与CSS。</li><li>理解浏览器开发工具的基本使用。</li><li>不要求已有设计学位。</li></ul></div></div><p>章法教学角色甲（合成人物，无真实履历背书）</p><ul><li><dl><dt>课次</dt><dd>第一讲</dd><dt>内容</dt><dd>明确任务与冻结内容</dd></dl></li><li><dl><dt>课次</dt><dd>第二讲</dd><dt>内容</dt><dd>中文阅读与页面层级</dd></dl></li><li><dl><dt>课次</dt><dd>第三讲</dd><dt>内容</dt><dd>浏览器测量与缺陷复现</dd></dl></li><li><dl><dt>课次</dt><dd>第四讲</dd><dt>内容</dt><dd>任务回放与证据整理</dd></dl></li></ul><p>¥399／期（演示）</p><p>无真实招生名额</p><p>仅可本地模拟申请，不保证录取，不会外发资料。</p><button id=\"apply\">本地模拟申请</button><output id=\"result\" aria-live=\"polite\"></output></main><script>document.querySelector('#apply').onclick=()=>document.querySelector('#result').textContent='已录取';</script></body>",
+          "<button id=\"apply\">本地模拟申请</button>",
+          "<button id=\"apply\">本地模拟申请</button>",
+          "<body><main><p class=\"notice\">演示内容，仅用于中文网页设计评测。 这是审阅或改版的冻结输入，不是已验收成品。</p><h1>面向中文界面的信息组织、排版验证与任务可用性入门实践课</h1><p>有基础HTML与CSS知识，能在本地运行静态页面的学习者。</p><div class=\"hover-only\"><span>查看先修条件</span><div class=\"prerequisites\"><ul><li>能编辑HTML与CSS。</li><li>理解浏览器开发工具的基本使用。</li><li>不要求已有设计学位。</li></ul></div></div><p>章法教学角色甲（合成人物，无真实履历背书）</p><ul><li><dl><dt>课次</dt><dd>第一讲</dd><dt>内容</dt><dd>明确任务与冻结内容</dd></dl></li><li><dl><dt>课次</dt><dd>第二讲</dd><dt>内容</dt><dd>中文阅读与页面层级</dd></dl></li><li><dl><dt>课次</dt><dd>第三讲</dd><dt>内容</dt><dd>浏览器测量与缺陷复现</dd></dl></li><li><dl><dt>课次</dt><dd>第四讲</dd><dt>内容</dt><dd>任务回放与证据整理</dd></dl></li></ul><p>¥399／期（演示）</p><p>无真实招生名额</p><p>仅可本地模拟申请，不保证录取，不会外发资料。</p><button id=\"apply\">本地模拟申请</button><output id=\"result\" aria-live=\"polite\"></output></main><script>document.querySelector('#apply').onclick=()=>document.querySelector('#result').textContent='已录取';</script></body>"
+        ],
+        "applicationResult": "已录取",
+        "status": "pass"
+      }
+    ],
+    "stress": [
+      {
+        "mode": "320",
+        "viewport": 320,
+        "documentWidth": 320,
+        "bodyText": 265,
+        "images": 0,
+        "overflow": false,
+        "note": "320像素几何与完整截图"
+      },
+      {
+        "mode": "text200",
+        "viewport": 390,
+        "documentWidth": 390,
+        "bodyText": 265,
+        "images": 0,
+        "overflow": false,
+        "note": "CSS文字放大200%的压力观察；非浏览器菜单文字缩放，嵌套元素可能累乘。"
+      },
+      {
+        "mode": "fallback",
+        "viewport": 390,
+        "documentWidth": 390,
+        "bodyText": 265,
+        "images": 0,
+        "overflow": false,
+        "note": "强制系统sans-serif回退；未证明逐字字形来源。"
+      }
+    ],
+    "manual": "MANUAL_PENDING",
+    "probeStatus": "not_run"
+  },
+  "unknown": [
+    "真实手机与读屏体验未测，MANUAL_PENDING。",
+    "实际字形来源未逐字诊断。",
+    "未运行真实服务或外发；演示内容不构成真实兼容、招生或服务结果。"
+  ],
+  "recommendationsOnly": true,
+  "sourceModified": false,
+  "completedAt": "2026-10-29T10:49:45.672Z"
+}

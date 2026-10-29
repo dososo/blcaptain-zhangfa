@@ -1,0 +1,681 @@
+{
+  "题号": "06",
+  "模式": "新建",
+  "任务": "找到《河岸的第三盏灯》并查看播放状态、制作信息和第二章节。",
+  "内容包": "../../bench/briefs/06.json",
+  "说明": "这是批次生成示例。各条件分开会话，组内共享上下文；不是逐题独立统计胜率实验。作者自测、独立复核和人工验收分别记录。",
+  "人工验收": "MANUAL_PENDING",
+  "条件": [
+    {
+      "条件": "甲：不加载章法与分寸",
+      "产物": "../runs/06/control/index.html",
+      "类型": "实际生成页面",
+      "流程偏差": [],
+      "模型完整版本": "未暴露",
+      "批次开始时间": "2026-10-29T10:40:48.877Z",
+      "批次结束时间": "2026-10-29T10:40:52.037Z",
+      "作者记录脱敏副本": "./runs/control-remaining.json",
+      "作者自测性质": "由该条件的生成智能体执行，不冒充独立人类验收",
+      "方向理由": null,
+      "任务与操作": [
+        {
+          "宽度": 390,
+          "主任务": "找到目标片目、制作资料与第二章节不可播放说明",
+          "结果": "通过"
+        },
+        {
+          "宽度": 1440,
+          "主任务": "找到目标片目、制作资料与第二章节不可播放说明",
+          "结果": "通过"
+        }
+      ],
+      "修复记录": [],
+      "已知问题与边界": [],
+      "独立自动复核": {
+        "status": "fail",
+        "检查时间": "2026-10-29T10:49:32.543Z",
+        "浏览器": "156.0.8078.48",
+        "视口宽度": [
+          320,
+          390,
+          1440
+        ],
+        "页面": [
+          {
+            "宽度": 320,
+            "状态": "pass",
+            "资源稳定": true,
+            "问题": [],
+            "标题行片段": [
+              {
+                "text": "把看过的时间，留在这里",
+                "element": "h1",
+                "fontFamily": "system-ui, -apple-system, \"PingFang SC\", sans-serif",
+                "fontSize": "36px",
+                "lines": [
+                  "把看过的时间，留",
+                  "在这里"
+                ],
+                "status": "pass"
+              },
+              {
+                "text": "河岸的第三盏灯",
+                "element": "h2",
+                "fontFamily": "system-ui, -apple-system, \"PingFang SC\", sans-serif",
+                "fontSize": "25px",
+                "lines": [
+                  "河岸的第三盏灯"
+                ],
+                "status": "pass"
+              },
+              {
+                "text": "慢慢经过的夏天",
+                "element": "h2",
+                "fontFamily": "system-ui, -apple-system, \"PingFang SC\", sans-serif",
+                "fontSize": "25px",
+                "lines": [
+                  "慢慢经过的夏天"
+                ],
+                "status": "pass"
+              }
+            ]
+          },
+          {
+            "宽度": 390,
+            "状态": "pass",
+            "资源稳定": true,
+            "问题": [],
+            "标题行片段": [
+              {
+                "text": "把看过的时间，留在这里",
+                "element": "h1",
+                "fontFamily": "system-ui, -apple-system, \"PingFang SC\", sans-serif",
+                "fontSize": "36px",
+                "lines": [
+                  "把看过的时间，留在这",
+                  "里"
+                ],
+                "status": "pass"
+              },
+              {
+                "text": "河岸的第三盏灯",
+                "element": "h2",
+                "fontFamily": "system-ui, -apple-system, \"PingFang SC\", sans-serif",
+                "fontSize": "25px",
+                "lines": [
+                  "河岸的第三盏灯"
+                ],
+                "status": "pass"
+              },
+              {
+                "text": "慢慢经过的夏天",
+                "element": "h2",
+                "fontFamily": "system-ui, -apple-system, \"PingFang SC\", sans-serif",
+                "fontSize": "25px",
+                "lines": [
+                  "慢慢经过的夏天"
+                ],
+                "status": "pass"
+              }
+            ]
+          },
+          {
+            "宽度": 1440,
+            "状态": "pass",
+            "资源稳定": true,
+            "问题": [],
+            "标题行片段": [
+              {
+                "text": "把看过的时间，留在这里",
+                "element": "h1",
+                "fontFamily": "system-ui, -apple-system, \"PingFang SC\", sans-serif",
+                "fontSize": "62px",
+                "lines": [
+                  "把看过的时间，留在这里"
+                ],
+                "status": "pass"
+              },
+              {
+                "text": "河岸的第三盏灯",
+                "element": "h2",
+                "fontFamily": "system-ui, -apple-system, \"PingFang SC\", sans-serif",
+                "fontSize": "25px",
+                "lines": [
+                  "河岸的第三盏灯"
+                ],
+                "status": "pass"
+              },
+              {
+                "text": "慢慢经过的夏天",
+                "element": "h2",
+                "fontFamily": "system-ui, -apple-system, \"PingFang SC\", sans-serif",
+                "fontSize": "25px",
+                "lines": [
+                  "慢慢经过的夏天"
+                ],
+                "status": "pass"
+              }
+            ]
+          }
+        ],
+        "分寸": {
+          "状态": "fail",
+          "版本": "0.1.0",
+          "错误": 4,
+          "警告": 1,
+          "覆盖": [
+            320,
+            390,
+            1440
+          ],
+          "规则计数": {
+            "T09": 1,
+            "T13": 1,
+            "T07": 1,
+            "T02": 1,
+            "T04": 1
+          }
+        },
+        "主任务": "作者自测见生成记录；本自动检查不推断全部主任务通过",
+        "人工视觉与真机": "MANUAL_PENDING",
+        "原始证据": "保存在本地每个产物的.zhangfa-evidence目录，发布摘要不携带本机路径",
+        "局限": [
+          "这是当前页面和指定宽度的浏览器快照，不是审美评分，也不代表完整无障碍合规。",
+          "名称检查覆盖常见原生控件与按钮角色；复杂 ARIA、键盘操作、对比度和读屏体验仍需人工验收。",
+          "裁切检查依据可见文字行盒与 overflow 容器；画布、伪元素、封闭影子树和尚未展开的交互内容未覆盖。",
+          "截图等待字体与当前图片就绪；滚动触发的懒加载、登录态、动画各时刻和真机体验仍需另验。",
+          "分寸通过只代表所运行的中文规则通过；最终中文语义断行、内容质量与视觉验收仍需人工确认。"
+        ]
+      },
+      "文件": [
+        {
+          "文件": "index.html",
+          "sha256": "c626f3e5945253e8bcaefa1d4fad068f09d229f3cd87ebea9c0299e7196d0eed"
+        }
+      ]
+    },
+    {
+      "条件": "乙：只加载分寸",
+      "产物": "../runs/06/measure/index.html",
+      "类型": "实际生成页面",
+      "流程偏差": [],
+      "模型完整版本": "未暴露",
+      "批次开始时间": "2026-10-29T10:37:24.422Z",
+      "批次结束时间": "2026-10-29T10:43:10.234Z",
+      "作者记录脱敏副本": "./runs/measure-remaining.json",
+      "作者自测性质": "由该条件的生成智能体执行，不冒充独立人类验收",
+      "方向理由": null,
+      "任务与操作": [
+        "定位片目，制作资料与第二章节，确认不可播放",
+        "390像素下模拟系统字体回退与叶节点200%文字放大；无远程图片依赖"
+      ],
+      "修复记录": [],
+      "已知问题与边界": [
+        "200%文字放大为浏览器叶节点字号模拟；字体回退为Arial/sans-serif模拟，未做真实操作系统字体卸载。",
+        "未做真实手机、屏幕阅读器和人工视觉验收。"
+      ],
+      "独立自动复核": {
+        "status": "pass",
+        "检查时间": "2026-10-29T10:49:34.734Z",
+        "浏览器": "156.0.8078.48",
+        "视口宽度": [
+          320,
+          390,
+          1440
+        ],
+        "页面": [
+          {
+            "宽度": 320,
+            "状态": "pass",
+            "资源稳定": true,
+            "问题": [],
+            "标题行片段": [
+              {
+                "text": "把看过的时间，留在这里",
+                "element": "h1",
+                "fontFamily": "Arial, \"PingFang SC\", sans-serif",
+                "fontSize": "34px",
+                "lines": [
+                  "把看过的时间，留",
+                  "在这里"
+                ],
+                "status": "pass"
+              },
+              {
+                "text": "河岸的第三盏灯",
+                "element": "h2",
+                "fontFamily": "Arial, \"PingFang SC\", sans-serif",
+                "fontSize": "24px",
+                "lines": [
+                  "河岸的第三盏灯"
+                ],
+                "status": "pass"
+              },
+              {
+                "text": "制作资料",
+                "element": "h2",
+                "fontFamily": "Arial, \"PingFang SC\", sans-serif",
+                "fontSize": "24px",
+                "lines": [
+                  "制作资料"
+                ],
+                "status": "pass"
+              },
+              {
+                "text": "章节目录",
+                "element": "h2",
+                "fontFamily": "Arial, \"PingFang SC\", sans-serif",
+                "fontSize": "24px",
+                "lines": [
+                  "章节目录"
+                ],
+                "status": "pass"
+              },
+              {
+                "text": "慢慢经过的夏天",
+                "element": "h2",
+                "fontFamily": "Arial, \"PingFang SC\", sans-serif",
+                "fontSize": "24px",
+                "lines": [
+                  "慢慢经过的夏天"
+                ],
+                "status": "pass"
+              }
+            ]
+          },
+          {
+            "宽度": 390,
+            "状态": "pass",
+            "资源稳定": true,
+            "问题": [],
+            "标题行片段": [
+              {
+                "text": "把看过的时间，留在这里",
+                "element": "h1",
+                "fontFamily": "Arial, \"PingFang SC\", sans-serif",
+                "fontSize": "34px",
+                "lines": [
+                  "把看过的时间，留在这",
+                  "里"
+                ],
+                "status": "pass"
+              },
+              {
+                "text": "河岸的第三盏灯",
+                "element": "h2",
+                "fontFamily": "Arial, \"PingFang SC\", sans-serif",
+                "fontSize": "24px",
+                "lines": [
+                  "河岸的第三盏灯"
+                ],
+                "status": "pass"
+              },
+              {
+                "text": "制作资料",
+                "element": "h2",
+                "fontFamily": "Arial, \"PingFang SC\", sans-serif",
+                "fontSize": "24px",
+                "lines": [
+                  "制作资料"
+                ],
+                "status": "pass"
+              },
+              {
+                "text": "章节目录",
+                "element": "h2",
+                "fontFamily": "Arial, \"PingFang SC\", sans-serif",
+                "fontSize": "24px",
+                "lines": [
+                  "章节目录"
+                ],
+                "status": "pass"
+              },
+              {
+                "text": "慢慢经过的夏天",
+                "element": "h2",
+                "fontFamily": "Arial, \"PingFang SC\", sans-serif",
+                "fontSize": "24px",
+                "lines": [
+                  "慢慢经过的夏天"
+                ],
+                "status": "pass"
+              }
+            ]
+          },
+          {
+            "宽度": 1440,
+            "状态": "pass",
+            "资源稳定": true,
+            "问题": [],
+            "标题行片段": [
+              {
+                "text": "把看过的时间，留在这里",
+                "element": "h1",
+                "fontFamily": "Arial, \"PingFang SC\", sans-serif",
+                "fontSize": "57.6px",
+                "lines": [
+                  "把看过的时间，留在这里"
+                ],
+                "status": "pass"
+              },
+              {
+                "text": "河岸的第三盏灯",
+                "element": "h2",
+                "fontFamily": "Arial, \"PingFang SC\", sans-serif",
+                "fontSize": "24px",
+                "lines": [
+                  "河岸的第三盏灯"
+                ],
+                "status": "pass"
+              },
+              {
+                "text": "制作资料",
+                "element": "h2",
+                "fontFamily": "Arial, \"PingFang SC\", sans-serif",
+                "fontSize": "24px",
+                "lines": [
+                  "制作资料"
+                ],
+                "status": "pass"
+              },
+              {
+                "text": "章节目录",
+                "element": "h2",
+                "fontFamily": "Arial, \"PingFang SC\", sans-serif",
+                "fontSize": "24px",
+                "lines": [
+                  "章节目录"
+                ],
+                "status": "pass"
+              },
+              {
+                "text": "慢慢经过的夏天",
+                "element": "h2",
+                "fontFamily": "Arial, \"PingFang SC\", sans-serif",
+                "fontSize": "24px",
+                "lines": [
+                  "慢慢经过的夏天"
+                ],
+                "status": "pass"
+              }
+            ]
+          }
+        ],
+        "分寸": {
+          "状态": "pass",
+          "版本": "0.1.0",
+          "错误": 0,
+          "警告": 0,
+          "覆盖": [
+            320,
+            390,
+            1440
+          ],
+          "规则计数": {}
+        },
+        "主任务": "作者自测见生成记录；本自动检查不推断全部主任务通过",
+        "人工视觉与真机": "MANUAL_PENDING",
+        "原始证据": "保存在本地每个产物的.zhangfa-evidence目录，发布摘要不携带本机路径",
+        "局限": [
+          "这是当前页面和指定宽度的浏览器快照，不是审美评分，也不代表完整无障碍合规。",
+          "名称检查覆盖常见原生控件与按钮角色；复杂 ARIA、键盘操作、对比度和读屏体验仍需人工验收。",
+          "裁切检查依据可见文字行盒与 overflow 容器；画布、伪元素、封闭影子树和尚未展开的交互内容未覆盖。",
+          "截图等待字体与当前图片就绪；滚动触发的懒加载、登录态、动画各时刻和真机体验仍需另验。",
+          "分寸通过只代表所运行的中文规则通过；最终中文语义断行、内容质量与视觉验收仍需人工确认。"
+        ]
+      },
+      "文件": [
+        {
+          "文件": "index.html",
+          "sha256": "8ba05fa8df0004990432f084866de59bf3864d60837b4f6c37b696a3c7e792df"
+        },
+        {
+          "文件": "measure.css",
+          "sha256": "cc0ba1e4da554d44e1a1a753512a1e52e78c7901debdc5c44d97c948b2a826a4"
+        }
+      ]
+    },
+    {
+      "条件": "丙：章法结合分寸",
+      "产物": "../runs/06/full/index.html",
+      "类型": "实际生成页面",
+      "流程偏差": [
+        "初版完整写出后才运行标题行探针，未执行全页铺开前的片段试排。",
+        "每题只保留一个实际方向和理由，未先保留三个可比较首屏方向。",
+        "03、06、12题超出一次首轮修复预算；已保留失败文件、报告和逐轮原因，不计公平胜率。",
+        "初次文字放大使用百分比叠加探针，不能当作准确200%证据；后续另用实际字号逐元素乘2的压力测试，保留两份记录。",
+        "同会话自审，没有独立人类或真机验收；不宣称完整技能流程通过，不计效果胜率。"
+      ],
+      "模型完整版本": "未暴露",
+      "批次开始时间": "2026-10-29T10:45:37.390Z",
+      "批次结束时间": "2026-10-29T10:52:38.346Z",
+      "作者记录脱敏副本": "./runs/full-remaining.json",
+      "作者自测性质": "由该条件的生成智能体执行，不冒充独立人类验收",
+      "方向理由": "黑底片目档案以作品名称代替未授权剧照；章节横向转为窄屏纵列，始终明确无法播放。",
+      "任务与操作": [
+        {
+          "width": 390,
+          "actions": [
+            "第二章节定位且持续说明不可播放"
+          ],
+          "externalRequests": [],
+          "status": "pass"
+        },
+        {
+          "width": 1440,
+          "actions": [
+            "第二章节定位且持续说明不可播放"
+          ],
+          "externalRequests": [],
+          "status": "pass"
+        }
+      ],
+      "修复记录": [
+        {
+          "round": 2,
+          "reason": "视觉自审看到海报占位“第三”被拆开，改为“河岸的／第三盏灯”。",
+          "snapshot": "before-visual-fix"
+        }
+      ],
+      "已知问题与边界": [
+        "人类审美、真实手机和读屏验收未执行，MANUAL_PENDING。",
+        "实际字体逐字命中与完整无障碍合规未验证。"
+      ],
+      "独立自动复核": {
+        "status": "pass",
+        "检查时间": "2026-10-29T10:55:45.640Z",
+        "浏览器": "156.0.8078.48",
+        "视口宽度": [
+          320,
+          390,
+          1440
+        ],
+        "页面": [
+          {
+            "宽度": 320,
+            "状态": "pass",
+            "资源稳定": true,
+            "问题": [],
+            "标题行片段": [
+              {
+                "text": "把看过的时间，留在这里",
+                "element": "h1",
+                "fontFamily": "Arial, \"PingFang SC\", sans-serif",
+                "fontSize": "34px",
+                "lines": [
+                  "把看过的时间，",
+                  "留在这里"
+                ],
+                "status": "pass"
+              },
+              {
+                "text": "《河岸的第三盏灯》",
+                "element": "h2",
+                "fontFamily": "Arial, \"PingFang SC\", sans-serif",
+                "fontSize": "23px",
+                "lines": [
+                  "《河岸的第三盏灯》"
+                ],
+                "status": "pass"
+              },
+              {
+                "text": "章节目录",
+                "element": "h2",
+                "fontFamily": "Arial, \"PingFang SC\", sans-serif",
+                "fontSize": "23px",
+                "lines": [
+                  "章节目录"
+                ],
+                "status": "pass"
+              },
+              {
+                "text": "《慢慢经过的夏天》",
+                "element": "h2",
+                "fontFamily": "Arial, \"PingFang SC\", sans-serif",
+                "fontSize": "23px",
+                "lines": [
+                  "《慢慢经过的夏天》"
+                ],
+                "status": "pass"
+              }
+            ]
+          },
+          {
+            "宽度": 390,
+            "状态": "pass",
+            "资源稳定": true,
+            "问题": [],
+            "标题行片段": [
+              {
+                "text": "把看过的时间，留在这里",
+                "element": "h1",
+                "fontFamily": "Arial, \"PingFang SC\", sans-serif",
+                "fontSize": "34px",
+                "lines": [
+                  "把看过的时间，",
+                  "留在这里"
+                ],
+                "status": "pass"
+              },
+              {
+                "text": "《河岸的第三盏灯》",
+                "element": "h2",
+                "fontFamily": "Arial, \"PingFang SC\", sans-serif",
+                "fontSize": "23px",
+                "lines": [
+                  "《河岸的第三盏灯》"
+                ],
+                "status": "pass"
+              },
+              {
+                "text": "章节目录",
+                "element": "h2",
+                "fontFamily": "Arial, \"PingFang SC\", sans-serif",
+                "fontSize": "23px",
+                "lines": [
+                  "章节目录"
+                ],
+                "status": "pass"
+              },
+              {
+                "text": "《慢慢经过的夏天》",
+                "element": "h2",
+                "fontFamily": "Arial, \"PingFang SC\", sans-serif",
+                "fontSize": "23px",
+                "lines": [
+                  "《慢慢经过的夏天》"
+                ],
+                "status": "pass"
+              }
+            ]
+          },
+          {
+            "宽度": 1440,
+            "状态": "pass",
+            "资源稳定": true,
+            "问题": [],
+            "标题行片段": [
+              {
+                "text": "把看过的时间，留在这里",
+                "element": "h1",
+                "fontFamily": "Arial, \"PingFang SC\", sans-serif",
+                "fontSize": "62px",
+                "lines": [
+                  "把看过的时间，",
+                  "留在这里"
+                ],
+                "status": "pass"
+              },
+              {
+                "text": "《河岸的第三盏灯》",
+                "element": "h2",
+                "fontFamily": "Arial, \"PingFang SC\", sans-serif",
+                "fontSize": "24px",
+                "lines": [
+                  "《河岸的第三盏灯》"
+                ],
+                "status": "pass"
+              },
+              {
+                "text": "章节目录",
+                "element": "h2",
+                "fontFamily": "Arial, \"PingFang SC\", sans-serif",
+                "fontSize": "24px",
+                "lines": [
+                  "章节目录"
+                ],
+                "status": "pass"
+              },
+              {
+                "text": "《慢慢经过的夏天》",
+                "element": "h2",
+                "fontFamily": "Arial, \"PingFang SC\", sans-serif",
+                "fontSize": "24px",
+                "lines": [
+                  "《慢慢经过的夏天》"
+                ],
+                "status": "pass"
+              }
+            ]
+          }
+        ],
+        "分寸": {
+          "状态": "pass",
+          "版本": "0.1.0",
+          "错误": 0,
+          "警告": 0,
+          "覆盖": [
+            320,
+            390,
+            1440
+          ],
+          "规则计数": {}
+        },
+        "主任务": "作者自测见生成记录；本自动检查不推断全部主任务通过",
+        "人工视觉与真机": "MANUAL_PENDING",
+        "原始证据": "保存在本地每个产物的.zhangfa-evidence目录，发布摘要不携带本机路径",
+        "局限": [
+          "这是当前页面和指定宽度的浏览器快照，不是审美评分，也不代表完整无障碍合规。",
+          "名称检查覆盖常见原生控件与按钮角色；复杂 ARIA、键盘操作、对比度和读屏体验仍需人工验收。",
+          "裁切检查依据可见文字行盒与 overflow 容器；画布、伪元素、封闭影子树和尚未展开的交互内容未覆盖。",
+          "截图等待字体与当前图片就绪；滚动触发的懒加载、登录态、动画各时刻和真机体验仍需另验。",
+          "分寸通过只代表所运行的中文规则通过；最终中文语义断行、内容质量与视觉验收仍需人工确认。"
+        ]
+      },
+      "文件": [
+        {
+          "文件": "index.html",
+          "sha256": "9c32abdb976d4a1b26ff897d7883a4cb354128efe4b3e153e9b3f2b1317a982e"
+        },
+        {
+          "文件": "measure.css",
+          "sha256": "cc0ba1e4da554d44e1a1a753512a1e52e78c7901debdc5c44d97c948b2a826a4"
+        },
+        {
+          "文件": "style.css",
+          "sha256": "4194e620a8edb5a9fba1cfcbf68f87e782277bb7a0315e1ae4aa07d6b13c2641"
+        }
+      ]
+    }
+  ]
+}

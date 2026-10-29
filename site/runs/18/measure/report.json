@@ -1,0 +1,57 @@
+{
+  "id": "18",
+  "condition": "measure",
+  "mode": "只审阅",
+  "source": "http://127.0.0.1:4180/18/",
+  "observedAt": "2026-10-29T10:38:31.017Z",
+  "widths": [
+    390,
+    320,
+    1440
+  ],
+  "findings": [
+    {
+      "id": "18-1",
+      "status": "确定缺陷",
+      "severity": "中",
+      "title": "先修条件只有鼠标悬停可展开",
+      "element": ".hover-only .prerequisites",
+      "widths": [
+        320,
+        390,
+        1440
+      ],
+      "steps": "初始先修条件不可见；按 Tab 首个焦点直接到 #apply，无法停在查看先修条件；鼠标悬停后列表才可见。",
+      "impact": "键盘用户无法查看完整先修条件；触屏行为仍需实机核实。",
+      "suggestion": "使用原生 details/summary 或可聚焦的展开按钮，保留列表内容。",
+      "evidence": "evidence/generation/measure-rem-18/input-390.png"
+    },
+    {
+      "id": "18-2",
+      "status": "确定缺陷",
+      "severity": "中",
+      "title": "本地申请错误显示“已录取”",
+      "element": "#apply → #result",
+      "widths": [
+        320,
+        390,
+        1440
+      ],
+      "steps": "点击“本地模拟申请”，结果显示“已录取”。",
+      "impact": "与“不保证录取”和无真实招生名额的边界冲突。",
+      "suggestion": "反馈应明确仅本地模拟申请，未产生录取结果或外发资料。",
+      "evidence": "evidence/generation/measure-rem-18/input-390.png"
+    }
+  ],
+  "normal": [
+    "长课程标题自然多行不是缺陷。",
+    "讲师合成人物身份已披露，不应捏造履历。",
+    "适用对象要求基础 HTML、CSS；不能据“入门”推断零基础适用。"
+  ],
+  "suggestions": [],
+  "unknown": [
+    "未检查真实手机触屏、屏幕阅读器、操作系统级字体故障。",
+    "未修改冻结输入；发现项均为建议，未验证修复完成。"
+  ],
+  "observations": "evidence/generation/measure-rem-review-observations.json"
+}

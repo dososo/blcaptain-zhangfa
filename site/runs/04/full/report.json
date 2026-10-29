@@ -1,0 +1,119 @@
+{
+  "id": "04",
+  "condition": "full",
+  "mode": "只审阅",
+  "title": "开源组件发布说明审阅",
+  "url": "http://127.0.0.1:4180/04/",
+  "inputSha256": "f6d57e79c13f8d50a28973c880a57e19cfa077df5e5ea5354d642ac21b24c4a4",
+  "reviewer": "同会话模型自审；非独立人类验收",
+  "findings": [
+    {
+      "severity": "高",
+      "element": "nav a[href=\"#migrate\"]",
+      "title": "迁移导航目标不存在",
+      "steps": "在390、1440像素点击“迁移说明”。",
+      "observed": "地址变为#migrate，但document.querySelector(location.hash)为false；实际章节ID是migration。",
+      "impact": "无法借导航定位迁移接口。",
+      "suggestion": "把链接改为#迁移章节的实际ID（migration），复测点击和键盘回车。"
+    },
+    {
+      "severity": "中",
+      "element": ".package-name",
+      "title": "窄屏重复发布标题裁切",
+      "steps": "在390像素读取包名下方重复标题；320像素复查。",
+      "observed": "390像素内容宽504px、容器宽350px，overflow:hidden且white-space:nowrap；截图中尾部发布说明消失。1440像素不裁切。",
+      "impact": "此处版本标题无法完整阅读；上方h1完整，故不是全页版本号缺失。",
+      "suggestion": "允许这行自然换行，或在不丢失语义的前提下移除纯重复呈现。"
+    }
+  ],
+  "normalControls": "Node.js 22、React 19与未验证范围已披露；代码引号应保持语法，分寸T03直引号提示属于代码上下文误报，不建议改为弯引号。",
+  "measurement": {
+    "summary": {
+      "files": 1,
+      "cjk_files": 1,
+      "errors": 4,
+      "warns": 0,
+      "status": "fail"
+    },
+    "raw": "evidence/generation/full-rem-04/measure-first/raw.json",
+    "arbitration": "T02/T04是缺少声明的规则结果，未据此推断每一行已出现禁则缺陷；T13字体栈声明不足不等于已看到缺字。"
+  },
+  "evidence": {
+    "url": "http://127.0.0.1:4180/04/",
+    "tasks": [
+      {
+        "width": 390,
+        "actions": [
+          "点击迁移说明，记录目标是否存在与包名裁切几何"
+        ],
+        "externalRequests": [],
+        "anchor": {
+          "hash": "#migrate",
+          "target": false
+        },
+        "packageGeometry": {
+          "client": 350,
+          "scroll": 504,
+          "overflow": "hidden"
+        },
+        "status": "pass"
+      },
+      {
+        "width": 1440,
+        "actions": [
+          "点击迁移说明，记录目标是否存在与包名裁切几何"
+        ],
+        "externalRequests": [],
+        "anchor": {
+          "hash": "#migrate",
+          "target": false
+        },
+        "packageGeometry": {
+          "client": 960,
+          "scroll": 960,
+          "overflow": "hidden"
+        },
+        "status": "pass"
+      }
+    ],
+    "stress": [
+      {
+        "mode": "320",
+        "viewport": 320,
+        "documentWidth": 320,
+        "bodyText": 292,
+        "images": 0,
+        "overflow": false,
+        "note": "320像素几何与完整截图"
+      },
+      {
+        "mode": "text200",
+        "viewport": 390,
+        "documentWidth": 449,
+        "bodyText": 292,
+        "images": 0,
+        "overflow": true,
+        "note": "CSS文字放大200%的压力观察；非浏览器菜单文字缩放，嵌套元素可能累乘。"
+      },
+      {
+        "mode": "fallback",
+        "viewport": 390,
+        "documentWidth": 390,
+        "bodyText": 292,
+        "images": 0,
+        "overflow": false,
+        "note": "强制系统sans-serif回退；未证明逐字字形来源。"
+      }
+    ],
+    "manual": "MANUAL_PENDING",
+    "probeStatus": "fail"
+  },
+  "unknown": [
+    "真实手机与读屏体验未测，MANUAL_PENDING。",
+    "实际字形来源未逐字诊断。",
+    "未运行真实服务或外发；演示内容不构成真实兼容、招生或服务结果。"
+  ],
+  "recommendationsOnly": true,
+  "sourceModified": false,
+  "completedAt": "2026-10-29T10:49:45.673Z"
+}

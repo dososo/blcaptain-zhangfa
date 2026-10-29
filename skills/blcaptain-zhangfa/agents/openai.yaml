@@ -1,0 +1,4 @@
+interface:
+  display_name: "章法 · 中文网页设计"
+  short_description: "用真实中文内容组织页面表达，并以浏览器证据审阅排版、布局和主要任务"
+  default_prompt: "使用 $blcaptain-zhangfa 设计或审阅这个中文网页，保留真实内容与既有功能，给出可验证的结果。"

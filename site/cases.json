@@ -1,0 +1,1001 @@
+{
+  "version": "0.1.0",
+  "cases": [
+    {
+      "id": "01",
+      "title": "中文网页校验工具官网",
+      "category": "工具官网",
+      "mode": "新建",
+      "status": "generated",
+      "brief": "为演示工具“字里”制作中文官网，让安装与一条可操作的中文检测结果成为主体。",
+      "task": "找到安装方式，复制完整命令，理解标题孤字检测并跳到修复说明。",
+      "kind": "真实智能体试验",
+      "arms": [
+        {
+          "id": "control",
+          "label": "甲：不加载章法与分寸",
+          "url": "./runs/01/control/index.html",
+          "status": "generated",
+          "technicalStatus": "fail",
+          "protocolNotes": []
+        },
+        {
+          "id": "measure",
+          "label": "乙：只加载分寸",
+          "url": "./runs/01/measure/index.html",
+          "status": "generated",
+          "technicalStatus": "pass",
+          "protocolNotes": []
+        },
+        {
+          "id": "full",
+          "label": "丙：章法结合分寸",
+          "url": "./runs/01/full/index.html",
+          "status": "generated",
+          "technicalStatus": "pass",
+          "protocolNotes": []
+        }
+      ],
+      "evidenceUrl": "./records/01.json"
+    },
+    {
+      "id": "02",
+      "title": "本地笔记工具的离线与同步边界",
+      "category": "笔记工具",
+      "mode": "新建",
+      "status": "generated",
+      "brief": "为“留白笔记”演示产品说明离线编辑与可选同步的边界。",
+      "task": "打开长文件名笔记；切换离线状态；模拟同步失败后恢复，确认正文仍保留。",
+      "kind": "真实智能体试验",
+      "arms": [
+        {
+          "id": "control",
+          "label": "甲：不加载章法与分寸",
+          "url": "./runs/02/control/index.html",
+          "status": "generated",
+          "technicalStatus": "fail",
+          "protocolNotes": []
+        },
+        {
+          "id": "measure",
+          "label": "乙：只加载分寸",
+          "url": "./runs/02/measure/index.html",
+          "status": "generated",
+          "technicalStatus": "pass",
+          "protocolNotes": []
+        },
+        {
+          "id": "full",
+          "label": "丙：章法结合分寸",
+          "url": "./runs/02/full/index.html",
+          "status": "generated",
+          "protocolNotes": [
+            "初版完整写出后才运行标题行探针，未执行全页铺开前的片段试排。",
+            "每题只保留一个实际方向和理由，未先保留三个可比较首屏方向。",
+            "03、06、12题超出一次首轮修复预算；已保留失败文件、报告和逐轮原因，不计公平胜率。",
+            "初次文字放大使用百分比叠加探针，不能当作准确200%证据；后续另用实际字号逐元素乘2的压力测试，保留两份记录。",
+            "同会话自审，没有独立人类或真机验收；不宣称完整技能流程通过，不计效果胜率。"
+          ],
+          "technicalStatus": "pass"
+        }
+      ],
+      "evidenceUrl": "./records/02.json"
+    },
+    {
+      "id": "03",
+      "title": "音频转写演示工作台",
+      "category": "转写工具",
+      "mode": "新建",
+      "status": "generated",
+      "brief": "制作“听记”演示工作台，以选择文件、查看说话人与时间码解释工作流。",
+      "task": "选择不支持文件查看错误，再使用演示音频查看第二段转写。",
+      "kind": "真实智能体试验",
+      "arms": [
+        {
+          "id": "control",
+          "label": "甲：不加载章法与分寸",
+          "url": "./runs/03/control/index.html",
+          "status": "generated",
+          "technicalStatus": "fail",
+          "protocolNotes": []
+        },
+        {
+          "id": "measure",
+          "label": "乙：只加载分寸",
+          "url": "./runs/03/measure/index.html",
+          "status": "generated",
+          "technicalStatus": "pass",
+          "protocolNotes": []
+        },
+        {
+          "id": "full",
+          "label": "丙：章法结合分寸",
+          "url": "./runs/03/full/index.html",
+          "status": "generated",
+          "protocolNotes": [
+            "初版完整写出后才运行标题行探针，未执行全页铺开前的片段试排。",
+            "每题只保留一个实际方向和理由，未先保留三个可比较首屏方向。",
+            "03、06、12题超出一次首轮修复预算；已保留失败文件、报告和逐轮原因，不计公平胜率。",
+            "初次文字放大使用百分比叠加探针，不能当作准确200%证据；后续另用实际字号逐元素乘2的压力测试，保留两份记录。",
+            "同会话自审，没有独立人类或真机验收；不宣称完整技能流程通过，不计效果胜率。"
+          ],
+          "technicalStatus": "pass"
+        }
+      ],
+      "evidenceUrl": "./records/03.json"
+    },
+    {
+      "id": "04",
+      "title": "开源组件发布说明审阅",
+      "category": "发布页",
+      "mode": "只审阅",
+      "status": "generated",
+      "brief": "只审阅同一冻结发布页，报告版本、兼容信息和迁移路径的可复核问题。",
+      "task": "定位目标版本及迁移说明，输出含元素、复现宽度、影响与建议的审阅报告。",
+      "kind": "真实智能体试验",
+      "arms": [
+        {
+          "id": "control",
+          "label": "甲：不加载章法与分寸",
+          "url": "./runs/04/control/index.html",
+          "status": "generated",
+          "technicalStatus": "not_run",
+          "protocolNotes": []
+        },
+        {
+          "id": "measure",
+          "label": "乙：只加载分寸",
+          "url": "./runs/04/measure/index.html",
+          "status": "generated",
+          "technicalStatus": "not_run",
+          "protocolNotes": []
+        },
+        {
+          "id": "full",
+          "label": "丙：章法结合分寸",
+          "url": "./runs/04/full/index.html",
+          "status": "generated",
+          "protocolNotes": [
+            "初版完整写出后才运行标题行探针，未执行全页铺开前的片段试排。",
+            "每题只保留一个实际方向和理由，未先保留三个可比较首屏方向。",
+            "03、06、12题超出一次首轮修复预算；已保留失败文件、报告和逐轮原因，不计公平胜率。",
+            "初次文字放大使用百分比叠加探针，不能当作准确200%证据；后续另用实际字号逐元素乘2的压力测试，保留两份记录。",
+            "同会话自审，没有独立人类或真机验收；不宣称完整技能流程通过，不计效果胜率。"
+          ],
+          "technicalStatus": "not_run"
+        }
+      ],
+      "evidenceUrl": "./records/04.json"
+    },
+    {
+      "id": "05",
+      "title": "独立书店的周六活动",
+      "category": "文化空间",
+      "mode": "新建",
+      "status": "generated",
+      "brief": "为“纸岸书店”制作书与活动共同主导的页面，帮助读者找到周六晚间活动。",
+      "task": "从日程找到2026年11月7日周六活动，查看报名条件与地点。",
+      "kind": "真实智能体试验",
+      "arms": [
+        {
+          "id": "control",
+          "label": "甲：不加载章法与分寸",
+          "url": "./runs/05/control/index.html",
+          "status": "generated",
+          "technicalStatus": "fail",
+          "protocolNotes": []
+        },
+        {
+          "id": "measure",
+          "label": "乙：只加载分寸",
+          "url": "./runs/05/measure/index.html",
+          "status": "generated",
+          "technicalStatus": "pass",
+          "protocolNotes": []
+        },
+        {
+          "id": "full",
+          "label": "丙：章法结合分寸",
+          "url": "./runs/05/full/index.html",
+          "status": "generated",
+          "technicalStatus": "pass",
+          "protocolNotes": []
+        }
+      ],
+      "evidenceUrl": "./records/05.json"
+    },
+    {
+      "id": "06",
+      "title": "纪录片线上档案",
+      "category": "影像档案",
+      "mode": "新建",
+      "status": "generated",
+      "brief": "制作演示纪录片档案，以片目、章节和制作资料建立可浏览结构。",
+      "task": "找到《河岸的第三盏灯》并查看播放状态、制作信息和第二章节。",
+      "kind": "真实智能体试验",
+      "arms": [
+        {
+          "id": "control",
+          "label": "甲：不加载章法与分寸",
+          "url": "./runs/06/control/index.html",
+          "status": "generated",
+          "technicalStatus": "fail",
+          "protocolNotes": []
+        },
+        {
+          "id": "measure",
+          "label": "乙：只加载分寸",
+          "url": "./runs/06/measure/index.html",
+          "status": "generated",
+          "technicalStatus": "pass",
+          "protocolNotes": []
+        },
+        {
+          "id": "full",
+          "label": "丙：章法结合分寸",
+          "url": "./runs/06/full/index.html",
+          "status": "generated",
+          "protocolNotes": [
+            "初版完整写出后才运行标题行探针，未执行全页铺开前的片段试排。",
+            "每题只保留一个实际方向和理由，未先保留三个可比较首屏方向。",
+            "03、06、12题超出一次首轮修复预算；已保留失败文件、报告和逐轮原因，不计公平胜率。",
+            "初次文字放大使用百分比叠加探针，不能当作准确200%证据；后续另用实际字号逐元素乘2的压力测试，保留两份记录。",
+            "同会话自审，没有独立人类或真机验收；不宣称完整技能流程通过，不计效果胜率。"
+          ],
+          "technicalStatus": "pass"
+        }
+      ],
+      "evidenceUrl": "./records/06.json"
+    },
+    {
+      "id": "07",
+      "title": "城市摄影师作品集",
+      "category": "摄影作品集",
+      "mode": "新建",
+      "status": "generated",
+      "brief": "为演示摄影师“沈行”制作按城市主题浏览的作品集，明确素材边界。",
+      "task": "筛选“夜行”，打开长地点名作品并查看拍摄注释。",
+      "kind": "真实智能体试验",
+      "arms": [
+        {
+          "id": "control",
+          "label": "甲：不加载章法与分寸",
+          "url": "./runs/07/control/index.html",
+          "status": "generated",
+          "technicalStatus": "fail",
+          "protocolNotes": []
+        },
+        {
+          "id": "measure",
+          "label": "乙：只加载分寸",
+          "url": "./runs/07/measure/index.html",
+          "status": "generated",
+          "technicalStatus": "pass",
+          "protocolNotes": []
+        },
+        {
+          "id": "full",
+          "label": "丙：章法结合分寸",
+          "url": "./runs/07/full/index.html",
+          "status": "generated",
+          "protocolNotes": [
+            "初版完整写出后才运行标题行探针，未执行全页铺开前的片段试排。",
+            "每题只保留一个实际方向和理由，未先保留三个可比较首屏方向。",
+            "03、06、12题超出一次首轮修复预算；已保留失败文件、报告和逐轮原因，不计公平胜率。",
+            "初次文字放大使用百分比叠加探针，不能当作准确200%证据；后续另用实际字号逐元素乘2的压力测试，保留两份记录。",
+            "同会话自审，没有独立人类或真机验收；不宣称完整技能流程通过，不计效果胜率。"
+          ],
+          "technicalStatus": "pass"
+        }
+      ],
+      "evidenceUrl": "./records/07.json"
+    },
+    {
+      "id": "08",
+      "title": "建筑工作室项目页",
+      "category": "建筑项目",
+      "mode": "新建",
+      "status": "generated",
+      "brief": "为“余地工作室”虚构项目说明地点、空间尺度与设计过程。",
+      "task": "找到项目关键参数，阅读无障碍路径的图纸替代描述。",
+      "kind": "真实智能体试验",
+      "arms": [
+        {
+          "id": "control",
+          "label": "甲：不加载章法与分寸",
+          "url": "./runs/08/control/index.html",
+          "status": "generated",
+          "technicalStatus": "fail",
+          "protocolNotes": []
+        },
+        {
+          "id": "measure",
+          "label": "乙：只加载分寸",
+          "url": "./runs/08/measure/index.html",
+          "status": "generated",
+          "technicalStatus": "pass",
+          "protocolNotes": []
+        },
+        {
+          "id": "full",
+          "label": "丙：章法结合分寸",
+          "url": "./runs/08/full/index.html",
+          "status": "generated",
+          "protocolNotes": [
+            "初版完整写出后才运行标题行探针，未执行全页铺开前的片段试排。",
+            "每题只保留一个实际方向和理由，未先保留三个可比较首屏方向。",
+            "03、06、12题超出一次首轮修复预算；已保留失败文件、报告和逐轮原因，不计公平胜率。",
+            "初次文字放大使用百分比叠加探针，不能当作准确200%证据；后续另用实际字号逐元素乘2的压力测试，保留两份记录。",
+            "同会话自审，没有独立人类或真机验收；不宣称完整技能流程通过，不计效果胜率。"
+          ],
+          "technicalStatus": "pass"
+        }
+      ],
+      "evidenceUrl": "./records/08.json"
+    },
+    {
+      "id": "09",
+      "title": "阅读室入口观察研究解读",
+      "category": "中文长文",
+      "mode": "新建",
+      "status": "generated",
+      "brief": "排版一篇完整中文方法解读长文，以合成记录说明公共空间入口观察；本冻结版约1800字。",
+      "task": "连续阅读全文，从目录进入证据段，打开注1后返回正文引用位置。",
+      "kind": "真实智能体试验",
+      "arms": [
+        {
+          "id": "control",
+          "label": "甲：不加载章法与分寸",
+          "url": "./runs/09/control/index.html",
+          "status": "generated",
+          "technicalStatus": "fail",
+          "protocolNotes": []
+        },
+        {
+          "id": "measure",
+          "label": "乙：只加载分寸",
+          "url": "./runs/09/measure/index.html",
+          "status": "generated",
+          "technicalStatus": "pass",
+          "protocolNotes": []
+        },
+        {
+          "id": "full",
+          "label": "丙：章法结合分寸",
+          "url": "./runs/09/full/index.html",
+          "status": "generated",
+          "technicalStatus": "pass",
+          "protocolNotes": []
+        }
+      ],
+      "evidenceUrl": "./records/09.json"
+    },
+    {
+      "id": "10",
+      "title": "双语安装排错文档审阅",
+      "category": "技术文档",
+      "mode": "只审阅",
+      "status": "generated",
+      "brief": "只审阅同一双语安装排错页，检查中文说明、命令和链接的关系。",
+      "task": "定位E_DEMO_CONFIG错误，找到完整检查路径与修复命令。",
+      "kind": "真实智能体试验",
+      "arms": [
+        {
+          "id": "control",
+          "label": "甲：不加载章法与分寸",
+          "url": "./runs/10/control/index.html",
+          "status": "generated",
+          "technicalStatus": "not_run",
+          "protocolNotes": []
+        },
+        {
+          "id": "measure",
+          "label": "乙：只加载分寸",
+          "url": "./runs/10/measure/index.html",
+          "status": "generated",
+          "technicalStatus": "not_run",
+          "protocolNotes": []
+        },
+        {
+          "id": "full",
+          "label": "丙：章法结合分寸",
+          "url": "./runs/10/full/index.html",
+          "status": "generated",
+          "protocolNotes": [
+            "初版完整写出后才运行标题行探针，未执行全页铺开前的片段试排。",
+            "每题只保留一个实际方向和理由，未先保留三个可比较首屏方向。",
+            "03、06、12题超出一次首轮修复预算；已保留失败文件、报告和逐轮原因，不计公平胜率。",
+            "初次文字放大使用百分比叠加探针，不能当作准确200%证据；后续另用实际字号逐元素乘2的压力测试，保留两份记录。",
+            "同会话自审，没有独立人类或真机验收；不宣称完整技能流程通过，不计效果胜率。"
+          ],
+          "technicalStatus": "not_run"
+        }
+      ],
+      "evidenceUrl": "./records/10.json"
+    },
+    {
+      "id": "11",
+      "title": "公共阅读空间数据解读",
+      "category": "数据新闻",
+      "mode": "新建",
+      "status": "generated",
+      "brief": "用小型合成数据制作可读图表与结论，明确日期、单位和分母。",
+      "task": "从图表查到第三季度夜间开放时长，打开同一数据表并理解比较边界。",
+      "kind": "真实智能体试验",
+      "arms": [
+        {
+          "id": "control",
+          "label": "甲：不加载章法与分寸",
+          "url": "./runs/11/control/index.html",
+          "status": "generated",
+          "technicalStatus": "fail",
+          "protocolNotes": []
+        },
+        {
+          "id": "measure",
+          "label": "乙：只加载分寸",
+          "url": "./runs/11/measure/index.html",
+          "status": "generated",
+          "technicalStatus": "pass",
+          "protocolNotes": []
+        },
+        {
+          "id": "full",
+          "label": "丙：章法结合分寸",
+          "url": "./runs/11/full/index.html",
+          "status": "generated",
+          "protocolNotes": [
+            "初版完整写出后才运行标题行探针，未执行全页铺开前的片段试排。",
+            "每题只保留一个实际方向和理由，未先保留三个可比较首屏方向。",
+            "03、06、12题超出一次首轮修复预算；已保留失败文件、报告和逐轮原因，不计公平胜率。",
+            "初次文字放大使用百分比叠加探针，不能当作准确200%证据；后续另用实际字号逐元素乘2的压力测试，保留两份记录。",
+            "同会话自审，没有独立人类或真机验收；不宣称完整技能流程通过，不计效果胜率。"
+          ],
+          "technicalStatus": "pass"
+        }
+      ],
+      "evidenceUrl": "./records/11.json"
+    },
+    {
+      "id": "12",
+      "title": "繁體地區閱讀文章",
+      "category": "繁体文章",
+      "mode": "新建",
+      "status": "generated",
+      "brief": "製作繁體中文閱讀頁，保留臺灣地區用語、引號與日期慣例。",
+      "task": "閱讀文章並找到活動日期與報名邊界，檢查地區字形及標點。",
+      "kind": "真实智能体试验",
+      "arms": [
+        {
+          "id": "control",
+          "label": "甲：不加载章法与分寸",
+          "url": "./runs/12/control/index.html",
+          "status": "generated",
+          "technicalStatus": "fail",
+          "protocolNotes": []
+        },
+        {
+          "id": "measure",
+          "label": "乙：只加载分寸",
+          "url": "./runs/12/measure/index.html",
+          "status": "generated",
+          "technicalStatus": "pass",
+          "protocolNotes": []
+        },
+        {
+          "id": "full",
+          "label": "丙：章法结合分寸",
+          "url": "./runs/12/full/index.html",
+          "status": "generated",
+          "protocolNotes": [
+            "初版完整写出后才运行标题行探针，未执行全页铺开前的片段试排。",
+            "每题只保留一个实际方向和理由，未先保留三个可比较首屏方向。",
+            "03、06、12题超出一次首轮修复预算；已保留失败文件、报告和逐轮原因，不计公平胜率。",
+            "初次文字放大使用百分比叠加探针，不能当作准确200%证据；后续另用实际字号逐元素乘2的压力测试，保留两份记录。",
+            "同会话自审，没有独立人类或真机验收；不宣称完整技能流程通过，不计效果胜率。"
+          ],
+          "technicalStatus": "pass"
+        }
+      ],
+      "evidenceUrl": "./records/12.json"
+    },
+    {
+      "id": "13",
+      "title": "轻量经营后台异常订单改版",
+      "category": "经营后台",
+      "mode": "受限改版",
+      "status": "generated",
+      "brief": "在同一已可运行的旧后台基础上改版，保留订单字段、筛选、详情、空状态和错误恢复。",
+      "task": "筛选异常订单，搜索“海桥”，打开DD-20261029-001详情；模拟失败后重试并保持筛选。",
+      "kind": "真实智能体试验",
+      "arms": [
+        {
+          "id": "control",
+          "label": "甲：不加载章法与分寸",
+          "url": "./runs/13/control/index.html",
+          "status": "generated",
+          "technicalStatus": "fail",
+          "protocolNotes": []
+        },
+        {
+          "id": "measure",
+          "label": "乙：只加载分寸",
+          "url": "./runs/13/measure/index.html",
+          "status": "generated",
+          "technicalStatus": "pass",
+          "protocolNotes": []
+        },
+        {
+          "id": "full",
+          "label": "丙：章法结合分寸",
+          "url": "./runs/13/full/index.html",
+          "status": "generated",
+          "technicalStatus": "pass",
+          "protocolNotes": []
+        }
+      ],
+      "evidenceUrl": "./records/13.json"
+    },
+    {
+      "id": "14",
+      "title": "项目列表与归档恢复改版",
+      "category": "项目管理",
+      "mode": "受限改版",
+      "status": "generated",
+      "brief": "改版同一项目管理输入，保留筛选负责人、归档恢复与撤销的业务语义。",
+      "task": "筛选负责人周禾，找到已归档项目，恢复后撤销恢复。",
+      "kind": "真实智能体试验",
+      "arms": [
+        {
+          "id": "control",
+          "label": "甲：不加载章法与分寸",
+          "url": "./runs/14/control/index.html",
+          "status": "generated",
+          "technicalStatus": "fail",
+          "protocolNotes": []
+        },
+        {
+          "id": "measure",
+          "label": "乙：只加载分寸",
+          "url": "./runs/14/measure/index.html",
+          "status": "generated",
+          "technicalStatus": "pass",
+          "protocolNotes": []
+        },
+        {
+          "id": "full",
+          "label": "丙：章法结合分寸",
+          "url": "./runs/14/full/index.html",
+          "status": "generated",
+          "protocolNotes": [
+            "初版完整写出后才运行标题行探针，未执行全页铺开前的片段试排。",
+            "每题只保留一个实际方向和理由，未先保留三个可比较首屏方向。",
+            "03、06、12题超出一次首轮修复预算；已保留失败文件、报告和逐轮原因，不计公平胜率。",
+            "初次文字放大使用百分比叠加探针，不能当作准确200%证据；后续另用实际字号逐元素乘2的压力测试，保留两份记录。",
+            "同会话自审，没有独立人类或真机验收；不宣称完整技能流程通过，不计效果胜率。"
+          ],
+          "technicalStatus": "pass"
+        }
+      ],
+      "evidenceUrl": "./records/14.json"
+    },
+    {
+      "id": "15",
+      "title": "期间收支表改版",
+      "category": "财务表格",
+      "mode": "受限改版",
+      "status": "generated",
+      "brief": "对同一财务表做受限改版，以完整表格支持两个期间比较。",
+      "task": "比较2026年8月与9月收入、支出及结余，说明符号所代表的变化。",
+      "kind": "真实智能体试验",
+      "arms": [
+        {
+          "id": "control",
+          "label": "甲：不加载章法与分寸",
+          "url": "./runs/15/control/index.html",
+          "status": "generated",
+          "technicalStatus": "fail",
+          "protocolNotes": []
+        },
+        {
+          "id": "measure",
+          "label": "乙：只加载分寸",
+          "url": "./runs/15/measure/index.html",
+          "status": "generated",
+          "technicalStatus": "pass",
+          "protocolNotes": []
+        },
+        {
+          "id": "full",
+          "label": "丙：章法结合分寸",
+          "url": "./runs/15/full/index.html",
+          "status": "generated",
+          "protocolNotes": [
+            "初版完整写出后才运行标题行探针，未执行全页铺开前的片段试排。",
+            "每题只保留一个实际方向和理由，未先保留三个可比较首屏方向。",
+            "03、06、12题超出一次首轮修复预算；已保留失败文件、报告和逐轮原因，不计公平胜率。",
+            "初次文字放大使用百分比叠加探针，不能当作准确200%证据；后续另用实际字号逐元素乘2的压力测试，保留两份记录。",
+            "同会话自审，没有独立人类或真机验收；不宣称完整技能流程通过，不计效果胜率。"
+          ],
+          "technicalStatus": "pass"
+        }
+      ],
+      "evidenceUrl": "./records/15.json"
+    },
+    {
+      "id": "16",
+      "title": "支持工作台回复流程改版",
+      "category": "客户支持",
+      "mode": "受限改版",
+      "status": "generated",
+      "brief": "对合成工单工作台做受限改版，保留搜索、选中、草稿与失败恢复。",
+      "task": "搜索未处理工单TK-002，填写演示回复，模拟失败后重试。",
+      "kind": "真实智能体试验",
+      "arms": [
+        {
+          "id": "control",
+          "label": "甲：不加载章法与分寸",
+          "url": "./runs/16/control/index.html",
+          "status": "generated",
+          "technicalStatus": "fail",
+          "protocolNotes": []
+        },
+        {
+          "id": "measure",
+          "label": "乙：只加载分寸",
+          "url": "./runs/16/measure/index.html",
+          "status": "generated",
+          "technicalStatus": "fail",
+          "protocolNotes": []
+        },
+        {
+          "id": "full",
+          "label": "丙：章法结合分寸",
+          "url": "./runs/16/full/index.html",
+          "status": "generated",
+          "protocolNotes": [
+            "初版完整写出后才运行标题行探针，未执行全页铺开前的片段试排。",
+            "每题只保留一个实际方向和理由，未先保留三个可比较首屏方向。",
+            "03、06、12题超出一次首轮修复预算；已保留失败文件、报告和逐轮原因，不计公平胜率。",
+            "初次文字放大使用百分比叠加探针，不能当作准确200%证据；后续另用实际字号逐元素乘2的压力测试，保留两份记录。",
+            "同会话自审，没有独立人类或真机验收；不宣称完整技能流程通过，不计效果胜率。"
+          ],
+          "technicalStatus": "fail"
+        }
+      ],
+      "evidenceUrl": "./records/16.json"
+    },
+    {
+      "id": "17",
+      "title": "城市活动本地模拟预约",
+      "category": "活动预约",
+      "mode": "新建",
+      "status": "generated",
+      "brief": "制作“沿河慢走”城市活动预约，以时间、地点和条件支持决策。",
+      "task": "选择11月7日14:00场与普通票，经历必填错误后完成本地模拟报名。",
+      "kind": "真实智能体试验",
+      "arms": [
+        {
+          "id": "control",
+          "label": "甲：不加载章法与分寸",
+          "url": "./runs/17/control/index.html",
+          "status": "generated",
+          "technicalStatus": "fail",
+          "protocolNotes": []
+        },
+        {
+          "id": "measure",
+          "label": "乙：只加载分寸",
+          "url": "./runs/17/measure/index.html",
+          "status": "generated",
+          "technicalStatus": "pass",
+          "protocolNotes": []
+        },
+        {
+          "id": "full",
+          "label": "丙：章法结合分寸",
+          "url": "./runs/17/full/index.html",
+          "status": "generated",
+          "technicalStatus": "pass",
+          "protocolNotes": []
+        }
+      ],
+      "evidenceUrl": "./records/17.json"
+    },
+    {
+      "id": "18",
+      "title": "课程适配与先修条件审阅",
+      "category": "课程报名",
+      "mode": "只审阅",
+      "status": "generated",
+      "brief": "只审阅演示课程页，检查学习路径、先修条件和申请状态。",
+      "task": "判断课程是否适合初学者，找到先修条件和申请边界，输出有证据的审阅。",
+      "kind": "真实智能体试验",
+      "arms": [
+        {
+          "id": "control",
+          "label": "甲：不加载章法与分寸",
+          "url": "./runs/18/control/index.html",
+          "status": "generated",
+          "technicalStatus": "not_run",
+          "protocolNotes": []
+        },
+        {
+          "id": "measure",
+          "label": "乙：只加载分寸",
+          "url": "./runs/18/measure/index.html",
+          "status": "generated",
+          "technicalStatus": "not_run",
+          "protocolNotes": []
+        },
+        {
+          "id": "full",
+          "label": "丙：章法结合分寸",
+          "url": "./runs/18/full/index.html",
+          "status": "generated",
+          "protocolNotes": [
+            "初版完整写出后才运行标题行探针，未执行全页铺开前的片段试排。",
+            "每题只保留一个实际方向和理由，未先保留三个可比较首屏方向。",
+            "03、06、12题超出一次首轮修复预算；已保留失败文件、报告和逐轮原因，不计公平胜率。",
+            "初次文字放大使用百分比叠加探针，不能当作准确200%证据；后续另用实际字号逐元素乘2的压力测试，保留两份记录。",
+            "同会话自审，没有独立人类或真机验收；不宣称完整技能流程通过，不计效果胜率。"
+          ],
+          "technicalStatus": "not_run"
+        }
+      ],
+      "evidenceUrl": "./records/18.json"
+    },
+    {
+      "id": "19",
+      "title": "公共服务材料准备清单",
+      "category": "办事指南",
+      "mode": "新建",
+      "status": "generated",
+      "brief": "制作合成公共阅读空间使用申请准备指南，明确不是政务页面。",
+      "task": "查看所需材料，勾选准备清单，再复位。",
+      "kind": "真实智能体试验",
+      "arms": [
+        {
+          "id": "control",
+          "label": "甲：不加载章法与分寸",
+          "url": "./runs/19/control/index.html",
+          "status": "generated",
+          "technicalStatus": "fail",
+          "protocolNotes": []
+        },
+        {
+          "id": "measure",
+          "label": "乙：只加载分寸",
+          "url": "./runs/19/measure/index.html",
+          "status": "generated",
+          "technicalStatus": "pass",
+          "protocolNotes": []
+        },
+        {
+          "id": "full",
+          "label": "丙：章法结合分寸",
+          "url": "./runs/19/full/index.html",
+          "status": "generated",
+          "protocolNotes": [
+            "初版完整写出后才运行标题行探针，未执行全页铺开前的片段试排。",
+            "每题只保留一个实际方向和理由，未先保留三个可比较首屏方向。",
+            "03、06、12题超出一次首轮修复预算；已保留失败文件、报告和逐轮原因，不计公平胜率。",
+            "初次文字放大使用百分比叠加探针，不能当作准确200%证据；后续另用实际字号逐元素乘2的压力测试，保留两份记录。",
+            "同会话自审，没有独立人类或真机验收；不宣称完整技能流程通过，不计效果胜率。"
+          ],
+          "technicalStatus": "pass"
+        }
+      ],
+      "evidenceUrl": "./records/19.json"
+    },
+    {
+      "id": "20",
+      "title": "小型旅店房型比较",
+      "category": "旅店预订",
+      "mode": "新建",
+      "status": "generated",
+      "brief": "为“河边小住”演示旅店制作房型比较，保留人数、设施和取消条款。",
+      "task": "选择2人入住，比较两种房型的价格与取消条件，查看本地选择摘要。",
+      "kind": "真实智能体试验",
+      "arms": [
+        {
+          "id": "control",
+          "label": "甲：不加载章法与分寸",
+          "url": "./runs/20/control/index.html",
+          "status": "generated",
+          "technicalStatus": "fail",
+          "protocolNotes": []
+        },
+        {
+          "id": "measure",
+          "label": "乙：只加载分寸",
+          "url": "./runs/20/measure/index.html",
+          "status": "generated",
+          "technicalStatus": "pass",
+          "protocolNotes": []
+        },
+        {
+          "id": "full",
+          "label": "丙：章法结合分寸",
+          "url": "./runs/20/full/index.html",
+          "status": "generated",
+          "protocolNotes": [
+            "初版完整写出后才运行标题行探针，未执行全页铺开前的片段试排。",
+            "每题只保留一个实际方向和理由，未先保留三个可比较首屏方向。",
+            "03、06、12题超出一次首轮修复预算；已保留失败文件、报告和逐轮原因，不计公平胜率。",
+            "初次文字放大使用百分比叠加探针，不能当作准确200%证据；后续另用实际字号逐元素乘2的压力测试，保留两份记录。",
+            "同会话自审，没有独立人类或真机验收；不宣称完整技能流程通过，不计效果胜率。"
+          ],
+          "technicalStatus": "pass"
+        }
+      ],
+      "evidenceUrl": "./records/20.json"
+    },
+    {
+      "id": "21",
+      "title": "三款桌面设备比较",
+      "category": "商品比较",
+      "mode": "新建",
+      "status": "generated",
+      "brief": "以演示规格和取舍制作三款USB-C桌面扩展坞比较，帮助用户按需求选择。",
+      "task": "比较三款设备，为需要双显示输出和有线网络的用户选择合适型号。",
+      "kind": "真实智能体试验",
+      "arms": [
+        {
+          "id": "control",
+          "label": "甲：不加载章法与分寸",
+          "url": "./runs/21/control/index.html",
+          "status": "generated",
+          "technicalStatus": "fail",
+          "protocolNotes": []
+        },
+        {
+          "id": "measure",
+          "label": "乙：只加载分寸",
+          "url": "./runs/21/measure/index.html",
+          "status": "generated",
+          "technicalStatus": "pass",
+          "protocolNotes": []
+        },
+        {
+          "id": "full",
+          "label": "丙：章法结合分寸",
+          "url": "./runs/21/full/index.html",
+          "status": "generated",
+          "technicalStatus": "pass",
+          "protocolNotes": []
+        }
+      ],
+      "evidenceUrl": "./records/21.json"
+    },
+    {
+      "id": "22",
+      "title": "餐厅菜单与过敏原",
+      "category": "餐厅菜单",
+      "mode": "新建",
+      "status": "generated",
+      "brief": "为“巷里食堂”演示菜单支持按类别查看、过敏原判断与本地菜篮。",
+      "task": "找到不含花生标注的热食，将一份番茄烩饭加入本地菜篮；辨认缺货菜品。",
+      "kind": "真实智能体试验",
+      "arms": [
+        {
+          "id": "control",
+          "label": "甲：不加载章法与分寸",
+          "url": "./runs/22/control/index.html",
+          "status": "generated",
+          "technicalStatus": "fail",
+          "protocolNotes": []
+        },
+        {
+          "id": "measure",
+          "label": "乙：只加载分寸",
+          "url": "./runs/22/measure/index.html",
+          "status": "generated",
+          "technicalStatus": "pass",
+          "protocolNotes": []
+        },
+        {
+          "id": "full",
+          "label": "丙：章法结合分寸",
+          "url": "./runs/22/full/index.html",
+          "status": "generated",
+          "protocolNotes": [
+            "初版完整写出后才运行标题行探针，未执行全页铺开前的片段试排。",
+            "每题只保留一个实际方向和理由，未先保留三个可比较首屏方向。",
+            "03、06、12题超出一次首轮修复预算；已保留失败文件、报告和逐轮原因，不计公平胜率。",
+            "初次文字放大使用百分比叠加探针，不能当作准确200%证据；后续另用实际字号逐元素乘2的压力测试，保留两份记录。",
+            "同会话自审，没有独立人类或真机验收；不宣称完整技能流程通过，不计效果胜率。"
+          ],
+          "technicalStatus": "pass"
+        }
+      ],
+      "evidenceUrl": "./records/22.json"
+    },
+    {
+      "id": "23",
+      "title": "文博展览的作品细读",
+      "category": "文博展览",
+      "mode": "新建",
+      "status": "generated",
+      "brief": "以原创合成作品演示展览细读，保留来源、年代、尺寸与授权边界。",
+      "task": "阅读作品资料，打开细节示意并退出，找到作品来源说明。",
+      "kind": "真实智能体试验",
+      "arms": [
+        {
+          "id": "control",
+          "label": "甲：不加载章法与分寸",
+          "url": "./runs/23/control/index.html",
+          "status": "generated",
+          "technicalStatus": "fail",
+          "protocolNotes": []
+        },
+        {
+          "id": "measure",
+          "label": "乙：只加载分寸",
+          "url": "./runs/23/measure/index.html",
+          "status": "generated",
+          "technicalStatus": "pass",
+          "protocolNotes": []
+        },
+        {
+          "id": "full",
+          "label": "丙：章法结合分寸",
+          "url": "./runs/23/full/index.html",
+          "status": "generated",
+          "protocolNotes": [
+            "初版完整写出后才运行标题行探针，未执行全页铺开前的片段试排。",
+            "每题只保留一个实际方向和理由，未先保留三个可比较首屏方向。",
+            "03、06、12题超出一次首轮修复预算；已保留失败文件、报告和逐轮原因，不计公平胜率。",
+            "初次文字放大使用百分比叠加探针，不能当作准确200%证据；后续另用实际字号逐元素乘2的压力测试，保留两份记录。",
+            "同会话自审，没有独立人类或真机验收；不宣称完整技能流程通过，不计效果胜率。"
+          ],
+          "technicalStatus": "pass"
+        }
+      ],
+      "evidenceUrl": "./records/23.json"
+    },
+    {
+      "id": "24",
+      "title": "无图咨询服务页审阅",
+      "category": "咨询服务",
+      "mode": "只审阅",
+      "status": "generated",
+      "brief": "只审阅同一无图咨询页，检查范围、费用口径与本地表单状态。",
+      "task": "判断服务是否包含开发，找到交付内容及费用边界，检查本地咨询反馈。",
+      "kind": "真实智能体试验",
+      "arms": [
+        {
+          "id": "control",
+          "label": "甲：不加载章法与分寸",
+          "url": "./runs/24/control/index.html",
+          "status": "generated",
+          "technicalStatus": "not_run",
+          "protocolNotes": []
+        },
+        {
+          "id": "measure",
+          "label": "乙：只加载分寸",
+          "url": "./runs/24/measure/index.html",
+          "status": "generated",
+          "technicalStatus": "not_run",
+          "protocolNotes": []
+        },
+        {
+          "id": "full",
+          "label": "丙：章法结合分寸",
+          "url": "./runs/24/full/index.html",
+          "status": "generated",
+          "protocolNotes": [
+            "初版完整写出后才运行标题行探针，未执行全页铺开前的片段试排。",
+            "每题只保留一个实际方向和理由，未先保留三个可比较首屏方向。",
+            "03、06、12题超出一次首轮修复预算；已保留失败文件、报告和逐轮原因，不计公平胜率。",
+            "初次文字放大使用百分比叠加探针，不能当作准确200%证据；后续另用实际字号逐元素乘2的压力测试，保留两份记录。",
+            "同会话自审，没有独立人类或真机验收；不宣称完整技能流程通过，不计效果胜率。"
+          ],
+          "technicalStatus": "not_run"
+        }
+      ],
+      "evidenceUrl": "./records/24.json"
+    }
+  ]
+}

@@ -1,0 +1,2022 @@
+{
+  "公开说明": "生成记录脱敏副本。只移除本机绝对路径；未补写成本、模型版本或未执行的检查。截图等原始二进制证据保留本地，不在此链接中分发。",
+  "记录": {
+    "批次": "条件full其余18题探索生成",
+    "生成记录时间": "2026-10-29T10:54:21.677Z",
+    "模型完整版本": "未暴露",
+    "章法技能sha256": "b793b900c5f79ff75a08d8732d6bf9967869216d6268d691095cadb736572cb9",
+    "技能当前sha256": "b793b900c5f79ff75a08d8732d6bf9967869216d6268d691095cadb736572cb9",
+    "分寸版本": "0.1.0",
+    "浏览器": "Chrome 156.0.8078.48 / playwright-core 1.64.1",
+    "已完成数量": 18,
+    "实施页数量": 14,
+    "只审阅数量": 4,
+    "结果说明": "18题均有输出；14个实施页390/1440主路径已执行；18份最终输出分寸为0 error、0 warn。四份报告的排版通过不代表输入缺陷修复。",
+    "过程限制": [
+      "这是探索批次，不计算保留集泛化胜率。",
+      "技能含开发反馈后的新增标题观察规则，与六开发题流程不同，已记录实际SKILL.md哈希。",
+      "初版完整写出后才跑标题行探针，未满足全页铺开前先片段试排的过程顺序。",
+      "每题保存一个实际方向及理由，未先保存三个可比较首屏方向。",
+      "初次text200探针用百分比覆盖导致嵌套字号可能累乘；原始证据保留，不把它当准确200%结论。final及final-extra使用逐元素实际字号乘2，不等于浏览器菜单缩放。",
+      "有必要额外修复的03、06、12均快照修复前文件并公开记录，不能按统一单轮预算统计公平胜率。",
+      "本批次为同会话模型自审，未进行独立人类或真机验收。"
+    ],
+    "工具失败记录": [
+      {
+        "题号": "12",
+        "阶段": "measure-final",
+        "退出码": 2,
+        "原因": "本题地区引号配置缺schema_version。",
+        "证据": "evidence/generation/full-rem-12/measure-final/execution.json"
+      },
+      {
+        "题号": "12",
+        "阶段": "measure-extra首次调用",
+        "退出码": 2,
+        "原因": "输出目录尚不存在；创建明确证据目录后原命令重跑成功。"
+      }
+    ],
+    "字体": [
+      {
+        "字体": "PingFang SC",
+        "授权档位": "只能调用系统字体",
+        "自托管": false,
+        "核验日期": "2026-10-25",
+        "来源": "https://www.apple.com/legal/sla/docs/macOSTahoe.pdf"
+      },
+      {
+        "字体": "Songti SC",
+        "授权档位": "授权表未收录，系统调用",
+        "自托管": false,
+        "说明": "不承诺可商用出图或再分发；页面没有提供字体文件。"
+      }
+    ],
+    "禁止范围遵守": "未读取其他条件产物、展示站样式、方案、research或bench/ground-truth.json；未联网、未提交Git、未删除目录、未改全局。",
+    "记录": [
+      {
+        "题号": "02",
+        "模式": "新建",
+        "开始时间": "2026-10-29T10:45:37.388Z",
+        "结束时间": "2026-10-29T10:49:47.957Z",
+        "条件": "full",
+        "方向理由": "笔记正文是主对象；两栏文件架与纸面编辑建立工具身份，同步状态另占一条可持续观察的横带。",
+        "完整模型版本": "未暴露",
+        "章法技能sha256": "b793b900c5f79ff75a08d8732d6bf9967869216d6268d691095cadb736572cb9",
+        "产物": {
+          "site/runs/02/full/app.js": "c47b1d604b6f9e94650dbff134139a2b40f92cec150bf762ac5ab9de14fc2003",
+          "site/runs/02/full/index.html": "edf27185715c1c4ed5787d6ad0e645d289480e8121af80105b78082e21e3ca5a",
+          "site/runs/02/full/measure.css": "cc0ba1e4da554d44e1a1a753512a1e52e78c7901debdc5c44d97c948b2a826a4",
+          "site/runs/02/full/style.css": "e413b3d466a87c2b694ba73d4ac387cec3de55b065ff775068abc738940a812e"
+        },
+        "实际操作": [
+          {
+            "width": 390,
+            "actions": [
+              "状态0正文逐字符保留",
+              "状态1正文逐字符保留",
+              "状态2正文逐字符保留",
+              "本地模拟同步完成，未发送到服务器"
+            ],
+            "externalRequests": [],
+            "status": "pass"
+          },
+          {
+            "width": 1440,
+            "actions": [
+              "状态0正文逐字符保留",
+              "状态1正文逐字符保留",
+              "状态2正文逐字符保留",
+              "本地模拟同步完成，未发送到服务器"
+            ],
+            "externalRequests": [],
+            "status": "pass"
+          }
+        ],
+        "命令": [
+          "node 本机研究或临时路径（已隐去）",
+          "node node_modules/measure-cjk/bin/measure-cjk.js lint http://127.0.0.1:4179/runs/02/full/ --render --widths 390,1440 --format json --out evidence/generation/full-rem-02/measure-final/raw.json"
+        ],
+        "分寸": {
+          "状态": "pass",
+          "errors": 0,
+          "warns": 0,
+          "disabled": [],
+          "原始报告": "evidence/generation/full-rem-02/measure-final/raw.json",
+          "注意": "只代表已运行的中文规则。"
+        },
+        "浏览器几何": {
+          "状态": "pass",
+          "报告": "evidence/generation/full-rem-02/final/preflight/report.json",
+          "总状态": "not_run",
+          "说明": "该检查以noMeasure调用，综合状态not_run仍如实保留；中文规则以独立实际分寸原始报告为准。"
+        },
+        "压力检查": [
+          {
+            "mode": "320",
+            "viewport": 320,
+            "documentWidth": 320,
+            "bodyText": 297,
+            "images": 0,
+            "overflow": false,
+            "note": "320像素几何与完整截图"
+          },
+          {
+            "mode": "text200",
+            "viewport": 390,
+            "documentWidth": 390,
+            "bodyText": 297,
+            "images": 0,
+            "overflow": false,
+            "note": "将每个元素实际字号加倍的200%文字压力测试；未调用浏览器菜单缩放。"
+          },
+          {
+            "mode": "fallback",
+            "viewport": 390,
+            "documentWidth": 390,
+            "bodyText": 297,
+            "images": 0,
+            "overflow": false,
+            "note": "强制系统sans-serif回退；未证明逐字字形来源。"
+          }
+        ],
+        "键盘覆盖": "原生控件主任务已执行；未逐页完成全部纯键盘主路径，不宣称全面键盘通过。",
+        "缺图检查": "页面无外部img素材；中性文字占位或内联SVG，未另造缺失网络图片，不适用图片加载失败模拟。",
+        "已知问题": [
+          "人类审美、真实手机和读屏验收未执行，MANUAL_PENDING。",
+          "实际字体逐字命中与完整无障碍合规未验证。"
+        ],
+        "边界": "仅当前页面会话的演示行为；无真实服务请求。",
+        "首轮修复": [
+          {
+            "round": 1,
+            "reason": "标题探针显示“夜间灯光”“第二次修订”被跨行拆开，分组短语；未改文字。",
+            "snapshot": "before-first-fix"
+          }
+        ],
+        "额外修复": [],
+        "修复轮数": 1,
+        "证据目录": "evidence/generation/full-rem-02",
+        "人工验收": "MANUAL_PENDING",
+        "最小回滚": "仅本题site/runs/02/full内本次生成的明确文件；受限改版可从冻结输入恢复同名index.html，原始输入未修改。",
+        "输入sha256": null
+      },
+      {
+        "题号": "03",
+        "模式": "新建",
+        "开始时间": "2026-10-29T10:45:37.390Z",
+        "结束时间": "2026-10-29T10:52:38.348Z",
+        "条件": "full",
+        "方向理由": "以时间码纵轴组织访谈；上传只作为入口而非营销大图，第二段长句获得完整阅读宽度。",
+        "完整模型版本": "未暴露",
+        "章法技能sha256": "b793b900c5f79ff75a08d8732d6bf9967869216d6268d691095cadb736572cb9",
+        "产物": {
+          "site/runs/03/full/app.js": "c278ff31ea91fe1d584e7c80ea60f9cd8788833090b6d60739c0d792abf08410",
+          "site/runs/03/full/index.html": "8a98ab8ca21911632c7f8b8fb042cd86eebc56d1455a3ac3eccf122545600067",
+          "site/runs/03/full/measure.css": "cc0ba1e4da554d44e1a1a753512a1e52e78c7901debdc5c44d97c948b2a826a4",
+          "site/runs/03/full/style.css": "401da7a50664408f70d1de8a4e5199f3d5a7ba73d64978e22536399ad7311ab6"
+        },
+        "实际操作": [
+          {
+            "width": 390,
+            "actions": [
+              "错误文件提示可恢复",
+              "00:24含完整受访者正文"
+            ],
+            "externalRequests": [],
+            "status": "pass"
+          },
+          {
+            "width": 1440,
+            "actions": [
+              "错误文件提示可恢复",
+              "00:24含完整受访者正文"
+            ],
+            "externalRequests": [],
+            "status": "pass"
+          }
+        ],
+        "命令": [
+          "node 本机研究或临时路径（已隐去）",
+          "node node_modules/measure-cjk/bin/measure-cjk.js lint http://127.0.0.1:4179/runs/03/full/ --render --widths 390,1440 --format json --out evidence/generation/full-rem-03/measure-after-extra/raw.json"
+        ],
+        "分寸": {
+          "状态": "pass",
+          "errors": 0,
+          "warns": 0,
+          "disabled": [],
+          "原始报告": "evidence/generation/full-rem-03/measure-after-extra/raw.json",
+          "注意": "只代表已运行的中文规则。"
+        },
+        "浏览器几何": {
+          "状态": "pass",
+          "报告": "evidence/generation/full-rem-03/final-extra/preflight/report.json",
+          "总状态": "not_run",
+          "说明": "该检查以noMeasure调用，综合状态not_run仍如实保留；中文规则以独立实际分寸原始报告为准。"
+        },
+        "压力检查": [
+          {
+            "mode": "320",
+            "viewport": 320,
+            "documentWidth": 320,
+            "bodyText": 468,
+            "images": 0,
+            "overflow": false,
+            "note": "320像素几何与完整截图"
+          },
+          {
+            "mode": "text200",
+            "viewport": 390,
+            "documentWidth": 390,
+            "bodyText": 468,
+            "images": 0,
+            "overflow": false,
+            "note": "将每个元素实际字号加倍的200%文字压力测试；未调用浏览器菜单缩放。"
+          },
+          {
+            "mode": "fallback",
+            "viewport": 390,
+            "documentWidth": 390,
+            "bodyText": 468,
+            "images": 0,
+            "overflow": false,
+            "note": "强制系统sans-serif回退；未证明逐字字形来源。"
+          }
+        ],
+        "键盘覆盖": "原生控件主任务已执行；未逐页完成全部纯键盘主路径，不宣称全面键盘通过。",
+        "缺图检查": "页面无外部img素材；中性文字占位或内联SVG，未另造缺失网络图片，不适用图片加载失败模拟。",
+        "已知问题": [
+          "人类审美、真实手机和读屏验收未执行，MANUAL_PENDING。",
+          "实际字体逐字命中与完整无障碍合规未验证。"
+        ],
+        "边界": "仅当前页面会话的演示行为；无真实服务请求。",
+        "首轮修复": [
+          {
+            "round": 1,
+            "reason": "标题末行只剩“文字”，按逗号分开并保全可回看短语。",
+            "snapshot": "before-first-fix"
+          }
+        ],
+        "额外修复": [
+          {
+            "round": 2,
+            "reason": "准确200%文字放大时短语nowrap超出390px；改为可受容器约束的行内块。",
+            "snapshot": "before-extra-fix"
+          }
+        ],
+        "修复轮数": 2,
+        "证据目录": "evidence/generation/full-rem-03",
+        "人工验收": "MANUAL_PENDING",
+        "最小回滚": "仅本题site/runs/03/full内本次生成的明确文件；受限改版可从冻结输入恢复同名index.html，原始输入未修改。",
+        "输入sha256": null
+      },
+      {
+        "题号": "04",
+        "模式": "只审阅",
+        "开始时间": "2026-10-29T10:46:35.787Z",
+        "结束时间": "2026-10-29T10:49:47.993Z",
+        "条件": "full",
+        "方向理由": "只观察冻结输入，报告按问题、复现、影响、建议、正常对照与未知组织；不改输入。",
+        "完整模型版本": "未暴露",
+        "章法技能sha256": "b793b900c5f79ff75a08d8732d6bf9967869216d6268d691095cadb736572cb9",
+        "产物": {
+          "site/runs/04/full/index.html": "6997bee1d4fa5fd1454109cf81f6d8618cffc72b0f8d60ae369188e7f03d881f",
+          "site/runs/04/full/measure.css": "cc0ba1e4da554d44e1a1a753512a1e52e78c7901debdc5c44d97c948b2a826a4",
+          "site/runs/04/full/report.json": "3bc1c0793a3ff2e8779666b4587e1c5c10cf2ed970f8a554f3d9563afaac07c2",
+          "site/runs/04/full/style.css": "3d7ca692bcacd2e04b57c44b6af6a4d1d66400cafd4a8569f87d2f39f1951849"
+        },
+        "实际操作": [
+          {
+            "width": 390,
+            "actions": [
+              "点击迁移说明，记录目标是否存在与包名裁切几何"
+            ],
+            "externalRequests": [],
+            "anchor": {
+              "hash": "#migrate",
+              "target": false
+            },
+            "packageGeometry": {
+              "client": 350,
+              "scroll": 504,
+              "overflow": "hidden"
+            },
+            "status": "pass"
+          },
+          {
+            "width": 1440,
+            "actions": [
+              "点击迁移说明，记录目标是否存在与包名裁切几何"
+            ],
+            "externalRequests": [],
+            "anchor": {
+              "hash": "#migrate",
+              "target": false
+            },
+            "packageGeometry": {
+              "client": 960,
+              "scroll": 960,
+              "overflow": "hidden"
+            },
+            "status": "pass"
+          }
+        ],
+        "命令": [
+          "node 本机研究或临时路径（已隐去）",
+          "node node_modules/measure-cjk/bin/measure-cjk.js lint http://127.0.0.1:4179/runs/04/full/ --render --widths 390,1440 --format json --out evidence/generation/full-rem-04/measure-final/raw.json"
+        ],
+        "分寸": {
+          "状态": "pass",
+          "errors": 0,
+          "warns": 0,
+          "disabled": [],
+          "原始报告": "evidence/generation/full-rem-04/measure-final/raw.json",
+          "注意": "此项验证报告产物排版；冻结输入仍保留原始失败，详见measure-first。"
+        },
+        "浏览器几何": {
+          "状态": "pass",
+          "报告": "evidence/generation/full-rem-04/output-final/report.json",
+          "总状态": "not_run",
+          "说明": "该检查以noMeasure调用，综合状态not_run仍如实保留；中文规则以独立实际分寸原始报告为准。"
+        },
+        "压力检查": [
+          {
+            "mode": "320",
+            "viewport": 320,
+            "documentWidth": 320,
+            "bodyText": 292,
+            "images": 0,
+            "overflow": false,
+            "note": "320像素几何与完整截图"
+          },
+          {
+            "mode": "text200",
+            "viewport": 390,
+            "documentWidth": 397,
+            "bodyText": 292,
+            "images": 0,
+            "overflow": true,
+            "note": "将每个元素实际字号加倍的200%文字压力测试；未调用浏览器菜单缩放。"
+          },
+          {
+            "mode": "fallback",
+            "viewport": 390,
+            "documentWidth": 390,
+            "bodyText": 292,
+            "images": 0,
+            "overflow": false,
+            "note": "强制系统sans-serif回退；未证明逐字字形来源。"
+          }
+        ],
+        "键盘覆盖": "原生控件主任务已执行；未逐页完成全部纯键盘主路径，不宣称全面键盘通过。",
+        "缺图检查": "页面无外部img素材；中性文字占位或内联SVG，未另造缺失网络图片，不适用图片加载失败模拟。",
+        "已知问题": [
+          {
+            "severity": "高",
+            "element": "nav a[href=\"#migrate\"]",
+            "title": "迁移导航目标不存在",
+            "steps": "在390、1440像素点击“迁移说明”。",
+            "observed": "地址变为#migrate，但document.querySelector(location.hash)为false；实际章节ID是migration。",
+            "impact": "无法借导航定位迁移接口。",
+            "suggestion": "把链接改为#迁移章节的实际ID（migration），复测点击和键盘回车。"
+          },
+          {
+            "severity": "中",
+            "element": ".package-name",
+            "title": "窄屏重复发布标题裁切",
+            "steps": "在390像素读取包名下方重复标题；320像素复查。",
+            "observed": "390像素内容宽504px、容器宽350px，overflow:hidden且white-space:nowrap；截图中尾部发布说明消失。1440像素不裁切。",
+            "impact": "此处版本标题无法完整阅读；上方h1完整，故不是全页版本号缺失。",
+            "suggestion": "允许这行自然换行，或在不丢失语义的前提下移除纯重复呈现。"
+          }
+        ],
+        "边界": "观测操作脚本pass仅表示成功取得证据，不表示被审阅输入无缺陷。",
+        "首轮修复": [],
+        "额外修复": [],
+        "修复轮数": 0,
+        "证据目录": "evidence/generation/full-rem-04",
+        "人工验收": "MANUAL_PENDING",
+        "最小回滚": "仅本题site/runs/04/full内本次生成的明确文件；受限改版可从冻结输入恢复同名index.html，原始输入未修改。",
+        "输入sha256": "f6d57e79c13f8d50a28973c880a57e19cfa077df5e5ea5354d642ac21b24c4a4"
+      },
+      {
+        "题号": "06",
+        "模式": "新建",
+        "开始时间": "2026-10-29T10:45:37.390Z",
+        "结束时间": "2026-10-29T10:52:38.346Z",
+        "条件": "full",
+        "方向理由": "黑底片目档案以作品名称代替未授权剧照；章节横向转为窄屏纵列，始终明确无法播放。",
+        "完整模型版本": "未暴露",
+        "章法技能sha256": "b793b900c5f79ff75a08d8732d6bf9967869216d6268d691095cadb736572cb9",
+        "产物": {
+          "site/runs/06/full/index.html": "9c32abdb976d4a1b26ff897d7883a4cb354128efe4b3e153e9b3f2b1317a982e",
+          "site/runs/06/full/measure.css": "cc0ba1e4da554d44e1a1a753512a1e52e78c7901debdc5c44d97c948b2a826a4",
+          "site/runs/06/full/style.css": "4194e620a8edb5a9fba1cfcbf68f87e782277bb7a0315e1ae4aa07d6b13c2641"
+        },
+        "实际操作": [
+          {
+            "width": 390,
+            "actions": [
+              "第二章节定位且持续说明不可播放"
+            ],
+            "externalRequests": [],
+            "status": "pass"
+          },
+          {
+            "width": 1440,
+            "actions": [
+              "第二章节定位且持续说明不可播放"
+            ],
+            "externalRequests": [],
+            "status": "pass"
+          }
+        ],
+        "命令": [
+          "node 本机研究或临时路径（已隐去）",
+          "node node_modules/measure-cjk/bin/measure-cjk.js lint http://127.0.0.1:4179/runs/06/full/ --render --widths 390,1440 --format json --out evidence/generation/full-rem-06/measure-after-extra/raw.json"
+        ],
+        "分寸": {
+          "状态": "pass",
+          "errors": 0,
+          "warns": 0,
+          "disabled": [],
+          "原始报告": "evidence/generation/full-rem-06/measure-after-extra/raw.json",
+          "注意": "只代表已运行的中文规则。"
+        },
+        "浏览器几何": {
+          "状态": "pass",
+          "报告": "evidence/generation/full-rem-06/output-final/report.json",
+          "总状态": "not_run",
+          "说明": "该检查以noMeasure调用，综合状态not_run仍如实保留；中文规则以独立实际分寸原始报告为准。"
+        },
+        "压力检查": [
+          {
+            "mode": "320",
+            "viewport": 320,
+            "documentWidth": 320,
+            "bodyText": 511,
+            "images": 0,
+            "overflow": false,
+            "note": "320像素几何与完整截图"
+          },
+          {
+            "mode": "text200",
+            "viewport": 390,
+            "documentWidth": 390,
+            "bodyText": 511,
+            "images": 0,
+            "overflow": false,
+            "note": "将每个元素实际字号加倍的200%文字压力测试；未调用浏览器菜单缩放。"
+          },
+          {
+            "mode": "fallback",
+            "viewport": 390,
+            "documentWidth": 390,
+            "bodyText": 511,
+            "images": 0,
+            "overflow": false,
+            "note": "强制系统sans-serif回退；未证明逐字字形来源。"
+          }
+        ],
+        "键盘覆盖": "原生控件主任务已执行；未逐页完成全部纯键盘主路径，不宣称全面键盘通过。",
+        "缺图检查": "页面无外部img素材；中性文字占位或内联SVG，未另造缺失网络图片，不适用图片加载失败模拟。",
+        "已知问题": [
+          "人类审美、真实手机和读屏验收未执行，MANUAL_PENDING。",
+          "实际字体逐字命中与完整无障碍合规未验证。"
+        ],
+        "边界": "仅当前页面会话的演示行为；无真实服务请求。",
+        "首轮修复": [
+          {
+            "round": 1,
+            "reason": "标题“留在这里”被拆成两行，按真实语义分行。",
+            "snapshot": "before-first-fix"
+          }
+        ],
+        "额外修复": [
+          {
+            "round": 2,
+            "reason": "视觉自审看到海报占位“第三”被拆开，改为“河岸的／第三盏灯”。",
+            "snapshot": "before-visual-fix"
+          }
+        ],
+        "修复轮数": 2,
+        "证据目录": "evidence/generation/full-rem-06",
+        "人工验收": "MANUAL_PENDING",
+        "最小回滚": "仅本题site/runs/06/full内本次生成的明确文件；受限改版可从冻结输入恢复同名index.html，原始输入未修改。",
+        "输入sha256": null
+      },
+      {
+        "题号": "07",
+        "模式": "新建",
+        "开始时间": "2026-10-29T10:45:37.391Z",
+        "结束时间": "2026-10-29T10:49:50.077Z",
+        "条件": "full",
+        "方向理由": "作品集用三种指定比例的缺图框形成节奏，以完整地点与注释承担可信信息；筛选后不留空洞网格。",
+        "完整模型版本": "未暴露",
+        "章法技能sha256": "b793b900c5f79ff75a08d8732d6bf9967869216d6268d691095cadb736572cb9",
+        "产物": {
+          "site/runs/07/full/app.js": "08c5a6f23db9d36444582fd6acce5ef8e3d46b2c958a221a2638e17d0f550355",
+          "site/runs/07/full/index.html": "7f1b283b0761b889492ced1ab87bd90ccda94352368f18fe4c7317861e8a6a76",
+          "site/runs/07/full/measure.css": "cc0ba1e4da554d44e1a1a753512a1e52e78c7901debdc5c44d97c948b2a826a4",
+          "site/runs/07/full/style.css": "ae4f42c41317a70bbdab74c6dd29e0e7ef164f3c10e3ed418a5d1cdadf3f05ee"
+        },
+        "实际操作": [
+          {
+            "width": 390,
+            "actions": [
+              "夜行仅显示P01",
+              "详情完整长地点与注释",
+              "清除筛选恢复3项"
+            ],
+            "externalRequests": [],
+            "status": "pass"
+          },
+          {
+            "width": 1440,
+            "actions": [
+              "夜行仅显示P01",
+              "详情完整长地点与注释",
+              "清除筛选恢复3项"
+            ],
+            "externalRequests": [],
+            "status": "pass"
+          }
+        ],
+        "命令": [
+          "node 本机研究或临时路径（已隐去）",
+          "node node_modules/measure-cjk/bin/measure-cjk.js lint http://127.0.0.1:4179/runs/07/full/ --render --widths 390,1440 --format json --out evidence/generation/full-rem-07/measure-final/raw.json"
+        ],
+        "分寸": {
+          "状态": "pass",
+          "errors": 0,
+          "warns": 0,
+          "disabled": [],
+          "原始报告": "evidence/generation/full-rem-07/measure-final/raw.json",
+          "注意": "只代表已运行的中文规则。"
+        },
+        "浏览器几何": {
+          "状态": "pass",
+          "报告": "evidence/generation/full-rem-07/final/preflight/report.json",
+          "总状态": "not_run",
+          "说明": "该检查以noMeasure调用，综合状态not_run仍如实保留；中文规则以独立实际分寸原始报告为准。"
+        },
+        "压力检查": [
+          {
+            "mode": "320",
+            "viewport": 320,
+            "documentWidth": 320,
+            "bodyText": 295,
+            "images": 0,
+            "overflow": false,
+            "note": "320像素几何与完整截图"
+          },
+          {
+            "mode": "text200",
+            "viewport": 390,
+            "documentWidth": 390,
+            "bodyText": 295,
+            "images": 0,
+            "overflow": false,
+            "note": "将每个元素实际字号加倍的200%文字压力测试；未调用浏览器菜单缩放。"
+          },
+          {
+            "mode": "fallback",
+            "viewport": 390,
+            "documentWidth": 390,
+            "bodyText": 295,
+            "images": 0,
+            "overflow": false,
+            "note": "强制系统sans-serif回退；未证明逐字字形来源。"
+          }
+        ],
+        "键盘覆盖": "原生控件主任务已执行；未逐页完成全部纯键盘主路径，不宣称全面键盘通过。",
+        "缺图检查": "页面无外部img素材；中性文字占位或内联SVG，未另造缺失网络图片，不适用图片加载失败模拟。",
+        "已知问题": [
+          "人类审美、真实手机和读屏验收未执行，MANUAL_PENDING。",
+          "实际字体逐字命中与完整无障碍合规未验证。"
+        ],
+        "边界": "仅当前页面会话的演示行为；无真实服务请求。",
+        "首轮修复": [],
+        "额外修复": [],
+        "修复轮数": 0,
+        "证据目录": "evidence/generation/full-rem-07",
+        "人工验收": "MANUAL_PENDING",
+        "最小回滚": "仅本题site/runs/07/full内本次生成的明确文件；受限改版可从冻结输入恢复同名index.html，原始输入未修改。",
+        "输入sha256": null
+      },
+      {
+        "题号": "08",
+        "模式": "新建",
+        "开始时间": "2026-10-29T10:45:37.391Z",
+        "结束时间": "2026-10-29T10:52:38.348Z",
+        "条件": "full",
+        "方向理由": "建筑参数与示意平面构成双页图册；通道、书架、阅读桌有明确方向，完整替代描述常驻。",
+        "完整模型版本": "未暴露",
+        "章法技能sha256": "b793b900c5f79ff75a08d8732d6bf9967869216d6268d691095cadb736572cb9",
+        "产物": {
+          "site/runs/08/full/index.html": "264fea60094cd08db5bde538990d7584ec635588f5829f10ef2449e70bf574b6",
+          "site/runs/08/full/measure.css": "cc0ba1e4da554d44e1a1a753512a1e52e78c7901debdc5c44d97c948b2a826a4",
+          "site/runs/08/full/style.css": "5fe0b5b27b96695de670787159600098b5c0042fbb32dbfa984197beb58daa9c"
+        },
+        "实际操作": [
+          {
+            "width": 390,
+            "actions": [
+              "四项参数完整可读",
+              "完整无障碍路径替代描述可读"
+            ],
+            "externalRequests": [],
+            "status": "pass"
+          },
+          {
+            "width": 1440,
+            "actions": [
+              "四项参数完整可读",
+              "完整无障碍路径替代描述可读"
+            ],
+            "externalRequests": [],
+            "status": "pass"
+          }
+        ],
+        "命令": [
+          "node 本机研究或临时路径（已隐去）",
+          "node node_modules/measure-cjk/bin/measure-cjk.js lint http://127.0.0.1:4179/runs/08/full/ --render --widths 390,1440 --format json --out evidence/generation/full-rem-08/measure-after-extra/raw.json"
+        ],
+        "分寸": {
+          "状态": "pass",
+          "errors": 0,
+          "warns": 0,
+          "disabled": [],
+          "原始报告": "evidence/generation/full-rem-08/measure-after-extra/raw.json",
+          "注意": "只代表已运行的中文规则。"
+        },
+        "浏览器几何": {
+          "状态": "pass",
+          "报告": "evidence/generation/full-rem-08/final-extra/preflight/report.json",
+          "总状态": "not_run",
+          "说明": "该检查以noMeasure调用，综合状态not_run仍如实保留；中文规则以独立实际分寸原始报告为准。"
+        },
+        "压力检查": [
+          {
+            "mode": "320",
+            "viewport": 320,
+            "documentWidth": 320,
+            "bodyText": 463,
+            "images": 0,
+            "overflow": false,
+            "note": "320像素几何与完整截图"
+          },
+          {
+            "mode": "text200",
+            "viewport": 390,
+            "documentWidth": 390,
+            "bodyText": 463,
+            "images": 0,
+            "overflow": false,
+            "note": "将每个元素实际字号加倍的200%文字压力测试；未调用浏览器菜单缩放。"
+          },
+          {
+            "mode": "fallback",
+            "viewport": 390,
+            "documentWidth": 390,
+            "bodyText": 463,
+            "images": 0,
+            "overflow": false,
+            "note": "强制系统sans-serif回退；未证明逐字字形来源。"
+          }
+        ],
+        "键盘覆盖": "原生控件主任务已执行；未逐页完成全部纯键盘主路径，不宣称全面键盘通过。",
+        "缺图检查": "页面无外部img素材；中性文字占位或内联SVG，未另造缺失网络图片，不适用图片加载失败模拟。",
+        "已知问题": [
+          "人类审美、真实手机和读屏验收未执行，MANUAL_PENDING。",
+          "实际字体逐字命中与完整无障碍合规未验证。"
+        ],
+        "边界": "仅当前页面会话的演示行为；无真实服务请求。",
+        "首轮修复": [
+          {
+            "round": 1,
+            "reason": "精确200%文字放大时双列参数超出390px；窄屏改为单列参数。",
+            "snapshot": "before-extra-fix"
+          }
+        ],
+        "额外修复": [],
+        "修复轮数": 1,
+        "证据目录": "evidence/generation/full-rem-08",
+        "人工验收": "MANUAL_PENDING",
+        "最小回滚": "仅本题site/runs/08/full内本次生成的明确文件；受限改版可从冻结输入恢复同名index.html，原始输入未修改。",
+        "输入sha256": null
+      },
+      {
+        "题号": "10",
+        "模式": "只审阅",
+        "开始时间": "2026-10-29T10:46:46.268Z",
+        "结束时间": "2026-10-29T10:49:51.975Z",
+        "条件": "full",
+        "方向理由": "只观察冻结输入，报告按问题、复现、影响、建议、正常对照与未知组织；不改输入。",
+        "完整模型版本": "未暴露",
+        "章法技能sha256": "b793b900c5f79ff75a08d8732d6bf9967869216d6268d691095cadb736572cb9",
+        "产物": {
+          "site/runs/10/full/index.html": "88042e95aca51e43dec82d58f1942c06a6f449a6305c19fb143394bc20ccff11",
+          "site/runs/10/full/measure.css": "cc0ba1e4da554d44e1a1a753512a1e52e78c7901debdc5c44d97c948b2a826a4",
+          "site/runs/10/full/report.json": "3bc618c784d2ce133c5815b7ecc980b85d3dee319c96ebcc569cdd7a9cb23398",
+          "site/runs/10/full/style.css": "3d7ca692bcacd2e04b57c44b6af6a4d1d66400cafd4a8569f87d2f39f1951849"
+        },
+        "实际操作": [
+          {
+            "width": 390,
+            "actions": [
+              "点击复制检查命令，逐字符记录展示命令与实际复制变量；未执行命令"
+            ],
+            "externalRequests": [],
+            "copy": {
+              "display": "demo-config-check --config \"./中文项目与多人协作演示/config/zhangfa.preview.config.json\" --verbose",
+              "copied": "demo-config-check --config \"./中文项目与多人协作演示/config/zhangfa.preview.config.json\""
+            },
+            "status": "pass"
+          },
+          {
+            "width": 1440,
+            "actions": [
+              "点击复制检查命令，逐字符记录展示命令与实际复制变量；未执行命令"
+            ],
+            "externalRequests": [],
+            "copy": {
+              "display": "demo-config-check --config \"./中文项目与多人协作演示/config/zhangfa.preview.config.json\" --verbose",
+              "copied": "demo-config-check --config \"./中文项目与多人协作演示/config/zhangfa.preview.config.json\""
+            },
+            "status": "pass"
+          }
+        ],
+        "命令": [
+          "node 本机研究或临时路径（已隐去）",
+          "node node_modules/measure-cjk/bin/measure-cjk.js lint http://127.0.0.1:4179/runs/10/full/ --render --widths 390,1440 --format json --out evidence/generation/full-rem-10/measure-final/raw.json"
+        ],
+        "分寸": {
+          "状态": "pass",
+          "errors": 0,
+          "warns": 0,
+          "disabled": [],
+          "原始报告": "evidence/generation/full-rem-10/measure-final/raw.json",
+          "注意": "此项验证报告产物排版；冻结输入仍保留原始失败，详见measure-first。"
+        },
+        "浏览器几何": {
+          "状态": "pass",
+          "报告": "evidence/generation/full-rem-10/output-final/report.json",
+          "总状态": "not_run",
+          "说明": "该检查以noMeasure调用，综合状态not_run仍如实保留；中文规则以独立实际分寸原始报告为准。"
+        },
+        "压力检查": [
+          {
+            "mode": "320",
+            "viewport": 320,
+            "documentWidth": 942,
+            "bodyText": 429,
+            "images": 0,
+            "overflow": true,
+            "note": "320像素几何与完整截图"
+          },
+          {
+            "mode": "text200",
+            "viewport": 390,
+            "documentWidth": 1847,
+            "bodyText": 429,
+            "images": 0,
+            "overflow": true,
+            "note": "将每个元素实际字号加倍的200%文字压力测试；未调用浏览器菜单缩放。"
+          },
+          {
+            "mode": "fallback",
+            "viewport": 390,
+            "documentWidth": 920,
+            "bodyText": 429,
+            "images": 0,
+            "overflow": true,
+            "note": "强制系统sans-serif回退；未证明逐字字形来源。"
+          }
+        ],
+        "键盘覆盖": "原生控件主任务已执行；未逐页完成全部纯键盘主路径，不宣称全面键盘通过。",
+        "缺图检查": "页面无外部img素材；中性文字占位或内联SVG，未另造缺失网络图片，不适用图片加载失败模拟。",
+        "已知问题": [
+          {
+            "severity": "高",
+            "element": "#copy / #command",
+            "title": "复制命令丢失--verbose参数",
+            "steps": "在390、1440像素点击“复制检查命令”，核对window.__copiedText和#command文本。",
+            "observed": "展示以--verbose结尾，实际复制字符串停在配置文件结束引号；两者逐字符不同。",
+            "impact": "复制路径不能得到页面承诺的完整检查命令。",
+            "suggestion": "让复制直接取命令元素的完整textContent并核对末尾参数。"
+          },
+          {
+            "severity": "高",
+            "element": "pre#command",
+            "title": "固定宽度代码块撑宽整页",
+            "steps": "在390、320像素打开页面，比较documentElement.scrollWidth与innerWidth。",
+            "observed": "pre固定width:900px、无局部滚动容器。390像素全页截图宽942px，文本视区仅390px。320像素同样存在整页溢出。",
+            "impact": "读者被迫横移整个页面查找命令与正文，破坏排错路径。",
+            "suggestion": "让代码容器max-width:100%，只在代码块内部overflow-x:auto，不拆掉合法中文路径。"
+          },
+          {
+            "severity": "中",
+            "element": "导航区域",
+            "title": "任务给定的两个定位链接未提供",
+            "steps": "检查可见a[href]及键盘可聚焦项。",
+            "observed": "页面有errors和configuration章节ID，却没有“返回错误索引”“配置字段说明”的链接。",
+            "impact": "用户无法使用冻结内容给定的快捷定位动作。",
+            "suggestion": "补齐指向已存在章节的锚点链接，保留完整双语内容。"
+          }
+        ],
+        "边界": "观测操作脚本pass仅表示成功取得证据，不表示被审阅输入无缺陷。",
+        "首轮修复": [],
+        "额外修复": [],
+        "修复轮数": 0,
+        "证据目录": "evidence/generation/full-rem-10",
+        "人工验收": "MANUAL_PENDING",
+        "最小回滚": "仅本题site/runs/10/full内本次生成的明确文件；受限改版可从冻结输入恢复同名index.html，原始输入未修改。",
+        "输入sha256": "1a602df6572f92393f8d27855c6a29518826a4b08d18d19bafe3f8aad2c70f74"
+      },
+      {
+        "题号": "11",
+        "模式": "新建",
+        "开始时间": "2026-10-29T10:45:37.392Z",
+        "结束时间": "2026-10-29T10:49:51.977Z",
+        "条件": "full",
+        "方向理由": "数据页以同尺度分组横条为主对象，季度与小时直接标注，读者无需悬停；统计口径在图旁而非脚注。",
+        "完整模型版本": "未暴露",
+        "章法技能sha256": "b793b900c5f79ff75a08d8732d6bf9967869216d6268d691095cadb736572cb9",
+        "产物": {
+          "site/runs/11/full/index.html": "930630be6dedc4d33e52da67133ae75ee6030727019317c87972b07040917510",
+          "site/runs/11/full/measure.css": "cc0ba1e4da554d44e1a1a753512a1e52e78c7901debdc5c44d97c948b2a826a4",
+          "site/runs/11/full/style.css": "ca2bf0f2fca81f933b0f18c8dd89c29c24cb95b3330c71f9b5257110cbc9f21e"
+        },
+        "实际操作": [
+          {
+            "width": 390,
+            "actions": [
+              "数据表存在第三季度12小时",
+              "统计口径可定位"
+            ],
+            "externalRequests": [],
+            "status": "pass"
+          },
+          {
+            "width": 1440,
+            "actions": [
+              "数据表存在第三季度12小时",
+              "统计口径可定位"
+            ],
+            "externalRequests": [],
+            "status": "pass"
+          }
+        ],
+        "命令": [
+          "node 本机研究或临时路径（已隐去）",
+          "node node_modules/measure-cjk/bin/measure-cjk.js lint http://127.0.0.1:4179/runs/11/full/ --render --widths 390,1440 --format json --out evidence/generation/full-rem-11/measure-final/raw.json"
+        ],
+        "分寸": {
+          "状态": "pass",
+          "errors": 0,
+          "warns": 0,
+          "disabled": [],
+          "原始报告": "evidence/generation/full-rem-11/measure-final/raw.json",
+          "注意": "只代表已运行的中文规则。"
+        },
+        "浏览器几何": {
+          "状态": "pass",
+          "报告": "evidence/generation/full-rem-11/final/preflight/report.json",
+          "总状态": "not_run",
+          "说明": "该检查以noMeasure调用，综合状态not_run仍如实保留；中文规则以独立实际分寸原始报告为准。"
+        },
+        "压力检查": [
+          {
+            "mode": "320",
+            "viewport": 320,
+            "documentWidth": 320,
+            "bodyText": 470,
+            "images": 0,
+            "overflow": false,
+            "note": "320像素几何与完整截图"
+          },
+          {
+            "mode": "text200",
+            "viewport": 390,
+            "documentWidth": 390,
+            "bodyText": 470,
+            "images": 0,
+            "overflow": false,
+            "note": "将每个元素实际字号加倍的200%文字压力测试；未调用浏览器菜单缩放。"
+          },
+          {
+            "mode": "fallback",
+            "viewport": 390,
+            "documentWidth": 390,
+            "bodyText": 470,
+            "images": 0,
+            "overflow": false,
+            "note": "强制系统sans-serif回退；未证明逐字字形来源。"
+          }
+        ],
+        "键盘覆盖": "原生控件主任务已执行；未逐页完成全部纯键盘主路径，不宣称全面键盘通过。",
+        "缺图检查": "页面无外部img素材；中性文字占位或内联SVG，未另造缺失网络图片，不适用图片加载失败模拟。",
+        "已知问题": [
+          "人类审美、真实手机和读屏验收未执行，MANUAL_PENDING。",
+          "实际字体逐字命中与完整无障碍合规未验证。"
+        ],
+        "边界": "仅当前页面会话的演示行为；无真实服务请求。",
+        "首轮修复": [],
+        "额外修复": [],
+        "修复轮数": 0,
+        "证据目录": "evidence/generation/full-rem-11",
+        "人工验收": "MANUAL_PENDING",
+        "最小回滚": "仅本题site/runs/11/full内本次生成的明确文件；受限改版可从冻结输入恢复同名index.html，原始输入未修改。",
+        "输入sha256": null
+      },
+      {
+        "题号": "12",
+        "模式": "新建",
+        "开始时间": "2026-10-29T10:45:37.392Z",
+        "结束时间": "2026-10-29T10:50:55.397Z",
+        "条件": "full",
+        "方向理由": "繁体长文以窄幅阅读、旁注活动信息建立刊物节奏；双层引号原样保留，不强行换成简体习惯。",
+        "完整模型版本": "未暴露",
+        "章法技能sha256": "b793b900c5f79ff75a08d8732d6bf9967869216d6268d691095cadb736572cb9",
+        "产物": {
+          "site/runs/12/full/index.html": "9bd4e3405eea608c3391101a9c3a2561cd8ac9eaf7779efb6a9a65d510a0ae98",
+          "site/runs/12/full/measure.config.json": "14d2f612f47f84b1da8bc0479ceb810496b374ddced2be9c1c6c0249f933d5b1",
+          "site/runs/12/full/measure.css": "cc0ba1e4da554d44e1a1a753512a1e52e78c7901debdc5c44d97c948b2a826a4",
+          "site/runs/12/full/style.css": "d659cd4cb09a16cf9351f697e2e2cd2747d617496f39c911f89ceff72be5b1c9"
+        },
+        "实际操作": [
+          {
+            "width": 390,
+            "actions": [
+              "繁体地区语言标记",
+              "双层引号保留"
+            ],
+            "externalRequests": [],
+            "status": "pass"
+          },
+          {
+            "width": 1440,
+            "actions": [
+              "繁体地区语言标记",
+              "双层引号保留"
+            ],
+            "externalRequests": [],
+            "status": "pass"
+          }
+        ],
+        "命令": [
+          "node 本机研究或临时路径（已隐去）",
+          "node node_modules/measure-cjk/bin/measure-cjk.js lint http://127.0.0.1:4179/runs/12/full/ --render --widths 390,1440 --format json --out evidence/generation/full-rem-12/measure-extra/raw.json --config site/runs/12/full/measure.config.json"
+        ],
+        "分寸": {
+          "状态": "pass",
+          "errors": 0,
+          "warns": 0,
+          "disabled": [],
+          "原始报告": "evidence/generation/full-rem-12/measure-extra/raw.json",
+          "注意": "只代表已运行的中文规则。"
+        },
+        "浏览器几何": {
+          "状态": "pass",
+          "报告": "evidence/generation/full-rem-12/final-extra/preflight/report.json",
+          "总状态": "not_run",
+          "说明": "该检查以noMeasure调用，综合状态not_run仍如实保留；中文规则以独立实际分寸原始报告为准。"
+        },
+        "压力检查": [
+          {
+            "mode": "320",
+            "viewport": 320,
+            "documentWidth": 320,
+            "bodyText": 445,
+            "images": 0,
+            "overflow": false,
+            "note": "320像素几何与完整截图"
+          },
+          {
+            "mode": "text200",
+            "viewport": 390,
+            "documentWidth": 390,
+            "bodyText": 445,
+            "images": 0,
+            "overflow": false,
+            "note": "将每个元素实际字号加倍的200%文字压力测试；未调用浏览器菜单缩放。"
+          },
+          {
+            "mode": "fallback",
+            "viewport": 390,
+            "documentWidth": 390,
+            "bodyText": 445,
+            "images": 0,
+            "overflow": false,
+            "note": "强制系统sans-serif回退；未证明逐字字形来源。"
+          }
+        ],
+        "键盘覆盖": "原生控件主任务已执行；未逐页完成全部纯键盘主路径，不宣称全面键盘通过。",
+        "缺图检查": "页面无外部img素材；中性文字占位或内联SVG，未另造缺失网络图片，不适用图片加载失败模拟。",
+        "已知问题": [
+          "人类审美、真实手机和读屏验收未执行，MANUAL_PENDING。",
+          "实际字体逐字命中与完整无障碍合规未验证。"
+        ],
+        "边界": "仅当前页面会话的演示行为；无真实服务请求。",
+        "首轮修复": [
+          {
+            "round": 1,
+            "reason": "繁体引号与分寸默认curly配置冲突；使用本题corner配置，保全双层引号；改善标题语义分行。",
+            "snapshot": "before-first-fix"
+          }
+        ],
+        "额外修复": [
+          {
+            "round": 2,
+            "reason": "配置缺schema_version导致退出2；补齐schema与zh-TW地区配置。准确200%文字压力显示短语nowrap溢出，允许容器内换行。",
+            "snapshot": "before-extra-fix"
+          }
+        ],
+        "修复轮数": 2,
+        "证据目录": "evidence/generation/full-rem-12",
+        "人工验收": "MANUAL_PENDING",
+        "最小回滚": "仅本题site/runs/12/full内本次生成的明确文件；受限改版可从冻结输入恢复同名index.html，原始输入未修改。",
+        "输入sha256": null
+      },
+      {
+        "题号": "14",
+        "模式": "受限改版",
+        "开始时间": "2026-10-29T10:45:37.393Z",
+        "结束时间": "2026-10-29T10:49:54.434Z",
+        "条件": "full",
+        "方向理由": "项目长名与负责人优先于装饰；筛选、列表、撤销形成上下任务顺序，保留冻结数据与操作ID。",
+        "完整模型版本": "未暴露",
+        "章法技能sha256": "b793b900c5f79ff75a08d8732d6bf9967869216d6268d691095cadb736572cb9",
+        "产物": {
+          "site/runs/14/full/index.html": "a04fa5c1101f257cb680e738cc7ab22d6c306fc0d71df566dcdd0e0279c821c3",
+          "site/runs/14/full/measure.css": "cc0ba1e4da554d44e1a1a753512a1e52e78c7901debdc5c44d97c948b2a826a4",
+          "site/runs/14/full/style.css": "52eef62734f09c12593cfed44551a1b7734cc9174fe2d75caffb2760204e71bf"
+        },
+        "实际操作": [
+          {
+            "width": 390,
+            "actions": [
+              "PJ-02恢复进行中",
+              "PJ-02撤销恢复回已归档"
+            ],
+            "externalRequests": [],
+            "focusAfterRestore": "undo",
+            "focusAfterUndo": "<button data-id=\"PJ-02\">恢复项目</button>",
+            "status": "pass"
+          },
+          {
+            "width": 1440,
+            "actions": [
+              "PJ-02恢复进行中",
+              "PJ-02撤销恢复回已归档"
+            ],
+            "externalRequests": [],
+            "focusAfterRestore": "undo",
+            "focusAfterUndo": "<button data-id=\"PJ-02\">恢复项目</button>",
+            "status": "pass"
+          }
+        ],
+        "命令": [
+          "node 本机研究或临时路径（已隐去）",
+          "node node_modules/measure-cjk/bin/measure-cjk.js lint http://127.0.0.1:4179/runs/14/full/ --render --widths 390,1440 --format json --out evidence/generation/full-rem-14/measure-final/raw.json"
+        ],
+        "分寸": {
+          "状态": "pass",
+          "errors": 0,
+          "warns": 0,
+          "disabled": [],
+          "原始报告": "evidence/generation/full-rem-14/measure-final/raw.json",
+          "注意": "只代表已运行的中文规则。"
+        },
+        "浏览器几何": {
+          "状态": "pass",
+          "报告": "evidence/generation/full-rem-14/final/preflight/report.json",
+          "总状态": "not_run",
+          "说明": "该检查以noMeasure调用，综合状态not_run仍如实保留；中文规则以独立实际分寸原始报告为准。"
+        },
+        "压力检查": [
+          {
+            "mode": "320",
+            "viewport": 320,
+            "documentWidth": 320,
+            "bodyText": 244,
+            "images": 0,
+            "overflow": false,
+            "note": "320像素几何与完整截图"
+          },
+          {
+            "mode": "text200",
+            "viewport": 390,
+            "documentWidth": 390,
+            "bodyText": 244,
+            "images": 0,
+            "overflow": false,
+            "note": "将每个元素实际字号加倍的200%文字压力测试；未调用浏览器菜单缩放。"
+          },
+          {
+            "mode": "fallback",
+            "viewport": 390,
+            "documentWidth": 390,
+            "bodyText": 244,
+            "images": 0,
+            "overflow": false,
+            "note": "强制系统sans-serif回退；未证明逐字字形来源。"
+          }
+        ],
+        "键盘覆盖": "原生控件主任务已执行；未逐页完成全部纯键盘主路径，不宣称全面键盘通过。",
+        "缺图检查": "页面无外部img素材；中性文字占位或内联SVG，未另造缺失网络图片，不适用图片加载失败模拟。",
+        "已知问题": [
+          "人类审美、真实手机和读屏验收未执行，MANUAL_PENDING。",
+          "实际字体逐字命中与完整无障碍合规未验证。"
+        ],
+        "边界": "仅当前页面会话的演示行为；无真实服务请求。",
+        "首轮修复": [],
+        "额外修复": [],
+        "修复轮数": 0,
+        "证据目录": "evidence/generation/full-rem-14",
+        "人工验收": "MANUAL_PENDING",
+        "最小回滚": "仅本题site/runs/14/full内本次生成的明确文件；受限改版可从冻结输入恢复同名index.html，原始输入未修改。",
+        "输入sha256": "633de9bc31c2b365d9321c0d45e680e87127ead1b391f7b985e54b478beaf2a7"
+      },
+      {
+        "题号": "15",
+        "模式": "受限改版",
+        "开始时间": "2026-10-29T10:45:37.393Z",
+        "结束时间": "2026-10-29T10:52:39.593Z",
+        "条件": "full",
+        "方向理由": "比较期间以整张账页为主对象，金额纵向对齐、差额保留正号，局部滚动保全窄屏字段。",
+        "完整模型版本": "未暴露",
+        "章法技能sha256": "b793b900c5f79ff75a08d8732d6bf9967869216d6268d691095cadb736572cb9",
+        "产物": {
+          "site/runs/15/full/index.html": "a5977f2f8d6a8ee1ca8bf75fcd6724a9afa29cb437ea31fe357a3ca5cf4d1133",
+          "site/runs/15/full/measure.css": "cc0ba1e4da554d44e1a1a753512a1e52e78c7901debdc5c44d97c948b2a826a4",
+          "site/runs/15/full/style.css": "0c906663930f2078ebd13426e319f0c8e908018a5b528453634051abb0d87110"
+        },
+        "实际操作": [
+          {
+            "width": 390,
+            "actions": [
+              "两期结余和差额完整",
+              "核对128000−86500=41500；136000−92400=43600，差额分别8000／5900／2100"
+            ],
+            "externalRequests": [],
+            "status": "pass"
+          },
+          {
+            "width": 1440,
+            "actions": [
+              "两期结余和差额完整",
+              "核对128000−86500=41500；136000−92400=43600，差额分别8000／5900／2100"
+            ],
+            "externalRequests": [],
+            "status": "pass"
+          }
+        ],
+        "命令": [
+          "node 本机研究或临时路径（已隐去）",
+          "node node_modules/measure-cjk/bin/measure-cjk.js lint http://127.0.0.1:4179/runs/15/full/ --render --widths 390,1440 --format json --out evidence/generation/full-rem-15/measure-after-extra/raw.json"
+        ],
+        "分寸": {
+          "状态": "pass",
+          "errors": 0,
+          "warns": 0,
+          "disabled": [],
+          "原始报告": "evidence/generation/full-rem-15/measure-after-extra/raw.json",
+          "注意": "只代表已运行的中文规则。"
+        },
+        "浏览器几何": {
+          "状态": "pass",
+          "报告": "evidence/generation/full-rem-15/output-final/report.json",
+          "总状态": "not_run",
+          "说明": "该检查以noMeasure调用，综合状态not_run仍如实保留；中文规则以独立实际分寸原始报告为准。"
+        },
+        "压力检查": [
+          {
+            "mode": "320",
+            "viewport": 320,
+            "documentWidth": 320,
+            "bodyText": 358,
+            "images": 0,
+            "overflow": false,
+            "note": "320像素几何与完整截图"
+          },
+          {
+            "mode": "text200",
+            "viewport": 390,
+            "documentWidth": 390,
+            "bodyText": 358,
+            "images": 0,
+            "overflow": false,
+            "note": "将每个元素实际字号加倍的200%文字压力测试；未调用浏览器菜单缩放。"
+          },
+          {
+            "mode": "fallback",
+            "viewport": 390,
+            "documentWidth": 390,
+            "bodyText": 358,
+            "images": 0,
+            "overflow": false,
+            "note": "强制系统sans-serif回退；未证明逐字字形来源。"
+          }
+        ],
+        "键盘覆盖": "表格区域聚焦与方向键滚动见keyboard-scroll.json。",
+        "缺图检查": "页面无外部img素材；中性文字占位或内联SVG，未另造缺失网络图片，不适用图片加载失败模拟。",
+        "已知问题": [
+          "人类审美、真实手机和读屏验收未执行，MANUAL_PENDING。",
+          "实际字体逐字命中与完整无障碍合规未验证。"
+        ],
+        "边界": "仅当前页面会话的演示行为；无真实服务请求。",
+        "首轮修复": [
+          {
+            "round": 1,
+            "reason": "窄屏完整表格缺少滚动提示与可聚焦区域；保全数据、原表和结构，增加本地操作说明与tabindex。",
+            "snapshot": "before-visual-fix"
+          }
+        ],
+        "额外修复": [],
+        "修复轮数": 1,
+        "证据目录": "evidence/generation/full-rem-15",
+        "人工验收": "MANUAL_PENDING",
+        "最小回滚": "仅本题site/runs/15/full内本次生成的明确文件；受限改版可从冻结输入恢复同名index.html，原始输入未修改。",
+        "输入sha256": "2984762bb9b4eddabf0b0e06a8d89e2b14b9614a0539bfefd1de6d12377b7356"
+      },
+      {
+        "题号": "16",
+        "模式": "受限改版",
+        "开始时间": "2026-10-29T10:45:37.394Z",
+        "结束时间": "2026-10-29T10:49:54.447Z",
+        "条件": "full",
+        "方向理由": "搜索及工单详情构成收件工作台，回复草稿与错误恢复紧邻上下文，保留所有ID和本地数据。",
+        "完整模型版本": "未暴露",
+        "章法技能sha256": "b793b900c5f79ff75a08d8732d6bf9967869216d6268d691095cadb736572cb9",
+        "产物": {
+          "site/runs/16/full/index.html": "333f080ff3ab43022d5a74bfbb1c40a44e0bde1b54a2da5b8585369a6d5ce821",
+          "site/runs/16/full/measure.css": "cc0ba1e4da554d44e1a1a753512a1e52e78c7901debdc5c44d97c948b2a826a4",
+          "site/runs/16/full/style.css": "52eef62734f09c12593cfed44551a1b7734cc9174fe2d75caffb2760204e71bf"
+        },
+        "实际操作": [
+          {
+            "width": 390,
+            "actions": [
+              "失败后草稿逐字符保留",
+              "重试仅本地模拟成功",
+              "切换工单返回后当前草稿保留"
+            ],
+            "externalRequests": [],
+            "status": "pass"
+          },
+          {
+            "width": 1440,
+            "actions": [
+              "失败后草稿逐字符保留",
+              "重试仅本地模拟成功",
+              "切换工单返回后当前草稿保留"
+            ],
+            "externalRequests": [],
+            "status": "pass"
+          }
+        ],
+        "命令": [
+          "node 本机研究或临时路径（已隐去）",
+          "node node_modules/measure-cjk/bin/measure-cjk.js lint http://127.0.0.1:4179/runs/16/full/ --render --widths 390,1440 --format json --out evidence/generation/full-rem-16/measure-final/raw.json"
+        ],
+        "分寸": {
+          "状态": "pass",
+          "errors": 0,
+          "warns": 0,
+          "disabled": [],
+          "原始报告": "evidence/generation/full-rem-16/measure-final/raw.json",
+          "注意": "只代表已运行的中文规则。"
+        },
+        "浏览器几何": {
+          "状态": "pass",
+          "报告": "evidence/generation/full-rem-16/final/preflight/report.json",
+          "总状态": "not_run",
+          "说明": "该检查以noMeasure调用，综合状态not_run仍如实保留；中文规则以独立实际分寸原始报告为准。"
+        },
+        "压力检查": [
+          {
+            "mode": "320",
+            "viewport": 320,
+            "documentWidth": 320,
+            "bodyText": 201,
+            "images": 0,
+            "overflow": false,
+            "note": "320像素几何与完整截图"
+          },
+          {
+            "mode": "text200",
+            "viewport": 390,
+            "documentWidth": 390,
+            "bodyText": 201,
+            "images": 0,
+            "overflow": false,
+            "note": "将每个元素实际字号加倍的200%文字压力测试；未调用浏览器菜单缩放。"
+          },
+          {
+            "mode": "fallback",
+            "viewport": 390,
+            "documentWidth": 390,
+            "bodyText": 201,
+            "images": 0,
+            "overflow": false,
+            "note": "强制系统sans-serif回退；未证明逐字字形来源。"
+          }
+        ],
+        "键盘覆盖": "原生控件主任务已执行；未逐页完成全部纯键盘主路径，不宣称全面键盘通过。",
+        "缺图检查": "页面无外部img素材；中性文字占位或内联SVG，未另造缺失网络图片，不适用图片加载失败模拟。",
+        "已知问题": [
+          "人类审美、真实手机和读屏验收未执行，MANUAL_PENDING。",
+          "实际字体逐字命中与完整无障碍合规未验证。"
+        ],
+        "边界": "仅当前页面会话的演示行为；无真实服务请求。",
+        "首轮修复": [
+          {
+            "round": 1,
+            "reason": "原输入共用一个回复框，编辑另一个工单会覆盖原草稿；保留ID、数据、搜索和状态动作，按工单保存本会话草稿。",
+            "snapshot": "before-first-fix"
+          }
+        ],
+        "额外修复": [],
+        "修复轮数": 1,
+        "证据目录": "evidence/generation/full-rem-16",
+        "人工验收": "MANUAL_PENDING",
+        "最小回滚": "仅本题site/runs/16/full内本次生成的明确文件；受限改版可从冻结输入恢复同名index.html，原始输入未修改。",
+        "输入sha256": "f5644bd95e0c48f4b01c9335b9c48144be171c7111cc0b4fc8bf76cb360f774e"
+      },
+      {
+        "题号": "18",
+        "模式": "只审阅",
+        "开始时间": "2026-10-29T10:47:05.410Z",
+        "结束时间": "2026-10-29T10:49:56.595Z",
+        "条件": "full",
+        "方向理由": "只观察冻结输入，报告按问题、复现、影响、建议、正常对照与未知组织；不改输入。",
+        "完整模型版本": "未暴露",
+        "章法技能sha256": "b793b900c5f79ff75a08d8732d6bf9967869216d6268d691095cadb736572cb9",
+        "产物": {
+          "site/runs/18/full/index.html": "71634c5221ce7311b107ecf767710cd8e61020b1ab3711adba767f9f1a34d082",
+          "site/runs/18/full/measure.css": "cc0ba1e4da554d44e1a1a753512a1e52e78c7901debdc5c44d97c948b2a826a4",
+          "site/runs/18/full/report.json": "7e4aff53d8eeb097d384929ca3a6f74ba2f036d92d05a09935a2381abf4679ca",
+          "site/runs/18/full/style.css": "3d7ca692bcacd2e04b57c44b6af6a4d1d66400cafd4a8569f87d2f39f1951849"
+        },
+        "实际操作": [
+          {
+            "width": 390,
+            "actions": [
+              "Tab遍历先修入口并点击本地模拟申请，记录状态结果"
+            ],
+            "externalRequests": [],
+            "prerequisites": false,
+            "tabStops": [
+              "<button id=\"apply\">本地模拟申请</button>",
+              "<body><main><p class=\"notice\">演示内容，仅用于中文网页设计评测。 这是审阅或改版的冻结输入，不是已验收成品。</p><h1>面向中文界面的信息组织、排版验证与任务可用性入门实践课</h1><p>有基础HTML与CSS知识，能在本地运行静态页面的学习者。</p><div class=\"hover-only\"><span>查看先修条件</span><div class=\"prerequisites\"><ul><li>能编辑HTML与CSS。</li><li>理解浏览器开发工具的基本使用。</li><li>不要求已有设计学位。</li></ul></div></div><p>章法教学角色甲（合成人物，无真实履历背书）</p><ul><li><dl><dt>课次</dt><dd>第一讲</dd><dt>内容</dt><dd>明确任务与冻结内容</dd></dl></li><li><dl><dt>课次</dt><dd>第二讲</dd><dt>内容</dt><dd>中文阅读与页面层级</dd></dl></li><li><dl><dt>课次</dt><dd>第三讲</dd><dt>内容</dt><dd>浏览器测量与缺陷复现</dd></dl></li><li><dl><dt>课次</dt><dd>第四讲</dd><dt>内容</dt><dd>任务回放与证据整理</dd></dl></li></ul><p>¥399／期（演示）</p><p>无真实招生名额</p><p>仅可本地模拟申请，不保证录取，不会外发资料。</p><button id=\"apply\">本地模拟申请</button><output id=\"result\" aria-live=\"polite\"></output></main><script>document.querySelector('#apply').onclick=()=>document.querySelector('#result').textContent='已录取';</script></body>",
+              "<button id=\"apply\">本地模拟申请</button>",
+              "<button id=\"apply\">本地模拟申请</button>",
+              "<body><main><p class=\"notice\">演示内容，仅用于中文网页设计评测。 这是审阅或改版的冻结输入，不是已验收成品。</p><h1>面向中文界面的信息组织、排版验证与任务可用性入门实践课</h1><p>有基础HTML与CSS知识，能在本地运行静态页面的学习者。</p><div class=\"hover-only\"><span>查看先修条件</span><div class=\"prerequisites\"><ul><li>能编辑HTML与CSS。</li><li>理解浏览器开发工具的基本使用。</li><li>不要求已有设计学位。</li></ul></div></div><p>章法教学角色甲（合成人物，无真实履历背书）</p><ul><li><dl><dt>课次</dt><dd>第一讲</dd><dt>内容</dt><dd>明确任务与冻结内容</dd></dl></li><li><dl><dt>课次</dt><dd>第二讲</dd><dt>内容</dt><dd>中文阅读与页面层级</dd></dl></li><li><dl><dt>课次</dt><dd>第三讲</dd><dt>内容</dt><dd>浏览器测量与缺陷复现</dd></dl></li><li><dl><dt>课次</dt><dd>第四讲</dd><dt>内容</dt><dd>任务回放与证据整理</dd></dl></li></ul><p>¥399／期（演示）</p><p>无真实招生名额</p><p>仅可本地模拟申请，不保证录取，不会外发资料。</p><button id=\"apply\">本地模拟申请</button><output id=\"result\" aria-live=\"polite\"></output></main><script>document.querySelector('#apply').onclick=()=>document.querySelector('#result').textContent='已录取';</script></body>"
+            ],
+            "applicationResult": "已录取",
+            "status": "pass"
+          },
+          {
+            "width": 1440,
+            "actions": [
+              "Tab遍历先修入口并点击本地模拟申请，记录状态结果"
+            ],
+            "externalRequests": [],
+            "prerequisites": false,
+            "tabStops": [
+              "<button id=\"apply\">本地模拟申请</button>",
+              "<body><main><p class=\"notice\">演示内容，仅用于中文网页设计评测。 这是审阅或改版的冻结输入，不是已验收成品。</p><h1>面向中文界面的信息组织、排版验证与任务可用性入门实践课</h1><p>有基础HTML与CSS知识，能在本地运行静态页面的学习者。</p><div class=\"hover-only\"><span>查看先修条件</span><div class=\"prerequisites\"><ul><li>能编辑HTML与CSS。</li><li>理解浏览器开发工具的基本使用。</li><li>不要求已有设计学位。</li></ul></div></div><p>章法教学角色甲（合成人物，无真实履历背书）</p><ul><li><dl><dt>课次</dt><dd>第一讲</dd><dt>内容</dt><dd>明确任务与冻结内容</dd></dl></li><li><dl><dt>课次</dt><dd>第二讲</dd><dt>内容</dt><dd>中文阅读与页面层级</dd></dl></li><li><dl><dt>课次</dt><dd>第三讲</dd><dt>内容</dt><dd>浏览器测量与缺陷复现</dd></dl></li><li><dl><dt>课次</dt><dd>第四讲</dd><dt>内容</dt><dd>任务回放与证据整理</dd></dl></li></ul><p>¥399／期（演示）</p><p>无真实招生名额</p><p>仅可本地模拟申请，不保证录取，不会外发资料。</p><button id=\"apply\">本地模拟申请</button><output id=\"result\" aria-live=\"polite\"></output></main><script>document.querySelector('#apply').onclick=()=>document.querySelector('#result').textContent='已录取';</script></body>",
+              "<button id=\"apply\">本地模拟申请</button>",
+              "<button id=\"apply\">本地模拟申请</button>",
+              "<body><main><p class=\"notice\">演示内容，仅用于中文网页设计评测。 这是审阅或改版的冻结输入，不是已验收成品。</p><h1>面向中文界面的信息组织、排版验证与任务可用性入门实践课</h1><p>有基础HTML与CSS知识，能在本地运行静态页面的学习者。</p><div class=\"hover-only\"><span>查看先修条件</span><div class=\"prerequisites\"><ul><li>能编辑HTML与CSS。</li><li>理解浏览器开发工具的基本使用。</li><li>不要求已有设计学位。</li></ul></div></div><p>章法教学角色甲（合成人物，无真实履历背书）</p><ul><li><dl><dt>课次</dt><dd>第一讲</dd><dt>内容</dt><dd>明确任务与冻结内容</dd></dl></li><li><dl><dt>课次</dt><dd>第二讲</dd><dt>内容</dt><dd>中文阅读与页面层级</dd></dl></li><li><dl><dt>课次</dt><dd>第三讲</dd><dt>内容</dt><dd>浏览器测量与缺陷复现</dd></dl></li><li><dl><dt>课次</dt><dd>第四讲</dd><dt>内容</dt><dd>任务回放与证据整理</dd></dl></li></ul><p>¥399／期（演示）</p><p>无真实招生名额</p><p>仅可本地模拟申请，不保证录取，不会外发资料。</p><button id=\"apply\">本地模拟申请</button><output id=\"result\" aria-live=\"polite\"></output></main><script>document.querySelector('#apply').onclick=()=>document.querySelector('#result').textContent='已录取';</script></body>"
+            ],
+            "applicationResult": "已录取",
+            "status": "pass"
+          }
+        ],
+        "命令": [
+          "node 本机研究或临时路径（已隐去）",
+          "node node_modules/measure-cjk/bin/measure-cjk.js lint http://127.0.0.1:4179/runs/18/full/ --render --widths 390,1440 --format json --out evidence/generation/full-rem-18/measure-final/raw.json"
+        ],
+        "分寸": {
+          "状态": "pass",
+          "errors": 0,
+          "warns": 0,
+          "disabled": [],
+          "原始报告": "evidence/generation/full-rem-18/measure-final/raw.json",
+          "注意": "此项验证报告产物排版；冻结输入仍保留原始失败，详见measure-first。"
+        },
+        "浏览器几何": {
+          "状态": "pass",
+          "报告": "evidence/generation/full-rem-18/output-final/report.json",
+          "总状态": "not_run",
+          "说明": "该检查以noMeasure调用，综合状态not_run仍如实保留；中文规则以独立实际分寸原始报告为准。"
+        },
+        "压力检查": [
+          {
+            "mode": "320",
+            "viewport": 320,
+            "documentWidth": 320,
+            "bodyText": 265,
+            "images": 0,
+            "overflow": false,
+            "note": "320像素几何与完整截图"
+          },
+          {
+            "mode": "text200",
+            "viewport": 390,
+            "documentWidth": 390,
+            "bodyText": 265,
+            "images": 0,
+            "overflow": false,
+            "note": "将每个元素实际字号加倍的200%文字压力测试；未调用浏览器菜单缩放。"
+          },
+          {
+            "mode": "fallback",
+            "viewport": 390,
+            "documentWidth": 390,
+            "bodyText": 265,
+            "images": 0,
+            "overflow": false,
+            "note": "强制系统sans-serif回退；未证明逐字字形来源。"
+          }
+        ],
+        "键盘覆盖": "实际Tab遍历，确认先修入口不可达。",
+        "缺图检查": "页面无外部img素材；中性文字占位或内联SVG，未另造缺失网络图片，不适用图片加载失败模拟。",
+        "已知问题": [
+          {
+            "severity": "高",
+            "element": ".hover-only / .prerequisites",
+            "title": "先修条件无法由键盘展开",
+            "steps": "加载页面不移动鼠标，以Tab遍历焦点，尝试到达“查看先修条件”。",
+            "observed": ".prerequisites初始不可见；入口是无tabindex的span，Tab直接到达申请按钮。CSS仅:hover显示先修条件。",
+            "impact": "键盘用户不能判断自己是否适合课程；触屏稳定展开也没有明确控件。",
+            "suggestion": "改为常驻清单，或用原生details/summary、按钮提供可聚焦展开状态。"
+          },
+          {
+            "severity": "高",
+            "element": "#apply / #result",
+            "title": "模拟申请反馈误写为已录取",
+            "steps": "在390、1440像素点击“本地模拟申请”。",
+            "observed": "反馈为“已录取”，但正文明确无真实招生名额、仅本地模拟且不保证录取。",
+            "impact": "把本地动作冒充招生决定，破坏演示边界。",
+            "suggestion": "反馈明确“本地模拟申请已记录，未提交、不保证录取”。"
+          }
+        ],
+        "边界": "观测操作脚本pass仅表示成功取得证据，不表示被审阅输入无缺陷。",
+        "首轮修复": [],
+        "额外修复": [],
+        "修复轮数": 0,
+        "证据目录": "evidence/generation/full-rem-18",
+        "人工验收": "MANUAL_PENDING",
+        "最小回滚": "仅本题site/runs/18/full内本次生成的明确文件；受限改版可从冻结输入恢复同名index.html，原始输入未修改。",
+        "输入sha256": "1dad16946217cf3738656f1f95bc2ec35a59b31e61e6a344490a41bc2de8aa81"
+      },
+      {
+        "题号": "19",
+        "模式": "新建",
+        "开始时间": "2026-10-29T10:45:37.395Z",
+        "结束时间": "2026-10-29T10:49:56.553Z",
+        "条件": "full",
+        "方向理由": "准备指南围绕四项清单，编号与完成状态并列；步骤先交代适用场景，清单不伪装提交表单。",
+        "完整模型版本": "未暴露",
+        "章法技能sha256": "b793b900c5f79ff75a08d8732d6bf9967869216d6268d691095cadb736572cb9",
+        "产物": {
+          "site/runs/19/full/app.js": "3c29d4fbdc4e7d8288e5c3f189a35ecae49b8339a4932ea394060a23bf188069",
+          "site/runs/19/full/index.html": "869517329b17bd8ea778b9c82fd21865a10dece853916a918754194d4be57a32",
+          "site/runs/19/full/measure.css": "cc0ba1e4da554d44e1a1a753512a1e52e78c7901debdc5c44d97c948b2a826a4",
+          "site/runs/19/full/style.css": "0372b6769380d15e2a00c0b46609c0a443c58dacf88874e25cc493a4d87edd5a"
+        },
+        "实际操作": [
+          {
+            "width": 390,
+            "actions": [
+              "独立勾选计数2／4",
+              "全部复位0／4"
+            ],
+            "externalRequests": [],
+            "status": "pass"
+          },
+          {
+            "width": 1440,
+            "actions": [
+              "独立勾选计数2／4",
+              "全部复位0／4"
+            ],
+            "externalRequests": [],
+            "status": "pass"
+          }
+        ],
+        "命令": [
+          "node 本机研究或临时路径（已隐去）",
+          "node node_modules/measure-cjk/bin/measure-cjk.js lint http://127.0.0.1:4179/runs/19/full/ --render --widths 390,1440 --format json --out evidence/generation/full-rem-19/measure-final/raw.json"
+        ],
+        "分寸": {
+          "状态": "pass",
+          "errors": 0,
+          "warns": 0,
+          "disabled": [],
+          "原始报告": "evidence/generation/full-rem-19/measure-final/raw.json",
+          "注意": "只代表已运行的中文规则。"
+        },
+        "浏览器几何": {
+          "状态": "pass",
+          "报告": "evidence/generation/full-rem-19/final/preflight/report.json",
+          "总状态": "not_run",
+          "说明": "该检查以noMeasure调用，综合状态not_run仍如实保留；中文规则以独立实际分寸原始报告为准。"
+        },
+        "压力检查": [
+          {
+            "mode": "320",
+            "viewport": 320,
+            "documentWidth": 320,
+            "bodyText": 381,
+            "images": 0,
+            "overflow": false,
+            "note": "320像素几何与完整截图"
+          },
+          {
+            "mode": "text200",
+            "viewport": 390,
+            "documentWidth": 390,
+            "bodyText": 381,
+            "images": 0,
+            "overflow": false,
+            "note": "将每个元素实际字号加倍的200%文字压力测试；未调用浏览器菜单缩放。"
+          },
+          {
+            "mode": "fallback",
+            "viewport": 390,
+            "documentWidth": 390,
+            "bodyText": 381,
+            "images": 0,
+            "overflow": false,
+            "note": "强制系统sans-serif回退；未证明逐字字形来源。"
+          }
+        ],
+        "键盘覆盖": "原生控件主任务已执行；未逐页完成全部纯键盘主路径，不宣称全面键盘通过。",
+        "缺图检查": "页面无外部img素材；中性文字占位或内联SVG，未另造缺失网络图片，不适用图片加载失败模拟。",
+        "已知问题": [
+          "人类审美、真实手机和读屏验收未执行，MANUAL_PENDING。",
+          "实际字体逐字命中与完整无障碍合规未验证。"
+        ],
+        "边界": "仅当前页面会话的演示行为；无真实服务请求。",
+        "首轮修复": [
+          {
+            "round": 1,
+            "reason": "标题将“使用”拆成跨行，按空间身份与准备任务分行。",
+            "snapshot": "before-first-fix"
+          }
+        ],
+        "额外修复": [],
+        "修复轮数": 1,
+        "证据目录": "evidence/generation/full-rem-19",
+        "人工验收": "MANUAL_PENDING",
+        "最小回滚": "仅本题site/runs/19/full内本次生成的明确文件；受限改版可从冻结输入恢复同名index.html，原始输入未修改。",
+        "输入sha256": null
+      },
+      {
+        "题号": "20",
+        "模式": "新建",
+        "开始时间": "2026-10-29T10:45:37.396Z",
+        "结束时间": "2026-10-29T10:49:56.594Z",
+        "条件": "full",
+        "方向理由": "房型比较用并列条款清单取代摄影预订促销；价格、楼层、取消窗口同序呈现，摘要明确库存边界。",
+        "完整模型版本": "未暴露",
+        "章法技能sha256": "b793b900c5f79ff75a08d8732d6bf9967869216d6268d691095cadb736572cb9",
+        "产物": {
+          "site/runs/20/full/app.js": "445e1517505824589b243e14158cb3a43ed32be1f2f750f393a8b5d9acbd0f93",
+          "site/runs/20/full/index.html": "5f64eb53df227e10256cd818edf21a9da1cc74f49e51909ebc7042fcbec03765",
+          "site/runs/20/full/measure.css": "cc0ba1e4da554d44e1a1a753512a1e52e78c7901debdc5c44d97c948b2a826a4",
+          "site/runs/20/full/style.css": "271e7d233090edae6785e3c9a459dfdb00e189d914aa42259a439ceab2767fb2"
+        },
+        "实际操作": [
+          {
+            "width": 390,
+            "actions": [
+              "双人临院摘要含人民币480",
+              "双人河景摘要含日期晚数与库存边界"
+            ],
+            "externalRequests": [],
+            "status": "pass"
+          },
+          {
+            "width": 1440,
+            "actions": [
+              "双人临院摘要含人民币480",
+              "双人河景摘要含日期晚数与库存边界"
+            ],
+            "externalRequests": [],
+            "status": "pass"
+          }
+        ],
+        "命令": [
+          "node 本机研究或临时路径（已隐去）",
+          "node node_modules/measure-cjk/bin/measure-cjk.js lint http://127.0.0.1:4179/runs/20/full/ --render --widths 390,1440 --format json --out evidence/generation/full-rem-20/measure-final/raw.json"
+        ],
+        "分寸": {
+          "状态": "pass",
+          "errors": 0,
+          "warns": 0,
+          "disabled": [],
+          "原始报告": "evidence/generation/full-rem-20/measure-final/raw.json",
+          "注意": "只代表已运行的中文规则。"
+        },
+        "浏览器几何": {
+          "状态": "pass",
+          "报告": "evidence/generation/full-rem-20/final/preflight/report.json",
+          "总状态": "not_run",
+          "说明": "该检查以noMeasure调用，综合状态not_run仍如实保留；中文规则以独立实际分寸原始报告为准。"
+        },
+        "压力检查": [
+          {
+            "mode": "320",
+            "viewport": 320,
+            "documentWidth": 320,
+            "bodyText": 475,
+            "images": 0,
+            "overflow": false,
+            "note": "320像素几何与完整截图"
+          },
+          {
+            "mode": "text200",
+            "viewport": 390,
+            "documentWidth": 390,
+            "bodyText": 475,
+            "images": 0,
+            "overflow": false,
+            "note": "将每个元素实际字号加倍的200%文字压力测试；未调用浏览器菜单缩放。"
+          },
+          {
+            "mode": "fallback",
+            "viewport": 390,
+            "documentWidth": 390,
+            "bodyText": 475,
+            "images": 0,
+            "overflow": false,
+            "note": "强制系统sans-serif回退；未证明逐字字形来源。"
+          }
+        ],
+        "键盘覆盖": "原生控件主任务已执行；未逐页完成全部纯键盘主路径，不宣称全面键盘通过。",
+        "缺图检查": "页面无外部img素材；中性文字占位或内联SVG，未另造缺失网络图片，不适用图片加载失败模拟。",
+        "已知问题": [
+          "人类审美、真实手机和读屏验收未执行，MANUAL_PENDING。",
+          "实际字体逐字命中与完整无障碍合规未验证。"
+        ],
+        "边界": "仅当前页面会话的演示行为；无真实服务请求。",
+        "首轮修复": [
+          {
+            "round": 1,
+            "reason": "标题“住宿条件”被拆行；价格小字继承Georgia无中文字体触发T13，补足系统中文字体栈。",
+            "snapshot": "before-first-fix"
+          }
+        ],
+        "额外修复": [],
+        "修复轮数": 1,
+        "证据目录": "evidence/generation/full-rem-20",
+        "人工验收": "MANUAL_PENDING",
+        "最小回滚": "仅本题site/runs/20/full内本次生成的明确文件；受限改版可从冻结输入恢复同名index.html，原始输入未修改。",
+        "输入sha256": null
+      },
+      {
+        "题号": "22",
+        "模式": "新建",
+        "开始时间": "2026-10-29T10:45:37.397Z",
+        "结束时间": "2026-10-29T10:49:58.573Z",
+        "条件": "full",
+        "方向理由": "食堂菜单以菜名、份量、过敏原与价格构成点单清单；缺货直接禁用，菜篮保留独立总价与本地说明。",
+        "完整模型版本": "未暴露",
+        "章法技能sha256": "b793b900c5f79ff75a08d8732d6bf9967869216d6268d691095cadb736572cb9",
+        "产物": {
+          "site/runs/22/full/app.js": "22ff8ab322ddb7bdc4c41b05c1927ef1d23c215577bb486427b617182cba30c6",
+          "site/runs/22/full/index.html": "938aa778310a07ef622e59a7bb2ce9893dafaa6e0025ef79c40a8fd0a9ca5036",
+          "site/runs/22/full/measure.css": "cc0ba1e4da554d44e1a1a753512a1e52e78c7901debdc5c44d97c948b2a826a4",
+          "site/runs/22/full/style.css": "b5819e9b83257a5f8aacdf5306ea5220d4c5e3c70aab7b450e9d09111e446171"
+        },
+        "实际操作": [
+          {
+            "width": 390,
+            "actions": [
+              "热食仅F01",
+              "加入番茄烩饭总价38.00",
+              "F03缺货不能加入",
+              "清空菜篮归零"
+            ],
+            "externalRequests": [],
+            "status": "pass"
+          },
+          {
+            "width": 1440,
+            "actions": [
+              "热食仅F01",
+              "加入番茄烩饭总价38.00",
+              "F03缺货不能加入",
+              "清空菜篮归零"
+            ],
+            "externalRequests": [],
+            "status": "pass"
+          }
+        ],
+        "命令": [
+          "node 本机研究或临时路径（已隐去）",
+          "node node_modules/measure-cjk/bin/measure-cjk.js lint http://127.0.0.1:4179/runs/22/full/ --render --widths 390,1440 --format json --out evidence/generation/full-rem-22/measure-final/raw.json"
+        ],
+        "分寸": {
+          "状态": "pass",
+          "errors": 0,
+          "warns": 0,
+          "disabled": [],
+          "原始报告": "evidence/generation/full-rem-22/measure-final/raw.json",
+          "注意": "只代表已运行的中文规则。"
+        },
+        "浏览器几何": {
+          "状态": "pass",
+          "报告": "evidence/generation/full-rem-22/final/preflight/report.json",
+          "总状态": "not_run",
+          "说明": "该检查以noMeasure调用，综合状态not_run仍如实保留；中文规则以独立实际分寸原始报告为准。"
+        },
+        "压力检查": [
+          {
+            "mode": "320",
+            "viewport": 320,
+            "documentWidth": 320,
+            "bodyText": 455,
+            "images": 0,
+            "overflow": false,
+            "note": "320像素几何与完整截图"
+          },
+          {
+            "mode": "text200",
+            "viewport": 390,
+            "documentWidth": 390,
+            "bodyText": 455,
+            "images": 0,
+            "overflow": false,
+            "note": "将每个元素实际字号加倍的200%文字压力测试；未调用浏览器菜单缩放。"
+          },
+          {
+            "mode": "fallback",
+            "viewport": 390,
+            "documentWidth": 390,
+            "bodyText": 455,
+            "images": 0,
+            "overflow": false,
+            "note": "强制系统sans-serif回退；未证明逐字字形来源。"
+          }
+        ],
+        "键盘覆盖": "原生控件主任务已执行；未逐页完成全部纯键盘主路径，不宣称全面键盘通过。",
+        "缺图检查": "页面无外部img素材；中性文字占位或内联SVG，未另造缺失网络图片，不适用图片加载失败模拟。",
+        "已知问题": [
+          "人类审美、真实手机和读屏验收未执行，MANUAL_PENDING。",
+          "实际字体逐字命中与完整无障碍合规未验证。"
+        ],
+        "边界": "仅当前页面会话的演示行为；无真实服务请求。",
+        "首轮修复": [],
+        "额外修复": [],
+        "修复轮数": 0,
+        "证据目录": "evidence/generation/full-rem-22",
+        "人工验收": "MANUAL_PENDING",
+        "最小回滚": "仅本题site/runs/22/full内本次生成的明确文件；受限改版可从冻结输入恢复同名index.html，原始输入未修改。",
+        "输入sha256": null
+      },
+      {
+        "题号": "23",
+        "模式": "新建",
+        "开始时间": "2026-10-29T10:45:37.397Z",
+        "结束时间": "2026-10-29T10:49:58.577Z",
+        "条件": "full",
+        "方向理由": "作品细读以明确标记的现代几何碗形为主对象，作品档案逐项对照，放大用原生对话框保留键盘退出。",
+        "完整模型版本": "未暴露",
+        "章法技能sha256": "b793b900c5f79ff75a08d8732d6bf9967869216d6268d691095cadb736572cb9",
+        "产物": {
+          "site/runs/23/full/app.js": "ef678081f7cf617202a0ee28efbec3e7e951e4b1030ce54842ec5292214647b0",
+          "site/runs/23/full/index.html": "79b5222237aa1de26de7ec9bfe64dc29d36dfa58aead5c16ec4537f5bad949fe",
+          "site/runs/23/full/measure.css": "cc0ba1e4da554d44e1a1a753512a1e52e78c7901debdc5c44d97c948b2a826a4",
+          "site/runs/23/full/style.css": "a0173694fbbbca7deec603cdf98fa2913ad647873e2a067380816a1c3f9cf2d0"
+        },
+        "实际操作": [
+          {
+            "width": 390,
+            "actions": [
+              "打开细节示意",
+              "Esc关闭后焦点返回",
+              "关闭按钮退出",
+              "来源与授权可定位"
+            ],
+            "externalRequests": [],
+            "status": "pass"
+          },
+          {
+            "width": 1440,
+            "actions": [
+              "打开细节示意",
+              "Esc关闭后焦点返回",
+              "关闭按钮退出",
+              "来源与授权可定位"
+            ],
+            "externalRequests": [],
+            "status": "pass"
+          }
+        ],
+        "命令": [
+          "node 本机研究或临时路径（已隐去）",
+          "node node_modules/measure-cjk/bin/measure-cjk.js lint http://127.0.0.1:4179/runs/23/full/ --render --widths 390,1440 --format json --out evidence/generation/full-rem-23/measure-final/raw.json"
+        ],
+        "分寸": {
+          "状态": "pass",
+          "errors": 0,
+          "warns": 0,
+          "disabled": [],
+          "原始报告": "evidence/generation/full-rem-23/measure-final/raw.json",
+          "注意": "只代表已运行的中文规则。"
+        },
+        "浏览器几何": {
+          "状态": "pass",
+          "报告": "evidence/generation/full-rem-23/final/preflight/report.json",
+          "总状态": "not_run",
+          "说明": "该检查以noMeasure调用，综合状态not_run仍如实保留；中文规则以独立实际分寸原始报告为准。"
+        },
+        "压力检查": [
+          {
+            "mode": "320",
+            "viewport": 320,
+            "documentWidth": 320,
+            "bodyText": 464,
+            "images": 0,
+            "overflow": false,
+            "note": "320像素几何与完整截图"
+          },
+          {
+            "mode": "text200",
+            "viewport": 390,
+            "documentWidth": 390,
+            "bodyText": 464,
+            "images": 0,
+            "overflow": false,
+            "note": "将每个元素实际字号加倍的200%文字压力测试；未调用浏览器菜单缩放。"
+          },
+          {
+            "mode": "fallback",
+            "viewport": 390,
+            "documentWidth": 390,
+            "bodyText": 464,
+            "images": 0,
+            "overflow": false,
+            "note": "强制系统sans-serif回退；未证明逐字字形来源。"
+          }
+        ],
+        "键盘覆盖": "实际完成对话框打开、Esc和关闭按钮、焦点返回。",
+        "缺图检查": "页面无外部img素材；中性文字占位或内联SVG，未另造缺失网络图片，不适用图片加载失败模拟。",
+        "已知问题": [
+          "人类审美、真实手机和读屏验收未执行，MANUAL_PENDING。",
+          "实际字体逐字命中与完整无障碍合规未验证。"
+        ],
+        "边界": "仅当前页面会话的演示行为；无真实服务请求。",
+        "首轮修复": [
+          {
+            "round": 1,
+            "reason": "标题把“一种秩序”拆开，按两句分行；避免作品框无信息拉伸。",
+            "snapshot": "before-first-fix"
+          }
+        ],
+        "额外修复": [],
+        "修复轮数": 1,
+        "证据目录": "evidence/generation/full-rem-23",
+        "人工验收": "MANUAL_PENDING",
+        "最小回滚": "仅本题site/runs/23/full内本次生成的明确文件；受限改版可从冻结输入恢复同名index.html，原始输入未修改。",
+        "输入sha256": null
+      },
+      {
+        "题号": "24",
+        "模式": "只审阅",
+        "开始时间": "2026-10-29T10:47:20.987Z",
+        "结束时间": "2026-10-29T10:49:58.575Z",
+        "条件": "full",
+        "方向理由": "只观察冻结输入，报告按问题、复现、影响、建议、正常对照与未知组织；不改输入。",
+        "完整模型版本": "未暴露",
+        "章法技能sha256": "b793b900c5f79ff75a08d8732d6bf9967869216d6268d691095cadb736572cb9",
+        "产物": {
+          "site/runs/24/full/index.html": "dd9c879162e2bf6a101ea9ff0ca1341ee00814246e5e27e55d48d38cda7b09f8",
+          "site/runs/24/full/measure.css": "cc0ba1e4da554d44e1a1a753512a1e52e78c7901debdc5c44d97c948b2a826a4",
+          "site/runs/24/full/report.json": "9690bc52e1ad4581de908256490bc9e2d03fb2fa2ec5a07b83c90e956e5a7c8e",
+          "site/runs/24/full/style.css": "3d7ca692bcacd2e04b57c44b6af6a4d1d66400cafd4a8569f87d2f39f1951849"
+        },
+        "实际操作": [
+          {
+            "width": 390,
+            "actions": [
+              "空表与填写确认后的本地反馈均实际执行"
+            ],
+            "externalRequests": [],
+            "terms": {
+              "fontSize": "8px",
+              "text": "不含代码实施。"
+            },
+            "emptySubmission": "本地模拟咨询已记录，未向任何服务方发送信息。",
+            "filledSubmission": "本地模拟咨询已记录，未向任何服务方发送信息。",
+            "status": "pass"
+          },
+          {
+            "width": 1440,
+            "actions": [
+              "空表与填写确认后的本地反馈均实际执行"
+            ],
+            "externalRequests": [],
+            "terms": {
+              "fontSize": "8px",
+              "text": "不含代码实施。"
+            },
+            "emptySubmission": "本地模拟咨询已记录，未向任何服务方发送信息。",
+            "filledSubmission": "本地模拟咨询已记录，未向任何服务方发送信息。",
+            "status": "pass"
+          }
+        ],
+        "命令": [
+          "node 本机研究或临时路径（已隐去）",
+          "node node_modules/measure-cjk/bin/measure-cjk.js lint http://127.0.0.1:4179/runs/24/full/ --render --widths 390,1440 --format json --out evidence/generation/full-rem-24/measure-final/raw.json"
+        ],
+        "分寸": {
+          "状态": "pass",
+          "errors": 0,
+          "warns": 0,
+          "disabled": [],
+          "原始报告": "evidence/generation/full-rem-24/measure-final/raw.json",
+          "注意": "此项验证报告产物排版；冻结输入仍保留原始失败，详见measure-first。"
+        },
+        "浏览器几何": {
+          "状态": "pass",
+          "报告": "evidence/generation/full-rem-24/output-final/report.json",
+          "总状态": "not_run",
+          "说明": "该检查以noMeasure调用，综合状态not_run仍如实保留；中文规则以独立实际分寸原始报告为准。"
+        },
+        "压力检查": [
+          {
+            "mode": "320",
+            "viewport": 320,
+            "documentWidth": 320,
+            "bodyText": 298,
+            "images": 0,
+            "overflow": false,
+            "note": "320像素几何与完整截图"
+          },
+          {
+            "mode": "text200",
+            "viewport": 390,
+            "documentWidth": 390,
+            "bodyText": 298,
+            "images": 0,
+            "overflow": false,
+            "note": "将每个元素实际字号加倍的200%文字压力测试；未调用浏览器菜单缩放。"
+          },
+          {
+            "mode": "fallback",
+            "viewport": 390,
+            "documentWidth": 390,
+            "bodyText": 298,
+            "images": 0,
+            "overflow": false,
+            "note": "强制系统sans-serif回退；未证明逐字字形来源。"
+          }
+        ],
+        "键盘覆盖": "原生控件主任务已执行；未逐页完成全部纯键盘主路径，不宣称全面键盘通过。",
+        "缺图检查": "页面无外部img素材；中性文字占位或内联SVG，未另造缺失网络图片，不适用图片加载失败模拟。",
+        "已知问题": [
+          {
+            "severity": "高",
+            "element": ".terms",
+            "title": "费用排除条款仅8像素",
+            "steps": "在390、1440像素读取费用行，获取.terms计算字号。",
+            "observed": "“不含代码实施。”计算font-size为8px；两宽度一致。",
+            "impact": "关键费用边界过小，容易误解服务包含代码实施；前面的“不含前后端开发”清单仍存在。",
+            "suggestion": "使费用行排除条款与相邻正文同等可读，至少达到正文14px以上并保留完整文字。"
+          },
+          {
+            "severity": "高",
+            "element": "#consult [name=consent] / #result",
+            "title": "未确认本地说明也接受空提交",
+            "steps": "不填写称呼、问题、不勾选确认框，点击“提交本地演示需求”。随后填写并勾选再提交比较。",
+            "observed": "空提交与完整提交都返回“本地模拟咨询已记录，未向任何服务方发送信息。”；输入无required，脚本未检查确认。",
+            "impact": "要求确认的字段没有实际约束；用户无法区分无效资料与有效的本地模拟。",
+            "suggestion": "要求明确勾选本地说明并校验必要输入；空输入就定位可恢复错误，仍不外发。"
+          }
+        ],
+        "边界": "观测操作脚本pass仅表示成功取得证据，不表示被审阅输入无缺陷。",
+        "首轮修复": [],
+        "额外修复": [],
+        "修复轮数": 0,
+        "证据目录": "evidence/generation/full-rem-24",
+        "人工验收": "MANUAL_PENDING",
+        "最小回滚": "仅本题site/runs/24/full内本次生成的明确文件；受限改版可从冻结输入恢复同名index.html，原始输入未修改。",
+        "输入sha256": "cd728a53f2439b5be3da347686e070ac1cf40c027fee36be5356f8a6846f9b59"
+      }
+    ],
+    "protocolDeviations": [
+      "初版完整写出后才运行标题行探针，未执行全页铺开前的片段试排。",
+      "每题只保留一个实际方向和理由，未先保留三个可比较首屏方向。",
+      "03、06、12题超出一次首轮修复预算；已保留失败文件、报告和逐轮原因，不计公平胜率。",
+      "初次文字放大使用百分比叠加探针，不能当作准确200%证据；后续另用实际字号逐元素乘2的压力测试，保留两份记录。",
+      "同会话自审，没有独立人类或真机验收；不宣称完整技能流程通过，不计效果胜率。"
+    ]
+  }
+}

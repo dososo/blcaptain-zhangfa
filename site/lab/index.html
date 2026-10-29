@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="十二组可操作的中文网页局部规则示意。同一内容、有限变量，观察排版与交互的变化。">
+  <title>局部试排室 · 章法</title>
+  <link rel="stylesheet" href="./lab.css">
+  <script type="module" src="./lab.js"></script>
+</head>
+<body>
+  <a class="skip" href="#experiment">跳到试排</a>
+  <header class="masthead"><a href="/">章法 / 返回案例册</a><span>局部试排室 · 十二组</span></header>
+  <main>
+    <div class="intro"><p class="eyebrow">把一处细节，放到眼前</p><h1>同一段中文，<br>试一条规则。</h1><p>调节宽度、切换规则，再亲手触发焦点或失败状态。这里保留原文，只改变列出的少数变量。</p></div>
+    <p class="boundary"><strong>手工规则示意，不计入生成效果实验</strong><span>这里的“问题 / 改进”是预先编排的教学条件，不是代理生成结果，也没有人类偏好胜率。</span></p>
+    <section class="workbench" aria-label="局部规则试排">
+      <aside><label for="rule-select">选择一组局部规则</label><select id="rule-select"></select><ol id="rule-list" aria-label="十二组规则"></ol></aside>
+      <div id="experiment" tabindex="-1">
+        <div class="experiment-heading"><div><p class="eyebrow" id="rule-number"></p><h2 id="rule-title"></h2></div><button id="reset" type="button">重置本组</button></div>
+        <p id="rule-intro"></p>
+        <div class="toolbar"><fieldset><legend>试排视口上限</legend><button type="button" data-width="390" aria-pressed="true">手机 390 像素</button><button type="button" data-width="768" aria-pressed="false">平板 768 像素</button></fieldset><label for="view-select">查看方式 <select id="view-select"><option value="both">问题与改进</option><option value="before">仅问题</option><option value="after">仅改进</option></select></label></div>
+        <p class="width-note">视口不缩放；窗口不足时自动收窄，实际宽度显示在每栏下方。宽屏试排会纵向排列。</p>
+        <div id="comparisons" data-width="390" data-view="both">
+          <article class="sample" data-arm="before"><div class="sample-label"><h3>问题条件</h3><span>原始内容</span></div><iframe id="before-frame" title="问题条件的独立试排" sandbox="allow-scripts allow-same-origin allow-forms"></iframe><p class="metrics" id="before-metrics" aria-live="polite">等待试排</p></article>
+          <article class="sample" data-arm="after"><div class="sample-label"><h3>改进条件</h3><span>同一内容</span></div><iframe id="after-frame" title="改进条件的独立试排" sandbox="allow-scripts allow-same-origin allow-forms"></iframe><p class="metrics" id="after-metrics" aria-live="polite">等待试排</p></article>
+        </div>
+        <dl class="evidence"><div><dt>只改这些变量</dt><dd id="variables"></dd></div><div><dt>这次能证明什么</dt><dd id="proves"></dd></div><div><dt>这次没有证明什么</dt><dd id="limits"></dd></div></dl>
+        <p id="environment" class="environment"></p><p id="selection-status" class="sr-only" role="status"></p>
+      </div>
+    </section>
+    <footer><p>所有内容均为演示文案与演示数据。无外部字体、图片、请求；交互只在本地页面发生。</p><p>浏览器几何可复现，字体实际命中、地区字形与人类阅读体验仍需另行验收。</p></footer>
+  </main>
+</body>
+</html>

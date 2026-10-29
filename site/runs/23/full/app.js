@@ -1,0 +1,1 @@
+const dialog=document.querySelector('#detail'),entry=document.querySelector('#zoom');entry.onclick=()=>dialog.showModal();document.querySelector('#close').onclick=()=>dialog.close();dialog.addEventListener('close',()=>entry.focus());

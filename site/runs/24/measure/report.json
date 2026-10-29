@@ -1,0 +1,59 @@
+{
+  "id": "24",
+  "condition": "measure",
+  "mode": "只审阅",
+  "source": "http://127.0.0.1:4180/24/",
+  "observedAt": "2026-10-29T10:38:31.017Z",
+  "widths": [
+    390,
+    320,
+    1440
+  ],
+  "findings": [
+    {
+      "id": "24-1",
+      "status": "确定缺陷",
+      "severity": "中",
+      "title": "费用旁的实施排除条款字号过小",
+      "element": ".terms",
+      "widths": [
+        320,
+        390,
+        1440
+      ],
+      "steps": "读取费用行，计算样式显示“不含代码实施。”为 8px。",
+      "impact": "关键费用边界难读；上方不包含列表仍有完整开发排除说明。",
+      "suggestion": "将关键条款恢复到至少 14px 的可读正文尺度。",
+      "evidence": "evidence/generation/measure-rem-24/input-390.png"
+    },
+    {
+      "id": "24-2",
+      "status": "确定缺陷",
+      "severity": "中",
+      "title": "未确认本地模拟说明仍可提交",
+      "element": "#consult input[name=consent]",
+      "widths": [
+        320,
+        390,
+        1440
+      ],
+      "steps": "填入演示称呼与问题，保持确认复选框未选中，提交后仍显示本地记录成功。",
+      "impact": "表单中的确认动作没有实际约束，用户可绕过明确确认。",
+      "suggestion": "使用 required 或在本地提交处理前检查确认状态，并展示可恢复提示。",
+      "evidence": "evidence/generation/measure-rem-24/input-390.png"
+    }
+  ],
+  "normal": [
+    "服务明确不含前后端开发；费用为 ¥1800／次，含 90 分钟讨论和书面建议。",
+    "实际反馈说明未外发信息。",
+    "无图、无客户证言是已给定边界，不列为缺陷。"
+  ],
+  "suggestions": [
+    "如保留“查看合成预约摘要”流程文字，可增加可见摘要；目前仅观察到成功提示，不将缺少详细摘要直接认定为外发。"
+  ],
+  "unknown": [
+    "未检查真实手机触屏、屏幕阅读器、操作系统级字体故障。",
+    "未修改冻结输入；发现项均为建议，未验证修复完成。"
+  ],
+  "observations": "evidence/generation/measure-rem-review-observations.json"
+}

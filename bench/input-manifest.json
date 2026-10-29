@@ -1,0 +1,135 @@
+{
+  "version": "0.1.0",
+  "frozenAt": "2026-10-29T10:34:45.719254+00:00",
+  "说明": "冻结内容与输入的摘要；不能代替内容、交互或审阅证据。",
+  "files": [
+    {
+      "path": "bench/briefs/01.json",
+      "sha256": "25946a6227f4e89aeddf9e11ba7f012f7e38275f170e1ad775e9d9f9a6304b88"
+    },
+    {
+      "path": "bench/briefs/02.json",
+      "sha256": "26cb131cb9817e64feb56cf34ff54f1981673447f1b4a831d70085bb6e127e90"
+    },
+    {
+      "path": "bench/briefs/03.json",
+      "sha256": "6e6fdbeb378735796545bb4af3850ca22168595c5dac37405578415266d9c8ea"
+    },
+    {
+      "path": "bench/briefs/04.json",
+      "sha256": "07973f79706e6622736d8ad4678edfa60dff193f118e12df864448adf1fedf69"
+    },
+    {
+      "path": "bench/briefs/05.json",
+      "sha256": "923bad702fbc43c1581a849b1f137de7ab770fd8c0ffb436e56ac04b57965a57"
+    },
+    {
+      "path": "bench/briefs/06.json",
+      "sha256": "7cdeaaf204671ccab4c93a8fe6b88403cbacd92c0fc8026ba493d4598c8731cf"
+    },
+    {
+      "path": "bench/briefs/07.json",
+      "sha256": "6a44dfead8742c6c23420a6d5587086b99446b6be51f1afa9410d376de92f8b5"
+    },
+    {
+      "path": "bench/briefs/08.json",
+      "sha256": "0c16ef5422f0b92de319d4a450c38bb9e39e601e68216033ffe86ef8d6bda108"
+    },
+    {
+      "path": "bench/briefs/09.json",
+      "sha256": "e75d7c768a36b3abaf703977e75b2641c3a96d817591e8a25896ac107fe237b4"
+    },
+    {
+      "path": "bench/briefs/10.json",
+      "sha256": "a7cadff16e2ab56dc19f0ec0e8f7e3cf5124cd22db2d5a06c42a487772083c4d"
+    },
+    {
+      "path": "bench/briefs/11.json",
+      "sha256": "ce333c5b347a252ad2c012e43af948aedb12f9f7d38e78e6571fb2fb6c51c5d3"
+    },
+    {
+      "path": "bench/briefs/12.json",
+      "sha256": "f014fc1a669d4969e424090569797d22925a2aa766df7d1f309617ae3dfd9eee"
+    },
+    {
+      "path": "bench/briefs/13.json",
+      "sha256": "a4de974fd81992a0d68fde864815c94cde871d88f848befcc5abe736b9326f2c"
+    },
+    {
+      "path": "bench/briefs/14.json",
+      "sha256": "0698c72393d5e666045912eba44089f63ebfa8f3bc537d169fb860b1bb2eaf57"
+    },
+    {
+      "path": "bench/briefs/15.json",
+      "sha256": "9a78581a6db43acf9bac35e1d04a04652ab950809169b7ba1f53ef28c03ae95f"
+    },
+    {
+      "path": "bench/briefs/16.json",
+      "sha256": "ce7e089d14b312a9e718df82e785231eefdacc7e8a69b75333bc88d689251f39"
+    },
+    {
+      "path": "bench/briefs/17.json",
+      "sha256": "c00bf08b83dd3507b49301d38dafbd183d789f61f875d9152420073c499a215c"
+    },
+    {
+      "path": "bench/briefs/18.json",
+      "sha256": "9be38de95db7fbf82f850c42cdf1da0d84917b23a178d9fbe3e1c42db48b5d7f"
+    },
+    {
+      "path": "bench/briefs/19.json",
+      "sha256": "f5effd32d07fad737d4ca2fbf13123e4f7acfca27b4c3a37361c9de596a05b5b"
+    },
+    {
+      "path": "bench/briefs/20.json",
+      "sha256": "90f5e4d57981e3c90ce2dd18512af70ddb7fb11a42a0b8440621b069c90d34e7"
+    },
+    {
+      "path": "bench/briefs/21.json",
+      "sha256": "e3fd34ccb2937ab39f8974079afaaaee7a500711c23ba46ec37b0c20036d917c"
+    },
+    {
+      "path": "bench/briefs/22.json",
+      "sha256": "90625f51b5759a77696a1b9bbfd9ed3a1ac001835e592b63977f7e06d60d2f1a"
+    },
+    {
+      "path": "bench/briefs/23.json",
+      "sha256": "cfa207e77b93c1ebc06b28a51cef4f8f2de6f23866ba4e2d98c2507b004c4cde"
+    },
+    {
+      "path": "bench/briefs/24.json",
+      "sha256": "dd119f85a2f4e40fca45412d2fef842c307d7fee58e05966b3f356f2f96dc659"
+    },
+    {
+      "path": "bench/inputs/04/index.html",
+      "sha256": "f6d57e79c13f8d50a28973c880a57e19cfa077df5e5ea5354d642ac21b24c4a4"
+    },
+    {
+      "path": "bench/inputs/10/index.html",
+      "sha256": "1a602df6572f92393f8d27855c6a29518826a4b08d18d19bafe3f8aad2c70f74"
+    },
+    {
+      "path": "bench/inputs/13/index.html",
+      "sha256": "571e6a1d1b4ad8fb916aa50b7e02582edad5fefda01b06ea5b51fb7fa343b3c4"
+    },
+    {
+      "path": "bench/inputs/14/index.html",
+      "sha256": "633de9bc31c2b365d9321c0d45e680e87127ead1b391f7b985e54b478beaf2a7"
+    },
+    {
+      "path": "bench/inputs/15/index.html",
+      "sha256": "2984762bb9b4eddabf0b0e06a8d89e2b14b9614a0539bfefd1de6d12377b7356"
+    },
+    {
+      "path": "bench/inputs/16/index.html",
+      "sha256": "f5644bd95e0c48f4b01c9335b9c48144be171c7111cc0b4fc8bf76cb360f774e"
+    },
+    {
+      "path": "bench/inputs/18/index.html",
+      "sha256": "1dad16946217cf3738656f1f95bc2ec35a59b31e61e6a344490a41bc2de8aa81"
+    },
+    {
+      "path": "bench/inputs/24/index.html",
+      "sha256": "cd728a53f2439b5be3da347686e070ac1cf40c027fee36be5356f8a6846f9b59"
+    }
+  ]
+}

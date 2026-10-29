@@ -1,0 +1,57 @@
+{
+  "id": "04",
+  "condition": "measure",
+  "mode": "只审阅",
+  "source": "http://127.0.0.1:4180/04/",
+  "observedAt": "2026-10-29T10:38:31.018Z",
+  "widths": [
+    390,
+    320,
+    1440
+  ],
+  "findings": [
+    {
+      "id": "04-1",
+      "status": "确定缺陷",
+      "severity": "中",
+      "title": "迁移说明链接指向不存在的锚点",
+      "element": "nav a[href=\"#migrate\"]",
+      "widths": [
+        320,
+        390,
+        1440
+      ],
+      "steps": "激活“迁移说明”；地址变为 #migrate，但页面没有此 ID，实际说明是 #migration。",
+      "impact": "无法通过目录定位迁移段落。",
+      "suggestion": "将链接目标与实际段落 ID 统一。",
+      "evidence": "evidence/generation/measure-rem-04/input-390.png"
+    },
+    {
+      "id": "04-2",
+      "status": "确定缺陷",
+      "severity": "中",
+      "title": "窄屏包名说明被横向截断",
+      "element": ".package-name",
+      "widths": [
+        320,
+        390
+      ],
+      "steps": "打开页面；390 像素下元素宽 350、内容宽 504；320 下元素宽 280、内容宽 504。",
+      "impact": "此重复说明行无法完整读取；上方 h1 仍完整，版本号本身不是缺陷。",
+      "suggestion": "允许自然换行，取消单行隐藏裁切。",
+      "evidence": "evidence/generation/measure-rem-04/input-390.png"
+    }
+  ],
+  "normal": [
+    "目标版本 2.4.0 完整存在。",
+    "兼容矩阵明确限定 Node.js 22 与 React 19，其他组合未验证；不要求扩写支持承诺。"
+  ],
+  "suggestions": [
+    "可减少标题与重复包名说明的信息重复。"
+  ],
+  "unknown": [
+    "未检查真实手机触屏、屏幕阅读器、操作系统级字体故障。",
+    "未修改冻结输入；发现项均为建议，未验证修复完成。"
+  ],
+  "observations": "evidence/generation/measure-rem-review-observations.json"
+}

@@ -1,0 +1,1 @@
+const checks=[...document.querySelectorAll('[data-check]')];const update=()=>document.querySelector('#progress').textContent='已准备 '+checks.filter(x=>x.checked).length+'／4 项，仅保存于当前会话。';checks.forEach(x=>x.onchange=update);document.querySelector('#reset').onclick=()=>{checks.forEach(x=>x.checked=false);update()};

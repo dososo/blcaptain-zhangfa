@@ -1,0 +1,113 @@
+{
+  "id": "24",
+  "condition": "full",
+  "mode": "只审阅",
+  "title": "无图咨询服务页审阅",
+  "url": "http://127.0.0.1:4180/24/",
+  "inputSha256": "cd728a53f2439b5be3da347686e070ac1cf40c027fee36be5356f8a6846f9b59",
+  "reviewer": "同会话模型自审；非独立人类验收",
+  "findings": [
+    {
+      "severity": "高",
+      "element": ".terms",
+      "title": "费用排除条款仅8像素",
+      "steps": "在390、1440像素读取费用行，获取.terms计算字号。",
+      "observed": "“不含代码实施。”计算font-size为8px；两宽度一致。",
+      "impact": "关键费用边界过小，容易误解服务包含代码实施；前面的“不含前后端开发”清单仍存在。",
+      "suggestion": "使费用行排除条款与相邻正文同等可读，至少达到正文14px以上并保留完整文字。"
+    },
+    {
+      "severity": "高",
+      "element": "#consult [name=consent] / #result",
+      "title": "未确认本地说明也接受空提交",
+      "steps": "不填写称呼、问题、不勾选确认框，点击“提交本地演示需求”。随后填写并勾选再提交比较。",
+      "observed": "空提交与完整提交都返回“本地模拟咨询已记录，未向任何服务方发送信息。”；输入无required，脚本未检查确认。",
+      "impact": "要求确认的字段没有实际约束；用户无法区分无效资料与有效的本地模拟。",
+      "suggestion": "要求明确勾选本地说明并校验必要输入；空输入就定位可恢复错误，仍不外发。"
+    }
+  ],
+  "normalControls": "无图与无客户评价符合任务，不应补造Logo墙或证言；服务范围清单本来已经明确不含前后端开发。",
+  "measurement": {
+    "summary": {
+      "files": 1,
+      "cjk_files": 1,
+      "errors": 4,
+      "warns": 0,
+      "status": "fail"
+    },
+    "raw": "evidence/generation/full-rem-24/measure-first/raw.json",
+    "arbitration": "T02/T04是缺少声明的规则结果，未据此推断每一行已出现禁则缺陷；T13字体栈声明不足不等于已看到缺字。"
+  },
+  "evidence": {
+    "url": "http://127.0.0.1:4180/24/",
+    "tasks": [
+      {
+        "width": 390,
+        "actions": [
+          "空表与填写确认后的本地反馈均实际执行"
+        ],
+        "externalRequests": [],
+        "terms": {
+          "fontSize": "8px",
+          "text": "不含代码实施。"
+        },
+        "emptySubmission": "本地模拟咨询已记录，未向任何服务方发送信息。",
+        "filledSubmission": "本地模拟咨询已记录，未向任何服务方发送信息。",
+        "status": "pass"
+      },
+      {
+        "width": 1440,
+        "actions": [
+          "空表与填写确认后的本地反馈均实际执行"
+        ],
+        "externalRequests": [],
+        "terms": {
+          "fontSize": "8px",
+          "text": "不含代码实施。"
+        },
+        "emptySubmission": "本地模拟咨询已记录，未向任何服务方发送信息。",
+        "filledSubmission": "本地模拟咨询已记录，未向任何服务方发送信息。",
+        "status": "pass"
+      }
+    ],
+    "stress": [
+      {
+        "mode": "320",
+        "viewport": 320,
+        "documentWidth": 320,
+        "bodyText": 298,
+        "images": 0,
+        "overflow": false,
+        "note": "320像素几何与完整截图"
+      },
+      {
+        "mode": "text200",
+        "viewport": 390,
+        "documentWidth": 390,
+        "bodyText": 298,
+        "images": 0,
+        "overflow": false,
+        "note": "CSS文字放大200%的压力观察；非浏览器菜单文字缩放，嵌套元素可能累乘。"
+      },
+      {
+        "mode": "fallback",
+        "viewport": 390,
+        "documentWidth": 390,
+        "bodyText": 298,
+        "images": 0,
+        "overflow": false,
+        "note": "强制系统sans-serif回退；未证明逐字字形来源。"
+      }
+    ],
+    "manual": "MANUAL_PENDING",
+    "probeStatus": "not_run"
+  },
+  "unknown": [
+    "真实手机与读屏体验未测，MANUAL_PENDING。",
+    "实际字形来源未逐字诊断。",
+    "未运行真实服务或外发；演示内容不构成真实兼容、招生或服务结果。"
+  ],
+  "recommendationsOnly": true,
+  "sourceModified": false,
+  "completedAt": "2026-10-29T10:49:45.673Z"
+}

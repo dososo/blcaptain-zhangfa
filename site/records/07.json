@@ -1,0 +1,684 @@
+{
+  "题号": "07",
+  "模式": "新建",
+  "任务": "筛选“夜行”，打开长地点名作品并查看拍摄注释。",
+  "内容包": "../../bench/briefs/07.json",
+  "说明": "这是批次生成示例。各条件分开会话，组内共享上下文；不是逐题独立统计胜率实验。作者自测、独立复核和人工验收分别记录。",
+  "人工验收": "MANUAL_PENDING",
+  "条件": [
+    {
+      "条件": "甲：不加载章法与分寸",
+      "产物": "../runs/07/control/index.html",
+      "类型": "实际生成页面",
+      "流程偏差": [],
+      "模型完整版本": "未暴露",
+      "批次开始时间": "2026-10-29T10:40:52.168Z",
+      "批次结束时间": "2026-10-29T10:40:52.737Z",
+      "作者记录脱敏副本": "./runs/control-remaining.json",
+      "作者自测性质": "由该条件的生成智能体执行，不冒充独立人类验收",
+      "方向理由": null,
+      "任务与操作": [
+        {
+          "宽度": 390,
+          "主任务": "夜行筛选、完整详情、Esc退出、恢复全部",
+          "结果": "通过"
+        },
+        {
+          "宽度": 1440,
+          "主任务": "夜行筛选、完整详情、Esc退出、恢复全部",
+          "结果": "通过"
+        }
+      ],
+      "修复记录": [],
+      "已知问题与边界": [],
+      "独立自动复核": {
+        "status": "fail",
+        "检查时间": "2026-10-29T10:49:37.669Z",
+        "浏览器": "156.0.8078.48",
+        "视口宽度": [
+          320,
+          390,
+          1440
+        ],
+        "页面": [
+          {
+            "宽度": 320,
+            "状态": "pass",
+            "资源稳定": true,
+            "问题": [],
+            "标题行片段": [
+              {
+                "text": "在转角处，停一会儿",
+                "element": "h1",
+                "fontFamily": "system-ui, -apple-system, \"PingFang SC\", sans-serif",
+                "fontSize": "36px",
+                "lines": [
+                  "在转角处，停一会",
+                  "儿"
+                ],
+                "status": "pass"
+              },
+              {
+                "text": "末班车之后",
+                "element": "h2",
+                "fontFamily": "system-ui, -apple-system, \"PingFang SC\", sans-serif",
+                "fontSize": "26px",
+                "lines": [
+                  "末班车之后"
+                ],
+                "status": "pass"
+              },
+              {
+                "text": "午后水线",
+                "element": "h2",
+                "fontFamily": "system-ui, -apple-system, \"PingFang SC\", sans-serif",
+                "fontSize": "26px",
+                "lines": [
+                  "午后水线"
+                ],
+                "status": "pass"
+              },
+              {
+                "text": "转角的小窗",
+                "element": "h2",
+                "fontFamily": "system-ui, -apple-system, \"PingFang SC\", sans-serif",
+                "fontSize": "26px",
+                "lines": [
+                  "转角的小窗"
+                ],
+                "status": "pass"
+              }
+            ]
+          },
+          {
+            "宽度": 390,
+            "状态": "pass",
+            "资源稳定": true,
+            "问题": [],
+            "标题行片段": [
+              {
+                "text": "在转角处，停一会儿",
+                "element": "h1",
+                "fontFamily": "system-ui, -apple-system, \"PingFang SC\", sans-serif",
+                "fontSize": "36px",
+                "lines": [
+                  "在转角处，停一会儿"
+                ],
+                "status": "pass"
+              },
+              {
+                "text": "末班车之后",
+                "element": "h2",
+                "fontFamily": "system-ui, -apple-system, \"PingFang SC\", sans-serif",
+                "fontSize": "26px",
+                "lines": [
+                  "末班车之后"
+                ],
+                "status": "pass"
+              },
+              {
+                "text": "午后水线",
+                "element": "h2",
+                "fontFamily": "system-ui, -apple-system, \"PingFang SC\", sans-serif",
+                "fontSize": "26px",
+                "lines": [
+                  "午后水线"
+                ],
+                "status": "pass"
+              },
+              {
+                "text": "转角的小窗",
+                "element": "h2",
+                "fontFamily": "system-ui, -apple-system, \"PingFang SC\", sans-serif",
+                "fontSize": "26px",
+                "lines": [
+                  "转角的小窗"
+                ],
+                "status": "pass"
+              }
+            ]
+          },
+          {
+            "宽度": 1440,
+            "状态": "pass",
+            "资源稳定": true,
+            "问题": [],
+            "标题行片段": [
+              {
+                "text": "在转角处，停一会儿",
+                "element": "h1",
+                "fontFamily": "system-ui, -apple-system, \"PingFang SC\", sans-serif",
+                "fontSize": "62px",
+                "lines": [
+                  "在转角处，停一会儿"
+                ],
+                "status": "pass"
+              },
+              {
+                "text": "末班车之后",
+                "element": "h2",
+                "fontFamily": "system-ui, -apple-system, \"PingFang SC\", sans-serif",
+                "fontSize": "26px",
+                "lines": [
+                  "末班车之后"
+                ],
+                "status": "pass"
+              },
+              {
+                "text": "午后水线",
+                "element": "h2",
+                "fontFamily": "system-ui, -apple-system, \"PingFang SC\", sans-serif",
+                "fontSize": "26px",
+                "lines": [
+                  "午后水线"
+                ],
+                "status": "pass"
+              },
+              {
+                "text": "转角的小窗",
+                "element": "h2",
+                "fontFamily": "system-ui, -apple-system, \"PingFang SC\", sans-serif",
+                "fontSize": "26px",
+                "lines": [
+                  "转角的小窗"
+                ],
+                "status": "pass"
+              }
+            ]
+          }
+        ],
+        "分寸": {
+          "状态": "fail",
+          "版本": "0.1.0",
+          "错误": 3,
+          "警告": 0,
+          "覆盖": [
+            320,
+            390,
+            1440
+          ],
+          "规则计数": {
+            "T07": 1,
+            "T02": 1,
+            "T04": 1
+          }
+        },
+        "主任务": "作者自测见生成记录；本自动检查不推断全部主任务通过",
+        "人工视觉与真机": "MANUAL_PENDING",
+        "原始证据": "保存在本地每个产物的.zhangfa-evidence目录，发布摘要不携带本机路径",
+        "局限": [
+          "这是当前页面和指定宽度的浏览器快照，不是审美评分，也不代表完整无障碍合规。",
+          "名称检查覆盖常见原生控件与按钮角色；复杂 ARIA、键盘操作、对比度和读屏体验仍需人工验收。",
+          "裁切检查依据可见文字行盒与 overflow 容器；画布、伪元素、封闭影子树和尚未展开的交互内容未覆盖。",
+          "截图等待字体与当前图片就绪；滚动触发的懒加载、登录态、动画各时刻和真机体验仍需另验。",
+          "分寸通过只代表所运行的中文规则通过；最终中文语义断行、内容质量与视觉验收仍需人工确认。"
+        ]
+      },
+      "文件": [
+        {
+          "文件": "index.html",
+          "sha256": "6f51746f7448969f1d4715050cf028cbac6093d1178219c2346f059a2c93e591"
+        }
+      ]
+    },
+    {
+      "条件": "乙：只加载分寸",
+      "产物": "../runs/07/measure/index.html",
+      "类型": "实际生成页面",
+      "流程偏差": [],
+      "模型完整版本": "未暴露",
+      "批次开始时间": "2026-10-29T10:37:24.422Z",
+      "批次结束时间": "2026-10-29T10:43:10.237Z",
+      "作者记录脱敏副本": "./runs/measure-remaining.json",
+      "作者自测性质": "由该条件的生成智能体执行，不冒充独立人类验收",
+      "方向理由": null,
+      "任务与操作": [
+        "筛选夜行，查看长地点与注释，Esc退出，清除筛选",
+        "390像素下模拟系统字体回退与叶节点200%文字放大；无远程图片依赖"
+      ],
+      "修复记录": [
+        {
+          "id": "07",
+          "time": "2026-10-29T10:40:09.351Z",
+          "reason": "320像素照片占位aspect-ratio与min-height共同撑宽网格；允许网格项收缩且由比例决定高度。",
+          "iteration": 1
+        }
+      ],
+      "已知问题与边界": [
+        "200%文字放大为浏览器叶节点字号模拟；字体回退为Arial/sans-serif模拟，未做真实操作系统字体卸载。",
+        "未做真实手机、屏幕阅读器和人工视觉验收。"
+      ],
+      "独立自动复核": {
+        "status": "pass",
+        "检查时间": "2026-10-29T10:49:40.230Z",
+        "浏览器": "156.0.8078.48",
+        "视口宽度": [
+          320,
+          390,
+          1440
+        ],
+        "页面": [
+          {
+            "宽度": 320,
+            "状态": "pass",
+            "资源稳定": true,
+            "问题": [],
+            "标题行片段": [
+              {
+                "text": "在转角处，停一会儿",
+                "element": "h1",
+                "fontFamily": "Arial, \"PingFang SC\", sans-serif",
+                "fontSize": "34px",
+                "lines": [
+                  "在转角处，停一会",
+                  "儿"
+                ],
+                "status": "pass"
+              },
+              {
+                "text": "末班车之后",
+                "element": "h2",
+                "fontFamily": "Arial, \"PingFang SC\", sans-serif",
+                "fontSize": "24px",
+                "lines": [
+                  "末班车之后"
+                ],
+                "status": "pass"
+              },
+              {
+                "text": "午后水线",
+                "element": "h2",
+                "fontFamily": "Arial, \"PingFang SC\", sans-serif",
+                "fontSize": "24px",
+                "lines": [
+                  "午后水线"
+                ],
+                "status": "pass"
+              },
+              {
+                "text": "转角的小窗",
+                "element": "h2",
+                "fontFamily": "Arial, \"PingFang SC\", sans-serif",
+                "fontSize": "24px",
+                "lines": [
+                  "转角的小窗"
+                ],
+                "status": "pass"
+              }
+            ]
+          },
+          {
+            "宽度": 390,
+            "状态": "pass",
+            "资源稳定": true,
+            "问题": [],
+            "标题行片段": [
+              {
+                "text": "在转角处，停一会儿",
+                "element": "h1",
+                "fontFamily": "Arial, \"PingFang SC\", sans-serif",
+                "fontSize": "34px",
+                "lines": [
+                  "在转角处，停一会儿"
+                ],
+                "status": "pass"
+              },
+              {
+                "text": "末班车之后",
+                "element": "h2",
+                "fontFamily": "Arial, \"PingFang SC\", sans-serif",
+                "fontSize": "24px",
+                "lines": [
+                  "末班车之后"
+                ],
+                "status": "pass"
+              },
+              {
+                "text": "午后水线",
+                "element": "h2",
+                "fontFamily": "Arial, \"PingFang SC\", sans-serif",
+                "fontSize": "24px",
+                "lines": [
+                  "午后水线"
+                ],
+                "status": "pass"
+              },
+              {
+                "text": "转角的小窗",
+                "element": "h2",
+                "fontFamily": "Arial, \"PingFang SC\", sans-serif",
+                "fontSize": "24px",
+                "lines": [
+                  "转角的小窗"
+                ],
+                "status": "pass"
+              }
+            ]
+          },
+          {
+            "宽度": 1440,
+            "状态": "pass",
+            "资源稳定": true,
+            "问题": [],
+            "标题行片段": [
+              {
+                "text": "在转角处，停一会儿",
+                "element": "h1",
+                "fontFamily": "Arial, \"PingFang SC\", sans-serif",
+                "fontSize": "57.6px",
+                "lines": [
+                  "在转角处，停一会儿"
+                ],
+                "status": "pass"
+              },
+              {
+                "text": "末班车之后",
+                "element": "h2",
+                "fontFamily": "Arial, \"PingFang SC\", sans-serif",
+                "fontSize": "24px",
+                "lines": [
+                  "末班车之后"
+                ],
+                "status": "pass"
+              },
+              {
+                "text": "午后水线",
+                "element": "h2",
+                "fontFamily": "Arial, \"PingFang SC\", sans-serif",
+                "fontSize": "24px",
+                "lines": [
+                  "午后水线"
+                ],
+                "status": "pass"
+              },
+              {
+                "text": "转角的小窗",
+                "element": "h2",
+                "fontFamily": "Arial, \"PingFang SC\", sans-serif",
+                "fontSize": "24px",
+                "lines": [
+                  "转角的小窗"
+                ],
+                "status": "pass"
+              }
+            ]
+          }
+        ],
+        "分寸": {
+          "状态": "pass",
+          "版本": "0.1.0",
+          "错误": 0,
+          "警告": 0,
+          "覆盖": [
+            320,
+            390,
+            1440
+          ],
+          "规则计数": {}
+        },
+        "主任务": "作者自测见生成记录；本自动检查不推断全部主任务通过",
+        "人工视觉与真机": "MANUAL_PENDING",
+        "原始证据": "保存在本地每个产物的.zhangfa-evidence目录，发布摘要不携带本机路径",
+        "局限": [
+          "这是当前页面和指定宽度的浏览器快照，不是审美评分，也不代表完整无障碍合规。",
+          "名称检查覆盖常见原生控件与按钮角色；复杂 ARIA、键盘操作、对比度和读屏体验仍需人工验收。",
+          "裁切检查依据可见文字行盒与 overflow 容器；画布、伪元素、封闭影子树和尚未展开的交互内容未覆盖。",
+          "截图等待字体与当前图片就绪；滚动触发的懒加载、登录态、动画各时刻和真机体验仍需另验。",
+          "分寸通过只代表所运行的中文规则通过；最终中文语义断行、内容质量与视觉验收仍需人工确认。"
+        ]
+      },
+      "文件": [
+        {
+          "文件": "index.html",
+          "sha256": "b6fb36e7c9894210806aa669dfee453fe82d097f095597d78d0c522da90e6470"
+        },
+        {
+          "文件": "measure.css",
+          "sha256": "cc0ba1e4da554d44e1a1a753512a1e52e78c7901debdc5c44d97c948b2a826a4"
+        }
+      ]
+    },
+    {
+      "条件": "丙：章法结合分寸",
+      "产物": "../runs/07/full/index.html",
+      "类型": "实际生成页面",
+      "流程偏差": [
+        "初版完整写出后才运行标题行探针，未执行全页铺开前的片段试排。",
+        "每题只保留一个实际方向和理由，未先保留三个可比较首屏方向。",
+        "03、06、12题超出一次首轮修复预算；已保留失败文件、报告和逐轮原因，不计公平胜率。",
+        "初次文字放大使用百分比叠加探针，不能当作准确200%证据；后续另用实际字号逐元素乘2的压力测试，保留两份记录。",
+        "同会话自审，没有独立人类或真机验收；不宣称完整技能流程通过，不计效果胜率。"
+      ],
+      "模型完整版本": "未暴露",
+      "批次开始时间": "2026-10-29T10:45:37.391Z",
+      "批次结束时间": "2026-10-29T10:49:50.077Z",
+      "作者记录脱敏副本": "./runs/full-remaining.json",
+      "作者自测性质": "由该条件的生成智能体执行，不冒充独立人类验收",
+      "方向理由": "作品集用三种指定比例的缺图框形成节奏，以完整地点与注释承担可信信息；筛选后不留空洞网格。",
+      "任务与操作": [
+        {
+          "width": 390,
+          "actions": [
+            "夜行仅显示P01",
+            "详情完整长地点与注释",
+            "清除筛选恢复3项"
+          ],
+          "externalRequests": [],
+          "status": "pass"
+        },
+        {
+          "width": 1440,
+          "actions": [
+            "夜行仅显示P01",
+            "详情完整长地点与注释",
+            "清除筛选恢复3项"
+          ],
+          "externalRequests": [],
+          "status": "pass"
+        }
+      ],
+      "修复记录": [],
+      "已知问题与边界": [
+        "人类审美、真实手机和读屏验收未执行，MANUAL_PENDING。",
+        "实际字体逐字命中与完整无障碍合规未验证。"
+      ],
+      "独立自动复核": {
+        "status": "pass",
+        "检查时间": "2026-10-29T10:55:47.684Z",
+        "浏览器": "156.0.8078.48",
+        "视口宽度": [
+          320,
+          390,
+          1440
+        ],
+        "页面": [
+          {
+            "宽度": 320,
+            "状态": "pass",
+            "资源稳定": true,
+            "问题": [],
+            "标题行片段": [
+              {
+                "text": "在转角处，停一会儿",
+                "element": "h1",
+                "fontFamily": "Arial, \"PingFang SC\", sans-serif",
+                "fontSize": "38px",
+                "lines": [
+                  "在转角处，停一",
+                  "会儿"
+                ],
+                "status": "pass"
+              },
+              {
+                "text": "末班车之后",
+                "element": "h2",
+                "fontFamily": "Arial, \"PingFang SC\", sans-serif",
+                "fontSize": "23px",
+                "lines": [
+                  "末班车之后"
+                ],
+                "status": "pass"
+              },
+              {
+                "text": "午后水线",
+                "element": "h2",
+                "fontFamily": "Arial, \"PingFang SC\", sans-serif",
+                "fontSize": "23px",
+                "lines": [
+                  "午后水线"
+                ],
+                "status": "pass"
+              },
+              {
+                "text": "转角的小窗",
+                "element": "h2",
+                "fontFamily": "Arial, \"PingFang SC\", sans-serif",
+                "fontSize": "23px",
+                "lines": [
+                  "转角的小窗"
+                ],
+                "status": "pass"
+              }
+            ]
+          },
+          {
+            "宽度": 390,
+            "状态": "pass",
+            "资源稳定": true,
+            "问题": [],
+            "标题行片段": [
+              {
+                "text": "在转角处，停一会儿",
+                "element": "h1",
+                "fontFamily": "Arial, \"PingFang SC\", sans-serif",
+                "fontSize": "38px",
+                "lines": [
+                  "在转角处，停一会儿"
+                ],
+                "status": "pass"
+              },
+              {
+                "text": "末班车之后",
+                "element": "h2",
+                "fontFamily": "Arial, \"PingFang SC\", sans-serif",
+                "fontSize": "23px",
+                "lines": [
+                  "末班车之后"
+                ],
+                "status": "pass"
+              },
+              {
+                "text": "午后水线",
+                "element": "h2",
+                "fontFamily": "Arial, \"PingFang SC\", sans-serif",
+                "fontSize": "23px",
+                "lines": [
+                  "午后水线"
+                ],
+                "status": "pass"
+              },
+              {
+                "text": "转角的小窗",
+                "element": "h2",
+                "fontFamily": "Arial, \"PingFang SC\", sans-serif",
+                "fontSize": "23px",
+                "lines": [
+                  "转角的小窗"
+                ],
+                "status": "pass"
+              }
+            ]
+          },
+          {
+            "宽度": 1440,
+            "状态": "pass",
+            "资源稳定": true,
+            "问题": [],
+            "标题行片段": [
+              {
+                "text": "在转角处，停一会儿",
+                "element": "h1",
+                "fontFamily": "Arial, \"PingFang SC\", sans-serif",
+                "fontSize": "78px",
+                "lines": [
+                  "在转角处，停一会儿"
+                ],
+                "status": "pass"
+              },
+              {
+                "text": "末班车之后",
+                "element": "h2",
+                "fontFamily": "Arial, \"PingFang SC\", sans-serif",
+                "fontSize": "23px",
+                "lines": [
+                  "末班车之后"
+                ],
+                "status": "pass"
+              },
+              {
+                "text": "午后水线",
+                "element": "h2",
+                "fontFamily": "Arial, \"PingFang SC\", sans-serif",
+                "fontSize": "23px",
+                "lines": [
+                  "午后水线"
+                ],
+                "status": "pass"
+              },
+              {
+                "text": "转角的小窗",
+                "element": "h2",
+                "fontFamily": "Arial, \"PingFang SC\", sans-serif",
+                "fontSize": "23px",
+                "lines": [
+                  "转角的小窗"
+                ],
+                "status": "pass"
+              }
+            ]
+          }
+        ],
+        "分寸": {
+          "状态": "pass",
+          "版本": "0.1.0",
+          "错误": 0,
+          "警告": 0,
+          "覆盖": [
+            320,
+            390,
+            1440
+          ],
+          "规则计数": {}
+        },
+        "主任务": "作者自测见生成记录；本自动检查不推断全部主任务通过",
+        "人工视觉与真机": "MANUAL_PENDING",
+        "原始证据": "保存在本地每个产物的.zhangfa-evidence目录，发布摘要不携带本机路径",
+        "局限": [
+          "这是当前页面和指定宽度的浏览器快照，不是审美评分，也不代表完整无障碍合规。",
+          "名称检查覆盖常见原生控件与按钮角色；复杂 ARIA、键盘操作、对比度和读屏体验仍需人工验收。",
+          "裁切检查依据可见文字行盒与 overflow 容器；画布、伪元素、封闭影子树和尚未展开的交互内容未覆盖。",
+          "截图等待字体与当前图片就绪；滚动触发的懒加载、登录态、动画各时刻和真机体验仍需另验。",
+          "分寸通过只代表所运行的中文规则通过；最终中文语义断行、内容质量与视觉验收仍需人工确认。"
+        ]
+      },
+      "文件": [
+        {
+          "文件": "app.js",
+          "sha256": "08c5a6f23db9d36444582fd6acce5ef8e3d46b2c958a221a2638e17d0f550355"
+        },
+        {
+          "文件": "index.html",
+          "sha256": "7f1b283b0761b889492ced1ab87bd90ccda94352368f18fe4c7317861e8a6a76"
+        },
+        {
+          "文件": "measure.css",
+          "sha256": "cc0ba1e4da554d44e1a1a753512a1e52e78c7901debdc5c44d97c948b2a826a4"
+        },
+        {
+          "文件": "style.css",
+          "sha256": "ae4f42c41317a70bbdab74c6dd29e0e7ef164f3c10e3ed418a5d1cdadf3f05ee"
+        }
+      ]
+    }
+  ]
+}

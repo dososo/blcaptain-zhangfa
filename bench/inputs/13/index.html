@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>订单工作台 · 改版前输入</title>
+<style>
+*{box-sizing:border-box}body{margin:0;color:#26313d;background:#f3f5f7;font:15px/1.6 system-ui,-apple-system,"PingFang SC",sans-serif}header{background:#fff;border-bottom:1px solid #dce1e6;padding:20px 28px}header h1{margin:0;font-size:24px}header p{margin:4px 0 0;color:#576575}main{max-width:1320px;margin:auto;padding:28px}.filters,.panel{background:#fff;border:1px solid #dce1e6;border-radius:6px}.filters{display:flex;flex-wrap:wrap;align-items:end;gap:16px;padding:20px}label{display:block;font-weight:600}input,select,button{font:inherit}input,select{display:block;width:100%;margin-top:6px;border:1px solid #abb5bf;background:#fff;padding:8px 10px;border-radius:4px}label.search{flex:1;min-width:200px}button{padding:8px 14px;border:1px solid #9ba7b3;border-radius:4px;background:white;color:#253444;cursor:pointer}button:hover{background:#eef2f6}button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #1675b6;outline-offset:3px}.panel{margin-top:20px;overflow:hidden}.panel-heading{padding:16px 20px;border-bottom:1px solid #e1e5e9;display:flex;gap:16px;flex-wrap:wrap;justify-content:space-between}.panel-heading h2{margin:0;font-size:18px}.table-scroll{overflow-x:auto}table{border-collapse:collapse;width:100%;min-width:850px}th,td{padding:13px 16px;text-align:left;border-bottom:1px solid #e6eaee;vertical-align:top}th{background:#f8f9fa;white-space:nowrap;font-size:14px;color:#546170}td.company{min-width:210px;max-width:280px;overflow-wrap:anywhere}.order-id{white-space:nowrap;font-size:13px}.amount{font-variant-numeric:tabular-nums;white-space:nowrap;text-align:right}.state{white-space:nowrap}.state-abnormal{color:#a43a26}.muted{color:#667482}.empty,.error{padding:38px 20px;text-align:center}.error{background:#fff7f2}.empty p,.error p{margin:0 0 14px}.footer{margin-top:16px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:13px;color:#657383}dialog{width:min(600px,calc(100% - 32px));border:1px solid #a9b4bf;border-radius:8px;padding:24px;color:#26313d}dialog::backdrop{background:rgb(20 32 45 / .35)}dialog h2{margin:0;font-size:21px}dialog dl{display:grid;grid-template-columns:90px minmax(0,1fr);gap:12px}dialog dt{color:#647181}dialog dd{margin:0;overflow-wrap:anywhere}dialog footer{text-align:right}[hidden]{display:none!important}@media(max-width:560px){header{padding:18px 16px}main{padding:16px}.filters{padding:16px;gap:12px}.filters label{width:100%}.filters>button{flex:1}.panel-heading{padding:14px 16px}dialog dl{grid-template-columns:1fr;gap:4px}dialog dd{margin-bottom:10px}}
+</style>
+</head>
+<body>
+<header><h1>订单工作台</h1><p>演示数据，不连接支付、物流或客户系统。</p></header>
+<main data-testid="order-app">
+<form class="filters" id="filters" aria-label="订单筛选">
+<label class="search">搜索订单号或公司<input data-testid="keyword-input" id="keyword" type="search" placeholder="例如：海桥或订单号" autocomplete="off"></label>
+<label>订单状态<select data-testid="status-filter" id="status"><option>全部</option><option>异常</option><option>待处理</option><option>已完成</option><option>已取消</option></select></label>
+<button data-testid="reset-button" id="reset" type="button">清空筛选</button>
+</form>
+<section class="panel" aria-labelledby="list-title">
+<div class="panel-heading"><h2 id="list-title">订单列表</h2><span data-testid="result-count" id="count" role="status" aria-live="polite"></span></div>
+<div class="table-scroll" id="table-wrap"><table data-testid="orders-table"><thead><tr><th scope="col">订单号</th><th scope="col">公司</th><th scope="col" class="amount">金额</th><th scope="col">状态</th><th scope="col">创建时间</th><th scope="col">操作</th></tr></thead><tbody id="rows"></tbody></table></div>
+<div data-testid="empty-state" class="empty" id="empty" hidden><p>没有符合条件的演示订单。可以清空筛选后重试。</p></div>
+<div data-testid="error-state" class="error" id="error" role="alert" hidden><p>演示加载失败，订单数据没有丢失。重试后保留当前筛选。</p><button data-testid="retry-button" id="retry" type="button">重试加载</button></div>
+</section>
+<div class="footer"><span>共6条合成记录 · 只在当前页面操作</span><button data-testid="simulate-error" id="simulate-error" type="button">模拟加载失败</button></div>
+</main>
+<dialog data-testid="order-dialog" id="detail" aria-labelledby="detail-title"><h2 id="detail-title">演示订单详情</h2><p class="muted">不代表真实付款、发货或客户信息。</p><dl id="detail-fields"></dl><footer><button data-testid="close-detail" id="close-detail" type="button">关闭详情</button></footer></dialog>
+<script>
+const orders = [{"订单号": "DD-20261029-001", "公司": "示例海桥城市公共阅读与社区空间运营有限公司", "联系人": "陈禾（演示）", "商品": "桌面阅读灯 L1", "数量": 2, "金额分": 256000, "状态": "异常", "创建时间": "2026-10-29 09:12", "备注": "收货地址缺少楼层，请联系演示联系人补充。"}, {"订单号": "DD-20261029-002", "公司": "示例南岸文化服务工作室", "联系人": "周舟（演示）", "商品": "桌面支架 S2", "数量": 3, "金额分": 89700, "状态": "待处理", "创建时间": "2026-10-29 09:35", "备注": "待核对配送时间。"}, {"订单号": "DD-20261029-003", "公司": "示例西街空间研究社", "联系人": "林杉（演示）", "商品": "桌面扩展坞 D3", "数量": 1, "金额分": 69900, "状态": "已完成", "创建时间": "2026-10-28 17:28", "备注": "演示记录已完成。"}, {"订单号": "DD-20261029-004", "公司": "示例桥北设计事务所", "联系人": "吴汀（演示）", "商品": "桌面阅读灯 L1", "数量": 1, "金额分": 128000, "状态": "异常", "创建时间": "2026-10-28 16:04", "备注": "演示付款校验失败，需重新核对账单。"}, {"订单号": "DD-20261029-005", "公司": "示例河湾图书空间", "联系人": "沈原（演示）", "商品": "桌面支架 S2", "数量": 1, "金额分": 29900, "状态": "已取消", "创建时间": "2026-10-28 14:10", "备注": "演示客户取消，未发生真实退款。"}, {"订单号": "DD-20261029-006", "公司": "示例长堤设备维护中心", "联系人": "许禾（演示）", "商品": "桌面扩展坞 D3", "数量": 2, "金额分": 139800, "状态": "待处理", "创建时间": "2026-10-27 11:45", "备注": "待确认演示发货清单。"}];
+const keyword=document.querySelector('#keyword'),status=document.querySelector('#status'),rows=document.querySelector('#rows'),dialog=document.querySelector('#detail');
+let failed=false,opener=null;
+const money=cents=>'¥'+(cents/100).toLocaleString('zh-CN',{minimumFractionDigits:2,maximumFractionDigits:2});
+function cell(row,text,className){const td=document.createElement('td');td.textContent=text;if(className)td.className=className;row.append(td);return td}
+function render(){
+ const query=keyword.value.trim().toLowerCase();
+ const matches=orders.filter(order=>(status.value==='全部'||order['状态']===status.value)&&(!query||order['订单号'].toLowerCase().includes(query)||order['公司'].toLowerCase().includes(query)));
+ document.querySelector('#count').textContent=failed?'加载失败':`找到 ${matches.length} 条演示订单`;
+ document.querySelector('#error').hidden=!failed;document.querySelector('#empty').hidden=failed||matches.length>0;document.querySelector('#table-wrap').hidden=failed||matches.length===0;
+ rows.replaceChildren();
+ for(const order of matches){
+  const row=document.createElement('tr');row.dataset.orderId=order['订单号'];
+  cell(row,order['订单号'],'order-id');cell(row,order['公司'],'company');cell(row,money(order['金额分']),'amount');cell(row,order['状态'],order['状态']==='异常'?'state state-abnormal':'state');cell(row,order['创建时间']);
+  const action=cell(row,'');const button=document.createElement('button');button.type='button';button.textContent='查看详情';button.setAttribute('aria-label',`查看 ${order['订单号']} 详情`);button.dataset.action='detail';button.dataset.orderId=order['订单号'];button.addEventListener('click',()=>openDetail(order,button));action.append(button);rows.append(row);
+ }
+}
+function openDetail(order,button){
+ opener=button;
+ const fields=[['订单号','id'],['公司','company'],['联系人','contact'],['商品','product'],['数量','quantity'],['金额分','amount'],['状态','status'],['创建时间','created'],['备注','note']];
+ const dl=document.querySelector('#detail-fields');dl.replaceChildren();
+ for(const [name,key] of fields){const dt=document.createElement('dt');dt.textContent=name==='金额分'?'金额':name;const dd=document.createElement('dd');dd.dataset.testid='detail-'+key;dd.textContent=key==='amount'?money(order[name]):order[name];dl.append(dt,dd)}
+ history.replaceState(null,'','#order='+encodeURIComponent(order['订单号']));dialog.showModal();document.querySelector('#close-detail').focus();
+}
+function closeDetail(){if(dialog.open)dialog.close()}
+function reset(){keyword.value='';status.value='全部';failed=false;render();keyword.focus()}
+keyword.addEventListener('input',render);status.addEventListener('change',render);document.querySelector('#filters').addEventListener('submit',event=>event.preventDefault());document.querySelector('#reset').addEventListener('click',reset);
+document.querySelector('#simulate-error').addEventListener('click',()=>{failed=true;render();document.querySelector('#retry').focus()});
+document.querySelector('#retry').addEventListener('click',()=>{failed=false;render();document.querySelector('#simulate-error').focus()});
+document.querySelector('#close-detail').addEventListener('click',closeDetail);
+dialog.addEventListener('close',()=>{history.replaceState(null,'',location.pathname+location.search);if(opener&&opener.isConnected)opener.focus()});
+render();
+const route=new URLSearchParams(location.hash.slice(1)).get('order');if(route){const order=orders.find(item=>item['订单号']===route);if(order)openDetail(order,document.querySelector(`[data-action="detail"][data-order-id="${order['订单号']}"]`))}
+</script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+{
+  "id": "10",
+  "condition": "full",
+  "mode": "只审阅",
+  "title": "双语安装排错文档审阅",
+  "url": "http://127.0.0.1:4180/10/",
+  "inputSha256": "1a602df6572f92393f8d27855c6a29518826a4b08d18d19bafe3f8aad2c70f74",
+  "reviewer": "同会话模型自审；非独立人类验收",
+  "findings": [
+    {
+      "severity": "高",
+      "element": "#copy / #command",
+      "title": "复制命令丢失--verbose参数",
+      "steps": "在390、1440像素点击“复制检查命令”，核对window.__copiedText和#command文本。",
+      "observed": "展示以--verbose结尾，实际复制字符串停在配置文件结束引号；两者逐字符不同。",
+      "impact": "复制路径不能得到页面承诺的完整检查命令。",
+      "suggestion": "让复制直接取命令元素的完整textContent并核对末尾参数。"
+    },
+    {
+      "severity": "高",
+      "element": "pre#command",
+      "title": "固定宽度代码块撑宽整页",
+      "steps": "在390、320像素打开页面，比较documentElement.scrollWidth与innerWidth。",
+      "observed": "pre固定width:900px、无局部滚动容器。390像素全页截图宽942px，文本视区仅390px。320像素同样存在整页溢出。",
+      "impact": "读者被迫横移整个页面查找命令与正文，破坏排错路径。",
+      "suggestion": "让代码容器max-width:100%，只在代码块内部overflow-x:auto，不拆掉合法中文路径。"
+    },
+    {
+      "severity": "中",
+      "element": "导航区域",
+      "title": "任务给定的两个定位链接未提供",
+      "steps": "检查可见a[href]及键盘可聚焦项。",
+      "observed": "页面有errors和configuration章节ID，却没有“返回错误索引”“配置字段说明”的链接。",
+      "impact": "用户无法使用冻结内容给定的快捷定位动作。",
+      "suggestion": "补齐指向已存在章节的锚点链接，保留完整双语内容。"
+    }
+  ],
+  "normalControls": "双语与中文路径合法；局部代码横向滚动本来可以接受，本页问题是整页撑宽；本次没有执行演示命令。",
+  "measurement": {
+    "summary": {
+      "files": 1,
+      "cjk_files": 1,
+      "errors": 3,
+      "warns": 1,
+      "status": "fail"
+    },
+    "raw": "evidence/generation/full-rem-10/measure-first/raw.json",
+    "arbitration": "T02/T04是缺少声明的规则结果，未据此推断每一行已出现禁则缺陷；T13字体栈声明不足不等于已看到缺字。"
+  },
+  "evidence": {
+    "url": "http://127.0.0.1:4180/10/",
+    "tasks": [
+      {
+        "width": 390,
+        "actions": [
+          "点击复制检查命令，逐字符记录展示命令与实际复制变量；未执行命令"
+        ],
+        "externalRequests": [],
+        "copy": {
+          "display": "demo-config-check --config \"./中文项目与多人协作演示/config/zhangfa.preview.config.json\" --verbose",
+          "copied": "demo-config-check --config \"./中文项目与多人协作演示/config/zhangfa.preview.config.json\""
+        },
+        "status": "pass"
+      },
+      {
+        "width": 1440,
+        "actions": [
+          "点击复制检查命令，逐字符记录展示命令与实际复制变量；未执行命令"
+        ],
+        "externalRequests": [],
+        "copy": {
+          "display": "demo-config-check --config \"./中文项目与多人协作演示/config/zhangfa.preview.config.json\" --verbose",
+          "copied": "demo-config-check --config \"./中文项目与多人协作演示/config/zhangfa.preview.config.json\""
+        },
+        "status": "pass"
+      }
+    ],
+    "stress": [
+      {
+        "mode": "320",
+        "viewport": 320,
+        "documentWidth": 942,
+        "bodyText": 429,
+        "images": 0,
+        "overflow": true,
+        "note": "320像素几何与完整截图"
+      },
+      {
+        "mode": "text200",
+        "viewport": 390,
+        "documentWidth": 1508,
+        "bodyText": 429,
+        "images": 0,
+        "overflow": true,
+        "note": "CSS文字放大200%的压力观察；非浏览器菜单文字缩放，嵌套元素可能累乘。"
+      },
+      {
+        "mode": "fallback",
+        "viewport": 390,
+        "documentWidth": 920,
+        "bodyText": 429,
+        "images": 0,
+        "overflow": true,
+        "note": "强制系统sans-serif回退；未证明逐字字形来源。"
+      }
+    ],
+    "manual": "MANUAL_PENDING",
+    "probeStatus": "fail"
+  },
+  "unknown": [
+    "真实手机与读屏体验未测，MANUAL_PENDING。",
+    "实际字形来源未逐字诊断。",
+    "未运行真实服务或外发；演示内容不构成真实兼容、招生或服务结果。"
+  ],
+  "recommendationsOnly": true,
+  "sourceModified": false,
+  "completedAt": "2026-10-29T10:49:45.670Z"
+}

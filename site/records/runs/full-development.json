@@ -1,0 +1,604 @@
+{
+  "公开说明": "生成记录脱敏副本。只移除本机绝对路径；未补写成本、模型版本或未执行的检查。截图等原始二进制证据保留本地，不在此链接中分发。",
+  "记录": {
+    "condition": "full",
+    "definition": "章法＋分寸",
+    "modelFullVersion": "未暴露",
+    "sharedContext": true,
+    "evaluationScope": "批次生成示例，六题在同一代理上下文连续完成，不是逐题独立统计胜率评测。",
+    "constraints": "仅读取获准六份brief、13原始输入、章法与分寸技能及自身产物；无账号、外网、远程字体或图片。",
+    "skillsRead": [
+      "skills/blcaptain-zhangfa/SKILL.md",
+      "skills/blcaptain-zhangfa/references/页面任务.md",
+      "skills/blcaptain-zhangfa/references/中文构成.md",
+      "skills/blcaptain-zhangfa/references/验收协议.md",
+      "本机研究或临时路径（已隐去）",
+      "本机研究或临时路径（已隐去）",
+      "本机研究或临时路径（已隐去）"
+    ],
+    "toolVersions": {
+      "measure": "0.1.0",
+      "playwright": "1.64.1",
+      "browser": "系统Chrome 156.0.8078.48"
+    },
+    "fontDisclosure": {
+      "sources": "仅系统调用，无@font-face、无字体文件分发；查询使用离线授权表",
+      "PingFangSC": "本地授权表system-only，原文链接和2026-10-25核验日期在fonts-pingfang.json",
+      "SongtiSC": "授权表未收录，系统调用",
+      "Arial": "授权表未收录，系统调用",
+      "Georgia": "授权表未收录，系统调用",
+      "notes": "中文字体在初次写代码前已查询；Arial和Georgia为已有系统西文字族，补充离线查询留档，不声称商用图片授权。"
+    },
+    "initialEnvironmentIssue": {
+      "status": "resolved",
+      "detail": "首次误用/site/runs/前缀得到404；确认服务器根为site后使用/runs/，原始失败保存在各题route-mismatch/。不以404报告的零错误冒充通过。"
+    },
+    "testCorrections": [
+      {
+        "id": "13",
+        "detail": "按原异步close事件等待hash清空；直达详情须从空白页完整导航。失败报告保存在before-rule-fix和test-hash-navigation-mismatch。"
+      }
+    ],
+    "verificationScript": {
+      "path": "site/runs/01/full/verify-batch.mjs",
+      "sha256": "118f2b2397b52fa912ec3163ef2c2df731d556b5a1d67a68a6380b394a28aa9a"
+    },
+    "runs": [
+      {
+        "condition": "full",
+        "id": "01",
+        "title": "中文网页校验工具官网",
+        "modelFullVersion": "未暴露",
+        "startedAt": "2026-10-29T10:31:29.387Z",
+        "finishedAt": "2026-10-29T10:40:13.054Z",
+        "timeBasis": "从该页面首次源文件落盘至最终证据封存；非逐题隔离模型运行时间",
+        "url": "http://127.0.0.1:4179/runs/01/full/",
+        "direction": {
+          "selected": "命令与诊断对照工作区",
+          "reason": "访客先看到完整复制入口，再把标题孤字样本和修复建议对照阅读。深色命令区、浅色诊断单共同构成主体。",
+          "considered": [
+            "整页终端日志：操作集中，但中文阅读容易被代码淹没。",
+            "三栏规则索引：适合反复检索，首次安装路径较弱。",
+            "命令与诊断对照：同时支撑安装和理解一条可操作结果。"
+          ]
+        },
+        "commands": [
+          "node node_modules/measure-cjk/bin/measure-cjk.js lint http://127.0.0.1:4179/runs/01/full/ --render --widths 390,1440 --format json --out evidence/generation/full-dev-01/measure.json --evidence evidence/generation/full-dev-01/measure-evidence",
+          "node site/runs/01/full/verify-batch.mjs",
+          "node node_modules/measure-cjk/bin/measure-cjk.js fonts \"PingFang SC\" --format json",
+          "node node_modules/measure-cjk/bin/measure-cjk.js fonts \"Songti SC\" --format json"
+        ],
+        "repairBudget": {
+          "maximumPageCodeFixRounds": 1,
+          "used": 1,
+          "reason": "初轮分寸T11字号警告；01另有T13代码字体中文回退警告。只提高辅助段落字号并补01系统中文字体，不关闭规则。",
+          "before": "evidence/generation/full-dev-01/before-rule-fix/"
+        },
+        "checks": {
+          "measure": {
+            "files": 1,
+            "cjk_files": 1,
+            "errors": 0,
+            "warns": 0,
+            "status": "pass",
+            "exitCode": 0,
+            "disabledRules": [],
+            "report": "evidence/generation/full-dev-01/measure.json"
+          },
+          "interaction": {
+            "status": "pass",
+            "passed": 18,
+            "failed": [],
+            "report": "evidence/generation/full-dev-01/interaction.json",
+            "widths": [
+              390,
+              1440
+            ],
+            "stress": [
+              "320像素",
+              "200%文本模拟",
+              "通用衬线字体回退",
+              "移除img节点（无栅格图，结构图不受影响）"
+            ],
+            "pageErrors": [],
+            "externalRequests": []
+          },
+          "visualSelfReview": {
+            "status": "同会话自审，非独立评审",
+            "screenshots": [
+              "evidence/generation/full-dev-01/fold-390.png",
+              "evidence/generation/full-dev-01/fold-1440.png"
+            ],
+            "notes": [
+              "390与1440像素标题均在“都有”之间跨行；主代理同会话目视确认桌面风险。该批次产物冻结，未回改，不宣称语义断行已解决。",
+              "代码局部横向滚动，复制失败会保留并选中完整命令。"
+            ]
+          },
+          "humanVisual": "MANUAL_PENDING",
+          "realDevice": "MANUAL_PENDING",
+          "typography": null
+        },
+        "knownIssues": [
+          "390与1440像素标题均在“都有”之间跨行；主代理同会话目视确认桌面风险。该批次产物冻结，未回改，不宣称语义断行已解决。",
+          "代码局部横向滚动，复制失败会保留并选中完整命令。"
+        ],
+        "uncovered": [
+          "真人盲评",
+          "真实手机与辅助技术体验",
+          "逐字字体命中",
+          "完整无障碍合规",
+          "外部业务系统"
+        ],
+        "rollback": "仅恢复该题full/index.html与measure.css；证据保留，不删除其他条件。",
+        "briefSha256": "25946a6227f4e89aeddf9e11ba7f012f7e38275f170e1ad775e9d9f9a6304b88",
+        "sha256": {
+          "site/runs/01/full/index.html": "4cd2f21c4d615a0b2350a6bdb41516582ac9044239af5b29eb2fe9c916fa22a0",
+          "site/runs/01/full/measure.css": "cc0ba1e4da554d44e1a1a753512a1e52e78c7901debdc5c44d97c948b2a826a4"
+        }
+      },
+      {
+        "condition": "full",
+        "id": "05",
+        "title": "独立书店的周六活动",
+        "modelFullVersion": "未暴露",
+        "startedAt": "2026-10-29T10:31:29.387Z",
+        "finishedAt": "2026-10-29T10:40:13.056Z",
+        "timeBasis": "从该页面首次源文件落盘至最终证据封存；非逐题隔离模型运行时间",
+        "url": "http://127.0.0.1:4179/runs/05/full/",
+        "direction": {
+          "selected": "书封与周末日程并置",
+          "reason": "完整长书名成为书籍主对象，周六日期使用独立大数字，报名条件留在真实可关闭详情中。",
+          "considered": [
+            "店面导览：空间先行，但没有真实照片。",
+            "月历网格：日期明确，却削弱书与讲述者关系。",
+            "书封与周末日程：书籍先建立主题，再由具体日期引导行动。"
+          ]
+        },
+        "commands": [
+          "node node_modules/measure-cjk/bin/measure-cjk.js lint http://127.0.0.1:4179/runs/05/full/ --render --widths 390,1440 --format json --out evidence/generation/full-dev-05/measure.json --evidence evidence/generation/full-dev-05/measure-evidence",
+          "node site/runs/01/full/verify-batch.mjs",
+          "node node_modules/measure-cjk/bin/measure-cjk.js fonts \"PingFang SC\" --format json",
+          "node node_modules/measure-cjk/bin/measure-cjk.js fonts \"Songti SC\" --format json"
+        ],
+        "repairBudget": {
+          "maximumPageCodeFixRounds": 1,
+          "used": 1,
+          "reason": "初轮分寸T11字号警告；01另有T13代码字体中文回退警告。只提高辅助段落字号并补01系统中文字体，不关闭规则。",
+          "before": "evidence/generation/full-dev-05/before-rule-fix/"
+        },
+        "checks": {
+          "measure": {
+            "files": 1,
+            "cjk_files": 1,
+            "errors": 0,
+            "warns": 0,
+            "status": "pass",
+            "exitCode": 0,
+            "disabledRules": [],
+            "report": "evidence/generation/full-dev-05/measure.json"
+          },
+          "interaction": {
+            "status": "pass",
+            "passed": 18,
+            "failed": [],
+            "report": "evidence/generation/full-dev-05/interaction.json",
+            "widths": [
+              390,
+              1440
+            ],
+            "stress": [
+              "320像素",
+              "200%文本模拟",
+              "通用衬线字体回退",
+              "移除img节点（无栅格图，结构图不受影响）"
+            ],
+            "pageErrors": [],
+            "externalRequests": []
+          },
+          "visualSelfReview": {
+            "status": "同会话自审，非独立评审",
+            "screenshots": [
+              "evidence/generation/full-dev-05/fold-390.png",
+              "evidence/generation/full-dev-05/fold-1440.png"
+            ],
+            "notes": [
+              "书封为CSS文字示意，长书名在窄书封内自然多行；真实店内照片不适用。"
+            ]
+          },
+          "humanVisual": "MANUAL_PENDING",
+          "realDevice": "MANUAL_PENDING",
+          "typography": null
+        },
+        "knownIssues": [
+          "书封为CSS文字示意，长书名在窄书封内自然多行；真实店内照片不适用。"
+        ],
+        "uncovered": [
+          "真人盲评",
+          "真实手机与辅助技术体验",
+          "逐字字体命中",
+          "完整无障碍合规",
+          "外部业务系统"
+        ],
+        "rollback": "仅恢复该题full/index.html与measure.css；证据保留，不删除其他条件。",
+        "briefSha256": "923bad702fbc43c1581a849b1f137de7ab770fd8c0ffb436e56ac04b57965a57",
+        "sha256": {
+          "site/runs/05/full/index.html": "014d13667fbc98e8bdd20448d3679c67d92799a251bf5fb87033b1d73a594b0b",
+          "site/runs/05/full/measure.css": "cc0ba1e4da554d44e1a1a753512a1e52e78c7901debdc5c44d97c948b2a826a4"
+        }
+      },
+      {
+        "condition": "full",
+        "id": "09",
+        "title": "阅读室入口观察研究解读",
+        "modelFullVersion": "未暴露",
+        "startedAt": "2026-10-29T10:31:29.387Z",
+        "finishedAt": "2026-10-29T10:40:13.058Z",
+        "timeBasis": "从该页面首次源文件落盘至最终证据封存；非逐题隔离模型运行时间",
+        "url": "http://127.0.0.1:4179/runs/09/full/",
+        "direction": {
+          "selected": "正文主轴与证据边注",
+          "reason": "完整九段正文维持一条阅读轴，四章目录置于侧栏，12次合成分母与重复计数边界作为辅助边注。",
+          "considered": [
+            "单栏连续卷轴：阅读直接，证据定位较慢。",
+            "证据卡片拼贴：便于浏览，容易打断长文。",
+            "正文主轴与边注：连续阅读和目录、注释往返都能保留。"
+          ]
+        },
+        "commands": [
+          "node node_modules/measure-cjk/bin/measure-cjk.js lint http://127.0.0.1:4179/runs/09/full/ --render --widths 390,1440 --format json --out evidence/generation/full-dev-09/measure.json --evidence evidence/generation/full-dev-09/measure-evidence",
+          "node site/runs/01/full/verify-batch.mjs",
+          "node node_modules/measure-cjk/bin/measure-cjk.js fonts \"PingFang SC\" --format json",
+          "node node_modules/measure-cjk/bin/measure-cjk.js fonts \"Songti SC\" --format json"
+        ],
+        "repairBudget": {
+          "maximumPageCodeFixRounds": 1,
+          "used": 1,
+          "reason": "初轮分寸T11字号警告；01另有T13代码字体中文回退警告。只提高辅助段落字号并补01系统中文字体，不关闭规则。",
+          "before": "evidence/generation/full-dev-09/before-rule-fix/"
+        },
+        "checks": {
+          "measure": {
+            "files": 1,
+            "cjk_files": 1,
+            "errors": 0,
+            "warns": 0,
+            "status": "pass",
+            "exitCode": 0,
+            "disabledRules": [],
+            "report": "evidence/generation/full-dev-09/measure.json"
+          },
+          "interaction": {
+            "status": "pass",
+            "passed": 28,
+            "failed": [],
+            "report": "evidence/generation/full-dev-09/interaction.json",
+            "widths": [
+              390,
+              1440
+            ],
+            "stress": [
+              "320像素",
+              "200%文本模拟",
+              "通用衬线字体回退",
+              "移除img节点（无栅格图，结构图不受影响）"
+            ],
+            "pageErrors": [],
+            "externalRequests": []
+          },
+          "visualSelfReview": {
+            "status": "同会话自审，非独立评审",
+            "screenshots": [
+              "evidence/generation/full-dev-09/fold-390.png",
+              "evidence/generation/full-dev-09/fold-1440.png"
+            ],
+            "notes": [
+              "390像素标题将“为什么”分成“为／什么”；一次修复预算已使用，未继续修改。",
+              "计算样式只能确认声明的字体族，不证明每个汉字实际字体命中。"
+            ]
+          },
+          "humanVisual": "MANUAL_PENDING",
+          "realDevice": "MANUAL_PENDING",
+          "typography": {
+            "fontFamily": "Georgia, \"Songti SC\", serif",
+            "fontSize": "18px",
+            "lineHeight": "33.3px",
+            "width": 576,
+            "comment": "计算样式，不代表逐字字体命中已验证"
+          }
+        },
+        "knownIssues": [
+          "390像素标题将“为什么”分成“为／什么”；一次修复预算已使用，未继续修改。",
+          "计算样式只能确认声明的字体族，不证明每个汉字实际字体命中。"
+        ],
+        "uncovered": [
+          "真人盲评",
+          "真实手机与辅助技术体验",
+          "逐字字体命中",
+          "完整无障碍合规",
+          "外部业务系统"
+        ],
+        "rollback": "仅恢复该题full/index.html与measure.css；证据保留，不删除其他条件。",
+        "briefSha256": "e75d7c768a36b3abaf703977e75b2641c3a96d817591e8a25896ac107fe237b4",
+        "sha256": {
+          "site/runs/09/full/index.html": "e8c218e4dace98c8493cf9b212e4db5760898659c1d3f9259342cd62cd6dc340",
+          "site/runs/09/full/measure.css": "cc0ba1e4da554d44e1a1a753512a1e52e78c7901debdc5c44d97c948b2a826a4"
+        }
+      },
+      {
+        "condition": "full",
+        "id": "13",
+        "title": "轻量经营后台异常订单改版",
+        "modelFullVersion": "未暴露",
+        "startedAt": "2026-10-29T10:31:29.388Z",
+        "finishedAt": "2026-10-29T10:40:13.060Z",
+        "timeBasis": "从该页面首次源文件落盘至最终证据封存；非逐题隔离模型运行时间",
+        "url": "http://127.0.0.1:4179/runs/13/full/",
+        "direction": {
+          "selected": "异常提示与响应式订单工作台",
+          "reason": "先标示两条异常，再使用原有真实筛选；桌面保留横向表格，手机按原表格行重排信息，不删字段、记录或测试钩子。",
+          "considered": [
+            "保持原表横向滚动：改动小，手机公司与动作相距较远。",
+            "状态看板：异常明显，但破坏共同表格口径。",
+            "响应式工作台：保留原数据和行为，手机将订单行重排为完整记录。"
+          ]
+        },
+        "commands": [
+          "node node_modules/measure-cjk/bin/measure-cjk.js lint http://127.0.0.1:4179/runs/13/full/ --render --widths 390,1440 --format json --out evidence/generation/full-dev-13/measure.json --evidence evidence/generation/full-dev-13/measure-evidence",
+          "node site/runs/01/full/verify-batch.mjs 13",
+          "node node_modules/measure-cjk/bin/measure-cjk.js fonts \"PingFang SC\" --format json",
+          "node node_modules/measure-cjk/bin/measure-cjk.js fonts \"Songti SC\" --format json"
+        ],
+        "repairBudget": {
+          "maximumPageCodeFixRounds": 1,
+          "used": 1,
+          "reason": "初轮分寸T11字号警告；01另有T13代码字体中文回退警告。只提高辅助段落字号并补01系统中文字体，不关闭规则。",
+          "before": "evidence/generation/full-dev-13/before-rule-fix/"
+        },
+        "checks": {
+          "measure": {
+            "files": 1,
+            "cjk_files": 1,
+            "errors": 0,
+            "warns": 0,
+            "status": "pass",
+            "exitCode": 0,
+            "disabledRules": [],
+            "report": "evidence/generation/full-dev-13/measure.json"
+          },
+          "interaction": {
+            "status": "pass",
+            "passed": 50,
+            "failed": [],
+            "report": "evidence/generation/full-dev-13/interaction.json",
+            "widths": [
+              390,
+              1440
+            ],
+            "stress": [
+              "320像素",
+              "200%文本模拟",
+              "通用衬线字体回退",
+              "移除img节点（无栅格图，结构图不受影响）"
+            ],
+            "pageErrors": [],
+            "externalRequests": []
+          },
+          "visualSelfReview": {
+            "status": "同会话自审，非独立评审",
+            "screenshots": [
+              "evidence/generation/full-dev-13/fold-390.png",
+              "evidence/generation/full-dev-13/fold-1440.png"
+            ],
+            "notes": [
+              "原始旧页面只在初始加载解析详情hash；测试从about:blank进入完整URL验证该既有语义。",
+              "关闭事件异步清hash，测试等待事件完成；没有改变原业务脚本。"
+            ]
+          },
+          "humanVisual": "MANUAL_PENDING",
+          "realDevice": "MANUAL_PENDING",
+          "typography": null
+        },
+        "knownIssues": [
+          "原始旧页面只在初始加载解析详情hash；测试从about:blank进入完整URL验证该既有语义。",
+          "关闭事件异步清hash，测试等待事件完成；没有改变原业务脚本。"
+        ],
+        "uncovered": [
+          "真人盲评",
+          "真实手机与辅助技术体验",
+          "逐字字体命中",
+          "完整无障碍合规",
+          "外部业务系统"
+        ],
+        "rollback": "仅恢复该题full/index.html与measure.css；证据保留，不删除其他条件。",
+        "briefSha256": "a4de974fd81992a0d68fde864815c94cde871d88f848befcc5abe736b9326f2c",
+        "sha256": {
+          "site/runs/13/full/index.html": "3da9ad94afb62b8aa7b917ebd1434c74c02ae6fcf2a8300737e9e32febca08c2",
+          "site/runs/13/full/measure.css": "cc0ba1e4da554d44e1a1a753512a1e52e78c7901debdc5c44d97c948b2a826a4"
+        }
+      },
+      {
+        "condition": "full",
+        "id": "17",
+        "title": "城市活动本地模拟预约",
+        "modelFullVersion": "未暴露",
+        "startedAt": "2026-10-29T10:33:21.670Z",
+        "finishedAt": "2026-10-29T10:40:13.061Z",
+        "timeBasis": "从该页面首次源文件落盘至最终证据封存；非逐题隔离模型运行时间",
+        "url": "http://127.0.0.1:4179/runs/17/full/",
+        "direction": {
+          "selected": "路线示意与三步场次表单",
+          "reason": "地点、连续步行与参与条件先支持决策；表单通过日期、场次、票种、演示信息完成本地模拟。",
+          "considered": [
+            "海报主导：传播性强，但条件容易退居页尾。",
+            "全屏月历：便于选日期，但只有两天样本没有必要。",
+            "路线与三步表单：城市观察有主对象，费用与规则在提交前清楚呈现。"
+          ]
+        },
+        "commands": [
+          "node node_modules/measure-cjk/bin/measure-cjk.js lint http://127.0.0.1:4179/runs/17/full/ --render --widths 390,1440 --format json --out evidence/generation/full-dev-17/measure.json --evidence evidence/generation/full-dev-17/measure-evidence",
+          "node site/runs/01/full/verify-batch.mjs",
+          "node node_modules/measure-cjk/bin/measure-cjk.js fonts \"PingFang SC\" --format json",
+          "node node_modules/measure-cjk/bin/measure-cjk.js fonts \"Songti SC\" --format json"
+        ],
+        "repairBudget": {
+          "maximumPageCodeFixRounds": 1,
+          "used": 1,
+          "reason": "初轮分寸T11字号警告；01另有T13代码字体中文回退警告。只提高辅助段落字号并补01系统中文字体，不关闭规则。",
+          "before": "evidence/generation/full-dev-17/before-rule-fix/"
+        },
+        "checks": {
+          "measure": {
+            "files": 1,
+            "cjk_files": 1,
+            "errors": 0,
+            "warns": 0,
+            "status": "pass",
+            "exitCode": 0,
+            "disabledRules": [],
+            "report": "evidence/generation/full-dev-17/measure.json"
+          },
+          "interaction": {
+            "status": "pass",
+            "passed": 24,
+            "failed": [],
+            "report": "evidence/generation/full-dev-17/interaction.json",
+            "widths": [
+              390,
+              1440
+            ],
+            "stress": [
+              "320像素",
+              "200%文本模拟",
+              "通用衬线字体回退",
+              "移除img节点（无栅格图，结构图不受影响）"
+            ],
+            "pageErrors": [],
+            "externalRequests": []
+          },
+          "visualSelfReview": {
+            "status": "同会话自审，非独立评审",
+            "screenshots": [
+              "evidence/generation/full-dev-17/fold-390.png",
+              "evidence/generation/full-dev-17/fold-1440.png"
+            ],
+            "notes": [
+              "无真实预约、收费、邮件或可达性验证；仅允许.invalid演示邮箱。"
+            ]
+          },
+          "humanVisual": "MANUAL_PENDING",
+          "realDevice": "MANUAL_PENDING",
+          "typography": null
+        },
+        "knownIssues": [
+          "无真实预约、收费、邮件或可达性验证；仅允许.invalid演示邮箱。"
+        ],
+        "uncovered": [
+          "真人盲评",
+          "真实手机与辅助技术体验",
+          "逐字字体命中",
+          "完整无障碍合规",
+          "外部业务系统"
+        ],
+        "rollback": "仅恢复该题full/index.html与measure.css；证据保留，不删除其他条件。",
+        "briefSha256": "c00bf08b83dd3507b49301d38dafbd183d789f61f875d9152420073c499a215c",
+        "sha256": {
+          "site/runs/17/full/index.html": "4e0d6707bfdd908b49f927f0f876335479593fcef6551a65dca5bb87c24c8ffd",
+          "site/runs/17/full/measure.css": "cc0ba1e4da554d44e1a1a753512a1e52e78c7901debdc5c44d97c948b2a826a4"
+        }
+      },
+      {
+        "condition": "full",
+        "id": "21",
+        "title": "三款桌面设备比较",
+        "modelFullVersion": "未暴露",
+        "startedAt": "2026-10-29T10:33:21.671Z",
+        "finishedAt": "2026-10-29T10:40:13.063Z",
+        "timeBasis": "从该页面首次源文件落盘至最终证据封存；非逐题隔离模型运行时间",
+        "url": "http://127.0.0.1:4179/runs/21/full/",
+        "direction": {
+          "selected": "接口示意与完整差异表",
+          "reason": "切换型号直接更新演示设备图和接口说明，下方三列共同参数始终保留，双HDMI与千兆网口可在同一口径推导D3。",
+          "considered": [
+            "三张销售卡：价差清楚，但较难逐项核对接口。",
+            "问答向导：能给选择，但隐藏完整参数。",
+            "设备示意与差异表：让型号差异具象化，再以完整规格解释取舍。"
+          ]
+        },
+        "commands": [
+          "node node_modules/measure-cjk/bin/measure-cjk.js lint http://127.0.0.1:4179/runs/21/full/ --render --widths 390,1440 --format json --out evidence/generation/full-dev-21/measure.json --evidence evidence/generation/full-dev-21/measure-evidence",
+          "node site/runs/01/full/verify-batch.mjs",
+          "node node_modules/measure-cjk/bin/measure-cjk.js fonts \"PingFang SC\" --format json",
+          "node node_modules/measure-cjk/bin/measure-cjk.js fonts \"Songti SC\" --format json"
+        ],
+        "repairBudget": {
+          "maximumPageCodeFixRounds": 1,
+          "used": 1,
+          "reason": "初轮分寸T11字号警告；01另有T13代码字体中文回退警告。只提高辅助段落字号并补01系统中文字体，不关闭规则。",
+          "before": "evidence/generation/full-dev-21/before-rule-fix/"
+        },
+        "checks": {
+          "measure": {
+            "files": 1,
+            "cjk_files": 1,
+            "errors": 0,
+            "warns": 0,
+            "status": "pass",
+            "exitCode": 0,
+            "disabledRules": [],
+            "report": "evidence/generation/full-dev-21/measure.json"
+          },
+          "interaction": {
+            "status": "pass",
+            "passed": 82,
+            "failed": [],
+            "report": "evidence/generation/full-dev-21/interaction.json",
+            "widths": [
+              390,
+              1440
+            ],
+            "stress": [
+              "320像素",
+              "200%文本模拟",
+              "通用衬线字体回退",
+              "移除img节点（无栅格图，结构图不受影响）"
+            ],
+            "pageErrors": [],
+            "externalRequests": []
+          },
+          "visualSelfReview": {
+            "status": "同会话自审，非独立评审",
+            "screenshots": [
+              "evidence/generation/full-dev-21/fold-390.png",
+              "evidence/generation/full-dev-21/fold-1440.png"
+            ],
+            "notes": [
+              "390像素标题在“真正”之间跨行；语义节奏需人工审阅。",
+              "移动参数表局部横向滚动，全部参数始终存在；不保证真实兼容或外屏性能。"
+            ]
+          },
+          "humanVisual": "MANUAL_PENDING",
+          "realDevice": "MANUAL_PENDING",
+          "typography": null
+        },
+        "knownIssues": [
+          "390像素标题在“真正”之间跨行；语义节奏需人工审阅。",
+          "移动参数表局部横向滚动，全部参数始终存在；不保证真实兼容或外屏性能。"
+        ],
+        "uncovered": [
+          "真人盲评",
+          "真实手机与辅助技术体验",
+          "逐字字体命中",
+          "完整无障碍合规",
+          "外部业务系统"
+        ],
+        "rollback": "仅恢复该题full/index.html与measure.css；证据保留，不删除其他条件。",
+        "briefSha256": "e3fd34ccb2937ab39f8974079afaaaee7a500711c23ba46ec37b0c20036d917c",
+        "sha256": {
+          "site/runs/21/full/index.html": "941c3c4e10b85cc6b592d2867fa36d75d3d40e43334c395e389adb69a70a0c7b",
+          "site/runs/21/full/measure.css": "cc0ba1e4da554d44e1a1a753512a1e52e78c7901debdc5c44d97c948b2a826a4"
+        }
+      }
+    ],
+    "finishedAt": "2026-10-29T10:40:13.064Z"
+  }
+}

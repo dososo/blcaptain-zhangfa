@@ -1,0 +1,87 @@
+{
+  "题号": "10",
+  "条件": "control",
+  "结论": "已基于冻结输入实际浏览与操作完成审阅，未修改输入",
+  "确定缺陷": [
+    {
+      "元素": "#command（pre）",
+      "宽度": "320、390",
+      "复现": "打开错误页，整页宽942px，超过手机视口；命令固定900px且没有局部滚动容器。",
+      "影响": "阅读和命令检查需要拖动整页，不能在手机宽度内保持页面结构。",
+      "建议": "让代码容器限制在可用宽度并局部横向滚动，保留完整单条命令。",
+      "级别": "中"
+    },
+    {
+      "元素": "#copy、window.__copiedText",
+      "宽度": "320、390、1440",
+      "复现": "点击复制检查命令，运行时复制值以配置路径闭引号结束；显示命令末尾还有 --verbose。",
+      "影响": "复制内容与页面完整检查命令不一致，文字核对时丢失参数。",
+      "建议": "复制值直接使用完整显示命令，保留引号与 --verbose。",
+      "级别": "中"
+    }
+  ],
+  "设计建议": [
+    "保留中文路径及成对引号；局部代码滚动可以使用，无需拆成多条命令。"
+  ],
+  "待核实项": [
+    "未执行演示命令。浏览器剪贴板系统写入结果受运行环境权限影响；本次确定证据为页面运行时传给复制操作的文本。"
+  ],
+  "观察": [
+    {
+      "题号": "10",
+      "宽度": 390,
+      "测量": {
+        "视口": 390,
+        "页面宽": 942,
+        "横向溢出": true
+      },
+      "操作": [
+        {
+          "操作": "复制命令与显示命令比较",
+          "显示": "demo-config-check --config \"./中文项目与多人协作演示/config/zhangfa.preview.config.json\" --verbose",
+          "复制": "demo-config-check --config \"./中文项目与多人协作演示/config/zhangfa.preview.config.json\"",
+          "反馈": ""
+        }
+      ]
+    },
+    {
+      "题号": "10",
+      "宽度": 320,
+      "测量": {
+        "视口": 320,
+        "页面宽": 942,
+        "横向溢出": true
+      },
+      "操作": [
+        {
+          "操作": "复制命令与显示命令比较",
+          "显示": "demo-config-check --config \"./中文项目与多人协作演示/config/zhangfa.preview.config.json\" --verbose",
+          "复制": "demo-config-check --config \"./中文项目与多人协作演示/config/zhangfa.preview.config.json\"",
+          "反馈": ""
+        }
+      ]
+    },
+    {
+      "题号": "10",
+      "宽度": 1440,
+      "测量": {
+        "视口": 1440,
+        "页面宽": 1440,
+        "横向溢出": false
+      },
+      "操作": [
+        {
+          "操作": "复制命令与显示命令比较",
+          "显示": "demo-config-check --config \"./中文项目与多人协作演示/config/zhangfa.preview.config.json\" --verbose",
+          "复制": "demo-config-check --config \"./中文项目与多人协作演示/config/zhangfa.preview.config.json\"",
+          "反馈": ""
+        }
+      ]
+    }
+  ],
+  "证据路径": [
+    "evidence/generation/control-review/10-320.png",
+    "evidence/generation/control-review/10-390.png",
+    "evidence/generation/control-review/10-1440.png"
+  ]
+}

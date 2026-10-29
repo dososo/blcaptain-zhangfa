@@ -1,0 +1,2095 @@
+{
+  "公开说明": "生成记录脱敏副本。只移除本机绝对路径；未补写成本、模型版本或未执行的检查。截图等原始二进制证据保留本地，不在此链接中分发。",
+  "记录": {
+    "condition": "measure",
+    "batch": "remaining-18",
+    "modelFullVersion": "未暴露",
+    "startedAt": "2026-10-29T10:37:24.422Z",
+    "endedAt": "2026-10-29T10:43:10.278Z",
+    "count": 18,
+    "scopeNote": "这是同一个独立measure批次会话生成的18题示例，不是18个逐题独立模型会话，不用于独立统计胜率。",
+    "skill": "本机研究或临时路径（已隐去）",
+    "readBoundary": "只读取指派的18份brief和7份允许输入；未读取章法技能、其他条件、方案、research、ground-truth及展示站样式。",
+    "services": "全部本地页面与本地状态模拟；未联网，不连接真实服务，不提交表单到外部。",
+    "fontPolicy": {
+      "PingFang SC": "黄色档，仅系统调用，未自托管；字体表2026-10-25核验。",
+      "Songti SC": "授权表未收录，系统调用，未自托管。",
+      "remoteFonts": false
+    },
+    "verification": {
+      "generatedPages": 14,
+      "reviewReports": 4,
+      "finalMeasurePasses": 18,
+      "mainTasks390And1440": 28,
+      "expectedMainTaskChecks": 28,
+      "finalDefaultWidthChecks": 42,
+      "extraRepairDisclosure": "12题进行预算外第二次修复并公开保留原始失败。17题在一轮修复预算内完成，12题后处理完成；不以此统计条件胜率。"
+    },
+    "items": [
+      {
+        "id": "02",
+        "title": "本地笔记工具的离线与同步边界",
+        "mode": "新建",
+        "condition": "measure",
+        "startedAt": "2026-10-29T10:37:24.422Z",
+        "startTimeScope": "批次共同起点；未伪造逐题独立会话耗时",
+        "generationLastModifiedAt": "2026-10-29T10:37:24.424Z",
+        "endedAt": "2026-10-29T10:43:10.225Z",
+        "actions": [
+          "打开长文件名，输入正文，离线→失败→重试，正文逐字符一致",
+          "390像素下模拟系统字体回退与叶节点200%文字放大；无远程图片依赖"
+        ],
+        "measure": {
+          "initialPath": "evidence/generation/measure-rem-02/measure-initial.json",
+          "finalPath": "evidence/generation/measure-rem-02/measure-initial.json",
+          "summary": {
+            "files": 1,
+            "cjk_files": 1,
+            "errors": 0,
+            "warns": 0,
+            "status": "pass"
+          },
+          "initialExitCode": 0,
+          "disabledRules": [],
+          "configuration": "默认配置"
+        },
+        "repairs": [],
+        "interactions": [
+          {
+            "width": 390,
+            "status": "通过",
+            "errors": [],
+            "text200": {
+              "width": 390,
+              "scroll": 390
+            },
+            "externalRequests": [],
+            "console": []
+          },
+          {
+            "width": 1440,
+            "status": "通过",
+            "errors": [],
+            "externalRequests": [],
+            "console": []
+          },
+          {
+            "width": 320,
+            "status": "通过",
+            "errors": [],
+            "externalRequests": [],
+            "console": []
+          }
+        ],
+        "knownLimitations": [
+          "200%文字放大为浏览器叶节点字号模拟；字体回退为Arial/sans-serif模拟，未做真实操作系统字体卸载。",
+          "未做真实手机、屏幕阅读器和人工视觉验收。"
+        ],
+        "artifacts": [
+          {
+            "path": "site/runs/02/measure/index.html",
+            "sha256": "754c5c4037ac87e41be20b7817d5ca4aaa56cdac5a173c6db6abe535c4a02270",
+            "bytes": 5409
+          },
+          {
+            "path": "site/runs/02/measure/measure.css",
+            "sha256": "cc0ba1e4da554d44e1a1a753512a1e52e78c7901debdc5c44d97c948b2a826a4",
+            "bytes": 1121
+          }
+        ],
+        "evidence": [
+          {
+            "path": "evidence/generation/measure-rem-02/font-fallback.png",
+            "sha256": "33bab7c780849b23cc78ccddea1200fd671b75ddd04c906c84367e260cd460f4",
+            "bytes": 121986
+          },
+          {
+            "path": "evidence/generation/measure-rem-02/measure-initial.json",
+            "sha256": "9c03b91956f1b7af4785bd41ad7de2389339520f594428192e5ab46627e81d3d",
+            "bytes": 1047
+          },
+          {
+            "path": "evidence/generation/measure-rem-02/measure-initial.log",
+            "sha256": "d46d30540d5d4d33a0789fd27ec3b632c69b4da37e9d2031a32f667ec15033c1",
+            "bytes": 231
+          },
+          {
+            "path": "evidence/generation/measure-rem-02/task-1440.png",
+            "sha256": "ad2bf42c422eb3713c7bb09754070b7207fea72a6b244d4f8622d3a2deb6d0eb",
+            "bytes": 138375
+          },
+          {
+            "path": "evidence/generation/measure-rem-02/task-320.png",
+            "sha256": "19e90aef2f53abdbc5085d6748c46cfbbe055e00167c0ab7edaa11663e76dd06",
+            "bytes": 121774
+          },
+          {
+            "path": "evidence/generation/measure-rem-02/task-390.png",
+            "sha256": "33bab7c780849b23cc78ccddea1200fd671b75ddd04c906c84367e260cd460f4",
+            "bytes": 121986
+          },
+          {
+            "path": "evidence/generation/measure-rem-02/text-200.png",
+            "sha256": "e42144a34b06a603119c47ede33900ce75623c29ba289c4d339f094d09618367",
+            "bytes": 251197
+          }
+        ]
+      },
+      {
+        "id": "03",
+        "title": "音频转写演示工作台",
+        "mode": "新建",
+        "condition": "measure",
+        "startedAt": "2026-10-29T10:37:24.422Z",
+        "startTimeScope": "批次共同起点；未伪造逐题独立会话耗时",
+        "generationLastModifiedAt": "2026-10-29T10:37:24.425Z",
+        "endedAt": "2026-10-29T10:43:10.229Z",
+        "actions": [
+          "选择错误文件，加载演示，定位00:24说话人与全文",
+          "390像素下模拟系统字体回退与叶节点200%文字放大；无远程图片依赖"
+        ],
+        "measure": {
+          "initialPath": "evidence/generation/measure-rem-03/measure-initial.json",
+          "finalPath": "evidence/generation/measure-rem-03/measure-initial.json",
+          "summary": {
+            "files": 1,
+            "cjk_files": 1,
+            "errors": 0,
+            "warns": 0,
+            "status": "pass"
+          },
+          "initialExitCode": 0,
+          "disabledRules": [],
+          "configuration": "默认配置"
+        },
+        "repairs": [],
+        "interactions": [
+          {
+            "width": 390,
+            "status": "通过",
+            "errors": [],
+            "text200": {
+              "width": 390,
+              "scroll": 390
+            },
+            "externalRequests": [],
+            "console": []
+          },
+          {
+            "width": 1440,
+            "status": "通过",
+            "errors": [],
+            "externalRequests": [],
+            "console": []
+          },
+          {
+            "width": 320,
+            "status": "通过",
+            "errors": [],
+            "externalRequests": [],
+            "console": []
+          }
+        ],
+        "knownLimitations": [
+          "200%文字放大为浏览器叶节点字号模拟；字体回退为Arial/sans-serif模拟，未做真实操作系统字体卸载。",
+          "未做真实手机、屏幕阅读器和人工视觉验收。"
+        ],
+        "artifacts": [
+          {
+            "path": "site/runs/03/measure/index.html",
+            "sha256": "6a5334bfdb7f73d85a98e7ac4ae849a3affc642275f5985c3725d4c01d1198d0",
+            "bytes": 5764
+          },
+          {
+            "path": "site/runs/03/measure/measure.css",
+            "sha256": "cc0ba1e4da554d44e1a1a753512a1e52e78c7901debdc5c44d97c948b2a826a4",
+            "bytes": 1121
+          }
+        ],
+        "evidence": [
+          {
+            "path": "evidence/generation/measure-rem-03/font-fallback.png",
+            "sha256": "11a85a58c42297bf997fc09e85562ff88495a2f42e6ab2369b782dc93fc40152",
+            "bytes": 158983
+          },
+          {
+            "path": "evidence/generation/measure-rem-03/measure-initial.json",
+            "sha256": "90847170b133732fa1e17c8c9e4d0800e633eab1acbcfdb75fd0b17a837a6b70",
+            "bytes": 1047
+          },
+          {
+            "path": "evidence/generation/measure-rem-03/measure-initial.log",
+            "sha256": "ac39f6c77d27c44d66fb1e25a4fe15ec3228dd28103206bc86c6ac352055aa8b",
+            "bytes": 231
+          },
+          {
+            "path": "evidence/generation/measure-rem-03/task-1440.png",
+            "sha256": "8ecf65ab98e577719e7bde8fbd0cbe5e2ce3f90aaecbeac6ca46314c482121da",
+            "bytes": 180989
+          },
+          {
+            "path": "evidence/generation/measure-rem-03/task-320.png",
+            "sha256": "c2a6c9cd7f7523cd10ab1d29855caa6724f760f11922a5f214debf101f34ccc7",
+            "bytes": 159057
+          },
+          {
+            "path": "evidence/generation/measure-rem-03/task-390.png",
+            "sha256": "11a85a58c42297bf997fc09e85562ff88495a2f42e6ab2369b782dc93fc40152",
+            "bytes": 158983
+          },
+          {
+            "path": "evidence/generation/measure-rem-03/text-200.png",
+            "sha256": "a10ff6006735a1bee8f167a702d0ddf6caf71907c0e8fe95528c1145fcc7a35c",
+            "bytes": 329360
+          }
+        ]
+      },
+      {
+        "id": "04",
+        "title": "开源组件发布说明审阅",
+        "mode": "只审阅",
+        "condition": "measure",
+        "startedAt": "2026-10-29T10:37:24.422Z",
+        "startTimeScope": "批次共同起点；未伪造逐题独立会话耗时",
+        "generationLastModifiedAt": "2026-10-29T10:38:31.018Z",
+        "endedAt": "2026-10-29T10:43:10.232Z",
+        "actions": [
+          "读取允许冻结输入",
+          "在4180对390/320/1440实际观察并执行关键操作",
+          "输出确定缺陷、正常对照、设计建议、待核实项",
+          "只生成报告，未修改输入"
+        ],
+        "measure": {
+          "initialPath": "evidence/generation/measure-rem-04/measure-initial.json",
+          "finalPath": "evidence/generation/measure-rem-04/measure-initial.json",
+          "summary": {
+            "files": 1,
+            "cjk_files": 1,
+            "errors": 0,
+            "warns": 0,
+            "status": "pass"
+          },
+          "initialExitCode": 0,
+          "disabledRules": [],
+          "configuration": "默认配置"
+        },
+        "repairs": [],
+        "interactions": {
+          "observationPath": "evidence/generation/measure-rem-review-observations.json",
+          "widths": [
+            390,
+            320,
+            1440
+          ],
+          "status": "已观察并报告"
+        },
+        "knownLimitations": [
+          "200%文字放大为浏览器叶节点字号模拟；字体回退为Arial/sans-serif模拟，未做真实操作系统字体卸载。",
+          "未做真实手机、屏幕阅读器和人工视觉验收。",
+          "输入中的问题未修复；完整字段与事实可在原始观察记录核对。"
+        ],
+        "artifacts": [
+          {
+            "path": "site/runs/04/measure/index.html",
+            "sha256": "6dd1282eb90718f0bb27ad70abe9aad3c46f37c94052771ee750695ce98cec8a",
+            "bytes": 2334
+          },
+          {
+            "path": "site/runs/04/measure/measure.css",
+            "sha256": "cc0ba1e4da554d44e1a1a753512a1e52e78c7901debdc5c44d97c948b2a826a4",
+            "bytes": 1121
+          },
+          {
+            "path": "site/runs/04/measure/report.json",
+            "sha256": "c9cd55dd7cbee909bb31d8ec1e2f1c720406a13b105edf4ce9021b2ef546f2ae",
+            "bytes": 1915
+          }
+        ],
+        "evidence": [
+          {
+            "path": "evidence/generation/measure-rem-04/input-1440.png",
+            "sha256": "02f3452b2408e5a27f742e282a0ae341d6079ad3c746c9df713100599b8db27e",
+            "bytes": 91296
+          },
+          {
+            "path": "evidence/generation/measure-rem-04/input-320.png",
+            "sha256": "7fe54d0a9cab3c7c3affb90f93e9f5d8a141d78ff911defcd2295614b9bb2feb",
+            "bytes": 77126
+          },
+          {
+            "path": "evidence/generation/measure-rem-04/input-390.png",
+            "sha256": "bc39b1347af0d7ce2ad002a837deff10857e7e2ed4117cc93e48ae8e529a022c",
+            "bytes": 79030
+          },
+          {
+            "path": "evidence/generation/measure-rem-04/measure-initial.json",
+            "sha256": "0413d6f307de01677cd95695bf85d7c92e3a4c0b02450bf2386aee91472904b7",
+            "bytes": 1047
+          },
+          {
+            "path": "evidence/generation/measure-rem-04/measure-initial.log",
+            "sha256": "23e640a562fe83b0a908d094681de8038fbdd04dfadda722c2d5c51dccfedb7b",
+            "bytes": 231
+          }
+        ]
+      },
+      {
+        "id": "06",
+        "title": "纪录片线上档案",
+        "mode": "新建",
+        "condition": "measure",
+        "startedAt": "2026-10-29T10:37:24.422Z",
+        "startTimeScope": "批次共同起点；未伪造逐题独立会话耗时",
+        "generationLastModifiedAt": "2026-10-29T10:37:24.426Z",
+        "endedAt": "2026-10-29T10:43:10.234Z",
+        "actions": [
+          "定位片目，制作资料与第二章节，确认不可播放",
+          "390像素下模拟系统字体回退与叶节点200%文字放大；无远程图片依赖"
+        ],
+        "measure": {
+          "initialPath": "evidence/generation/measure-rem-06/measure-initial.json",
+          "finalPath": "evidence/generation/measure-rem-06/measure-initial.json",
+          "summary": {
+            "files": 1,
+            "cjk_files": 1,
+            "errors": 0,
+            "warns": 0,
+            "status": "pass"
+          },
+          "initialExitCode": 0,
+          "disabledRules": [],
+          "configuration": "默认配置"
+        },
+        "repairs": [],
+        "interactions": [
+          {
+            "width": 390,
+            "status": "通过",
+            "errors": [],
+            "text200": {
+              "width": 390,
+              "scroll": 390
+            },
+            "externalRequests": [],
+            "console": []
+          },
+          {
+            "width": 1440,
+            "status": "通过",
+            "errors": [],
+            "externalRequests": [],
+            "console": []
+          },
+          {
+            "width": 320,
+            "status": "通过",
+            "errors": [],
+            "externalRequests": [],
+            "console": []
+          }
+        ],
+        "knownLimitations": [
+          "200%文字放大为浏览器叶节点字号模拟；字体回退为Arial/sans-serif模拟，未做真实操作系统字体卸载。",
+          "未做真实手机、屏幕阅读器和人工视觉验收。"
+        ],
+        "artifacts": [
+          {
+            "path": "site/runs/06/measure/index.html",
+            "sha256": "8ba05fa8df0004990432f084866de59bf3864d60837b4f6c37b696a3c7e792df",
+            "bytes": 5717
+          },
+          {
+            "path": "site/runs/06/measure/measure.css",
+            "sha256": "cc0ba1e4da554d44e1a1a753512a1e52e78c7901debdc5c44d97c948b2a826a4",
+            "bytes": 1121
+          }
+        ],
+        "evidence": [
+          {
+            "path": "evidence/generation/measure-rem-06/font-fallback.png",
+            "sha256": "9bf4e2b4294aa7bd5b37bac881aa1373b23506be65606aa4a20ecef825a16c45",
+            "bytes": 159554
+          },
+          {
+            "path": "evidence/generation/measure-rem-06/measure-initial.json",
+            "sha256": "6544ba80cb35eb05e028b6c5cf0d12e6752aa772eaf36031427a230e57b92b63",
+            "bytes": 1047
+          },
+          {
+            "path": "evidence/generation/measure-rem-06/measure-initial.log",
+            "sha256": "e5598f6018a72087f9fb67f92ca5edadebc6bd322fe6291c8b7d0dfa0bac5d4e",
+            "bytes": 231
+          },
+          {
+            "path": "evidence/generation/measure-rem-06/task-1440.png",
+            "sha256": "4216a565c3082ea82240344c653041daaf328b05095c49052c9055d3dd6d2769",
+            "bytes": 183666
+          },
+          {
+            "path": "evidence/generation/measure-rem-06/task-320.png",
+            "sha256": "4773e74897a0dfd4a888dbc54b3f141f99fe23ed110e962c1acc8b0129bacafe",
+            "bytes": 156760
+          },
+          {
+            "path": "evidence/generation/measure-rem-06/task-390.png",
+            "sha256": "9bf4e2b4294aa7bd5b37bac881aa1373b23506be65606aa4a20ecef825a16c45",
+            "bytes": 159554
+          },
+          {
+            "path": "evidence/generation/measure-rem-06/text-200.png",
+            "sha256": "1d8151d99cb055773ace991e24cf02557c803a6e84a30549654ff7a538dfc617",
+            "bytes": 317938
+          }
+        ]
+      },
+      {
+        "id": "07",
+        "title": "城市摄影师作品集",
+        "mode": "新建",
+        "condition": "measure",
+        "startedAt": "2026-10-29T10:37:24.422Z",
+        "startTimeScope": "批次共同起点；未伪造逐题独立会话耗时",
+        "generationLastModifiedAt": "2026-10-29T10:40:09.351Z",
+        "endedAt": "2026-10-29T10:43:10.237Z",
+        "actions": [
+          "筛选夜行，查看长地点与注释，Esc退出，清除筛选",
+          "390像素下模拟系统字体回退与叶节点200%文字放大；无远程图片依赖"
+        ],
+        "measure": {
+          "initialPath": "evidence/generation/measure-rem-07/measure-initial.json",
+          "finalPath": "evidence/generation/measure-rem-07/measure-final.json",
+          "summary": {
+            "files": 1,
+            "cjk_files": 1,
+            "errors": 0,
+            "warns": 0,
+            "status": "pass"
+          },
+          "initialExitCode": 0,
+          "disabledRules": [],
+          "configuration": "默认配置"
+        },
+        "repairs": [
+          {
+            "id": "07",
+            "time": "2026-10-29T10:40:09.351Z",
+            "reason": "320像素照片占位aspect-ratio与min-height共同撑宽网格；允许网格项收缩且由比例决定高度。",
+            "iteration": 1
+          }
+        ],
+        "interactions": [
+          {
+            "width": 390,
+            "status": "通过",
+            "errors": [],
+            "text200": {
+              "width": 390,
+              "scroll": 390
+            },
+            "externalRequests": [],
+            "console": []
+          },
+          {
+            "width": 1440,
+            "status": "通过",
+            "errors": [],
+            "externalRequests": [],
+            "console": []
+          },
+          {
+            "width": 320,
+            "status": "通过",
+            "errors": [],
+            "externalRequests": [],
+            "console": []
+          }
+        ],
+        "knownLimitations": [
+          "200%文字放大为浏览器叶节点字号模拟；字体回退为Arial/sans-serif模拟，未做真实操作系统字体卸载。",
+          "未做真实手机、屏幕阅读器和人工视觉验收。"
+        ],
+        "artifacts": [
+          {
+            "path": "site/runs/07/measure/index.html",
+            "sha256": "b6fb36e7c9894210806aa669dfee453fe82d097f095597d78d0c522da90e6470",
+            "bytes": 6600
+          },
+          {
+            "path": "site/runs/07/measure/measure.css",
+            "sha256": "cc0ba1e4da554d44e1a1a753512a1e52e78c7901debdc5c44d97c948b2a826a4",
+            "bytes": 1121
+          }
+        ],
+        "evidence": [
+          {
+            "path": "evidence/generation/measure-rem-07/failure-320.png",
+            "sha256": "1a3b71209819adb6fee0c71f785dd7a769e5c6306325973424cdddb9035e96ba",
+            "bytes": 77527
+          },
+          {
+            "path": "evidence/generation/measure-rem-07/font-fallback.png",
+            "sha256": "32f52538153ad74a4bba331bd38f0379b2d0da4f9558aa924ef1b3ab473802f6",
+            "bytes": 76982
+          },
+          {
+            "path": "evidence/generation/measure-rem-07/initial-source-reconstruction/index.html",
+            "sha256": "ebf860609d80e444996eeadf6e4cf9738550d6f1505059d2f112959be2d03549",
+            "bytes": 6459
+          },
+          {
+            "path": "evidence/generation/measure-rem-07/initial-source-reconstruction/measure.css",
+            "sha256": "cc0ba1e4da554d44e1a1a753512a1e52e78c7901debdc5c44d97c948b2a826a4",
+            "bytes": 1121
+          },
+          {
+            "path": "evidence/generation/measure-rem-07/initial-source-reconstruction/provenance.json",
+            "sha256": "55cbc5a2dbf9df17f8da073758417f8452e8f48c7119ad7e48b89dbddd780dc2",
+            "bytes": 216
+          },
+          {
+            "path": "evidence/generation/measure-rem-07/measure-final.json",
+            "sha256": "3cdd2cb973b7ab68d17d775c499473d6619e010589e2f21897be7087dcb556b1",
+            "bytes": 1047
+          },
+          {
+            "path": "evidence/generation/measure-rem-07/measure-final.log",
+            "sha256": "f96252a402cf878eb6e0653c47a873047d9d841628a4859e93da6c250fc4640e",
+            "bytes": 231
+          },
+          {
+            "path": "evidence/generation/measure-rem-07/measure-initial.json",
+            "sha256": "50b969bcfa4e002b72ede0cb2f98461539e16295316216ecc8c2f95e9ea73d4a",
+            "bytes": 1047
+          },
+          {
+            "path": "evidence/generation/measure-rem-07/measure-initial.log",
+            "sha256": "f96252a402cf878eb6e0653c47a873047d9d841628a4859e93da6c250fc4640e",
+            "bytes": 231
+          },
+          {
+            "path": "evidence/generation/measure-rem-07/task-1440.png",
+            "sha256": "51be5947ceedcb85225da0ae4a26165dacc3ac3fd75d441d14a688a00624a71f",
+            "bytes": 86538
+          },
+          {
+            "path": "evidence/generation/measure-rem-07/task-320.png",
+            "sha256": "31bb6444c4db0472c7e0e9e060d24e5d6415171b8bbf84c03edbbf6284f088d3",
+            "bytes": 74733
+          },
+          {
+            "path": "evidence/generation/measure-rem-07/task-390.png",
+            "sha256": "32f52538153ad74a4bba331bd38f0379b2d0da4f9558aa924ef1b3ab473802f6",
+            "bytes": 76982
+          },
+          {
+            "path": "evidence/generation/measure-rem-07/text-200.png",
+            "sha256": "106e16fdb578984e9d6a30bfdb910c39c36529269e5bc8731c6340641d2b6f82",
+            "bytes": 150404
+          }
+        ]
+      },
+      {
+        "id": "08",
+        "title": "建筑工作室项目页",
+        "mode": "新建",
+        "condition": "measure",
+        "startedAt": "2026-10-29T10:37:24.422Z",
+        "startTimeScope": "批次共同起点；未伪造逐题独立会话耗时",
+        "generationLastModifiedAt": "2026-10-29T10:37:24.428Z",
+        "endedAt": "2026-10-29T10:43:10.241Z",
+        "actions": [
+          "读取四项参数与无障碍路径替代描述",
+          "390像素下模拟系统字体回退与叶节点200%文字放大；无远程图片依赖"
+        ],
+        "measure": {
+          "initialPath": "evidence/generation/measure-rem-08/measure-initial.json",
+          "finalPath": "evidence/generation/measure-rem-08/measure-initial.json",
+          "summary": {
+            "files": 1,
+            "cjk_files": 1,
+            "errors": 0,
+            "warns": 0,
+            "status": "pass"
+          },
+          "initialExitCode": 0,
+          "disabledRules": [],
+          "configuration": "默认配置"
+        },
+        "repairs": [],
+        "interactions": [
+          {
+            "width": 390,
+            "status": "通过",
+            "errors": [],
+            "text200": {
+              "width": 390,
+              "scroll": 390
+            },
+            "externalRequests": [],
+            "console": []
+          },
+          {
+            "width": 1440,
+            "status": "通过",
+            "errors": [],
+            "externalRequests": [],
+            "console": []
+          },
+          {
+            "width": 320,
+            "status": "通过",
+            "errors": [],
+            "externalRequests": [],
+            "console": []
+          }
+        ],
+        "knownLimitations": [
+          "200%文字放大为浏览器叶节点字号模拟；字体回退为Arial/sans-serif模拟，未做真实操作系统字体卸载。",
+          "未做真实手机、屏幕阅读器和人工视觉验收。"
+        ],
+        "artifacts": [
+          {
+            "path": "site/runs/08/measure/index.html",
+            "sha256": "1012bf4864274a0b24a55a36871a3d672a54d52b65d98802c67dc1a31aefe6fe",
+            "bytes": 5336
+          },
+          {
+            "path": "site/runs/08/measure/measure.css",
+            "sha256": "cc0ba1e4da554d44e1a1a753512a1e52e78c7901debdc5c44d97c948b2a826a4",
+            "bytes": 1121
+          }
+        ],
+        "evidence": [
+          {
+            "path": "evidence/generation/measure-rem-08/font-fallback.png",
+            "sha256": "dca7b8a23604b87554e182dc30bd7c7158a99771fe772da74feae13aaf87e3f7",
+            "bytes": 136464
+          },
+          {
+            "path": "evidence/generation/measure-rem-08/measure-initial.json",
+            "sha256": "cd23e4f5bf7671aa0ef060947225f739e95c797e65435b21be7e038422601a61",
+            "bytes": 1047
+          },
+          {
+            "path": "evidence/generation/measure-rem-08/measure-initial.log",
+            "sha256": "c5ccb69f8bfa0ad05438e04a3e4eb8d5b0a1094c640ea49f14264f404ba7d9d6",
+            "bytes": 231
+          },
+          {
+            "path": "evidence/generation/measure-rem-08/task-1440.png",
+            "sha256": "ac6520f5bc5de64897176073672f11fcfec523da46aff921f03725d36fae3b57",
+            "bytes": 151205
+          },
+          {
+            "path": "evidence/generation/measure-rem-08/task-320.png",
+            "sha256": "eb90ca3aa4c5eaf0f4c3f86a7451cb890fb638fc8a7288f3c592c9abe0f9aac5",
+            "bytes": 135156
+          },
+          {
+            "path": "evidence/generation/measure-rem-08/task-390.png",
+            "sha256": "dca7b8a23604b87554e182dc30bd7c7158a99771fe772da74feae13aaf87e3f7",
+            "bytes": 136464
+          },
+          {
+            "path": "evidence/generation/measure-rem-08/text-200.png",
+            "sha256": "6ffdd9533f2e469364bfa383edd1b4615f5ec61c666086d5fb4087809c92b359",
+            "bytes": 280522
+          }
+        ]
+      },
+      {
+        "id": "10",
+        "title": "双语安装排错文档审阅",
+        "mode": "只审阅",
+        "condition": "measure",
+        "startedAt": "2026-10-29T10:37:24.422Z",
+        "startTimeScope": "批次共同起点；未伪造逐题独立会话耗时",
+        "generationLastModifiedAt": "2026-10-29T10:38:31.017Z",
+        "endedAt": "2026-10-29T10:43:10.244Z",
+        "actions": [
+          "读取允许冻结输入",
+          "在4180对390/320/1440实际观察并执行关键操作",
+          "输出确定缺陷、正常对照、设计建议、待核实项",
+          "只生成报告，未修改输入"
+        ],
+        "measure": {
+          "initialPath": "evidence/generation/measure-rem-10/measure-initial.json",
+          "finalPath": "evidence/generation/measure-rem-10/measure-initial.json",
+          "summary": {
+            "files": 1,
+            "cjk_files": 1,
+            "errors": 0,
+            "warns": 0,
+            "status": "pass"
+          },
+          "initialExitCode": 0,
+          "disabledRules": [],
+          "configuration": "默认配置"
+        },
+        "repairs": [],
+        "interactions": {
+          "observationPath": "evidence/generation/measure-rem-review-observations.json",
+          "widths": [
+            390,
+            320,
+            1440
+          ],
+          "status": "已观察并报告"
+        },
+        "knownLimitations": [
+          "200%文字放大为浏览器叶节点字号模拟；字体回退为Arial/sans-serif模拟，未做真实操作系统字体卸载。",
+          "未做真实手机、屏幕阅读器和人工视觉验收。",
+          "输入中的问题未修复；完整字段与事实可在原始观察记录核对。"
+        ],
+        "artifacts": [
+          {
+            "path": "site/runs/10/measure/index.html",
+            "sha256": "ffce124750c30552e0bcf237de437145cb319654c3755bb5d73a1c6041640835",
+            "bytes": 2336
+          },
+          {
+            "path": "site/runs/10/measure/measure.css",
+            "sha256": "cc0ba1e4da554d44e1a1a753512a1e52e78c7901debdc5c44d97c948b2a826a4",
+            "bytes": 1121
+          },
+          {
+            "path": "site/runs/10/measure/report.json",
+            "sha256": "ab980c7d03ac16a8a0e58a4f5bcf03a66ee836486de6bb0f7787a38263410f26",
+            "bytes": 1915
+          }
+        ],
+        "evidence": [
+          {
+            "path": "evidence/generation/measure-rem-10/input-1440.png",
+            "sha256": "ceeb0947c7e720143a186bb54f80728f8cd8ed16157305a1c6afd84669bd42ee",
+            "bytes": 97890
+          },
+          {
+            "path": "evidence/generation/measure-rem-10/input-320.png",
+            "sha256": "a9e3ff461590b8c37a20f4452eb225d59abe8472e0662b8a74134baf9be33d7f",
+            "bytes": 97154
+          },
+          {
+            "path": "evidence/generation/measure-rem-10/input-390.png",
+            "sha256": "e6b3c9dedc9025f6e0b2c13fa2e412f23aade6ec05fd9d1fa7b7c77109c28157",
+            "bytes": 94683
+          },
+          {
+            "path": "evidence/generation/measure-rem-10/measure-initial.json",
+            "sha256": "b1120671d5f279538eda9e21f84716d26e8e3e364b6f5ff83fe7b33879a77282",
+            "bytes": 1047
+          },
+          {
+            "path": "evidence/generation/measure-rem-10/measure-initial.log",
+            "sha256": "99afac52034d0c86355df5df9cba60f2a15f5755857b8c4b6c0dbae4ac769929",
+            "bytes": 231
+          }
+        ]
+      },
+      {
+        "id": "11",
+        "title": "公共阅读空间数据解读",
+        "mode": "新建",
+        "condition": "measure",
+        "startedAt": "2026-10-29T10:37:24.422Z",
+        "startTimeScope": "批次共同起点；未伪造逐题独立会话耗时",
+        "generationLastModifiedAt": "2026-10-29T10:37:24.429Z",
+        "endedAt": "2026-10-29T10:43:10.247Z",
+        "actions": [
+          "读取第三季度图表与9值表格，查看统计口径",
+          "390像素下模拟系统字体回退与叶节点200%文字放大；无远程图片依赖"
+        ],
+        "measure": {
+          "initialPath": "evidence/generation/measure-rem-11/measure-initial.json",
+          "finalPath": "evidence/generation/measure-rem-11/measure-initial.json",
+          "summary": {
+            "files": 1,
+            "cjk_files": 1,
+            "errors": 0,
+            "warns": 0,
+            "status": "pass"
+          },
+          "initialExitCode": 0,
+          "disabledRules": [],
+          "configuration": "默认配置"
+        },
+        "repairs": [],
+        "interactions": [
+          {
+            "width": 390,
+            "status": "通过",
+            "errors": [],
+            "text200": {
+              "width": 390,
+              "scroll": 390
+            },
+            "externalRequests": [],
+            "console": []
+          },
+          {
+            "width": 1440,
+            "status": "通过",
+            "errors": [],
+            "externalRequests": [],
+            "console": []
+          },
+          {
+            "width": 320,
+            "status": "通过",
+            "errors": [],
+            "externalRequests": [],
+            "console": []
+          }
+        ],
+        "knownLimitations": [
+          "200%文字放大为浏览器叶节点字号模拟；字体回退为Arial/sans-serif模拟，未做真实操作系统字体卸载。",
+          "未做真实手机、屏幕阅读器和人工视觉验收。"
+        ],
+        "artifacts": [
+          {
+            "path": "site/runs/11/measure/index.html",
+            "sha256": "3746f34e6635e41d254d7936c97f3bcac8d549551bb63dfcfeea3daee06603a6",
+            "bytes": 6638
+          },
+          {
+            "path": "site/runs/11/measure/measure.css",
+            "sha256": "cc0ba1e4da554d44e1a1a753512a1e52e78c7901debdc5c44d97c948b2a826a4",
+            "bytes": 1121
+          }
+        ],
+        "evidence": [
+          {
+            "path": "evidence/generation/measure-rem-11/font-fallback.png",
+            "sha256": "0ea929de849731a90d07e33a96a2982e1fe39a67705909986d56f19792f10e71",
+            "bytes": 162943
+          },
+          {
+            "path": "evidence/generation/measure-rem-11/measure-initial.json",
+            "sha256": "df6d97343810e14909e54c8a337ce47218362f0dee8b1bdc0e3a3261c7bd90bb",
+            "bytes": 1047
+          },
+          {
+            "path": "evidence/generation/measure-rem-11/measure-initial.log",
+            "sha256": "06dc6aa64896899d99e3b183e481103560e4e150c225c06c8de0283c4aabef69",
+            "bytes": 231
+          },
+          {
+            "path": "evidence/generation/measure-rem-11/task-1440.png",
+            "sha256": "85a2c3436eac0948110c31309029fba57e607318e1488c03a157dcb5827a360f",
+            "bytes": 189605
+          },
+          {
+            "path": "evidence/generation/measure-rem-11/task-320.png",
+            "sha256": "05aa670633ba29207e96769c878f431f398f67831d42deca3f393526c1de72f9",
+            "bytes": 161815
+          },
+          {
+            "path": "evidence/generation/measure-rem-11/task-390.png",
+            "sha256": "0ea929de849731a90d07e33a96a2982e1fe39a67705909986d56f19792f10e71",
+            "bytes": 162943
+          },
+          {
+            "path": "evidence/generation/measure-rem-11/text-200.png",
+            "sha256": "cec7efd98d65846926cfd82da1bf1c3a14e879959e07def9235a3b9b8c47a355",
+            "bytes": 336051
+          }
+        ]
+      },
+      {
+        "id": "12",
+        "title": "繁體地區閱讀文章",
+        "mode": "新建",
+        "condition": "measure",
+        "startedAt": "2026-10-29T10:37:24.422Z",
+        "startTimeScope": "批次共同起点；未伪造逐题独立会话耗时",
+        "generationLastModifiedAt": "2026-10-29T10:41:48.738Z",
+        "endedAt": "2026-10-29T10:43:10.250Z",
+        "actions": [
+          "阅读繁体正文、双层引号、日期与报名边界",
+          "390像素下模拟系统字体回退与叶节点200%文字放大；无远程图片依赖"
+        ],
+        "measure": {
+          "initialPath": "evidence/generation/measure-rem-12/measure-initial.json",
+          "finalPath": "evidence/generation/measure-rem-12/measure-postprocess.json",
+          "summary": {
+            "files": 1,
+            "cjk_files": 1,
+            "errors": 0,
+            "warns": 0,
+            "status": "pass"
+          },
+          "initialExitCode": 1,
+          "disabledRules": [],
+          "configuration": "site/runs/12/measure/measure.config.json"
+        },
+        "repairs": [
+          {
+            "id": "12",
+            "time": "2026-10-29T10:40:09.352Z",
+            "reason": "保留繁體地區雙層引號，使用本題corner設定；頁尾身份事實轉為繁體字形。",
+            "iteration": 1
+          },
+          {
+            "id": "12",
+            "time": "2026-10-29T10:41:48.738720+00:00",
+            "iteration": 2,
+            "budgetException": true,
+            "reason": "主代理明确授权预算外修复：快照保留失败文件，补齐配置schema_version 1.0.0，并为繁体台湾地区保留合法corner引号配置。不得纳入公平胜率结论。"
+          }
+        ],
+        "interactions": [
+          {
+            "width": 390,
+            "status": "通过",
+            "errors": [],
+            "text200": {
+              "width": 390,
+              "scroll": 390
+            },
+            "externalRequests": [],
+            "console": []
+          },
+          {
+            "width": 1440,
+            "status": "通过",
+            "errors": [],
+            "externalRequests": [],
+            "console": []
+          },
+          {
+            "width": 320,
+            "status": "通过",
+            "errors": [],
+            "externalRequests": [],
+            "console": []
+          }
+        ],
+        "knownLimitations": [
+          "初轮默认curly与冻结繁体引号冲突；保留原始T03报告，不将其视为繁体必须修改的缺陷。",
+          "第一次修复配置缺少schema_version，保留退出2日志和失败快照；经主代理明确授权做预算外第二次修复，后处理不作公平胜率结论。",
+          "200%文字放大为浏览器叶节点字号模拟；字体回退为Arial/sans-serif模拟，未做真实操作系统字体卸载。",
+          "未做真实手机、屏幕阅读器和人工视觉验收。"
+        ],
+        "artifacts": [
+          {
+            "path": "site/runs/12/measure/index.html",
+            "sha256": "d960fd6ae7db8578992dcf1ac816f9d35eb576d965f2a8f5aa8da81a020190f3",
+            "bytes": 4573
+          },
+          {
+            "path": "site/runs/12/measure/measure.config.json",
+            "sha256": "4a140582cd9e9dcaee0c26bf51f3b0daa813676201503c5ac18f37cba0a934ba",
+            "bytes": 74
+          },
+          {
+            "path": "site/runs/12/measure/measure.css",
+            "sha256": "cc0ba1e4da554d44e1a1a753512a1e52e78c7901debdc5c44d97c948b2a826a4",
+            "bytes": 1121
+          }
+        ],
+        "evidence": [
+          {
+            "path": "evidence/generation/measure-rem-12/evidence/T03-001.png",
+            "sha256": "089e258a6fc1017a92ca6cfed4e54a195fdab56d63a3ede8dd84786801bf6204",
+            "bytes": 16080
+          },
+          {
+            "path": "evidence/generation/measure-rem-12/evidence/T03-002.png",
+            "sha256": "b4d040e690ca6a2381cca3c751ce789dc5079024110eabe3f7491e7a1e208a7d",
+            "bytes": 16879
+          },
+          {
+            "path": "evidence/generation/measure-rem-12/failed-snapshot/index.html",
+            "sha256": "d960fd6ae7db8578992dcf1ac816f9d35eb576d965f2a8f5aa8da81a020190f3",
+            "bytes": 4573
+          },
+          {
+            "path": "evidence/generation/measure-rem-12/failed-snapshot/measure.config.json",
+            "sha256": "38d0c40b48c90ddd37819374fdbe69bb1dee06533cbf3c822dc9b7e4444872e4",
+            "bytes": 24
+          },
+          {
+            "path": "evidence/generation/measure-rem-12/failed-snapshot/measure.css",
+            "sha256": "cc0ba1e4da554d44e1a1a753512a1e52e78c7901debdc5c44d97c948b2a826a4",
+            "bytes": 1121
+          },
+          {
+            "path": "evidence/generation/measure-rem-12/font-fallback.png",
+            "sha256": "edcc2e2a6c986be7d19b9ae437c5469119da4c949c0c00041bd25949a1ae75ca",
+            "bytes": 135230
+          },
+          {
+            "path": "evidence/generation/measure-rem-12/measure-final.log",
+            "sha256": "9caaa0bbdfd82a47d50060c38a33479be87030f1db3a983d68d3cb7c44134bb7",
+            "bytes": 151
+          },
+          {
+            "path": "evidence/generation/measure-rem-12/measure-initial.json",
+            "sha256": "fb3b2d51b4a7d53026291342b81d2766532b392ac1d8beeb3ac9208b459ffeec",
+            "bytes": 2032
+          },
+          {
+            "path": "evidence/generation/measure-rem-12/measure-initial.log",
+            "sha256": "87f7e67637dccedd42157f4be60e80d19fe1595edcaef2d4f75b59da9ceb1543",
+            "bytes": 977
+          },
+          {
+            "path": "evidence/generation/measure-rem-12/measure-postprocess.json",
+            "sha256": "a30b1168d7f131851d6a3963031d458233e873e44a389aba66ccbb4959ab83ad",
+            "bytes": 1047
+          },
+          {
+            "path": "evidence/generation/measure-rem-12/measure-postprocess.log",
+            "sha256": "c4e3677bb6ef755581e4f574ac4b17b0b52adfa391664d3e024df9b1623ed1f4",
+            "bytes": 231
+          },
+          {
+            "path": "evidence/generation/measure-rem-12/postprocess-1440.png",
+            "sha256": "d9780c89423bbe5dfa3138ddaf58e510c3d31290d73fcfdf08046fbaf077fc18",
+            "bytes": 165364
+          },
+          {
+            "path": "evidence/generation/measure-rem-12/postprocess-320.png",
+            "sha256": "7c47e0b431757bfb11d4e5d497ffa539701bbda4b08a3df1f020d7e7d5af78fb",
+            "bytes": 139396
+          },
+          {
+            "path": "evidence/generation/measure-rem-12/postprocess-390.png",
+            "sha256": "664e09127537dbd2af718df8c91c17389a6f77d8ee3231618c5c59001094414d",
+            "bytes": 138576
+          },
+          {
+            "path": "evidence/generation/measure-rem-12/task-1440.png",
+            "sha256": "0af5f1ae39f31329b94e7f1b71ab0cfb56faf0348a498b7a86f414e639ce4811",
+            "bytes": 164731
+          },
+          {
+            "path": "evidence/generation/measure-rem-12/task-320.png",
+            "sha256": "735e534103fea8a9653c7330ca37a9cf361547b6955445d139a07df3578f352a",
+            "bytes": 138831
+          },
+          {
+            "path": "evidence/generation/measure-rem-12/task-390.png",
+            "sha256": "020d8f416a56d0474ee02592276e2aea3e9a6b989a3b95f076b1588b323601cb",
+            "bytes": 137920
+          },
+          {
+            "path": "evidence/generation/measure-rem-12/text-200.png",
+            "sha256": "f0495893d7d9b25003977b1fc30f961db97f55099c7ecbeda2d1f28004aa8629",
+            "bytes": 276751
+          }
+        ]
+      },
+      {
+        "id": "14",
+        "title": "项目列表与归档恢复改版",
+        "mode": "受限改版",
+        "condition": "measure",
+        "startedAt": "2026-10-29T10:37:24.422Z",
+        "startTimeScope": "批次共同起点；未伪造逐题独立会话耗时",
+        "generationLastModifiedAt": "2026-10-29T10:37:24.431Z",
+        "endedAt": "2026-10-29T10:43:10.255Z",
+        "actions": [
+          "筛选周禾，包含归档，恢复PJ-02并撤销，检查焦点",
+          "390像素下模拟系统字体回退与叶节点200%文字放大；无远程图片依赖"
+        ],
+        "measure": {
+          "initialPath": "evidence/generation/measure-rem-14/measure-initial.json",
+          "finalPath": "evidence/generation/measure-rem-14/measure-initial.json",
+          "summary": {
+            "files": 1,
+            "cjk_files": 1,
+            "errors": 0,
+            "warns": 0,
+            "status": "pass"
+          },
+          "initialExitCode": 0,
+          "disabledRules": [],
+          "configuration": "默认配置"
+        },
+        "repairs": [],
+        "interactions": [
+          {
+            "width": 390,
+            "status": "通过",
+            "errors": [],
+            "text200": {
+              "width": 390,
+              "scroll": 390
+            },
+            "externalRequests": [],
+            "console": []
+          },
+          {
+            "width": 1440,
+            "status": "通过",
+            "errors": [],
+            "externalRequests": [],
+            "console": []
+          },
+          {
+            "width": 320,
+            "status": "通过",
+            "errors": [],
+            "externalRequests": [],
+            "console": []
+          }
+        ],
+        "knownLimitations": [
+          "200%文字放大为浏览器叶节点字号模拟；字体回退为Arial/sans-serif模拟，未做真实操作系统字体卸载。",
+          "未做真实手机、屏幕阅读器和人工视觉验收。"
+        ],
+        "artifacts": [
+          {
+            "path": "site/runs/14/measure/index.html",
+            "sha256": "3f25f066b31d1abf5a01e024ea0763ad77a2ed6955bc0d931e3773f87e5884f7",
+            "bytes": 5795
+          },
+          {
+            "path": "site/runs/14/measure/measure.css",
+            "sha256": "cc0ba1e4da554d44e1a1a753512a1e52e78c7901debdc5c44d97c948b2a826a4",
+            "bytes": 1121
+          }
+        ],
+        "evidence": [
+          {
+            "path": "evidence/generation/measure-rem-14/font-fallback.png",
+            "sha256": "fac58456c0e350246ef37da9bed98ab694bc69d803b7fe16b2ec08c22aa8d244",
+            "bytes": 85436
+          },
+          {
+            "path": "evidence/generation/measure-rem-14/measure-initial.json",
+            "sha256": "158bcd64276ac1511dcb87e35ebac10e4b506c0edb37e13cc0e927e97381b877",
+            "bytes": 1047
+          },
+          {
+            "path": "evidence/generation/measure-rem-14/measure-initial.log",
+            "sha256": "60df7c308d9e7895d550071d697caaa43be081d7d12fc76b19f426b4f80f1417",
+            "bytes": 231
+          },
+          {
+            "path": "evidence/generation/measure-rem-14/task-1440.png",
+            "sha256": "b9446a0add53ceda0e8ed0de25024c3f80b8fe3dbbbbe97d978e760cabdbf9a6",
+            "bytes": 93121
+          },
+          {
+            "path": "evidence/generation/measure-rem-14/task-320.png",
+            "sha256": "f4f07e69d46f4d42184fc4d8321fe3ae644d42001bbbed9be128b3e90d16b8e9",
+            "bytes": 84441
+          },
+          {
+            "path": "evidence/generation/measure-rem-14/task-390.png",
+            "sha256": "fac58456c0e350246ef37da9bed98ab694bc69d803b7fe16b2ec08c22aa8d244",
+            "bytes": 85436
+          },
+          {
+            "path": "evidence/generation/measure-rem-14/text-200.png",
+            "sha256": "067e60a2d817a50bb1b5a3f7fb830b4e4345d5cb21707b71b921c0851897598c",
+            "bytes": 168005
+          }
+        ]
+      },
+      {
+        "id": "15",
+        "title": "期间收支表改版",
+        "mode": "受限改版",
+        "condition": "measure",
+        "startedAt": "2026-10-29T10:37:24.422Z",
+        "startTimeScope": "批次共同起点；未伪造逐题独立会话耗时",
+        "generationLastModifiedAt": "2026-10-29T10:37:24.432Z",
+        "endedAt": "2026-10-29T10:43:10.259Z",
+        "actions": [
+          "对照两期收支和结余，读取差额定义；手机表格局部滚动",
+          "390像素下模拟系统字体回退与叶节点200%文字放大；无远程图片依赖"
+        ],
+        "measure": {
+          "initialPath": "evidence/generation/measure-rem-15/measure-initial.json",
+          "finalPath": "evidence/generation/measure-rem-15/measure-initial.json",
+          "summary": {
+            "files": 1,
+            "cjk_files": 1,
+            "errors": 0,
+            "warns": 0,
+            "status": "pass"
+          },
+          "initialExitCode": 0,
+          "disabledRules": [],
+          "configuration": "默认配置"
+        },
+        "repairs": [],
+        "interactions": [
+          {
+            "width": 390,
+            "status": "通过",
+            "errors": [],
+            "text200": {
+              "width": 390,
+              "scroll": 390
+            },
+            "externalRequests": [],
+            "console": []
+          },
+          {
+            "width": 1440,
+            "status": "通过",
+            "errors": [],
+            "externalRequests": [],
+            "console": []
+          },
+          {
+            "width": 320,
+            "status": "通过",
+            "errors": [],
+            "externalRequests": [],
+            "console": []
+          }
+        ],
+        "knownLimitations": [
+          "200%文字放大为浏览器叶节点字号模拟；字体回退为Arial/sans-serif模拟，未做真实操作系统字体卸载。",
+          "未做真实手机、屏幕阅读器和人工视觉验收。"
+        ],
+        "artifacts": [
+          {
+            "path": "site/runs/15/measure/index.html",
+            "sha256": "654db97d4732a0c255ea09cbc48d6f05bbfaa196a6d8b7f2653c389358bc774b",
+            "bytes": 4328
+          },
+          {
+            "path": "site/runs/15/measure/measure.css",
+            "sha256": "cc0ba1e4da554d44e1a1a753512a1e52e78c7901debdc5c44d97c948b2a826a4",
+            "bytes": 1121
+          }
+        ],
+        "evidence": [
+          {
+            "path": "evidence/generation/measure-rem-15/font-fallback.png",
+            "sha256": "e1b1929846e2160c97c1c1f0b3de36a5427fb4881662e45586466d231e2aca77",
+            "bytes": 83195
+          },
+          {
+            "path": "evidence/generation/measure-rem-15/measure-initial.json",
+            "sha256": "a24f422f0919bc9a64ad4b4cae02d69d07d9e0286e5c5640ede05c1a8c442e1c",
+            "bytes": 1047
+          },
+          {
+            "path": "evidence/generation/measure-rem-15/measure-initial.log",
+            "sha256": "aaf5291054bd526ceaa82e5ec5fbb1c60cff70bfbaf4151eeffbaaecc35c4f94",
+            "bytes": 231
+          },
+          {
+            "path": "evidence/generation/measure-rem-15/task-1440.png",
+            "sha256": "56bb374f918135291c38dd1896601d692a8d39cc100c63f3cf2e993e083728ab",
+            "bytes": 105284
+          },
+          {
+            "path": "evidence/generation/measure-rem-15/task-320.png",
+            "sha256": "cca68363fa668dd3639ac928e9a9a5c27ca13b0ffec6c9b9008186cd4379aecc",
+            "bytes": 81252
+          },
+          {
+            "path": "evidence/generation/measure-rem-15/task-390.png",
+            "sha256": "e1b1929846e2160c97c1c1f0b3de36a5427fb4881662e45586466d231e2aca77",
+            "bytes": 83195
+          },
+          {
+            "path": "evidence/generation/measure-rem-15/text-200.png",
+            "sha256": "d661d6f2934e9d02b5197828e4cbf0049a0f77aecf8baad00e3751d01e9a4f5a",
+            "bytes": 183165
+          }
+        ]
+      },
+      {
+        "id": "16",
+        "title": "支持工作台回复流程改版",
+        "mode": "受限改版",
+        "condition": "measure",
+        "startedAt": "2026-10-29T10:37:24.422Z",
+        "startTimeScope": "批次共同起点；未伪造逐题独立会话耗时",
+        "generationLastModifiedAt": "2026-10-29T10:40:09.353Z",
+        "endedAt": "2026-10-29T10:43:10.261Z",
+        "actions": [
+          "搜索TK-002，填写草稿，失败重试，切换工单后草稿保留",
+          "390像素下模拟系统字体回退与叶节点200%文字放大；无远程图片依赖"
+        ],
+        "measure": {
+          "initialPath": "evidence/generation/measure-rem-16/measure-initial.json",
+          "finalPath": "evidence/generation/measure-rem-16/measure-final.json",
+          "summary": {
+            "files": 1,
+            "cjk_files": 1,
+            "errors": 0,
+            "warns": 0,
+            "status": "pass"
+          },
+          "initialExitCode": 0,
+          "disabledRules": [],
+          "configuration": "默认配置"
+        },
+        "repairs": [
+          {
+            "id": "16",
+            "time": "2026-10-29T10:40:09.353Z",
+            "reason": "390像素200%文字放大后客户演示邮箱撑宽；允许完整邮箱自然折行。",
+            "iteration": 1
+          }
+        ],
+        "interactions": [
+          {
+            "width": 390,
+            "status": "通过",
+            "errors": [],
+            "text200": {
+              "width": 390,
+              "scroll": 390
+            },
+            "externalRequests": [],
+            "console": []
+          },
+          {
+            "width": 1440,
+            "status": "通过",
+            "errors": [],
+            "externalRequests": [],
+            "console": []
+          },
+          {
+            "width": 320,
+            "status": "通过",
+            "errors": [],
+            "externalRequests": [],
+            "console": []
+          }
+        ],
+        "knownLimitations": [
+          "200%文字放大为浏览器叶节点字号模拟；字体回退为Arial/sans-serif模拟，未做真实操作系统字体卸载。",
+          "未做真实手机、屏幕阅读器和人工视觉验收。"
+        ],
+        "artifacts": [
+          {
+            "path": "site/runs/16/measure/index.html",
+            "sha256": "87615c4173eb1d73c5afbb5070f87e65e200bdfb38c81c540e91fdb2083b1e6c",
+            "bytes": 6037
+          },
+          {
+            "path": "site/runs/16/measure/measure.css",
+            "sha256": "cc0ba1e4da554d44e1a1a753512a1e52e78c7901debdc5c44d97c948b2a826a4",
+            "bytes": 1121
+          }
+        ],
+        "evidence": [
+          {
+            "path": "evidence/generation/measure-rem-16/font-fallback.png",
+            "sha256": "18f9f16c26991e6e0d3a2269d6233cc72bf80b611243dcacdd8c20bd3b07525f",
+            "bytes": 121816
+          },
+          {
+            "path": "evidence/generation/measure-rem-16/initial-source-reconstruction/index.html",
+            "sha256": "48b8257c252431d77902272bc5e4b5887ee0ebf4ddb79f91b2667d38a7bdd5d0",
+            "bytes": 6004
+          },
+          {
+            "path": "evidence/generation/measure-rem-16/initial-source-reconstruction/measure.css",
+            "sha256": "cc0ba1e4da554d44e1a1a753512a1e52e78c7901debdc5c44d97c948b2a826a4",
+            "bytes": 1121
+          },
+          {
+            "path": "evidence/generation/measure-rem-16/initial-source-reconstruction/provenance.json",
+            "sha256": "d55f5c1022d9141741f9e34c080ecb2d34a3f4c182774c00c77ce4bb15c04682",
+            "bytes": 216
+          },
+          {
+            "path": "evidence/generation/measure-rem-16/measure-final.json",
+            "sha256": "ecd85e24d116d4d896d17ece0bbf161f49e64850718f50d4b5ef4ab91f49e38b",
+            "bytes": 1047
+          },
+          {
+            "path": "evidence/generation/measure-rem-16/measure-final.log",
+            "sha256": "ac50b3465501de0b5901156c91d7eda9629e124ce6f0a07d166e0f37296530f4",
+            "bytes": 231
+          },
+          {
+            "path": "evidence/generation/measure-rem-16/measure-initial.json",
+            "sha256": "0e36634d0d7f91a8de16afa9dfb6081c9c42c389858ddd93e6cc5f07bce43187",
+            "bytes": 1047
+          },
+          {
+            "path": "evidence/generation/measure-rem-16/measure-initial.log",
+            "sha256": "ac50b3465501de0b5901156c91d7eda9629e124ce6f0a07d166e0f37296530f4",
+            "bytes": 231
+          },
+          {
+            "path": "evidence/generation/measure-rem-16/task-1440.png",
+            "sha256": "b28f660a9b87458c61e56df231dff6a6938d867fd158f47f270b784b0e7a44ec",
+            "bytes": 135532
+          },
+          {
+            "path": "evidence/generation/measure-rem-16/task-320.png",
+            "sha256": "b0205dd36dc6f37f3bc4ca809fe52e576f31cdf5c28c47d6587a083a311369ad",
+            "bytes": 121780
+          },
+          {
+            "path": "evidence/generation/measure-rem-16/task-390.png",
+            "sha256": "18f9f16c26991e6e0d3a2269d6233cc72bf80b611243dcacdd8c20bd3b07525f",
+            "bytes": 121816
+          },
+          {
+            "path": "evidence/generation/measure-rem-16/text-200.png",
+            "sha256": "ed78a801fe0a29685062dddf40ce430f131a2161e10d6746d43d36dc8618ec62",
+            "bytes": 250643
+          }
+        ]
+      },
+      {
+        "id": "18",
+        "title": "课程适配与先修条件审阅",
+        "mode": "只审阅",
+        "condition": "measure",
+        "startedAt": "2026-10-29T10:37:24.422Z",
+        "startTimeScope": "批次共同起点；未伪造逐题独立会话耗时",
+        "generationLastModifiedAt": "2026-10-29T10:38:31.017Z",
+        "endedAt": "2026-10-29T10:43:10.263Z",
+        "actions": [
+          "读取允许冻结输入",
+          "在4180对390/320/1440实际观察并执行关键操作",
+          "输出确定缺陷、正常对照、设计建议、待核实项",
+          "只生成报告，未修改输入"
+        ],
+        "measure": {
+          "initialPath": "evidence/generation/measure-rem-18/measure-initial.json",
+          "finalPath": "evidence/generation/measure-rem-18/measure-initial.json",
+          "summary": {
+            "files": 1,
+            "cjk_files": 1,
+            "errors": 0,
+            "warns": 0,
+            "status": "pass"
+          },
+          "initialExitCode": 0,
+          "disabledRules": [],
+          "configuration": "默认配置"
+        },
+        "repairs": [],
+        "interactions": {
+          "observationPath": "evidence/generation/measure-rem-review-observations.json",
+          "widths": [
+            390,
+            320,
+            1440
+          ],
+          "status": "已观察并报告"
+        },
+        "knownLimitations": [
+          "200%文字放大为浏览器叶节点字号模拟；字体回退为Arial/sans-serif模拟，未做真实操作系统字体卸载。",
+          "未做真实手机、屏幕阅读器和人工视觉验收。",
+          "输入中的问题未修复；完整字段与事实可在原始观察记录核对。"
+        ],
+        "artifacts": [
+          {
+            "path": "site/runs/18/measure/index.html",
+            "sha256": "e9d0511f0b43f16fc70f90200f6e1e76510cb76e8d25b5ea5feb585e1f69a1c9",
+            "bytes": 2457
+          },
+          {
+            "path": "site/runs/18/measure/measure.css",
+            "sha256": "cc0ba1e4da554d44e1a1a753512a1e52e78c7901debdc5c44d97c948b2a826a4",
+            "bytes": 1121
+          },
+          {
+            "path": "site/runs/18/measure/report.json",
+            "sha256": "7d4ab8d4c76d7079ba41872e74568e8c17f64fb1c29f0c23751b3b86f3804581",
+            "bytes": 2002
+          }
+        ],
+        "evidence": [
+          {
+            "path": "evidence/generation/measure-rem-18/input-1440.png",
+            "sha256": "47bee62ed2b3f65f8505977c0d4104c377a88ffb20720a929a66afe289c4ee90",
+            "bytes": 105125
+          },
+          {
+            "path": "evidence/generation/measure-rem-18/input-320.png",
+            "sha256": "8d554c98b03f5d4253ea9e8fa0c65f958e4544148e8609726f46b330f3dd8473",
+            "bytes": 93273
+          },
+          {
+            "path": "evidence/generation/measure-rem-18/input-390.png",
+            "sha256": "838ddc9fe375d3bbb0296f61b3a7b2807a4bd411a4a1c02cd7f3a10910ff3253",
+            "bytes": 94462
+          },
+          {
+            "path": "evidence/generation/measure-rem-18/measure-initial.json",
+            "sha256": "a062bbb3ff7fa6763e3ca0068d9948692e64d6902d9aa64aefcd6980641a6b46",
+            "bytes": 1047
+          },
+          {
+            "path": "evidence/generation/measure-rem-18/measure-initial.log",
+            "sha256": "4a12fc55bcfeaf7069b28021efda13927268e6aff0a36758a3b0b7f51e332a05",
+            "bytes": 231
+          }
+        ]
+      },
+      {
+        "id": "19",
+        "title": "公共服务材料准备清单",
+        "mode": "新建",
+        "condition": "measure",
+        "startedAt": "2026-10-29T10:37:24.422Z",
+        "startTimeScope": "批次共同起点；未伪造逐题独立会话耗时",
+        "generationLastModifiedAt": "2026-10-29T10:37:24.434Z",
+        "endedAt": "2026-10-29T10:43:10.265Z",
+        "actions": [
+          "独立勾选四项，核对4／4，全部复位至0／4",
+          "390像素下模拟系统字体回退与叶节点200%文字放大；无远程图片依赖"
+        ],
+        "measure": {
+          "initialPath": "evidence/generation/measure-rem-19/measure-initial.json",
+          "finalPath": "evidence/generation/measure-rem-19/measure-initial.json",
+          "summary": {
+            "files": 1,
+            "cjk_files": 1,
+            "errors": 0,
+            "warns": 0,
+            "status": "pass"
+          },
+          "initialExitCode": 0,
+          "disabledRules": [],
+          "configuration": "默认配置"
+        },
+        "repairs": [],
+        "interactions": [
+          {
+            "width": 390,
+            "status": "通过",
+            "errors": [],
+            "text200": {
+              "width": 390,
+              "scroll": 390
+            },
+            "externalRequests": [],
+            "console": []
+          },
+          {
+            "width": 1440,
+            "status": "通过",
+            "errors": [],
+            "externalRequests": [],
+            "console": []
+          },
+          {
+            "width": 320,
+            "status": "通过",
+            "errors": [],
+            "externalRequests": [],
+            "console": []
+          }
+        ],
+        "knownLimitations": [
+          "200%文字放大为浏览器叶节点字号模拟；字体回退为Arial/sans-serif模拟，未做真实操作系统字体卸载。",
+          "未做真实手机、屏幕阅读器和人工视觉验收。"
+        ],
+        "artifacts": [
+          {
+            "path": "site/runs/19/measure/index.html",
+            "sha256": "7b3165ea30aa2fb2042616c41fdd9bda658e5b5ac1981642fba028416643a703",
+            "bytes": 5415
+          },
+          {
+            "path": "site/runs/19/measure/measure.css",
+            "sha256": "cc0ba1e4da554d44e1a1a753512a1e52e78c7901debdc5c44d97c948b2a826a4",
+            "bytes": 1121
+          }
+        ],
+        "evidence": [
+          {
+            "path": "evidence/generation/measure-rem-19/font-fallback.png",
+            "sha256": "cb1cac5d8f8495597fac3f2e9cbeac133833bdd46fce3120ce9b0f627ac8e5c5",
+            "bytes": 138002
+          },
+          {
+            "path": "evidence/generation/measure-rem-19/measure-initial.json",
+            "sha256": "fff79b24c514fe4aa7982b285ba4cc489a09218347d7489ef71263f36694bb2d",
+            "bytes": 1047
+          },
+          {
+            "path": "evidence/generation/measure-rem-19/measure-initial.log",
+            "sha256": "c5719f902795b60db23423c9c87528c4ee0d20850b64fc3cec4d9a4710a547cd",
+            "bytes": 231
+          },
+          {
+            "path": "evidence/generation/measure-rem-19/task-1440.png",
+            "sha256": "129c78365c2dd48cb375f97f7a09269258cd8a1bcf75696b06cf54e49adb45c7",
+            "bytes": 161064
+          },
+          {
+            "path": "evidence/generation/measure-rem-19/task-320.png",
+            "sha256": "a74d9d3a9947dd9c48743e5d09360e05c250294a8003b33942718115b0e11dc2",
+            "bytes": 137331
+          },
+          {
+            "path": "evidence/generation/measure-rem-19/task-390.png",
+            "sha256": "cb1cac5d8f8495597fac3f2e9cbeac133833bdd46fce3120ce9b0f627ac8e5c5",
+            "bytes": 138002
+          },
+          {
+            "path": "evidence/generation/measure-rem-19/text-200.png",
+            "sha256": "12d2c4d4a03f9920842b0aa0ff9068c82ae66e3ddc4a5964690b709cccc47790",
+            "bytes": 266727
+          }
+        ]
+      },
+      {
+        "id": "20",
+        "title": "小型旅店房型比较",
+        "mode": "新建",
+        "condition": "measure",
+        "startedAt": "2026-10-29T10:37:24.422Z",
+        "startTimeScope": "批次共同起点；未伪造逐题独立会话耗时",
+        "generationLastModifiedAt": "2026-10-29T10:37:24.435Z",
+        "endedAt": "2026-10-29T10:43:10.267Z",
+        "actions": [
+          "选择2人，对照两种房型与条款，选河景房并读取摘要",
+          "390像素下模拟系统字体回退与叶节点200%文字放大；无远程图片依赖"
+        ],
+        "measure": {
+          "initialPath": "evidence/generation/measure-rem-20/measure-initial.json",
+          "finalPath": "evidence/generation/measure-rem-20/measure-initial.json",
+          "summary": {
+            "files": 1,
+            "cjk_files": 1,
+            "errors": 0,
+            "warns": 0,
+            "status": "pass"
+          },
+          "initialExitCode": 0,
+          "disabledRules": [],
+          "configuration": "默认配置"
+        },
+        "repairs": [],
+        "interactions": [
+          {
+            "width": 390,
+            "status": "通过",
+            "errors": [],
+            "text200": {
+              "width": 390,
+              "scroll": 390
+            },
+            "externalRequests": [],
+            "console": []
+          },
+          {
+            "width": 1440,
+            "status": "通过",
+            "errors": [],
+            "externalRequests": [],
+            "console": []
+          },
+          {
+            "width": 320,
+            "status": "通过",
+            "errors": [],
+            "externalRequests": [],
+            "console": []
+          }
+        ],
+        "knownLimitations": [
+          "200%文字放大为浏览器叶节点字号模拟；字体回退为Arial/sans-serif模拟，未做真实操作系统字体卸载。",
+          "未做真实手机、屏幕阅读器和人工视觉验收。"
+        ],
+        "artifacts": [
+          {
+            "path": "site/runs/20/measure/index.html",
+            "sha256": "7f99d7a87282e51a063979dc9afbbb9255d1551fc4a96b21187218ce593a6f21",
+            "bytes": 6599
+          },
+          {
+            "path": "site/runs/20/measure/measure.css",
+            "sha256": "cc0ba1e4da554d44e1a1a753512a1e52e78c7901debdc5c44d97c948b2a826a4",
+            "bytes": 1121
+          }
+        ],
+        "evidence": [
+          {
+            "path": "evidence/generation/measure-rem-20/font-fallback.png",
+            "sha256": "83f75526cd2aa0229170769aa2a696fe4953a4262bd3f6bcf07cd2dc803104a8",
+            "bytes": 175433
+          },
+          {
+            "path": "evidence/generation/measure-rem-20/measure-initial.json",
+            "sha256": "989f73609712679c98045f70ccf838ebee7d87e1a65e442111fd33459ede38ca",
+            "bytes": 1047
+          },
+          {
+            "path": "evidence/generation/measure-rem-20/measure-initial.log",
+            "sha256": "48377ebf036e1adf5caa3d460c801e68091e5dbd4b8146cbef8fc558385f59a7",
+            "bytes": 231
+          },
+          {
+            "path": "evidence/generation/measure-rem-20/task-1440.png",
+            "sha256": "bd8659cf54e00ca1fe460bb2f866c0b466bed07da69869e118038781d5b2d1c0",
+            "bytes": 162629
+          },
+          {
+            "path": "evidence/generation/measure-rem-20/task-320.png",
+            "sha256": "2e6456f31672057aaeeef8dc46e8c383f06ca4760005877000e87f7dbfba6bf5",
+            "bytes": 171854
+          },
+          {
+            "path": "evidence/generation/measure-rem-20/task-390.png",
+            "sha256": "83f75526cd2aa0229170769aa2a696fe4953a4262bd3f6bcf07cd2dc803104a8",
+            "bytes": 175433
+          },
+          {
+            "path": "evidence/generation/measure-rem-20/text-200.png",
+            "sha256": "fe02a3e640e264567af9d1a01e155f57cd7c9aab37b0d59c551b9d9b572ba871",
+            "bytes": 352048
+          }
+        ]
+      },
+      {
+        "id": "22",
+        "title": "餐厅菜单与过敏原",
+        "mode": "新建",
+        "condition": "measure",
+        "startedAt": "2026-10-29T10:37:24.422Z",
+        "startTimeScope": "批次共同起点；未伪造逐题独立会话耗时",
+        "generationLastModifiedAt": "2026-10-29T10:37:24.436Z",
+        "endedAt": "2026-10-29T10:43:10.270Z",
+        "actions": [
+          "辨认缺货与花生，筛选热食，加入烩饭¥38.00，清空归零",
+          "390像素下模拟系统字体回退与叶节点200%文字放大；无远程图片依赖"
+        ],
+        "measure": {
+          "initialPath": "evidence/generation/measure-rem-22/measure-initial.json",
+          "finalPath": "evidence/generation/measure-rem-22/measure-initial.json",
+          "summary": {
+            "files": 1,
+            "cjk_files": 1,
+            "errors": 0,
+            "warns": 0,
+            "status": "pass"
+          },
+          "initialExitCode": 0,
+          "disabledRules": [],
+          "configuration": "默认配置"
+        },
+        "repairs": [],
+        "interactions": [
+          {
+            "width": 390,
+            "status": "通过",
+            "errors": [],
+            "text200": {
+              "width": 390,
+              "scroll": 390
+            },
+            "externalRequests": [],
+            "console": []
+          },
+          {
+            "width": 1440,
+            "status": "通过",
+            "errors": [],
+            "externalRequests": [],
+            "console": []
+          },
+          {
+            "width": 320,
+            "status": "通过",
+            "errors": [],
+            "externalRequests": [],
+            "console": []
+          }
+        ],
+        "knownLimitations": [
+          "200%文字放大为浏览器叶节点字号模拟；字体回退为Arial/sans-serif模拟，未做真实操作系统字体卸载。",
+          "未做真实手机、屏幕阅读器和人工视觉验收。"
+        ],
+        "artifacts": [
+          {
+            "path": "site/runs/22/measure/index.html",
+            "sha256": "8b8da6202e30adc8f1abfd70fb9fd231f404f383d0a388100742f6665be21377",
+            "bytes": 7486
+          },
+          {
+            "path": "site/runs/22/measure/measure.css",
+            "sha256": "cc0ba1e4da554d44e1a1a753512a1e52e78c7901debdc5c44d97c948b2a826a4",
+            "bytes": 1121
+          }
+        ],
+        "evidence": [
+          {
+            "path": "evidence/generation/measure-rem-22/font-fallback.png",
+            "sha256": "f5c34f7e827cb7b38d5ab1f7552a6bd534420c7d7f7297336f1e81df0bb54a6b",
+            "bytes": 89520
+          },
+          {
+            "path": "evidence/generation/measure-rem-22/measure-initial.json",
+            "sha256": "99cfc375b9516a82f7d36bf9d7a406611396c7d2a44e90709349c397482c903f",
+            "bytes": 1047
+          },
+          {
+            "path": "evidence/generation/measure-rem-22/measure-initial.log",
+            "sha256": "7cf6991193c15c49e0b564bf7d7d96809363a9819402acaa772f2f44e8699079",
+            "bytes": 231
+          },
+          {
+            "path": "evidence/generation/measure-rem-22/task-1440.png",
+            "sha256": "b95c5caa6673408e803f10b30f2cd731f5fd4fd01bc6fde7c1f1e88a884f3ba3",
+            "bytes": 102537
+          },
+          {
+            "path": "evidence/generation/measure-rem-22/task-320.png",
+            "sha256": "3de5a565c7d635a61b549a01fcef7c4782ae72dbcf9ced5ff74e6de6219b448b",
+            "bytes": 88146
+          },
+          {
+            "path": "evidence/generation/measure-rem-22/task-390.png",
+            "sha256": "f5c34f7e827cb7b38d5ab1f7552a6bd534420c7d7f7297336f1e81df0bb54a6b",
+            "bytes": 89520
+          },
+          {
+            "path": "evidence/generation/measure-rem-22/text-200.png",
+            "sha256": "0fae0c738cc0593e55ba34e6d8a500353ae45797e0982219ace4b5de1f4a1891",
+            "bytes": 187804
+          }
+        ]
+      },
+      {
+        "id": "23",
+        "title": "文博展览的作品细读",
+        "mode": "新建",
+        "condition": "measure",
+        "startedAt": "2026-10-29T10:37:24.422Z",
+        "startTimeScope": "批次共同起点；未伪造逐题独立会话耗时",
+        "generationLastModifiedAt": "2026-10-29T10:37:24.436Z",
+        "endedAt": "2026-10-29T10:43:10.271Z",
+        "actions": [
+          "键盘打开细节，Esc和按钮退出，焦点返回入口，查看来源",
+          "390像素下模拟系统字体回退与叶节点200%文字放大；无远程图片依赖"
+        ],
+        "measure": {
+          "initialPath": "evidence/generation/measure-rem-23/measure-initial.json",
+          "finalPath": "evidence/generation/measure-rem-23/measure-initial.json",
+          "summary": {
+            "files": 1,
+            "cjk_files": 1,
+            "errors": 0,
+            "warns": 0,
+            "status": "pass"
+          },
+          "initialExitCode": 0,
+          "disabledRules": [],
+          "configuration": "默认配置"
+        },
+        "repairs": [],
+        "interactions": [
+          {
+            "width": 390,
+            "status": "通过",
+            "errors": [],
+            "text200": {
+              "width": 390,
+              "scroll": 390
+            },
+            "externalRequests": [],
+            "console": []
+          },
+          {
+            "width": 1440,
+            "status": "通过",
+            "errors": [],
+            "externalRequests": [],
+            "console": []
+          },
+          {
+            "width": 320,
+            "status": "通过",
+            "errors": [],
+            "externalRequests": [],
+            "console": []
+          }
+        ],
+        "knownLimitations": [
+          "200%文字放大为浏览器叶节点字号模拟；字体回退为Arial/sans-serif模拟，未做真实操作系统字体卸载。",
+          "未做真实手机、屏幕阅读器和人工视觉验收。"
+        ],
+        "artifacts": [
+          {
+            "path": "site/runs/23/measure/index.html",
+            "sha256": "70308a59c9816066e2d8290bf6721958ca43303b1bac860aabef86bac63952d6",
+            "bytes": 6541
+          },
+          {
+            "path": "site/runs/23/measure/measure.css",
+            "sha256": "cc0ba1e4da554d44e1a1a753512a1e52e78c7901debdc5c44d97c948b2a826a4",
+            "bytes": 1121
+          }
+        ],
+        "evidence": [
+          {
+            "path": "evidence/generation/measure-rem-23/font-fallback.png",
+            "sha256": "31c0e4d1fe7f52bf954db6cb88fd6d041827c005fe0225e10ca2b828011d0557",
+            "bytes": 153438
+          },
+          {
+            "path": "evidence/generation/measure-rem-23/measure-initial.json",
+            "sha256": "20360edd01a3ec34d7d1e9ef00c8167c468619c5a6d7fc4b4240371b4c68fac5",
+            "bytes": 1047
+          },
+          {
+            "path": "evidence/generation/measure-rem-23/measure-initial.log",
+            "sha256": "d78f07e18a123ee9cd4ae383cd655d6deeaf110f440d2ca493ceb65cba20b773",
+            "bytes": 231
+          },
+          {
+            "path": "evidence/generation/measure-rem-23/task-1440.png",
+            "sha256": "f1980ac1e0da07124f728467d1996236346e97cd2e46d0773bff5d886e3dcf40",
+            "bytes": 175669
+          },
+          {
+            "path": "evidence/generation/measure-rem-23/task-320.png",
+            "sha256": "493e92529a4d7a50863a928e7c37374020f3cd9f988867500e7040af24d18e7a",
+            "bytes": 152156
+          },
+          {
+            "path": "evidence/generation/measure-rem-23/task-390.png",
+            "sha256": "31c0e4d1fe7f52bf954db6cb88fd6d041827c005fe0225e10ca2b828011d0557",
+            "bytes": 153438
+          },
+          {
+            "path": "evidence/generation/measure-rem-23/text-200.png",
+            "sha256": "15952ec1cee434ee7cd278f4072765d24fe28ecdd41a27f0fe37db49017daea5",
+            "bytes": 316780
+          }
+        ]
+      },
+      {
+        "id": "24",
+        "title": "无图咨询服务页审阅",
+        "mode": "只审阅",
+        "condition": "measure",
+        "startedAt": "2026-10-29T10:37:24.422Z",
+        "startTimeScope": "批次共同起点；未伪造逐题独立会话耗时",
+        "generationLastModifiedAt": "2026-10-29T10:40:09.353Z",
+        "endedAt": "2026-10-29T10:43:10.275Z",
+        "actions": [
+          "读取允许冻结输入",
+          "在4180对390/320/1440实际观察并执行关键操作",
+          "输出确定缺陷、正常对照、设计建议、待核实项",
+          "只生成报告，未修改输入"
+        ],
+        "measure": {
+          "initialPath": "evidence/generation/measure-rem-24/measure-initial.json",
+          "finalPath": "evidence/generation/measure-rem-24/measure-final.json",
+          "summary": {
+            "files": 1,
+            "cjk_files": 1,
+            "errors": 0,
+            "warns": 0,
+            "status": "pass"
+          },
+          "initialExitCode": 1,
+          "disabledRules": [],
+          "configuration": "默认配置"
+        },
+        "repairs": [
+          {
+            "id": "24",
+            "time": "2026-10-29T10:40:09.353Z",
+            "reason": "报告正常对照中币种和计费单位断行使／出现在行首；将该金额单位保持同行。",
+            "iteration": 1
+          }
+        ],
+        "interactions": {
+          "observationPath": "evidence/generation/measure-rem-review-observations.json",
+          "widths": [
+            390,
+            320,
+            1440
+          ],
+          "status": "已观察并报告"
+        },
+        "knownLimitations": [
+          "200%文字放大为浏览器叶节点字号模拟；字体回退为Arial/sans-serif模拟，未做真实操作系统字体卸载。",
+          "未做真实手机、屏幕阅读器和人工视觉验收。",
+          "输入中的问题未修复；完整字段与事实可在原始观察记录核对。"
+        ],
+        "artifacts": [
+          {
+            "path": "site/runs/24/measure/index.html",
+            "sha256": "9fc633cd04ef895e7a1ac4f69082831086146e7dccd7f67a5fd1cea8b197ed31",
+            "bytes": 2616
+          },
+          {
+            "path": "site/runs/24/measure/measure.css",
+            "sha256": "cc0ba1e4da554d44e1a1a753512a1e52e78c7901debdc5c44d97c948b2a826a4",
+            "bytes": 1121
+          },
+          {
+            "path": "site/runs/24/measure/report.json",
+            "sha256": "7671374b494cdfebe23698ba63454848bb96637772ffa6703e8bfb5a3e47b249",
+            "bytes": 2161
+          }
+        ],
+        "evidence": [
+          {
+            "path": "evidence/generation/measure-rem-24/evidence/T04-001.png",
+            "sha256": "eb3b6d4e0266aa480b7d9b0c8b88a2d9baea3f74e61380b9842fa9d79ee96f41",
+            "bytes": 12353
+          },
+          {
+            "path": "evidence/generation/measure-rem-24/initial-source-reconstruction/index.html",
+            "sha256": "72dfda7bec116c8846bbb5c6630e82608f0cb99d21ed0cc5e99be98b37bb6739",
+            "bytes": 2576
+          },
+          {
+            "path": "evidence/generation/measure-rem-24/initial-source-reconstruction/measure.css",
+            "sha256": "cc0ba1e4da554d44e1a1a753512a1e52e78c7901debdc5c44d97c948b2a826a4",
+            "bytes": 1121
+          },
+          {
+            "path": "evidence/generation/measure-rem-24/initial-source-reconstruction/provenance.json",
+            "sha256": "0f0558383d1cc955ec39e949708299fecc5bd2a1a94e36b516f20860c193e961",
+            "bytes": 216
+          },
+          {
+            "path": "evidence/generation/measure-rem-24/input-1440.png",
+            "sha256": "a71ed86be33f5ac7d0b3c3c9abd8b4f65eb0319c79dffde0b11d0acf12c3dee4",
+            "bytes": 128327
+          },
+          {
+            "path": "evidence/generation/measure-rem-24/input-320.png",
+            "sha256": "8f2b68fcc03e9e27bdec06a7a42a9b1001aeba301e8b87ec32891c9c50e38a04",
+            "bytes": 112333
+          },
+          {
+            "path": "evidence/generation/measure-rem-24/input-390.png",
+            "sha256": "4465d6f6a02c01d0ae640c2e2b6b605d583eef252a54713c2228842a2bbefcfa",
+            "bytes": 112698
+          },
+          {
+            "path": "evidence/generation/measure-rem-24/measure-final.json",
+            "sha256": "5cbce985048970958e46cd5ce21223e0b04791b8be13a4c1ba0b1dff493826ed",
+            "bytes": 1047
+          },
+          {
+            "path": "evidence/generation/measure-rem-24/measure-final.log",
+            "sha256": "0aa5c78c10be02c790e4ae56de557c735cd6ac3b902d268299e3e1a7f28320d2",
+            "bytes": 231
+          },
+          {
+            "path": "evidence/generation/measure-rem-24/measure-initial.json",
+            "sha256": "0c7890cc919f2df1bd950bef664124559157cf84c553fe7a7c5b75d418e7391f",
+            "bytes": 1531
+          },
+          {
+            "path": "evidence/generation/measure-rem-24/measure-initial.log",
+            "sha256": "752bf0d1d41f87925f486bd96ac88efeb90378588b2cf1328ef788c3cddd7352",
+            "bytes": 581
+          }
+        ]
+      }
+    ]
+  }
+}

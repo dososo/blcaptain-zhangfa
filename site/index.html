@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="description" content="章法：面向中文网页的原创设计技能。用相同需求、三种条件，逐页检查真实生成结果。">
+  <title>章法 — 让中文网页，有自己的章法</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#playground">跳至场景试验场</a>
+  <header class="masthead page-width">
+    <a class="brand" href="#" aria-label="章法首页"><span class="brand-symbol" aria-hidden="true">章</span><span>章法<span class="brand-description">中文网页设计技能</span></span></a>
+    <nav aria-label="主导航"><a href="#playground">场景试验场 <span aria-hidden="true">↗</span></a><a href="#principles">设计的分寸</a></nav>
+  </header>
+
+  <main>
+    <section class="hero page-width" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="signal" aria-hidden="true"></span> 从中文表达出发的网页设计</p>
+        <h1 id="hero-title">让中文网页，<br>有自己的<span class="hero-serif">章法</span>。</h1>
+        <p class="hero-intro">内容先有主次，页面才有气质。<br>让文字、留白与交互，一起服务于表达。</p>
+        <a class="primary-link" href="#playground">进入场景试验场 <span aria-hidden="true">↗</span></a>
+        <div class="hero-footnote"><span>中文语境</span><span>内容驱动</span><span>可检查的结果</span></div>
+      </div>
+
+      <div class="typesetter">
+        <div class="typesetter-bar"><span><span class="small-square" aria-hidden="true"></span> 一句中文的空间练习</span><span class="demo-badge">规则示意</span></div>
+        <div class="type-canvas" id="type-canvas" data-layout="left">
+          <div class="canvas-guide" aria-hidden="true"></div>
+          <span class="canvas-note">文字是页面的第一种图形</span>
+          <div class="type-composition"><span class="composition-index" aria-hidden="true">01 /</span><p id="type-output">好内容，<br>值得被好好看见。</p><span class="composition-caption">在主次之间，找到表达的重心。</span></div>
+          <span class="canvas-corner" aria-hidden="true">章法 · 试排</span>
+        </div>
+        <form class="type-controls" id="type-form">
+          <label class="title-field" for="type-input">换一句，试试章法<textarea id="type-input" name="试排标题" rows="2" maxlength="42">好内容，
+值得被好好看见。</textarea></label>
+          <label for="type-layout">构图<select id="type-layout" name="标题构图"><option value="left">左齐 · 有重心</option><option value="center">居中 · 有仪式</option><option value="narrow">窄栏 · 有节奏</option></select></label>
+        </form>
+      </div>
+    </section>
+
+    <section class="index-intro page-width" aria-label="试验范围">
+      <p><span class="intro-dot" aria-hidden="true"></span> 设计值得被检验，也值得被如实呈现。</p>
+      <div><span><strong id="scene-count">—</strong> 个场景</span><span><strong>3</strong> 组条件</span><span><strong id="real-count">—</strong> 组真实试验</span></div>
+    </section>
+
+    <section class="playground page-width" id="playground" aria-labelledby="playground-title">
+      <div class="section-heading"><div><p class="eyebrow">场景试验场 / 01</p><h2 id="playground-title">把差别，放进同一个问题。</h2></div><p>相同需求，三种条件。<br>逐页查看，自己判断。</p></div>
+      <div class="data-error" id="data-error" role="alert" hidden></div>
+      <div class="workbench" id="workbench" aria-busy="true">
+        <aside class="case-sidebar" aria-label="选择场景">
+          <div class="sidebar-heading"><h3>场景索引</h3><span id="filter-count" aria-live="polite">正在读取</span></div>
+          <label class="search-field" for="case-search"><span class="sr-only">搜索场景</span><span aria-hidden="true">⌕</span><input id="case-search" name="搜索场景" type="search" placeholder="搜索场景或需求" autocomplete="off"></label>
+          <label class="category-field" for="category-filter"><span>场景类型</span><select id="category-filter" name="场景类型"><option value="all">全部类型</option></select></label>
+          <div class="kind-filters" role="group" aria-label="按成果类别筛选"><button type="button" data-kind="all" aria-pressed="true">全部</button><button type="button" data-kind="真实智能体试验" aria-pressed="false">真实试验</button><button type="button" data-kind="规则示意" aria-pressed="false">规则示意</button><button type="button" data-kind="待生成" aria-pressed="false">尚未制作</button></div>
+          <div class="case-list" id="case-list"><p class="list-placeholder">正在读取场景索引…</p></div>
+          <p class="sidebar-note">“规则示意”用于解释方法；<br>“真实试验”保留实际生成结果。</p>
+        </aside>
+
+        <div class="preview-panel">
+          <div class="case-heading"><div><p class="case-meta" id="case-meta">请选择一个场景</p><h3 id="case-title">正在准备试验场</h3><p id="case-brief">读取后可切换设计条件，查看相同需求下的页面。</p></div><span class="case-number" id="case-number" aria-hidden="true">—</span></div>
+          <div class="condition-tabs" role="group" aria-label="生成条件"><button type="button" data-arm="control" aria-pressed="false"><span>01</span> 无本技能</button><button type="button" data-arm="measure" aria-pressed="false"><span>02</span> 仅分寸</button><button type="button" data-arm="full" aria-pressed="true"><span>03</span> 章法＋分寸</button></div>
+          <div class="preview-toolbar"><div class="device-switch" role="group" aria-label="预览尺寸"><button type="button" data-device="desktop" aria-pressed="true"><span aria-hidden="true">▱</span> 桌面</button><button type="button" data-device="mobile" aria-pressed="false"><span aria-hidden="true">▯</span> 手机</button></div><a id="open-page" class="text-link" target="_blank" rel="noopener noreferrer" hidden>打开独立页面 <span aria-hidden="true">↗</span></a></div>
+          <div class="preview-stage" id="preview-stage"><div class="empty-state" id="empty-state"><span class="empty-mark" aria-hidden="true">章</span><h4 id="empty-title">页面尚未制作</h4><p id="empty-description">这里会展示实际生成的页面。索引不等于成品。</p></div><div class="frame-shell" id="frame-shell" hidden><iframe id="case-frame" title="场景页面预览" sandbox="allow-scripts allow-forms"></iframe></div></div>
+          <div class="preview-caption"><span id="size-note">桌面布局 · 1440 像素宽 · 按区域等比缩放</span><span>预览用于比较版式；交互与复制可打开独立页面。尺寸预览不代表真机验收</span></div>
+          <div class="evidence-status" id="evidence-status" aria-live="polite">成果状态将在场景读取后显示。</div>
+          <details class="task-details"><summary>查看原始需求 <span aria-hidden="true">＋</span></summary><div id="case-task">尚未选择场景。</div></details>
+          <a class="evidence-link" id="evidence-link" target="_blank" rel="noopener noreferrer" hidden>查看试验记录 <span aria-hidden="true">↗</span></a>
+          <a class="evidence-link" id="open-input" target="_blank" rel="noopener noreferrer" hidden>打开只审阅的冻结输入 <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="principles page-width" id="principles" aria-labelledby="principles-title">
+      <div class="principles-title"><p class="eyebrow">设计的分寸 / 02</p><h2 id="principles-title">有章可循，<br>也有变化的余地。</h2><p>章法提供判断的顺序，<br>不把每个页面变成同一个答案。</p></div>
+      <div class="principle-list"><article><span>01</span><div><h3>先辨内容，再定形式</h3><p>谁在阅读，先看什么，接下来做什么。每一处视觉决定，都应有内容上的理由。</p></div></article><article><span>02</span><div><h3>让中文，按中文的节奏呼吸</h3><p>从行长、断句到标点，从标题的重心到段落的间距，让阅读自然发生。</p></div></article><article><span>03</span><div><h3>让结果，接受同一把尺子的检查</h3><p>能打开不等于已验收。分别记录生成、技术检查与视觉审视，保留尚未完成的部分。</p></div></article></div>
+    </section>
+
+    <section class="reading-note page-width" aria-labelledby="status-title"><h2 id="status-title">如何阅读这里的状态</h2><div><p><strong>真实智能体试验</strong>同一需求下实际运行并保留的页面；生成结果仍需技术与视觉检查。</p><p><strong>规则示意</strong>为解释设计方法而制作的示例，不作为技能效果的实验证据。</p><p><strong>尚未制作</strong>已列入范围、尚无可查看成品。不会用示例页替代真实试验。</p></div><p><a href="./lab/">打开12组局部试排示意 ↗</a></p><p class="status-footnote">各条件按批次运行，组内共享上下文；加载技能不代表完整执行，省略步骤与额外修复见每题记录。“已生成”只说明页面已经产出；“技术已验证”也不代表视觉或人工验收通过。本展示不推断成功率。</p></section>
+  </main>
+  <footer class="footer page-width"><a class="footer-brand" href="#">章法<span>中文网页，各有章法。</span></a><p>从表达出发，回到表达。</p><a href="#">回到顶部 ↑</a></footer>
+</body>
+</html>

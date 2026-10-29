@@ -1,0 +1,11 @@
+node_modules/
+release/
+.DS_Store
+research/
+tasks/
+方案.md
+案例与评测规格.md
+.local/
+/evidence/
+site/runs/**/verify-*.mjs
+site/runs/**/.zhangfa-evidence/

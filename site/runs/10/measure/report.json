@@ -1,0 +1,57 @@
+{
+  "id": "10",
+  "condition": "measure",
+  "mode": "只审阅",
+  "source": "http://127.0.0.1:4180/10/",
+  "observedAt": "2026-10-29T10:38:31.015Z",
+  "widths": [
+    390,
+    320,
+    1440
+  ],
+  "findings": [
+    {
+      "id": "10-1",
+      "status": "确定缺陷",
+      "severity": "中",
+      "title": "固定宽度命令块导致页面级横向溢出",
+      "element": "pre#command",
+      "widths": [
+        320,
+        390
+      ],
+      "steps": "打开页面；pre 宽度为 900；390 和 320 视口下文档宽均为 942。",
+      "impact": "整页需要横向移动才能读取命令，破坏手机阅读。",
+      "suggestion": "将横向滚动限制在命令容器内，并保留完整命令文字。",
+      "evidence": "evidence/generation/measure-rem-10/input-390.png"
+    },
+    {
+      "id": "10-2",
+      "status": "确定缺陷",
+      "severity": "中",
+      "title": "复制结果缺少显示命令的 --verbose 参数",
+      "element": "#copy / #command",
+      "widths": [
+        320,
+        390,
+        1440
+      ],
+      "steps": "点击“复制检查命令”；检查 window.__copiedText，与可见命令逐字符比较。",
+      "impact": "复制后的内容与展示内容不一致，丢失末尾 --verbose。",
+      "suggestion": "由唯一命令字符串同时驱动显示与复制。",
+      "evidence": "evidence/generation/measure-rem-10/input-390.png"
+    }
+  ],
+  "normal": [
+    "E_DEMO_CONFIG、完整路径和英文说明均保留。",
+    "检查命令是非执行演示，不应在审阅时运行。"
+  ],
+  "suggestions": [
+    "可为命令区域增加便于键盘定位的标签。"
+  ],
+  "unknown": [
+    "未检查真实手机触屏、屏幕阅读器、操作系统级字体故障。",
+    "未修改冻结输入；发现项均为建议，未验证修复完成。"
+  ],
+  "observations": "evidence/generation/measure-rem-review-observations.json"
+}
