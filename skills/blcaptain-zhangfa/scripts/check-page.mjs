@@ -12,7 +12,7 @@ const limitations = [
   '这是当前页面和指定宽度的浏览器快照，不是审美评分，也不代表完整无障碍合规。',
   '名称检查覆盖常见原生控件与按钮角色；复杂 ARIA、键盘操作、对比度和读屏体验仍需人工验收。',
   '裁切检查依据可见文字行盒与 overflow 容器；画布、伪元素、封闭影子树和尚未展开的交互内容未覆盖。',
-  '截图等待字体与当前图片就绪；滚动触发的懒加载、登录态、动画各时刻和真机体验仍需另验。',
+  '截图前有界滚动以触发当前可展示的懒加载图片并恢复原锚点；隐藏图片记为未检查，后续交互、持续异步内容、登录态、动画和真机仍需另验。',
   '分寸通过只代表所运行的中文规则通过；最终中文语义断行、内容质量与视觉验收仍需人工确认。'
 ];
 
@@ -119,13 +119,15 @@ function inspectDOM() {
   const describe = element => `${element.tagName.toLowerCase()}${element.id ? `#${element.id}` : ''}`;
   const rendered = element => {
     const style = getComputedStyle(element);
-    return style.visibility !== 'hidden' && style.visibility !== 'collapse' && style.opacity !== '0' && element.getClientRects().length > 0;
+    if (style.visibility === 'hidden' || style.visibility === 'collapse' || !element.getClientRects().length) return false;
+    for (let node = element; node; node = node.parentElement) if (getComputedStyle(node).opacity === '0') return false;
+    return true;
   };
   const add = (code, element, message) => findings.push({ code, element: describe(element), message });
   const documentWidth = Math.max(document.documentElement.scrollWidth, document.body?.scrollWidth || 0);
   if (documentWidth > innerWidth + 1) findings.push({ code: 'horizontal_overflow', message: `页面内容宽 ${documentWidth}px，窗口宽 ${innerWidth}px。`, documentWidth });
   for (const element of document.querySelectorAll('img')) {
-    if (rendered(element) && (!element.complete || !element.naturalWidth)) add('broken_image', element, '可见图片未成功加载。');
+    if (rendered(element) && element.complete && !element.naturalWidth) add('broken_image', element, '可见图片已结束加载但没有有效图像。');
   }
   const visibleText = element => {
     if (element.getAttribute('aria-hidden') === 'true') return '';
@@ -216,6 +218,51 @@ function headingLines() {
   });
 }
 
+async function prepareMedia(page) {
+  // 短暂等待首批异步数据，不把持续轮询或晚到交互内容当作已完整覆盖。
+  await page.waitForLoadState('networkidle', { timeout: 1500 }).catch(() => {});
+  return page.evaluate(async () => {
+    const started = performance.now(), deadline = started + 10000;
+    const origin = { x: scrollX, y: scrollY };
+    const pause = () => new Promise(resolve => setTimeout(resolve, 50));
+    const shown = image => {
+      const css = getComputedStyle(image);
+      if (!image.getClientRects().length || ['hidden', 'collapse'].includes(css.visibility)) return false;
+      for (let node = image; node; node = node.parentElement) if (getComputedStyle(node).opacity === '0') return false;
+      return true;
+    };
+    // 图片到达后才可能撑出滚动范围，连初始尚未溢出的裁切容器也要恢复。
+    const positions = [...document.querySelectorAll('*')].filter(node => {
+      const css = getComputedStyle(node);
+      return node.scrollTop || node.scrollLeft || [css.overflowX, css.overflowY].some(value => ['auto', 'scroll', 'hidden'].includes(value));
+    }).map(node => [node, node.scrollLeft, node.scrollTop]);
+    let scrollComplete = true;
+    try {
+      for (const image of document.images) {
+        if (!shown(image)) continue;
+        if (performance.now() >= deadline) { scrollComplete = false; break; }
+        image.scrollIntoView({ block: 'center', inline: 'nearest', behavior: 'instant' });
+        await pause();
+      }
+      while (performance.now() < deadline && (document.fonts.status !== 'loaded' || [...document.images].some(image => shown(image) && !image.complete))) await pause();
+    } finally {
+      for (const [node, left, top] of positions) node.scrollTo({ left, top, behavior: 'instant' });
+      scrollTo({ left: origin.x, top: origin.y, behavior: 'instant' });
+    }
+    const images = [...document.images].map(image => ({
+      source: image.currentSrc || image.src,
+      status: !shown(image) ? 'not_run' : !image.complete ? 'pending' : image.naturalWidth ? 'loaded' : 'failed'
+    }));
+    return {
+      ready: scrollComplete && document.fonts.status === 'loaded' && !images.some(image => image.status === 'pending'),
+      scrollComplete,
+      restoredPosition: { x: scrollX, y: scrollY },
+      images,
+      scope: '当前可展示图片经真实滚动触发；隐藏图片未检查，不代表切换或展开后通过。'
+    };
+  });
+}
+
 async function inspectWidth(browser, options, width) {
   const page = await browser.newPage({ viewport: { width, height: 1000 }, locale: 'zh-CN', reducedMotion: 'reduce', serviceWorkers: 'block' });
   const errors = [], blocked = [];
@@ -236,13 +283,8 @@ async function inspectWidth(browser, options, width) {
   try {
     const response = await page.goto(options.url, { waitUntil: 'load', timeout: 20000 });
     if (response && response.status() >= 400) errors.push({ code: 'http_error', message: `页面 HTTP 状态为 ${response.status()}。` });
-    const ready = await page.evaluate(async () => {
-      let timer;
-      const settled = Promise.all([document.fonts.ready, ...[...document.images].map(img => img.complete ? Promise.resolve() : new Promise(resolve => { img.addEventListener('load', resolve, { once: true }); img.addEventListener('error', resolve, { once: true }); }))]);
-      const ready = await Promise.race([settled.then(() => true), new Promise(resolve => { timer = setTimeout(() => resolve(false), 10000); })]);
-      clearTimeout(timer);
-      return ready;
-    });
+    result.media = await prepareMedia(page);
+    const ready = result.media.ready;
     result.findings = [...await page.evaluate(inspectDOM), ...errors];
     result.headings = await page.evaluate(headingLines);
     result.headingScope = '前12个可见横排h1/h2；计算字体栈不是逐字实际字体命中证明；语义需审阅。';
@@ -250,7 +292,7 @@ async function inspectWidth(browser, options, width) {
     result.status = result.findings.length ? 'fail' : ready && !blocked.length ? 'pass' : 'unknown';
     result.resourcesReady = ready;
     if (blocked.length) result.blockedRequests = [...new Set(blocked)];
-    if (!ready) result.reason = '字体或图片未在等待期内就绪，截图不能视为完整渲染。';
+    if (!ready) result.reason = '当前可展示图片、滚动范围或字体未在有界等待内就绪，截图不能视为完整渲染；隐藏图片另记未检查。';
   } catch (error) {
     result.status = 'fail';
     result.findings.push(...errors, { code: 'page_load_error', message: error.message });

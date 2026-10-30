@@ -15,6 +15,10 @@ const temporary = () => mkdtemp(path.join(tmpdir(), '章法检查-'));
 async function serve(t) {
   const server = createServer(async (request, response) => {
     const pathname = decodeURI(request.url);
+    if (pathname === '/图片.svg') { response.setHeader('Content-Type', 'image/svg+xml'); response.end('<svg xmlns="http://www.w3.org/2000/svg" width="160" height="90"><rect width="160" height="90" fill="green"/></svg>'); return; }
+    if (pathname === '/长图.svg') { response.setHeader('Content-Type', 'image/svg+xml'); response.end('<svg xmlns="http://www.w3.org/2000/svg" width="160" height="900"><rect width="160" height="900" fill="green"/></svg>'); return; }
+    if (pathname === '/懒加载容器') { response.setHeader('Content-Type', 'text/html; charset=utf-8'); response.end('<html lang="zh-CN"><meta charset="utf-8"><p>首屏中文内容</p><div style="margin-top:7000px"><img loading="lazy" src="/图片.svg" alt="先触发下方区域" width="160" height="90"></div><a href="#" style="position:relative;display:block;height:180px;width:160px;overflow:hidden"><img loading="lazy" src="/长图.svg" alt="没有预设尺寸的长图"><span style="position:absolute;left:0;top:0">查看完整页面</span></a></html>'); return; }
+    if (pathname.startsWith('/懒加载')) { response.setHeader('Content-Type', 'text/html; charset=utf-8'); response.end(`<html lang="zh-CN"><meta charset="utf-8"><p>首屏中文内容</p>${pathname.includes('隐藏') ? '<div hidden><img loading="lazy" src="/不存在.png" alt="未展开的图片" width="160" height="90"></div>' : `<div style="margin-top:7000px"><img loading="lazy" src="${pathname.includes('坏图') ? '/不存在.png' : '/图片.svg'}" alt="下方图片" width="160" height="90"></div>`}</html>`); return; }
     if (pathname === '/断连.js') { request.socket.destroy(); return; }
     if (pathname.startsWith('/资源缺失')) { response.setHeader('Content-Type', 'text/html; charset=utf-8'); response.end(`<html lang="zh-CN"><meta charset="utf-8"><p>中文资源检查页面</p><script src="${pathname.includes('断连') ? '/断连.js' : '/app.js'}"></script><link rel="stylesheet" href="/style.css"></html>`); return; }
     if (pathname === '/外部资源') { response.end('<!doctype html><html><body><p>本地内容</p><script src="https://example.com/禁止.js"></script></body></html>'); return; }
@@ -81,6 +85,45 @@ test('异常页报告溢出、裁切、坏图、名称、链接和页面异常',
   assert.equal(report.status, 'fail');
   const codes = report.pages[0].findings.map(item => item.code);
   for (const code of ['horizontal_overflow', 'clipped_content', 'broken_image', 'unnamed_control', 'empty_href', 'pageerror']) assert.ok(codes.includes(code), code);
+});
+
+test('下方懒加载图片经实际滚动加载，截图恢复原锚点', async t => {
+  const url = await serve(t);
+  const report = await inspectPage({ url: `${url}/懒加载`, out: await temporary(), widths: [390], noMeasure: true });
+  const page = report.pages[0];
+  assert.equal(page.status, 'pass', JSON.stringify(page.findings));
+  assert.equal(page.resourcesReady, true);
+  assert.equal(page.media.images[0].status, 'loaded');
+  assert.deepEqual(page.media.restoredPosition, { x: 0, y: 0 });
+});
+
+test('图片到达后才出现溢出的裁切容器恢复原位，不卷走入口文字', async t => {
+  const url = await serve(t);
+  const report = await inspectPage({ url: `${url}/懒加载容器`, out: await temporary(), widths: [390], noMeasure: true });
+  const page = report.pages[0];
+  assert.equal(page.status, 'pass', JSON.stringify(page.findings));
+  assert.equal(page.resourcesReady, true);
+  assert.ok(page.media.images.every(image => image.status === 'loaded'));
+  assert.ok(!page.findings.some(item => item.code === 'clipped_content'));
+});
+
+test('下方懒加载真实坏图仍为失败，不把加载结束当成功', async t => {
+  const url = await serve(t);
+  const report = await inspectPage({ url: `${url}/懒加载坏图`, out: await temporary(), widths: [390], noMeasure: true });
+  const page = report.pages[0];
+  assert.equal(page.status, 'fail');
+  assert.equal(page.media.images[0].status, 'failed');
+  assert.ok(page.findings.some(item => item.code === 'broken_image'));
+});
+
+test('未展开的隐藏懒图不阻塞当前渲染，也不冒充已检查', async t => {
+  const url = await serve(t);
+  const report = await inspectPage({ url: `${url}/懒加载隐藏`, out: await temporary(), widths: [390], noMeasure: true });
+  const page = report.pages[0];
+  assert.equal(page.status, 'pass', JSON.stringify(page.findings));
+  assert.equal(page.resourcesReady, true);
+  assert.equal(page.media.images[0].status, 'not_run');
+  assert.match(page.media.scope, /隐藏图片未检查/);
 });
 
 test('CLI 遇到真实页面问题退出 1', async t => {

@@ -1,0 +1,43 @@
+{
+  "capturedAt": "2026-10-30T01:01:17.884Z",
+  "browser": "156.0.8078.79",
+  "nature": "同一冻结内容的不同生成条件；full包含0.2.0后期视觉修订。精选非胜率，不是单次改版前后。",
+  "captures": [
+    {
+      "file": "assets/story/05-1440-control.webp",
+      "url": "./runs/05/control/",
+      "width": 1440,
+      "height": 2341,
+      "fullPage": true,
+      "scrollY": 0,
+      "sha256": "b77ebd9774a2ed93e3b2c20b3eb19e23590e43ce8f05b5fcc0fde76be0d67b62"
+    },
+    {
+      "file": "assets/story/05-1440-full.webp",
+      "url": "./runs/05/full/",
+      "width": 1440,
+      "height": 1567,
+      "fullPage": true,
+      "scrollY": 0,
+      "sha256": "7856b66080ab25cbaeddb7ed7f0c1b5aa6258f275bd248f77495a7084c006a35"
+    },
+    {
+      "file": "assets/story/05-390-control.webp",
+      "url": "./runs/05/control/",
+      "width": 390,
+      "height": 2694,
+      "fullPage": true,
+      "scrollY": 0,
+      "sha256": "89629f4fd8e827f58071884c7d1c5f2b25e3aa8aa89426dd8e87d4e782897af3"
+    },
+    {
+      "file": "assets/story/05-390-full.webp",
+      "url": "./runs/05/full/",
+      "width": 390,
+      "height": 2853,
+      "fullPage": true,
+      "scrollY": 0,
+      "sha256": "8ce277c72ab8b38e8cbe713cbd326aca3a55e8e37a2c2984a9994b249674b026"
+    }
+  ]
+}

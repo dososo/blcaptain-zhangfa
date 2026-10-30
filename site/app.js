@@ -3,7 +3,7 @@
 const $ = (selector) => document.querySelector(selector);
 const armIds = ["control", "measure", "full"];
 const armLabels = { control: "无本技能", measure: "仅分寸", full: "章法＋分寸" };
-const state = { cases: [], selectedId: null, arm: "full", device: "desktop", kind: "all" };
+const state = { cases: [], selectedId: null, arm: "full", device: "desktop", kind: "all", review: null };
 let resizeObserver;
 let previewTimer;
 
@@ -20,7 +20,7 @@ function caseKind(item) {
 }
 
 function statusLabel(status) {
-  return { planned: "尚未制作", generated: "已生成，待检查", verified: "技术已验证", failed: "生成失败" }[status] || "状态待确认";
+  return { planned: "尚未制作", generated: "已生成", verified: "已生成（附技术记录）", failed: "生成失败" }[status] || "状态待确认";
 }
 
 function currentCase() {
@@ -73,7 +73,7 @@ function renderList() {
     title.textContent = item.title;
     const meta = document.createElement("span");
     meta.className = "item-meta";
-    meta.textContent = `${caseKind(item) === "待生成" ? "尚未制作" : caseKind(item)} · ${statusLabel(item.status)}`;
+    meta.textContent = `${caseKind(item) === "待生成" ? "尚未制作" : caseKind(item)} · ${item.arms?.some(arm => arm.visualRevision) ? "含视觉修订版" : statusLabel(item.status)}`;
     content.append(title, meta);
     button.append(number, content);
     button.addEventListener("click", () => {
@@ -153,14 +153,28 @@ function renderPreview() {
     $("#empty-description").textContent = `${armLabels[state.arm]} · ${item.title}。${arm?.status === "failed" ? "当前保留失败状态，不能打开预览。" : "索引已列出需求，暂时没有可查看的成品。"}`;
   }
 
-  const checkLabels = { pass: "指定范围的自动复查通过", fail: "自动复查发现问题，详见试验记录", unknown: "自动复查存在无法判断项", not_run: "自动复查尚未运行", not_applicable: "该项检查不适用" };
-  const technical = ["generated", "verified"].includes(arm?.status) ? `技术检查：${checkLabels[arm.technicalStatus] || "待验证"}；视觉与人工验收：待确认。` : "技术检查与视觉验收：尚无可验收页面。";
-  $("#evidence-status").textContent = `${armLabels[state.arm]} · ${statusLabel(arm?.status || "planned")}\n${technical}${kind === "规则示意" ? "\n当前是规则示意，用于说明方法，不作为真实智能体试验的效果证据。" : ""}`;
+  const checkLabels = { pass: "所列自动检查通过（覆盖范围见记录）", fail: "自动检查发现问题，保留失败记录", unknown: "存在无法判断项", not_run: "尚未运行", not_applicable: "该项不适用" };
+  const available = ["generated", "verified"].includes(arm?.status);
+  const reviewed = state.arm === "full" && item.mode !== "只审阅" && state.review?.independentVisual && available;
+  const status = $("#evidence-status");
+  status.replaceChildren();
+  const lines = [
+    `产物：${armLabels[state.arm]} · ${arm?.visualRevision ? `${arm.visualRevision.version}视觉修订版，原始生成另存` : `${statusLabel(arm?.status || "planned")}${available ? item.mode === "只审阅" ? "的审阅报告，未改写输入" : "；原始生成结果" : ""}`}`,
+    `技术：${available ? checkLabels[arm.technicalStatus] || "待验证" : "尚无可验收产物"}。`,
+    `模型视觉：${reviewed ? "已完成本批次四宽审查与问题复核；不代表全部状态通过" : state.arm === "full" && !state.review ? "本轮审查记录未读取，状态待确认" : "本轮未进行独立视觉审查"}。`,
+    "人工与真机：待验（MANUAL_PENDING）。"
+  ];
+  if (kind === "规则示意") lines.push("规则示意：用于说明方法，不作为真实智能体试验的效果证据。");
+  for (const line of lines) { const p = document.createElement("p"); p.textContent = line; status.append(p); }
   const originalUrl = localUrl(arm?.visualRevision?.originalUrl);
   $("#open-original").hidden = !originalUrl;
   if (originalUrl) $("#open-original").href = originalUrl;
   else $("#open-original").removeAttribute("href");
-  if (arm?.protocolNotes?.length) $("#evidence-status").textContent += `\n过程偏差：${arm.protocolNotes.map(note => typeof note === "string" ? note : JSON.stringify(note)).join("；")}。本条件不作为完整流程严格对照。`;
+  if (arm?.protocolNotes?.length) {
+    const note = document.createElement("p"); note.className = "status-note";
+    note.textContent = `过程说明：${arm.protocolNotes.map(note => typeof note === "string" ? note : JSON.stringify(note)).join("；")}。本条件不作为完整流程严格对照。`;
+    status.append(note);
+  }
   const evidenceUrl = localUrl(item.evidenceUrl);
   $("#evidence-link").hidden = !evidenceUrl;
   if (evidenceUrl) $("#evidence-link").href = evidenceUrl;
@@ -184,6 +198,10 @@ async function loadCases() {
     if (!data || !Array.isArray(data.cases) || data.cases.some((item) => !item || typeof item.id !== "string" || typeof item.title !== "string")) throw new Error("场景索引格式不完整。");
     if (!data.cases.length) throw new Error("场景索引目前为空。");
     state.cases = data.cases;
+    try {
+      const reviewResponse = await fetch("./review-v2.json", { cache: "no-store" });
+      if (reviewResponse.ok) state.review = await reviewResponse.json();
+    } catch { state.review = null; }
     state.selectedId = (state.cases.find((item) => item.arms?.some((arm) => canOpen(arm))) || state.cases[0]).id;
     const firstAvailable = currentCase().arms?.find((arm) => armIds.includes(arm.id) && canOpen(arm));
     if (!canOpen(currentArm(currentCase())) && firstAvailable) state.arm = firstAvailable.id;

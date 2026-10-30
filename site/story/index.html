@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="纸岸书店完整页面对比：同一份中文内容，观察书籍、日程与到店说明如何形成阅读顺序。">
+  <title>一本书，如何成为一页的主角 — 章法完整案例</title>
+  <link rel="stylesheet" href="./story.css"><script src="./story.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#comparison">跳到完整页面对比</a>
+  <header class="wrap"><a class="brand" href="../">章法 <span>中文网页设计与验收</span></a><a href="../#full-story">返回作品画廊 ↗</a></header>
+  <main>
+    <section class="intro wrap"><p class="eyebrow">完整案例 01 / 纸岸书店 · 合成演示</p><h1>一本书，<br><span class="title-phrase">如何成为</span><span class="title-phrase">一页的<em>主角。</em></span></h1><div class="intro-bottom"><p>同一份内容，换一种阅读顺序。<br>从书籍的吸引力，走到周六的活动，再找到到店的路。</p><a href="#comparison">往下看完整页面 ↓</a></div></section>
+    <section class="sequence wrap" aria-label="设计变化"><article><span>01 / 先看见书</span><h2>把内容，变成主对象。</h2><p>书籍从首屏之后的列表，进入首屏构图。长书名完整保留，文字书封承担视觉叙事；没有虚构店内摄影。</p></article><article><span>02 / 再找到活动</span><h2>让向往，接上行动。</h2><p>日程紧接书籍，周六与周日的信息并置。日期、时间、费用与演示席位可查，报名条件仍由真实按钮打开。</p></article><article><span>03 / 最后安排到店</span><h2>给阅读，一个落点。</h2><p>地址、营业时间与空间示意组织在结尾。手机按内容重排书封与日程，保留信息和主要操作。</p></article></section>
+    <section class="comparison" id="comparison" aria-labelledby="compare-title"><div class="wrap">
+      <div class="compare-heading"><div><p class="eyebrow">同内容 / 同视口 / 完整页面</p><h2 id="compare-title">整页看，才知道<br>变化发生在哪里。</h2></div><p>先看构图，再看文字与操作。<br>切换条件后纵向位置按比例保留；<br>两页结构不同，内容锚点并不一一对应。</p></div>
+      <div class="toolbar"><div class="segmented" role="group" aria-label="选择截图视口"><button type="button" data-width="1440" aria-pressed="true">桌面 · 1440px</button><button type="button" data-width="390" aria-pressed="false">手机 · 390px</button></div><div class="segmented" role="group" aria-label="选择生成条件"><button type="button" data-arm="control" aria-pressed="false">无本技能 · 原始页</button><button type="button" data-arm="full" aria-pressed="true">章法＋分寸 · 修订页</button></div></div>
+      <p class="view-label" id="view-label" aria-live="polite">章法＋分寸 · 0.2.0修订页 / 桌面1440px</p>
+      <div class="viewer" id="viewer" tabindex="0" role="region" aria-label="完整页面截图，可上下滚动"><p id="image-status" role="status" hidden></p><img id="page-image" src="../assets/story/05-1440-full.webp" alt="纸岸书店章法修订版的1440像素完整页面：首屏书封、活动日程、到店说明及演示边界"></div>
+      <div class="viewer-links"><span>截图窗口可上下滚动。桌面图等比缩放用于整体构图；细读可打开原图或实际页面。</span><a id="open-image" href="../assets/story/05-1440-full.webp" target="_blank" rel="noopener noreferrer">完整原图 ↗</a><a id="open-page" href="../runs/05/full/" target="_blank" rel="noopener noreferrer">操作当前页面 ↗</a></div>
+      <noscript><p>完整截图：<a href="../assets/story/05-1440-control.webp">原始桌面</a> · <a href="../assets/story/05-1440-full.webp">修订桌面</a> · <a href="../assets/story/05-390-control.webp">原始手机</a> · <a href="../assets/story/05-390-full.webp">修订手机</a></p></noscript>
+    </div></section>
+    <section class="facts wrap"><div><p class="eyebrow">内容与操作，不能为了画面丢掉</p><h2>变的是呈现，<br>保留的是事实。</h2></div><div><ul><li>两本完整书名、作者与说明。</li><li>两场活动的名称、时间、费用和演示席位。</li><li>周六报名条件、方式、地点与业务边界。</li><li>到店地址、营业时间、空间示意与演示声明。</li></ul><p>两边均可打开报名说明、收起并返回按钮。保全核验覆盖1440px和390px；截图记录含视口、尺寸与摘要。</p><a href="../assets/story/来源.json">查看截图来源 ↗</a></div></section>
+    <aside class="boundary wrap"><h2>这组对比能说明什么？</h2><p>这是同一冻结任务的两种生成条件：原始条件为“无本技能”，另一条件为“章法＋分寸”，后者包含0.2.0后期视觉审查修订。它展示结构、排印与迭代的具体结果，属于精选案例，不能证明首次生成胜率、业务转化或行业领先。</p><p>名称、书籍、人物、价格、地址与席位均为合成演示，不开放真实报名。真实手机、跨平台字体与真人偏好尚待验证。</p><div><a href="../runs/05/control/" target="_blank" rel="noopener noreferrer">原始对照页 ↗</a><a href="../history/v0.1.0/runs/05/full/" target="_blank" rel="noopener noreferrer">章法首次生成页 ↗</a><a href="../#refinements">看五组同页修订 ↓</a></div></aside>
+  </main><footer class="wrap"><a class="brand" href="../">章法</a><span>因文成形，有章可循。</span></footer>
+</body>
+</html>
